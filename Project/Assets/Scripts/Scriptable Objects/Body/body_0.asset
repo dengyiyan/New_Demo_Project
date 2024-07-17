@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74674e2953db534ea7e3f8065bd08bf, type: 3}
+  m_Name: body_0
+  m_EditorClassIdentifier: 
+  bodyPartName: Body
+  bodyPartAnimationID: 0
+  bodyPartColor: {r: 1, g: 1, b: 1, a: 1}
+  allBodyPartAnimations:
+  - {fileID: 7400000, guid: adf70b2d50a64f845911aa84163763a4, type: 2}
+  - {fileID: 7400000, guid: 26fe10cb08d703840aad9db31eaf52bc, type: 2}
+  - {fileID: 7400000, guid: ab876d5c7d638124cb42a284b86ebad4, type: 2}
+  - {fileID: 7400000, guid: 7c3769004e8aea440885a6a2bc769e86, type: 2}
+  - {fileID: 7400000, guid: c1e6b78cbcec3c2428a39b4462b31c2f, type: 2}
+  - {fileID: 7400000, guid: aa165f4cc3d3df4449e2994080c65b36, type: 2}
+  - {fileID: 7400000, guid: fee404c3f6ae76e45ad37847db58ef0f, type: 2}
+  - {fileID: 7400000, guid: 7db10dd10a3b62848aa55ef4f0d0865d, type: 2}

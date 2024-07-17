@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
+  m_Name: Starting
+  m_EditorClassIdentifier: 
+  sequenceName: Starting
+  steps:
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 6
+    boolParameters:
+    - parameterName: isSleeping
+      value: 1
+    nextScene: 
+  - npcName: Player
+    points: []
+    trigger: sleep
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 1
+    boolParameters: []
+    nextScene: 
+  - npcName: Player
+    points: []
+    trigger: wake
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 2
+    boolParameters: []
+    nextScene: 
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 6
+    boolParameters:
+    - parameterName: isSleeping
+      value: 0
+    nextScene: 
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues:
+      - speakerName: Player
+        text: 'Wow, the sun is shining so brightly this morning! '
+        choices: []
+        nextIndex: 1
+        triggers: []
+      - speakerName: Player
+        text: I can hear the birds singing. It must be a beautiful day outside.
+        choices: []
+        nextIndex: 2
+        triggers: []
+      - speakerName: Player
+        text: I can't wait to get outside and enjoy this weather. It's the perfect
+          day for an adventure around the village!
+        choices: []
+        nextIndex: 3
+        triggers: []
+      - speakerName: Player
+        text: I wonder what fun things I'll discover today.
+        choices: []
+        nextIndex: 4
+        triggers:
+        - characterName: Player
+          triggerName: heart
+      - speakerName: Player
+        text: Time to get up and see what Mom has made for breakfast.
+        choices: []
+        nextIndex: 5
+        triggers: []
+      - speakerName: Player
+        text: I should hurry up so I can head out and play.
+        choices: []
+        nextIndex: 999
+        triggers: []
+      ID: player_wakingup
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+  conditions:
+    conditions: []

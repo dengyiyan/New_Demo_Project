@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: waterfall_large_24
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 649323969, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: -1226260618, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: 2016530115, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: -1658471823, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: 838999249, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: 1464260356, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: 1110093821, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: 137862402, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: 338043199, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: -1989379732, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: -958800816, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: 614667096, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: 1521458489, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: -1902661896, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: 1435856868, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: 941567297, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  - {fileID: -185637479, guid: d701e0f03473d704b995012e5b944dee, type: 3}
+  m_MinSpeed: 1
+  m_MaxSpeed: 1
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 0
+  m_TileAnimationFlags: 0

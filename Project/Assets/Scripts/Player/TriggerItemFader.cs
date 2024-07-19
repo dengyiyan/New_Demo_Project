@@ -8,11 +8,11 @@ public class TriggerItemFader : MonoBehaviour
     {
         ItemFader[] faders = collision.GetComponentsInChildren<ItemFader>();
 
-        if(faders.Length>0)
+        if (faders.Length > 0)
         {
-            foreach(var item in faders)
+            foreach (var item in faders)
             {
-                item.FadeOut();
+                item.IncrementTriggerCount();
             }
         }
     }
@@ -25,7 +25,7 @@ public class TriggerItemFader : MonoBehaviour
         {
             foreach (var item in faders)
             {
-                item.FadeIn();
+                item.DecrementTriggerCount();
             }
         }
     }

@@ -215,6 +215,19 @@ public class DialogueManager : MonoBehaviour
         ConversationDialogue dialogue = currentDialogues[currentDialogueIndex];
         string speakerName = dialogue.speakerName == "Player" ? GameStateManager.PlayerName : dialogue.speakerName;
 
+        if (!string.IsNullOrEmpty(dialogue.divergence.parameter.parameterName) && GameStateManager.IsConditionMet(dialogue.divergence.parameter))
+        {
+            currentDialogueIndex = dialogue.divergence.nextIndex;
+            DisplayCurrentDialogue();
+            return;
+        }
+        else if (!string.IsNullOrEmpty(dialogue.divergence.parameter.parameterName) && !GameStateManager.IsConditionMet(dialogue.divergence.parameter))
+        {
+            currentDialogueIndex = dialogue.divergence.elseIndex;
+            DisplayCurrentDialogue();
+            return;
+        }
+
         // Check the required conditions
         if (dialogue.requirements != null && dialogue.requirements.Count > 0 && !GameStateManager.AreConditionsMet(dialogue.requirements))
         {
@@ -307,16 +320,20 @@ public class DialogueManager : MonoBehaviour
         {
             Button choiceButton = Instantiate(choiceButtonPrefab, choicePanel.transform);
             choiceButton.GetComponentInChildren<Text>().text = choice.choiceText;
-            choiceButton.onClick.AddListener(() => OnChoiceSelected(choice.nextIndex));
+            choiceButton.onClick.AddListener(() => OnChoiceSelected(choice));
             buttons.Add(choiceButton);
         }
     }
 
-    private void OnChoiceSelected(int choiceIndex)
+    private void OnChoiceSelected(DialogueChoice choice)
     {
+        if (choice.triggerPickUp)
+        {
+            choice.investObject.PickUp();
+        }
         choicePanel.SetActive(false);
         isChoiceActivated = false;
-        currentDialogueIndex = choiceIndex;
+        currentDialogueIndex = choice.nextIndex;
         DisplayCurrentDialogue();
     }
 

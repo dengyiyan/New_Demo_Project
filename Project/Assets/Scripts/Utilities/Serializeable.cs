@@ -10,6 +10,14 @@ public struct BooleanParameter
     public bool value;
 }
 
+[System.Serializable]
+public struct DialogueDivergence
+{
+    public BooleanParameter parameter;
+    public int nextIndex;
+    public int elseIndex;
+}
+
 [Serializable]
 public class DialogueAction
 {
@@ -68,6 +76,7 @@ public class ConversationDialogue
     public int nextIndex = 0;  // In case no choices at all
     public List<AnimationTrigger> triggers;
     public List<BooleanParameter> requirements;
+    public DialogueDivergence divergence;
     public List<DialogueAction> actions;
 }
 
@@ -85,6 +94,8 @@ public class DialogueChoice
 {
     public string choiceText;
     public int nextIndex;
+    public bool triggerPickUp;
+    public InvestObject investObject;
 }
 
 

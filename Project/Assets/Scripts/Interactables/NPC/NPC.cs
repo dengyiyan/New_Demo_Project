@@ -5,6 +5,7 @@ using UnityEngine;
 public class NPC : MonoBehaviour
 {
     public Conversation conversation;
+    [SerializeField] private bool advanced;
 
     private Animator animator;
     private GameObject player;
@@ -25,8 +26,11 @@ public class NPC : MonoBehaviour
     {
         Vector3 direction = (player.transform.position - transform.position).normalized;
 
-        animator.SetFloat("moveX", direction.x);
-        animator.SetFloat("moveY", direction.y);
-        animator.SetBool("isWalking", false);
+        if (advanced)
+        {
+            animator.SetFloat("moveX", direction.x);
+            animator.SetFloat("moveY", direction.y);
+            animator.SetBool("isWalking", false);
+        }
     }
 }

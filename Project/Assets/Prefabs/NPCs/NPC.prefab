@@ -335,6 +335,7 @@ MonoBehaviour:
   conversation:
     conversationDialogues: []
     ID: 
+  advanced: 1
 --- !u!114 &1121734295801282331
 MonoBehaviour:
   m_ObjectHideFlags: 0

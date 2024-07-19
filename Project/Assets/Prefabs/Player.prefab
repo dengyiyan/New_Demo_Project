@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 3001487889740801798}
   - component: {fileID: 4292005140228148759}
   - component: {fileID: 9103176144271195998}
+  - component: {fileID: 7930523356691231715}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -30,7 +31,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 858202538219958321}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 0}
   m_ConstrainProportionsScale: 0
@@ -198,6 +199,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13cbf417a363d6f4cb4270bcfa2ce397, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &7930523356691231715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858202538219958321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0fe28fee5d5aae499da42373a288713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.1
+  defaultSpeed: 4
 --- !u!1 &1272736952766447395
 GameObject:
   m_ObjectHideFlags: 0

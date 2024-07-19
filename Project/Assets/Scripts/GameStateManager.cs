@@ -18,6 +18,7 @@ public static class GameStateManager
     // private static Dictionary<string, string> sceneLastSpawnPoints = new Dictionary<string, string>();
     private static HashSet<string> sequencePlayed = new HashSet<string>(); 
     private static HashSet<string> conversationsCompleted = new HashSet<string>(); // Track completed conversations
+    private static HashSet<string> itemPicked = new HashSet<string>();
 
     // private const string DefaultSpawnPoint = "default";
     public static void SetBool(string key, bool value)
@@ -25,22 +26,58 @@ public static class GameStateManager
         gameBools[key] = value;
     }
 
+    public static void PickUp(string ItemID)
+    {
+        itemPicked.Add(ItemID);
+    }
+
+    public static bool IsItemPicked(string itemName)
+    {
+        return itemPicked.Contains(itemName);
+    }
+
+    public static void DestroyPickedItems()
+    {
+        Debug.Log("destroy triggered!");
+        foreach (var itemName in itemPicked)
+        {
+            var obj = GameObject.Find(itemName);
+            if (obj != null)
+            {
+                UnityEngine.Object.Destroy(obj);
+
+                Debug.Log("object destroyed!");
+            }
+        }
+    }
+
     public static bool GetBool(string key)
     {
         return gameBools.ContainsKey(key) && gameBools[key];
+    }
+
+    public static bool IsConditionMet(BooleanParameter condition)
+    {
+        if (!gameBools.TryGetValue(condition.parameterName, out bool value) || value != condition.value)
+        {
+            return false;
+        }
+        return true;
     }
 
     public static bool AreConditionsMet(List<BooleanParameter> conditions)
     {
         foreach (var condition in conditions)
         {
-            if (!gameBools.TryGetValue(condition.parameterName, out bool value) || value != condition.value)
+            if (!IsConditionMet(condition))
             {
                 return false;
             }
         }
         return true;
     }
+
+
 
     public static void SavePlayerPosition(string sceneName, Vector3 position)
     {

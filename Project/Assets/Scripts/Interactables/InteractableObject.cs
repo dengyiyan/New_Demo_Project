@@ -14,6 +14,7 @@ public class InteractableObject : MonoBehaviour
     private SpriteRenderer[] spriteRenderers;
     private Door door;
     private NPC npc;
+    private InvestObject invest;
 
     private static InteractableObject currentHoveredObject = null;
 
@@ -21,6 +22,7 @@ public class InteractableObject : MonoBehaviour
     {
         door = GetComponent<Door>();
         npc = GetComponent<NPC>();
+        invest = GetComponent<InvestObject>();
 
         player = GameObject.FindGameObjectWithTag("Player");
         if (player != null)
@@ -180,6 +182,13 @@ public class InteractableObject : MonoBehaviour
     }
     private void InvestInteraction()
     {
-
+        if (invest)
+        {
+            invest.StartConversation();
+        }
+        else
+        {
+            Debug.Log("No invest script found");
+        }
     }
 }

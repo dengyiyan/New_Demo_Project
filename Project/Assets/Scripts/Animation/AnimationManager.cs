@@ -311,6 +311,7 @@ public class AnimationManager : MonoBehaviour
     private Animator animator;
     [SerializeField] private PlayableDirector playableDirector;
 
+
     private void Start()
     {
         npcs = new Dictionary<string, GameObject>();
@@ -328,7 +329,7 @@ public class AnimationManager : MonoBehaviour
 
         if (startingSequence != null)
         {
-            StartCoroutine(PlaySequenceCoroutine(startingSequence));
+            PlaySequence(startingSequence);
         }
         // StartCoroutine(HandleSequences());
     }
@@ -338,43 +339,44 @@ public class AnimationManager : MonoBehaviour
         // Debug.Log(activeSteps.Count);
     }
 
-    private IEnumerator HandleSequences()
-    {
-        foreach (var seq in sequences)
-        {
-            while (GameStateManager.IsSequencePlayed(seq.sequenceName) || !ShouldPlaySequence(seq.conditions))
-            {
-                if (GameStateManager.IsSequencePlayed(seq.sequenceName))
-                {
-                    Debug.Log($"Sequence {seq.sequenceName} has already been played.");
-                    break; // Skip to the next sequence
-                }
+    //private IEnumerator HandleSequences()
+    //{
+    //    foreach (var seq in sequences)
+    //    {
+    //        while (GameStateManager.IsSequencePlayed(seq.sequenceName) || !ShouldPlaySequence(seq.conditions))
+    //        {
+    //            if (GameStateManager.IsSequencePlayed(seq.sequenceName))
+    //            {
+    //                Debug.Log($"Sequence {seq.sequenceName} has already been played.");
+    //                break; // Skip to the next sequence
+    //            }
 
-                if (!ShouldPlaySequence(seq.conditions))
-                {
-                    Debug.Log($"Conditions for sequence {seq.sequenceName} are not fulfilled. Pausing until conditions are met.");
-                }
+    //            if (!ShouldPlaySequence(seq.conditions))
+    //            {
+    //                Debug.Log($"Conditions for sequence {seq.sequenceName} are not fulfilled. Pausing until conditions are met.");
+    //            }
 
-                yield return null; // Wait for the next frame and check again
-            }
+    //            yield return null; // Wait for the next frame and check again
+    //        }
 
-            if (!GameStateManager.IsSequencePlayed(seq.sequenceName) && ShouldPlaySequence(seq.conditions))
-            {
-                yield return StartCoroutine(PlaySequenceCoroutine(seq)); // Ensure sequence is fully completed
-            }
-        }
+    //        if (!GameStateManager.IsSequencePlayed(seq.sequenceName) && ShouldPlaySequence(seq.conditions))
+    //        {
+    //            yield return StartCoroutine(PlaySequenceCoroutine(seq)); // Ensure sequence is fully completed
+    //        }
+    //    }
 
-        //uiController.OnAnimationEnd();
-        //if (playerMovement != null)
-        //{
-        //    Debug.Log("enable");
-        //    playerMovement.EnableMovement();
-        //}
-    }
+    //    //uiController.OnAnimationEnd();
+    //    //if (playerMovement != null)
+    //    //{
+    //    //    Debug.Log("enable");
+    //    //    playerMovement.EnableMovement();
+    //    //}
+    //}
 
     public void PlaySequence(AnimationSequence sequence)
     {
         animator.SetBool("isWalking", false);
+        
         //var sequence = sequences.Find(seq => seq.sequenceName == sequenceName);
         //if (sequence != null && !GameStateManager.IsSequencePlayed(sequenceName))
         //{
@@ -390,6 +392,7 @@ public class AnimationManager : MonoBehaviour
             HandlePlayerMovement();
             Debug.Log($"Sequence {sequence.sequenceName} already played.");
         }
+
     }
 
     private bool ShouldPlaySequence(SequenceConditions conditions)
@@ -431,10 +434,15 @@ public class AnimationManager : MonoBehaviour
     }
     private IEnumerator PlaySequenceCoroutine(AnimationSequence sequence)
     {
+        EventHandler.CallDisableCursorEvent();
+        Debug.Log("Disable cursor in Animation Manager!");
+
+
         Debug.Log($"Playing sequence {sequence.sequenceName}");
         GameStateManager.MarkSequencePlayed(sequence.sequenceName);
 
-        EventHandler.CallDisableCursorEvent();
+
+        // EventHandler.CallDisableCursorEvent();
         foreach (var step in sequence.steps)
         {
             if (npcs.TryGetValue(step.npcName, out GameObject npc))
@@ -484,12 +492,15 @@ public class AnimationManager : MonoBehaviour
             }
         }
 
+
+        EventHandler.CallEnableCursorEvent();
+        Debug.Log("Enable cursor in Animation Manager!");
+
         // uiController.OnAnimationEnd();
         if (!dialogueManager.GetIsShowing())
         {
             EventHandler.CallEnablePlayerMovementEvent();
         }
-        EventHandler.CallEnableCursorEvent();
     }
 
     private IEnumerator HandleAnimationStep(AnimationMovement npc, AnimationStep step)

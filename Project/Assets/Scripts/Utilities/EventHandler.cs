@@ -57,10 +57,10 @@ public static class EventHandler
         MoveToPosition?.Invoke(targetPosition);
     }
 
-    public static event Action<InteractionType, float> CursorChangeEvent;
-    public static void CallCursorChange(InteractionType type, float transparency)
+    public static event Action<InteractionType, bool> CursorChangeEvent;
+    public static void CallCursorChange(InteractionType type, bool isValid)
     {
-        CursorChangeEvent?.Invoke(type, transparency);
+        CursorChangeEvent?.Invoke(type, isValid);
     }
 
     public static event Action<string, string> ShowMessageEvent;

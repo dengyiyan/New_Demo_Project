@@ -5,13 +5,16 @@ using UnityEngine;
 public class CursorManager : MonoBehaviour
 {
     public Sprite defaultCursor, normalInteractCursor, investCursor, dialogueCursor;
+    private Texture2D defaultCursorTexture, normalInteractCursorTexture, investCursorTexture, dialogueCursorTexture;
+    private Texture2D invalidDefaultCursorTexture, invalidNormalInteractCursorTexture, invalidInvestCursorTexture, invalidDialogueCursorTexture;
+
     public Vector2 hotspot = Vector2.zero;
 
-    private Sprite currentSprite;
-    private float currentTransparency;
+    private Texture2D currentTexture;
+    // private float currentTransparency;
 
-    private Sprite previousSprite;
-    private float previousTransparency;
+    // private Sprite previousSprite;
+    // private float previousTransparency;
 
     private bool cursorEnable = true;
 
@@ -35,29 +38,60 @@ public class CursorManager : MonoBehaviour
         EventHandler.DisableCursorEvent -= SetCursorDisable;
     }
 
+    private void Awake()
+    {
+        PrepareTexture();
+
+        SetCursor(defaultCursorTexture);
+    }
+
     private void Start()
     {
-        previousSprite = defaultCursor;
-        previousTransparency = 1f;
-        SetCursor(defaultCursor, 1f);
+        PrepareTexture();
+
+        SetCursor(defaultCursorTexture);
     }
 
-    private void Update()
+    private void PrepareTexture()
     {
-        if (cursorEnable && (currentSprite != previousSprite || currentTransparency != previousTransparency))
-        {
-            //Debug.Log(currentSprite);
-            //Debug.Log(currentTransparency);
-            SetCursor(currentSprite, currentTransparency);
-            previousSprite = currentSprite;
-            previousTransparency = currentTransparency;
-        }
-        else if (!cursorEnable)
-        {
-            SetCursor(defaultCursor, Settings.validCursorTransparency);
-        }
+        defaultCursorTexture = ConvertSpriteToTexture2D(defaultCursor);
+        normalInteractCursorTexture = ConvertSpriteToTexture2D(normalInteractCursor);
+        investCursorTexture = ConvertSpriteToTexture2D(investCursor);
+        dialogueCursorTexture = ConvertSpriteToTexture2D(dialogueCursor);
+
+        invalidDefaultCursorTexture = new Texture2D(defaultCursorTexture.width, defaultCursorTexture.height, defaultCursorTexture.format, false);
+        invalidNormalInteractCursorTexture = new Texture2D(normalInteractCursorTexture.width, normalInteractCursorTexture.height, normalInteractCursorTexture.format, false);
+        invalidInvestCursorTexture = new Texture2D(investCursorTexture.width, investCursorTexture.height, investCursorTexture.format, false);
+        invalidDialogueCursorTexture = new Texture2D(dialogueCursorTexture.width, dialogueCursorTexture.height, dialogueCursorTexture.format, false);
+
+        Graphics.CopyTexture(defaultCursorTexture, invalidDefaultCursorTexture);
+        Graphics.CopyTexture(normalInteractCursorTexture, invalidNormalInteractCursorTexture);
+        Graphics.CopyTexture(investCursorTexture, invalidInvestCursorTexture);
+        Graphics.CopyTexture(dialogueCursorTexture, invalidDialogueCursorTexture);
+
+        AdjustCursorTransparency(invalidDialogueCursorTexture, Settings.invalidCursorTransparency);
+        AdjustCursorTransparency(invalidDefaultCursorTexture, Settings.invalidCursorTransparency);
+        AdjustCursorTransparency(invalidNormalInteractCursorTexture, Settings.invalidCursorTransparency);
+        AdjustCursorTransparency(invalidInvestCursorTexture, Settings.invalidCursorTransparency);
 
     }
+    //private void Update()
+    //{
+    //    // Debug.Log(cursorEnable);
+    //    if (!cursorEnable)
+    //    {
+    //        SetCursor(defaultCursor, Settings.validCursorTransparency);
+    //    }
+    //    else if (cursorEnable && (currentSprite != previousSprite || currentTransparency != previousTransparency))
+    //    {
+    //        Debug.Log(currentSprite);
+    //        //Debug.Log(currentTransparency);
+    //        SetCursor(currentSprite, currentTransparency);
+    //        previousSprite = currentSprite;
+    //        previousTransparency = currentTransparency;
+    //    }
+
+    //}
 
     public static Texture2D ConvertSpriteToTexture2D(Sprite sprite)
     {
@@ -82,50 +116,62 @@ public class CursorManager : MonoBehaviour
         texture.Apply();
     }
 
-    private void SetCursor(Sprite cursorSprite, float transparency)
+    private void SetCursor(Texture2D cursor)
     {
-        if (cursorSprite)
+        Debug.Log($"Setting cursor to texture {cursor}");
+        if (cursor != null)
         {
-            Texture2D cursorTexture = ConvertSpriteToTexture2D(cursorSprite);
-            AdjustCursorTransparency(cursorTexture, transparency);
-            Cursor.SetCursor(cursorTexture, hotspot, CursorMode.Auto);
+            // exture2D cursorTexture = new Texture2D(cursor.width, cursor.height, cursor.format, false);
+            // Graphics.CopyTexture(cursor, cursorTexture);
+            // AdjustCursorTransparency(cursorTexture, transparency);
+            Cursor.SetCursor(cursor, hotspot, CursorMode.Auto);
         }
     }
 
     private void OnBeforeSceneUnloadEvent()
     {
+        SetCursor(defaultCursorTexture);
         SetCursorDisable();
     }
 
     private void SetCursorDisable()
     {
-        SetCursor(defaultCursor, Settings.validCursorTransparency);
+        SetCursor(defaultCursorTexture);
         cursorEnable = false;
     }
 
     private void OnAfterSceneLoadEvent()
     {
+        SetCursor(defaultCursorTexture);
         SetCursorEnable();
     }
 
     private void SetCursorEnable()
     {
-        SetCursor(defaultCursor, Settings.validCursorTransparency);
+        SetCursor(defaultCursorTexture);
+        // Update the cursor state immediately after enabling it
+        // SetCursor(currentSprite, currentTransparency);
         cursorEnable = true;
     }
 
 
-    private void OnCursorChange(InteractionType type, float transparency)
+    private void OnCursorChange(InteractionType type, bool isValid)
     {
-        currentSprite = type switch
+        if (cursorEnable)
         {
-            InteractionType.NPC => dialogueCursor,
-            InteractionType.Invest => investCursor,
-            InteractionType.Door => normalInteractCursor,
-            InteractionType.Normal => normalInteractCursor,
-            _ => defaultCursor
-        };
+            currentTexture = type switch
+            {
+                InteractionType.NPC => isValid ? dialogueCursorTexture : invalidDialogueCursorTexture,
+                InteractionType.Invest => isValid ? investCursorTexture : invalidInvestCursorTexture,
+                InteractionType.Door => isValid ? normalInteractCursorTexture : invalidNormalInteractCursorTexture,
+                InteractionType.Normal => isValid ? normalInteractCursorTexture : invalidNormalInteractCursorTexture,
+                _ => isValid ? defaultCursorTexture : invalidDefaultCursorTexture
+            };
 
-        currentTransparency = transparency;
+            // currentTransparency = transparency;
+
+            Debug.Log($"Cursor change triggered with type {type} and valid {isValid}!");
+            SetCursor(currentTexture);
+        }
     }
 }

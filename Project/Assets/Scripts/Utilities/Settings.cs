@@ -10,4 +10,7 @@ public static class Settings
 
     public const float invalidCursorTransparency = 0.5f;
     public const float validCursorTransparency = 1f;
+
+    public const string MerchantName = "Morris";
+    public const string MerchantCode = "The suspicious merchant";
 }

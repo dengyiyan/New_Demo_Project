@@ -1,0 +1,3128 @@
+fileFormatVersion: 2
+guid: bf87709bfded9b249b333f5b709c792c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_0
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 413
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e655c05b0d12914429f4d95a72235ea4
+      internalID: -906061237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_1
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 413
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebc6646db23b42f4cb68f3d005a68f8c
+      internalID: 1560082369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_2
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 413
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2517fc79c98a68e46a67cf233377bf75
+      internalID: 2021737611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_3
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 413
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 334db37f8f368c94b871f2ebc5a570cc
+      internalID: 1121269076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_4
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 413
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ef1af9582f0c9e4088e99bde1fefdb0
+      internalID: -1286686443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_5
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 413
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5bcf3dfaddca54d8ff7b25dd180d03
+      internalID: -921263093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_6
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 413
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe02c2156f8c06408cc1ec9d7105ab2
+      internalID: -1634715346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_7
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 413
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8778e3f0b494cdd41964d50c5486dd59
+      internalID: 51901611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_8
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 413
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c1903f5891a0548a478b86b46aacae
+      internalID: 1814640719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_9
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 413
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd540d9be748c8642afcefdd850ec78b
+      internalID: 1954743607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_10
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 381
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5501bebe36b2cd4c98a327ef3356652
+      internalID: -1538280639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_11
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 381
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53ccc3fdc52e2c44197a425905188823
+      internalID: 174662888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_12
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 381
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003f64dd46dd99e41925f49b5df7c95e
+      internalID: -571789676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_13
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 381
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4990defa88dd624a9eeaf594bf754e1
+      internalID: 1935910507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_14
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 381
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de22acd4fc86ff548af75716f7b4c50c
+      internalID: -499022959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_15
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 381
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab3d215efd1a4f499d214da6bf5e11e
+      internalID: -2132956714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_16
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 381
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5802d2beb8c14342a636cfd16274933
+      internalID: -618774322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_17
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 381
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c49b52fc49a0fd54db5eeb5c1f9bbdf3
+      internalID: 2045791072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_18
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 381
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314190cc3c7e6544ebd84a07cde3ce54
+      internalID: 1858816014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_19
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 381
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 749175a8025047b4aa7d973caba0e1db
+      internalID: 945933035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_20
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 349
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f81307c203d09d469f1658d92529f19
+      internalID: -663187534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_21
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 349
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d3711a2fbba057499635d96174b7487
+      internalID: 638615990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_22
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 349
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c524510960c65bb40977ca12ab0f532c
+      internalID: -1308731088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_23
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 349
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d21988c06c531f4a8b5219f3d0ec258
+      internalID: -204948587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_24
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 349
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6ea836907e98fd4f90dfe2ffd3301b7
+      internalID: 48602691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_25
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 349
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8bcf08244f9a94d8f8bab326cbdbf5
+      internalID: 1698941591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_26
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 349
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2990a81932121e4fa52c9b5afccef1f
+      internalID: 1108957514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_27
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 349
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eff4bebc1440aa479422a3f7330f161
+      internalID: 1365238293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_28
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 349
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b914c8ed6fa8adb4b8d8454b37a70a3e
+      internalID: 908286837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_29
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 349
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fafebbcff1ad50141a33e3c2b2f25f4b
+      internalID: 1344717218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_30
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 317
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45a5de066abbcae4799d1557f11ed123
+      internalID: -1134082410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_31
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 317
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05b2ea78b12bc7942a41acc79f3c16d0
+      internalID: 1002087856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_32
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 317
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3872be1327a285b43b16326f35aeb3dc
+      internalID: 1757837225
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_33
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 317
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7b1ad535e6809b45b65848e03ca3640
+      internalID: 1040366549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_34
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 317
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08538adb64a4cb44bb2edbd796c61e1
+      internalID: 178224506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_35
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 317
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93db4c1b94c355345bffa03790988997
+      internalID: -551782532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_36
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 317
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4429a50fe00f9a7419ea9cf7ef832e6c
+      internalID: -40917447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_37
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 317
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f1c3574fd5e5d3408b6b84cd7257b00
+      internalID: -545680905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_38
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 317
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d223ded8a1e5764485b192b23b4909f
+      internalID: 1246841396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_39
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 317
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae312e88d57753943a6506f2b976d32c
+      internalID: -1321776949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_40
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 285
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19de187ef004b904793ef31b9d5949ef
+      internalID: -404662720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_41
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 285
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b061b488cae210c488a39ac3850dfcd6
+      internalID: -1707425317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_42
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 285
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5537b9bad0925644bcd496c4cc073b4
+      internalID: -1304113348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_43
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 285
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8643f45df0f156408a599c90bba9999
+      internalID: 1795525086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_44
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 285
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946ef94411ab5b849b49e50872275890
+      internalID: 10598190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_45
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 285
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47d93bc78e61e24eaee20889ebc4347
+      internalID: -1482330191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_46
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 285
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15d090b2675492349960e50ff84907d0
+      internalID: -461800719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_47
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 285
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13d5b774d49852f4d9de60b8df6a5e7c
+      internalID: 291752948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_48
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 285
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c0f46e238e18f4ba89ddc8d9a35993
+      internalID: -250413512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_49
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 285
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13923fa34e66cf94f8802a641f51fb20
+      internalID: -1488901325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_50
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 253
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dd9e9268b9cd924aab61db5cb61f66e
+      internalID: 1530433897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_51
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 253
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd771f72d34724042964b4f07b95f385
+      internalID: -689275389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_52
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 253
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07ab6e558e2ef54f8e8e5ed43fdbf18
+      internalID: 61795107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_53
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 253
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bae1d4dc2d9c274e910a1e9d61fcd50
+      internalID: 474433639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_54
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 253
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04115276fd9fb649a0bff718a0c1ba0
+      internalID: 517751696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_55
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 253
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f364dce61c4217c4fb412545fdfc0b98
+      internalID: -126915666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_56
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 253
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66263ff6a55b1da4a8bb3cfd106af186
+      internalID: -2130189417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_57
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 253
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 804cac6c6ef138d45a3e4a3d728709a2
+      internalID: -1193801776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_58
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 253
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba638f5ff51331d478fc9fea2de89e45
+      internalID: -1625266279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_59
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 253
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b19946f57396cc04f8ff6e1440456de7
+      internalID: 1967837983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_60
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 221
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 789ddb5e97d9d7943a282acd8bf8211f
+      internalID: 1227799677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_61
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 221
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20ff0a8aff5f124c8c88f1b514ccaa7
+      internalID: 1114545039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_62
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 221
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b2f2f3afa7f4f4aac1c4afbb5eb8b3
+      internalID: -1005955911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_63
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 221
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2166257dbdabdc443a7e43f41d236b10
+      internalID: 1734221847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_64
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 221
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77725f59bdb21194a8447599891b0853
+      internalID: 246984522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_65
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 221
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158ced02708a54a44a63d77ef854b329
+      internalID: -516577679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_66
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 221
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82887033321734948bd542faa5aa5534
+      internalID: -1039894031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_67
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 221
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094eef8a3b7f7964681069540d933e13
+      internalID: -628137763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_68
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 221
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7b587a9054a1347959f307992975d1
+      internalID: -1803270208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_69
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 221
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c392ea95bc7d38408439311b2cc931e
+      internalID: 2119598251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_70
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 189
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48d0848ef4e6dcf498de73d4740d09a0
+      internalID: 1833230201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_71
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 189
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5a53995f12f1f48953086dce106674
+      internalID: -1808228477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_72
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 189
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7539aab4ed5b86b46aee8afc16445ce5
+      internalID: -507565494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_73
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 189
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1fcb580f047eb84387ff5dd720a9fa0
+      internalID: -1296722087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_74
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 189
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe2f4d9ef693e14db21cfd903624ef0
+      internalID: 762079355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_75
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 189
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bbf34ab7d6401143b70430d0c65710b
+      internalID: -1748616894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_76
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 189
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 923ab08656735de45a160ac024c0937a
+      internalID: -1881490605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_77
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 189
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ddcc25322d4449489c12fce3a0183d0
+      internalID: -83280298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_78
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 189
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef8da83defabf3448959d2cb515a577
+      internalID: 679863774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_79
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 189
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ccba081c731f743995198851c1bb3b
+      internalID: -936987371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_80
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 157
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec5b64090554ff948bb00d489dafe716
+      internalID: 1491410823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_81
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 157
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bd9f01358c0f5943b451307b0333d75
+      internalID: 254690318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_82
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 157
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80e66b3364977a1469271b7286930b74
+      internalID: 2064749736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_83
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 157
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80bdf14696572b4c839813e097ac975
+      internalID: -1090331144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_84
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 157
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c64fd04b67e0841968bccd8dfce89d
+      internalID: -1184666095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_85
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 157
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6e7b79c000899b44b4a5a7a243b3e46
+      internalID: -822174112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_86
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 157
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0c8cc945904894cb18d29135242af4
+      internalID: -1271026604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_87
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 157
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d270b0fabed78d443b84d04656a8c85e
+      internalID: 561570960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_88
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 157
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd547eb5662c3e64bb632b736851b02f
+      internalID: -376279517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_89
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 157
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 412c3b8100f8387408b2efe15810145d
+      internalID: 1233124257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_90
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 125
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b208c1a1b7024542a5e621f8dfb711b
+      internalID: 868329096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_91
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 125
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 481a5c42e19c52b409f275c2b41a9dba
+      internalID: -1726552895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_92
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 125
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e576d0d26388604e8aad40fc4618713
+      internalID: 1719610521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_93
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 125
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288bb5bc0f363454189ec587dee400fc
+      internalID: -915061270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_94
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 125
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae3edd0e2c78223449ef5bc5d3860f84
+      internalID: 1647150489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_95
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 125
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abcd7cbbbd9865842969aef4c01f9d34
+      internalID: 74440535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_96
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 125
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0f92e2c26eedcb4caac1a3aea1d70e0
+      internalID: 485949603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_97
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 125
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ff802cafcde3849bc86d5a9a0aef7c
+      internalID: 1236965646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_98
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 125
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a0a52a1af459624ea796382952d1cfa
+      internalID: -1591628770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_99
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 125
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f446c61176ae01c40a6ab9c444accbdd
+      internalID: -687911456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_100
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 125
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e63bc97150faa3c4cada363d1c7a6949
+      internalID: -902662434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_101
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 125
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20b2595ca7de5ee4a9bcc309a5c2ef9e
+      internalID: -835463832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_102
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 125
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e72f90501c77c04bb13a00e24f9705f
+      internalID: -446841274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_103
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 125
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9a016dd059857d40af9dd535cbe5e69
+      internalID: -1457554121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_104
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 93
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20125a41d91af3943b750ff8eb68d4f2
+      internalID: -231863690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_105
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 93
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c61c4b5cb54d0294fb77b19435e6013d
+      internalID: 1067266215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_106
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 93
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20ac0449f8e09bf4a9ba8df370ea363d
+      internalID: 287243912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_107
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 93
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e62baa218d8bdf40841018854922868
+      internalID: 1821317400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_108
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 93
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbdf261a7d5adef4bb671fff59e9c00f
+      internalID: -1914152068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_109
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 93
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f0a400822fe7074182fb9f038c67e9c
+      internalID: -440166720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_110
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 93
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6d05ac91f8f104483c0bbb8b2f9a74
+      internalID: 1845507566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_111
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 93
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72e61547ac88d84d8822bae4044dae9
+      internalID: -1778848316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_112
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 93
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3340cc4a1e8bd964a87becd76cc4cfbb
+      internalID: -1107393118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_113
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 93
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29415e8a3ae75b04fb900b975b44f46e
+      internalID: -1306330825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_114
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 93
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c628875face69a438c2907a7b4c4bfd
+      internalID: -996091045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_115
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 61
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c718c7e3aa0c24cb8289d5653cd132
+      internalID: 1531191172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_116
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 61
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9c2c4a50c473a4d9e2b6d881c307a7
+      internalID: 2140654335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_117
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 61
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b52ffcca5e4254784bccfd677655f9
+      internalID: -1960790524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_118
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 61
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ada427c5da266438a54c8b4c473334
+      internalID: 1616408018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_119
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 61
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3040c0e5ae4a29468a17bb00c2e23da
+      internalID: -199743420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_120
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 61
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a0008927a600c34297641233e22afb4
+      internalID: 1755417487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_121
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 61
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32347c35dab042f44a447ba8586279f7
+      internalID: -901321205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_122
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 61
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ab9bcd750a2084b813253e5acc6aae
+      internalID: -1476566222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_123
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 61
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9109ea4ce8097409f0d0f659b5c99a
+      internalID: 1461390843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_124
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 61
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e458e5c0fb932a646a5779f54e96a5da
+      internalID: 673119763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_125
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 61
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2d2ca1a1f27934e9c5fd611e148839
+      internalID: -742103057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_126
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 29
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5bd75688a3ab84092df10581a05d5d
+      internalID: -824880762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_127
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 29
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d962452b64e0884aadc6eef03e3cced
+      internalID: 1794007668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_128
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 29
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c591add90f5641e4abe86bf17a881a94
+      internalID: -1946520391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_129
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 29
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d662a1d68a304c74aaf99fb4542ca8de
+      internalID: 861030046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_130
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 29
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3a01225057161b4ca800c984ac112a5
+      internalID: 369502010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_131
+      rect:
+        serializedVersion: 2
+        x: 165
+        y: 29
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ea837da1babc884bb0d3372259a0b27
+      internalID: -1406873795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_132
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 29
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 091fbbaf1d9997942bdcba107e5a62df
+      internalID: 2005613012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_133
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 29
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6abffd122e4be94796d73e0edc3e39c
+      internalID: -1907365114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_134
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 29
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d24e105f9803c4ea760b182e9a3b08
+      internalID: 1814474217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_135
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 29
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f06a3cd4dd92e164192a941f3e2778fa
+      internalID: 165221320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NPC_Bookkeeper_136
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 29
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a0b08490d467404987c233d87d2ab98
+      internalID: 1318365847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      NPC_Bookkeeper_0: -906061237
+      NPC_Bookkeeper_1: 1560082369
+      NPC_Bookkeeper_10: -1538280639
+      NPC_Bookkeeper_100: -902662434
+      NPC_Bookkeeper_101: -835463832
+      NPC_Bookkeeper_102: -446841274
+      NPC_Bookkeeper_103: -1457554121
+      NPC_Bookkeeper_104: -231863690
+      NPC_Bookkeeper_105: 1067266215
+      NPC_Bookkeeper_106: 287243912
+      NPC_Bookkeeper_107: 1821317400
+      NPC_Bookkeeper_108: -1914152068
+      NPC_Bookkeeper_109: -440166720
+      NPC_Bookkeeper_11: 174662888
+      NPC_Bookkeeper_110: 1845507566
+      NPC_Bookkeeper_111: -1778848316
+      NPC_Bookkeeper_112: -1107393118
+      NPC_Bookkeeper_113: -1306330825
+      NPC_Bookkeeper_114: -996091045
+      NPC_Bookkeeper_115: 1531191172
+      NPC_Bookkeeper_116: 2140654335
+      NPC_Bookkeeper_117: -1960790524
+      NPC_Bookkeeper_118: 1616408018
+      NPC_Bookkeeper_119: -199743420
+      NPC_Bookkeeper_12: -571789676
+      NPC_Bookkeeper_120: 1755417487
+      NPC_Bookkeeper_121: -901321205
+      NPC_Bookkeeper_122: -1476566222
+      NPC_Bookkeeper_123: 1461390843
+      NPC_Bookkeeper_124: 673119763
+      NPC_Bookkeeper_125: -742103057
+      NPC_Bookkeeper_126: -824880762
+      NPC_Bookkeeper_127: 1794007668
+      NPC_Bookkeeper_128: -1946520391
+      NPC_Bookkeeper_129: 861030046
+      NPC_Bookkeeper_13: 1935910507
+      NPC_Bookkeeper_130: 369502010
+      NPC_Bookkeeper_131: -1406873795
+      NPC_Bookkeeper_132: 2005613012
+      NPC_Bookkeeper_133: -1907365114
+      NPC_Bookkeeper_134: 1814474217
+      NPC_Bookkeeper_135: 165221320
+      NPC_Bookkeeper_136: 1318365847
+      NPC_Bookkeeper_14: -499022959
+      NPC_Bookkeeper_15: -2132956714
+      NPC_Bookkeeper_16: -618774322
+      NPC_Bookkeeper_17: 2045791072
+      NPC_Bookkeeper_18: 1858816014
+      NPC_Bookkeeper_19: 945933035
+      NPC_Bookkeeper_2: 2021737611
+      NPC_Bookkeeper_20: -663187534
+      NPC_Bookkeeper_21: 638615990
+      NPC_Bookkeeper_22: -1308731088
+      NPC_Bookkeeper_23: -204948587
+      NPC_Bookkeeper_24: 48602691
+      NPC_Bookkeeper_25: 1698941591
+      NPC_Bookkeeper_26: 1108957514
+      NPC_Bookkeeper_27: 1365238293
+      NPC_Bookkeeper_28: 908286837
+      NPC_Bookkeeper_29: 1344717218
+      NPC_Bookkeeper_3: 1121269076
+      NPC_Bookkeeper_30: -1134082410
+      NPC_Bookkeeper_31: 1002087856
+      NPC_Bookkeeper_32: 1757837225
+      NPC_Bookkeeper_33: 1040366549
+      NPC_Bookkeeper_34: 178224506
+      NPC_Bookkeeper_35: -551782532
+      NPC_Bookkeeper_36: -40917447
+      NPC_Bookkeeper_37: -545680905
+      NPC_Bookkeeper_38: 1246841396
+      NPC_Bookkeeper_39: -1321776949
+      NPC_Bookkeeper_4: -1286686443
+      NPC_Bookkeeper_40: -404662720
+      NPC_Bookkeeper_41: -1707425317
+      NPC_Bookkeeper_42: -1304113348
+      NPC_Bookkeeper_43: 1795525086
+      NPC_Bookkeeper_44: 10598190
+      NPC_Bookkeeper_45: -1482330191
+      NPC_Bookkeeper_46: -461800719
+      NPC_Bookkeeper_47: 291752948
+      NPC_Bookkeeper_48: -250413512
+      NPC_Bookkeeper_49: -1488901325
+      NPC_Bookkeeper_5: -921263093
+      NPC_Bookkeeper_50: 1530433897
+      NPC_Bookkeeper_51: -689275389
+      NPC_Bookkeeper_52: 61795107
+      NPC_Bookkeeper_53: 474433639
+      NPC_Bookkeeper_54: 517751696
+      NPC_Bookkeeper_55: -126915666
+      NPC_Bookkeeper_56: -2130189417
+      NPC_Bookkeeper_57: -1193801776
+      NPC_Bookkeeper_58: -1625266279
+      NPC_Bookkeeper_59: 1967837983
+      NPC_Bookkeeper_6: -1634715346
+      NPC_Bookkeeper_60: 1227799677
+      NPC_Bookkeeper_61: 1114545039
+      NPC_Bookkeeper_62: -1005955911
+      NPC_Bookkeeper_63: 1734221847
+      NPC_Bookkeeper_64: 246984522
+      NPC_Bookkeeper_65: -516577679
+      NPC_Bookkeeper_66: -1039894031
+      NPC_Bookkeeper_67: -628137763
+      NPC_Bookkeeper_68: -1803270208
+      NPC_Bookkeeper_69: 2119598251
+      NPC_Bookkeeper_7: 51901611
+      NPC_Bookkeeper_70: 1833230201
+      NPC_Bookkeeper_71: -1808228477
+      NPC_Bookkeeper_72: -507565494
+      NPC_Bookkeeper_73: -1296722087
+      NPC_Bookkeeper_74: 762079355
+      NPC_Bookkeeper_75: -1748616894
+      NPC_Bookkeeper_76: -1881490605
+      NPC_Bookkeeper_77: -83280298
+      NPC_Bookkeeper_78: 679863774
+      NPC_Bookkeeper_79: -936987371
+      NPC_Bookkeeper_8: 1814640719
+      NPC_Bookkeeper_80: 1491410823
+      NPC_Bookkeeper_81: 254690318
+      NPC_Bookkeeper_82: 2064749736
+      NPC_Bookkeeper_83: -1090331144
+      NPC_Bookkeeper_84: -1184666095
+      NPC_Bookkeeper_85: -822174112
+      NPC_Bookkeeper_86: -1271026604
+      NPC_Bookkeeper_87: 561570960
+      NPC_Bookkeeper_88: -376279517
+      NPC_Bookkeeper_89: 1233124257
+      NPC_Bookkeeper_9: 1954743607
+      NPC_Bookkeeper_90: 868329096
+      NPC_Bookkeeper_91: -1726552895
+      NPC_Bookkeeper_92: 1719610521
+      NPC_Bookkeeper_93: -915061270
+      NPC_Bookkeeper_94: 1647150489
+      NPC_Bookkeeper_95: 74440535
+      NPC_Bookkeeper_96: 485949603
+      NPC_Bookkeeper_97: 1236965646
+      NPC_Bookkeeper_98: -1591628770
+      NPC_Bookkeeper_99: -687911456
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

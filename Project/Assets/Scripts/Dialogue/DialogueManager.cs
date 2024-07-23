@@ -30,6 +30,7 @@ public class DialogueManager : MonoBehaviour
     private bool isChoiceActivated = false;
     private bool isTyping = false;
     private string typingSentence;
+    private bool isAnimationPlaying = false;
     private DialogueChoice[] typingChoices;
 
     //public Sprite cursorSprite;
@@ -76,6 +77,11 @@ public class DialogueManager : MonoBehaviour
         animators["Player"] = animator;
 
         AddEventTrigger(dialoguePanel, EventTriggerType.PointerClick, OnDialoguePanelClick);
+    }
+
+    private void Start()
+    {
+        OnRegisterAnimatorEvent();
     }
 
     private void OnEnable()
@@ -133,17 +139,47 @@ public class DialogueManager : MonoBehaviour
         animators["Player"] = animator;
     }
 
+    private string getTrueSpeakerName(string speakerName)
+    {
+        string name = "";
+        if (speakerName == "Player")
+        {
+            name = GameStateManager.PlayerName;
+        }
+        else if (speakerName == "Merchant")
+        {
+            if (GameStateManager.GetBool("MerchantShowHisName"))
+            {
+                name = Settings.MerchantName;
+            }
+            else
+            {
+                name = Settings.MerchantCode;
+            }
+        }
+        else
+        {
+            name = speakerName;
+        }
+
+        return name;
+    }
+
     public void ShowMessage(string speakerName, string message)
     {
         isShowing = true;
         isShowingMessage = true;
-        string name = speakerName == "Player" ? GameStateManager.PlayerName : speakerName;
+        
+        string name = getTrueSpeakerName(speakerName);
+
         dialoguePanel.SetActive(true);
         nameText.text = name;
         StopAllCoroutines();
-        StartCoroutine(TypeSentence(ReplaceWithPlayerName(message), null));
+        StartCoroutine(TypeSentence(ReplaceWithNames(message), null));
 
         EventHandler.CallDisablePlayerMovementEvent();
+        EventHandler.CallDisableCursorEvent();
+        Debug.Log("Disable cursor in Dialogue Manager!");
 
         animator.SetBool("isWalking", false);
 
@@ -156,6 +192,8 @@ public class DialogueManager : MonoBehaviour
         isShowingMessage = false;
         dialoguePanel.SetActive(false);
         EventHandler.CallEnablePlayerMovementEvent();
+        EventHandler.CallEnableCursorEvent();
+        Debug.Log("Enable cursor in Dialogue Manager!");
 
         ResetCameraFocus();
     }
@@ -166,7 +204,6 @@ public class DialogueManager : MonoBehaviour
             return;
         Debug.Log("Conversation Started!");
         isShowing = true;
-        EventHandler.CallDisableCursorEvent();
         if (dialogues == null)
         {
             dialogues = new Queue<ConversationDialogue>();
@@ -179,6 +216,8 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(true);
 
         EventHandler.CallDisablePlayerMovementEvent();
+        EventHandler.CallDisableCursorEvent();
+        Debug.Log("Disable cursor in Dialogue Manager!");
 
         animator.SetBool("isWalking", false);
         DisplayCurrentDialogue();
@@ -190,11 +229,12 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
         choicePanel.SetActive(false);
 
-        EventHandler.CallEnableCursorEvent();
 
         GameStateManager.MarkConversationCompleted(currentConversationID);
 
         EventHandler.CallEnablePlayerMovementEvent();
+        EventHandler.CallEnableCursorEvent();
+        Debug.Log("Enable cursor in Dialogue Manager!");
 
         ResetCameraFocus();
     }
@@ -213,7 +253,10 @@ public class DialogueManager : MonoBehaviour
         }
 
         ConversationDialogue dialogue = currentDialogues[currentDialogueIndex];
-        string speakerName = dialogue.speakerName == "Player" ? GameStateManager.PlayerName : dialogue.speakerName;
+
+        string speakerName = getTrueSpeakerName(dialogue.speakerName);
+        Debug.Log($"MerchantShowHisName:{GameStateManager.GetBool("MerchantShowHisName")}");
+        // string speakerName = dialogue.speakerName == "Player" ? GameStateManager.PlayerName : dialogue.speakerName;
 
         if (!string.IsNullOrEmpty(dialogue.divergence.parameter.parameterName) && GameStateManager.IsConditionMet(dialogue.divergence.parameter))
         {
@@ -247,14 +290,14 @@ public class DialogueManager : MonoBehaviour
             StopAllCoroutines();
 
             typingChoices = dialogue.choices;
-            StartCoroutine(TypeSentence(ReplaceWithPlayerName(dialogue.text), () => {
+            StartCoroutine(TypeSentence(ReplaceWithNames(dialogue.text), () => {
                 if (typingChoices != null && typingChoices.Length > 0)
                 {
                     DisplayChoices(typingChoices);
                 }
             }));
 
-            // StartCoroutine(TypeSentence(ReplaceWithPlayerName(dialogue.text)));
+            // StartCoroutine(TypeSentence(ReplaceWithNames(dialogue.text)));
 
             FocusCameraOnSpeaker(dialogue.speakerName);
 
@@ -267,8 +310,9 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            currentDialogueIndex = dialogue.nextIndex;
-            DisplayCurrentDialogue();
+            StartCoroutine(WaitForAnimations(dialogue.triggers));
+            // currentDialogueIndex = dialogue.nextIndex;
+            // DisplayCurrentDialogue();
         }
     }
 
@@ -288,10 +332,7 @@ public class DialogueManager : MonoBehaviour
         {
             if (animators.TryGetValue(trigger.characterName, out Animator animator))
             {
-                if (animator != null)
-                {
-                    animator.SetTrigger(trigger.triggerName);
-                }
+                animator.SetTrigger(trigger.triggerName);
             }
             else
             {
@@ -300,9 +341,32 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private string ReplaceWithPlayerName(string str)
+    private IEnumerator WaitForAnimations(List<AnimationTrigger> triggers)
     {
-        return str.Replace("[Player]", GameStateManager.PlayerName);
+        isAnimationPlaying = true;
+        foreach (AnimationTrigger trigger in triggers)
+        {
+            if (animators.TryGetValue(trigger.characterName, out Animator animator))
+            {
+                AnimationMovement movement = animator.gameObject.GetComponent<AnimationMovement>();
+                if (movement != null)
+                {
+                    yield return StartCoroutine(movement.WaitForAnimation(trigger.triggerName, AnimationType.Emote));
+                }
+            }
+        }
+
+        isAnimationPlaying = false;
+
+        currentDialogueIndex = currentDialogues[currentDialogueIndex].nextIndex;
+        DisplayCurrentDialogue();
+    }
+
+    private string ReplaceWithNames(string str)
+    {
+        string newString = str.Replace("[Player]", GameStateManager.PlayerName);
+        newString = newString.Replace("[Merchant]", Settings.MerchantName);
+        return newString;
     }
 
     private void DisplayChoices(DialogueChoice[] choices)
@@ -344,6 +408,11 @@ public class DialogueManager : MonoBehaviour
 
     private void OnDialoguePanelClick(BaseEventData data)
     {
+        if (isAnimationPlaying)
+        {
+            return;
+        }
+
         if (isShowingMessage)
         {
             if (isTyping)

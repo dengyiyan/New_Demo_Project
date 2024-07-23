@@ -36,7 +36,7 @@ public class AnimationMovement : MonoBehaviour
         }
 
         animator = GetComponent<Animator>();
-        myRigidbody.interpolation = RigidbodyInterpolation2D.Interpolate;
+        // myRigidbody.interpolation = RigidbodyInterpolation2D.Interpolate;
     }
 
     public void SetPoints(List<Vector3> newPoints)
@@ -47,7 +47,7 @@ public class AnimationMovement : MonoBehaviour
 
     public IEnumerator MoveAlongPoints()
     {
-        myRigidbody.bodyType = RigidbodyType2D.Dynamic;
+        // myRigidbody.bodyType = RigidbodyType2D.Dynamic;
 
         while (points.Count > 0)
         {
@@ -78,6 +78,7 @@ public class AnimationMovement : MonoBehaviour
             myRigidbody.bodyType = RigidbodyType2D.Kinematic;
         }
         HasCompletedPath = true;
+        myRigidbody.velocity = Vector2.zero;
     }
 
     public IEnumerator WaitForAnimation(string trigger, AnimationType type)

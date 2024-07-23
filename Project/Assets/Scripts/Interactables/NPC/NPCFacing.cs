@@ -39,6 +39,11 @@ public class NPCFacing : MonoBehaviour
             }
         }
     }
+
+    //public void SetPlayAnimation()
+    //{
+
+    //}
 }
 
 

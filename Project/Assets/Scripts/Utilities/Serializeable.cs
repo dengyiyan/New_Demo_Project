@@ -78,6 +78,7 @@ public class ConversationDialogue
     public List<BooleanParameter> requirements;
     public DialogueDivergence divergence;
     public List<DialogueAction> actions;
+    public List<BooleanParameter> boolParameters;
 }
 
 

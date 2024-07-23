@@ -11,7 +11,8 @@ public static class GameStateManager
     private static Dictionary<string, bool> gameBools = new Dictionary<string, bool>
     {
         {"HasFlower", false},
-        {"SisterReceiveFlower", false}
+        {"SisterReceiveFlower", false},
+        {"MerchantShowHisName", false }
     };
     private static Dictionary<string, Vector3> scenePlayerPositions = new Dictionary<string, Vector3>();
     private static Dictionary<string, Dictionary<string, NPCState>> sceneNPCStates = new Dictionary<string, Dictionary<string, NPCState>>();

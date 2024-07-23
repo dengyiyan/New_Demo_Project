@@ -6,7 +6,7 @@ public class InteractableObject : MonoBehaviour
 {
     [SerializeField] private InteractionType interactionType;
     [SerializeField] private float interactionRange;
-    [SerializeField] private float invalidTransparency = Settings.invalidCursorTransparency;
+    // [SerializeField] private float invalidTransparency = Settings.invalidCursorTransparency;
 
     private GameObject player;
     private Transform playerTransform;
@@ -59,22 +59,25 @@ public class InteractableObject : MonoBehaviour
         }
 
         bool isValid = distance < interactionRange;
-        float transparency = isValid ? Settings.validCursorTransparency : invalidTransparency;
+        // float transparency = isValid ? Settings.validCursorTransparency : invalidTransparency;
         if (isCursorOver)
         {
             currentHoveredObject = this;
-            EventHandler.CallCursorChange(interactionType, transparency);
+            EventHandler.CallCursorChange(interactionType, isValid);
+            // Debug.Log($"Changing cursor to {interactionType} with transparency {transparency} in {this.name}!");
         }
-        else if (currentHoveredObject == this)
+        else if (!isCursorOver && currentHoveredObject == this)
         {
             currentHoveredObject = null;
-            EventHandler.CallCursorChange(InteractionType.None, Settings.validCursorTransparency);
+            EventHandler.CallCursorChange(InteractionType.None, true);
+            // Debug.Log($"Changing cursor to {interactionType} in {this.name}! Because cursor is no longer over");
         }
 
         if (distance <= interactionRange && isCursorOver && Input.GetMouseButtonDown(0))
         {
+            // CursorManager.currentHoveredObject = null;
             Interact();
-            //EventHandler.CallCursorChange(InteractionType.None, Settings.validCursorTransparency);
+            EventHandler.CallCursorChange(InteractionType.None, true);
         }
     }
 

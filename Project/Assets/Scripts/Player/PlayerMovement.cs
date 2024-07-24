@@ -35,6 +35,7 @@ public class PlayerMovement : MonoBehaviour
         EventHandler.BeforeSceneUnloadEvent += OnBeforeSceneUnloadEvent;
         EventHandler.AfterSceneLoadEvent += OnAfterSceneLoadEvent;
         EventHandler.MoveToPosition += OnMoveToPosition;
+        EventHandler.PlayerFaceEvent += SetFacingDirection;
 
         EventHandler.EnablePlayerMovementEvent += EnableMovement;
         EventHandler.DisablePlayerMovementEvent += DisableMovement;
@@ -44,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
         EventHandler.BeforeSceneUnloadEvent -= OnBeforeSceneUnloadEvent;
         EventHandler.AfterSceneLoadEvent -= OnAfterSceneLoadEvent;
         EventHandler.MoveToPosition -= OnMoveToPosition;
+        EventHandler.PlayerFaceEvent -= SetFacingDirection;
 
         EventHandler.EnablePlayerMovementEvent -= EnableMovement;
         EventHandler.DisablePlayerMovementEvent -= DisableMovement;
@@ -139,5 +141,33 @@ public class PlayerMovement : MonoBehaviour
     {
         canMove = false;
         animator.SetBool("isWalking", false);
+    }
+
+    private void SetFacingDirection(Direction direction)
+    {
+        if (animator != null)
+        {
+            switch (direction)
+            {
+                case Direction.Front:
+                    animator.SetFloat("moveX", 0);
+                    animator.SetFloat("moveY", -1);
+                    break;
+                case Direction.Back:
+                    animator.SetFloat("moveX", 0);
+                    animator.SetFloat("moveY", 1);
+                    break;
+                case Direction.Left:
+                    animator.SetFloat("moveX", -1);
+                    animator.SetFloat("moveY", 0);
+                    break;
+                case Direction.Right:
+                    animator.SetFloat("moveX", 1);
+                    animator.SetFloat("moveY", 0);
+                    break;
+                default:
+                    break;
+            }
+        }
     }
 }

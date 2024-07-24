@@ -493,13 +493,13 @@ public class AnimationManager : MonoBehaviour
         }
 
 
-        EventHandler.CallEnableCursorEvent();
-        Debug.Log("Enable cursor in Animation Manager!");
 
         // uiController.OnAnimationEnd();
         if (!dialogueManager.GetIsShowing())
         {
             EventHandler.CallEnablePlayerMovementEvent();
+            EventHandler.CallEnableCursorEvent();
+            Debug.Log("Enable cursor in Animation Manager!");
         }
     }
 

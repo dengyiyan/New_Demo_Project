@@ -79,6 +79,11 @@ public class ConversationDialogue
     public DialogueDivergence divergence;
     public List<DialogueAction> actions;
     public List<BooleanParameter> boolParameters;
+    [SceneName]
+    public string sceneTo;
+    public string spawnID;
+    public Direction direction;
+
 }
 
 

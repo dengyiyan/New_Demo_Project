@@ -15,6 +15,12 @@ public static class EventHandler
         TransitionEvent?.Invoke(sceneName, spawnPointID);
     }
 
+    public static event Action<Direction> PlayerFaceEvent;
+    public static void CallPlayerFaceEvent(Direction direction)
+    {
+        PlayerFaceEvent?.Invoke(direction);
+    }
+
     public static event Action FadeInEvent;
     public static void CallFadeInEvent()
     {

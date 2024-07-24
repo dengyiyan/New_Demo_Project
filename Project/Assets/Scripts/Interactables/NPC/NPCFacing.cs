@@ -36,6 +36,8 @@ public class NPCFacing : MonoBehaviour
                     animator.SetFloat("moveX", 1);
                     animator.SetFloat("moveY", 0);
                     break;
+                default:
+                    break;
             }
         }
     }
@@ -47,12 +49,4 @@ public class NPCFacing : MonoBehaviour
 }
 
 
-[System.Serializable]
-public enum Direction
-{
-    Front,
-    Back,
-    Left,
-    Right,
-    // Add other animation types as needed
-}
+

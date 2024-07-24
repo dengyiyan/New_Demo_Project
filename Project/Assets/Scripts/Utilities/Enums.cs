@@ -14,3 +14,14 @@ public enum AnimationType
     None,
     // Add other animation types as needed
 }
+
+[System.Serializable]
+public enum Direction
+{
+    None,
+    Front,
+    Back,
+    Left,
+    Right,
+    // Add other animation types as needed
+}

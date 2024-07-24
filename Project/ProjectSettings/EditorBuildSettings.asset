@@ -18,12 +18,21 @@ EditorBuildSettings:
     path: Assets/Scenes/PeacefulVillage.unity
     guid: 2fde2103ea7be9441af327931d5f23bd
   - enabled: 1
+    path: Assets/Scenes/PeacefulVillage_After_Conflict.unity
+    guid: a93635875c4392749872031e399a4ee5
+  - enabled: 1
     path: Assets/Scenes/HeroHouse.unity
     guid: e30d32a7bff93df46a34a42f07d03e8f
   - enabled: 1
     path: Assets/Scenes/HeroHouse_After_Breakfast.unity
-    guid: fd755e2a9a2e3eb4aadbb954da65e3c7
+    guid: 2ec217fcd20403a428abfc16f818eb99
   - enabled: 1
     path: Assets/Scenes/HeroHouse_After_Out.unity
-    guid: c15785cf92a387e4ea06e4540ff15b82
+    guid: 654e365245a8ca747a583cd79d6ebb2c
+  - enabled: 1
+    path: Assets/Scenes/HeroHouse_End_of_Day.unity
+    guid: 2cc8dd08dcd5ce34abf76f394e473c46
+  - enabled: 1
+    path: Assets/Scenes/HeroHouse_Night.unity
+    guid: 1bdb926760adc234ba3c0265f19107ba
   m_configObjects: {}

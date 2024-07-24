@@ -38,9 +38,38 @@ MonoBehaviour:
     conversation:
       conversationDialogues:
       - speakerName: Merchant
-        text: Hi, my name is [Merchant]!
+        text: Well, well, what do we have here? A quaint little village stuck in
+          the past.
         choices: []
         nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Mayor Luis
+        text: Good day, traveller. What brings you to our village?
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Merchant
+        text: Good day indeed. I am Morris, people would call me Morris the Magnate.
+        choices: []
+        nextIndex: 3
         triggers: []
         requirements: []
         divergence:
@@ -54,9 +83,296 @@ MonoBehaviour:
           value: 1
         boolParameters: []
       - speakerName: Merchant
-        text: Nice to meet you!
+        text: I am a merchant of the finest goods and an investor in promising lands.
         choices: []
-        nextIndex: 2
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Merchant
+        text: I'm here to bring your backward village into the modern age and perhaps
+          discuss some... profitable opportunities.
+        choices: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Evelyn
+        text: So arrogant... He is even worse than the other outsiders.
+        choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Mayor Luis
+        text: 'We appreciate your offer, Mr.Morris, but our village is self-sufficient. '
+        choices: []
+        nextIndex: 7
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Mayor Luis
+        text: We have no need for your goods or your investments.
+        choices: []
+        nextIndex: 8
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Merchant
+        text: 'Hahaha...! Self-sufficient? Please. You''re living in the dark ages. '
+        choices: []
+        nextIndex: 9
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Merchant
+        text: Your land has great potential, and with my help, it could be worth
+          a fortune.
+        choices: []
+        nextIndex: 10
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Merchant
+        text: You should be grateful I'm even considering doing business here.
+        choices: []
+        nextIndex: 11
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Charlie
+        text: Hey! Watch your words, outsider!
+        choices: []
+        nextIndex: 12
+        triggers:
+        - characterName: Charlie
+          triggerName: surprise
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Mayor Luis
+        text: Calm down, Charlie.
+        choices: []
+        nextIndex: 13
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Charlie
+        text: But grandpa...
+        choices: []
+        nextIndex: 14
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Merchant
+        text: Wise choice, old fella! Now, are we talking business?
+        choices: []
+        nextIndex: 15
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Mayor Luis
+        text: There will be no business, Mr. Morris.
+        choices: []
+        nextIndex: 16
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Mayor Luis
+        text: Our village thrives on our own terms, and we do not want to ruin it
+          for the greediness of some outsider.
+        choices: []
+        nextIndex: 17
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Merchant
+        text: Greediness? I'm offering progress, prosperity!
+        choices: []
+        nextIndex: 18
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Merchant
+        text: Your stubbornness is costing your people a chance at a better life.
+        choices: []
+        nextIndex: 19
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Evelyn
+        text: We've heard enough. Leave our village, and take your greed with you.
+        choices: []
+        nextIndex: 20
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Merchant
+        text: Very well. But remember, this land could be so much more. You are choosing
+          to remain in the dark.
+        choices: []
+        nextIndex: 21
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Mayor Luis
+        text: This discussion is over. Leave now, and do not return.
+        choices: []
+        nextIndex: 22
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Merchant
+        text: You will regret this. Mark my words, this village will pay for your
+          arrogance.
+        choices: []
+        nextIndex: 23
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+      - speakerName: Merchant
+        text: Nobody can say no to me, Morris the Magnate!!!
+        choices: []
+        nextIndex: 24
         triggers: []
         requirements: []
         divergence:
@@ -75,17 +391,21 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
   - npcName: Merchant
-    points: []
+    points:
+    - {x: 18, y: 53, z: 0}
+    - {x: 23, y: 53, z: 0}
+    - {x: 23, y: 56, z: 0}
+    - {x: 21, y: 56, z: 0}
     trigger: 
     waitForCompletion: 0
     conversation:
       conversationDialogues: []
-      ID: Merchant_greetings
-    waitForConversationEnd: 1
+      ID: 
+    waitForConversationEnd: 0
     allowPlayerMove: 0
-    animationType: 3
+    animationType: 5
     boolParameters: []
-    nextScene: 
+    nextScene: PeacefulVillage_After_Conflict
     spawnID: 
   conditions:
     conditions: []

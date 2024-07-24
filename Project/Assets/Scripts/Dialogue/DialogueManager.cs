@@ -254,6 +254,12 @@ public class DialogueManager : MonoBehaviour
 
         ConversationDialogue dialogue = currentDialogues[currentDialogueIndex];
 
+        if (!string.IsNullOrEmpty(dialogue.sceneTo))
+        {
+            EventHandler.CallTransitionEvent(dialogue.sceneTo, dialogue.spawnID);
+            EventHandler.CallPlayerFaceEvent(dialogue.direction);
+        }
+
         string speakerName = getTrueSpeakerName(dialogue.speakerName);
         Debug.Log($"MerchantShowHisName:{GameStateManager.GetBool("MerchantShowHisName")}");
         // string speakerName = dialogue.speakerName == "Player" ? GameStateManager.PlayerName : dialogue.speakerName;
@@ -281,39 +287,40 @@ public class DialogueManager : MonoBehaviour
 
         ApplyDialogueActions(dialogue.actions);
 
-        TriggerAnimations(dialogue.triggers);
+        StartCoroutine(DisplayDialogueAfterAnimations(dialogue));
+        //TriggerAnimations(dialogue.triggers);
 
-        if (!string.IsNullOrEmpty(dialogue.text))
-        {
-            nameText.text = speakerName;
-            dialoguePanel.SetActive(true);
-            StopAllCoroutines();
+        //if (!string.IsNullOrEmpty(dialogue.text))
+        //{
+        //    nameText.text = speakerName;
+        //    dialoguePanel.SetActive(true);
+        //    StopAllCoroutines();
 
-            typingChoices = dialogue.choices;
-            StartCoroutine(TypeSentence(ReplaceWithNames(dialogue.text), () => {
-                if (typingChoices != null && typingChoices.Length > 0)
-                {
-                    DisplayChoices(typingChoices);
-                }
-            }));
+        //    typingChoices = dialogue.choices;
+        //    StartCoroutine(TypeSentence(ReplaceWithNames(dialogue.text), () => {
+        //        if (typingChoices != null && typingChoices.Length > 0)
+        //        {
+        //            DisplayChoices(typingChoices);
+        //        }
+        //    }));
 
-            // StartCoroutine(TypeSentence(ReplaceWithNames(dialogue.text)));
+        //    // StartCoroutine(TypeSentence(ReplaceWithNames(dialogue.text)));
 
-            FocusCameraOnSpeaker(dialogue.speakerName);
+        //    FocusCameraOnSpeaker(dialogue.speakerName);
 
-            //if (dialogue.choices != null && dialogue.choices.Length > 0 && !isTyping)
-            //{
-            //    DisplayChoices(dialogue.choices);
-            //}
+        //    //if (dialogue.choices != null && dialogue.choices.Length > 0 && !isTyping)
+        //    //{
+        //    //    DisplayChoices(dialogue.choices);
+        //    //}
 
-            currentDialogueIndex = dialogue.nextIndex;
-        }
-        else
-        {
-            StartCoroutine(WaitForAnimations(dialogue.triggers));
-            // currentDialogueIndex = dialogue.nextIndex;
-            // DisplayCurrentDialogue();
-        }
+        //    currentDialogueIndex = dialogue.nextIndex;
+        //}
+        //else
+        //{
+        //    StartCoroutine(WaitForAnimations(dialogue.triggers));
+        //    // currentDialogueIndex = dialogue.nextIndex;
+        //    // DisplayCurrentDialogue();
+        //}
     }
 
     private void ApplyDialogueActions(List<DialogueAction> actions)
@@ -326,18 +333,59 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    private void TriggerAnimations(List<AnimationTrigger> triggers)
+    private IEnumerator TriggerAnimations(List<AnimationTrigger> triggers)
     {
         foreach (AnimationTrigger trigger in triggers)
         {
             if (animators.TryGetValue(trigger.characterName, out Animator animator))
             {
                 animator.SetTrigger(trigger.triggerName);
+                AnimationMovement movement = animator.gameObject.GetComponent<AnimationMovement>();
+
+                if (movement != null)
+                {
+                    yield return StartCoroutine(movement.WaitForAnimation(trigger.triggerName, AnimationType.Emote));
+                }
+                else
+                {
+                    Debug.LogWarning($"AnimationMovement component not found on {trigger.characterName}.");
+                }
             }
             else
             {
                 Debug.LogWarning($"Animator with name {trigger.characterName} not found.");
             }
+        }
+    }
+
+    private IEnumerator DisplayDialogueAfterAnimations(ConversationDialogue dialogue)
+    {
+        isAnimationPlaying = true;
+        yield return StartCoroutine(TriggerAnimations(dialogue.triggers));
+        isAnimationPlaying = false;
+
+        if (!string.IsNullOrEmpty(dialogue.text))
+        {
+            nameText.text = getTrueSpeakerName(dialogue.speakerName);
+            dialoguePanel.SetActive(true);
+            StopAllCoroutines();
+
+            typingChoices = dialogue.choices;
+            StartCoroutine(TypeSentence(ReplaceWithNames(dialogue.text), () => {
+                if (typingChoices != null && typingChoices.Length > 0)
+                {
+                    DisplayChoices(typingChoices);
+                }
+            }));
+
+            FocusCameraOnSpeaker(dialogue.speakerName);
+
+            currentDialogueIndex = dialogue.nextIndex;
+        }
+        else
+        {
+            currentDialogueIndex = dialogue.nextIndex;
+            DisplayCurrentDialogue();
         }
     }
 

@@ -160,6 +160,7 @@ public class PlayerMovement : MonoBehaviour
                 case Direction.Left:
                     animator.SetFloat("moveX", -1);
                     animator.SetFloat("moveY", 0);
+                    flipOnX(true);
                     break;
                 case Direction.Right:
                     animator.SetFloat("moveX", 1);

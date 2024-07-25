@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
   m_Name: Genocide_Prelude
   m_EditorClassIdentifier: 
-  sequenceName: Starting
+  sequenceName: Prelude
   steps:
   - npcName: Player
     points: []
@@ -29,6 +29,7 @@ MonoBehaviour:
       value: 1
     nextScene: 
     spawnID: 
+    direction: 0
   - npcName: Player
     points: []
     trigger: sleep
@@ -42,6 +43,7 @@ MonoBehaviour:
     boolParameters: []
     nextScene: 
     spawnID: 
+    direction: 0
   - npcName: Player
     points: []
     trigger: 
@@ -89,6 +91,7 @@ MonoBehaviour:
     boolParameters: []
     nextScene: 
     spawnID: 
+    direction: 0
   - npcName: Player
     points: []
     trigger: wake
@@ -102,6 +105,7 @@ MonoBehaviour:
     boolParameters: []
     nextScene: 
     spawnID: 
+    direction: 0
   - npcName: Player
     points: []
     trigger: 
@@ -117,6 +121,7 @@ MonoBehaviour:
       value: 0
     nextScene: 
     spawnID: 
+    direction: 0
   - npcName: Player
     points: []
     trigger: 
@@ -147,6 +152,7 @@ MonoBehaviour:
     boolParameters: []
     nextScene: 
     spawnID: 
+    direction: 0
   - npcName: Father
     points:
     - {x: -5, y: 14, z: 0}
@@ -161,6 +167,7 @@ MonoBehaviour:
     boolParameters: []
     nextScene: 
     spawnID: 
+    direction: 0
   - npcName: Father
     points: []
     trigger: 
@@ -185,7 +192,7 @@ MonoBehaviour:
         spawnID: 
         direction: 0
       - speakerName: Father
-        text: We are invaded!
+        text: The village is invaded!
         choices: []
         nextIndex: 2
         triggers: []
@@ -240,9 +247,9 @@ MonoBehaviour:
         spawnID: 
         direction: 0
       - speakerName: Player
-        text: (I was stunned there, with hundreds of questions exploded in my mind)
+        text: (The next thing I know is that I was pushed under my bed)
         choices: []
-        nextIndex: 4
+        nextIndex: 5
         triggers: []
         requirements: []
         divergence:
@@ -263,5 +270,20 @@ MonoBehaviour:
     boolParameters: []
     nextScene: 
     spawnID: 
+    direction: 0
+  - npcName: Father
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 4
+    boolParameters: []
+    nextScene: HeroHouse_Night_After_Genocide
+    spawnID: 4
+    direction: 3
   conditions:
     conditions: []

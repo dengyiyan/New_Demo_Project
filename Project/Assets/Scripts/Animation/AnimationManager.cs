@@ -431,6 +431,7 @@ public class AnimationManager : MonoBehaviour
     private void HandleSceneChange(AnimationStep step)
     {
         EventHandler.CallTransitionEvent(step.nextScene, step.spawnID);
+        EventHandler.CallPlayerFaceEvent(step.direction);
     }
     private IEnumerator PlaySequenceCoroutine(AnimationSequence sequence)
     {
@@ -545,7 +546,10 @@ public class AnimationManager : MonoBehaviour
             IncrementAnimationCounter();
         }
 
-        yield return StartCoroutine(npc.MoveAlongPoints());
+        if (step.points.Count > 0)
+        {
+            yield return StartCoroutine(npc.MoveAlongPoints());
+        }
 
 
         npc.SetWalking(false);

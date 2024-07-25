@@ -54,6 +54,7 @@ public class AnimationStep
     public List<BooleanParameter> boolParameters;
     [SceneName] public string nextScene;
     public string spawnID;
+    public Direction direction;
     // public AnimationSequence nextSequence;
 }
 

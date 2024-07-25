@@ -448,7 +448,7 @@ Transform:
   m_GameObject: {fileID: 161169369}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.06, y: 18.63, z: -16}
+  m_LocalPosition: {x: 2.05, y: 18.57, z: -16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -806,7 +806,7 @@ Transform:
   m_GameObject: {fileID: 531126372}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.06, y: 18.63, z: 0}
+  m_LocalPosition: {x: 2.05, y: 18.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1055,7 +1055,7 @@ Transform:
   m_GameObject: {fileID: 565232659}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.06, y: 18.63, z: -16}
+  m_LocalPosition: {x: 2.05, y: 18.57, z: -16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1103,6 +1103,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bdf5f74190edaa479bb03ea8ddfbc1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &595824609
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 595824611}
+  - component: {fileID: 595824610}
+  m_Layer: 0
+  m_Name: SP4.HeroHouse_Player_up
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &595824610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595824609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b265178717a40bd48be8ccf83f41cc00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPointID: 4
+--- !u!4 &595824611
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 595824609}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5, y: 18, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &622347202
 GameObject:
   m_ObjectHideFlags: 3
@@ -1359,11 +1404,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1887544452139063866, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2.06
+      value: 2.05
       objectReference: {fileID: 0}
     - target: {fileID: 1887544452139063866, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 18.63
+      value: 18.57
       objectReference: {fileID: 0}
     - target: {fileID: 1887544452139063866, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1384,6 +1429,18 @@ PrefabInstance:
     - target: {fileID: 2076998751660547778, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: m_Size.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244468603881838738, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
+      propertyPath: m_SortingLayer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4244468603881838738, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 1171648269
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292005140228148759, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
+      propertyPath: defaultSpeed
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1765,7 +1822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1510471759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1778,7 +1835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4adbc733b8b5c7748b12c36abd1121c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSceneName: HeroHouse_End_of_Day
+  startSceneName: HeroHouse_After_Out
 --- !u!4 &1510471760
 Transform:
   m_ObjectHideFlags: 0
@@ -1952,6 +2009,7 @@ SceneRoots:
   - {fileID: 1924913590}
   - {fileID: 1956733784}
   - {fileID: 837478930}
+  - {fileID: 595824611}
   - {fileID: 233923282}
   - {fileID: 990996021}
   - {fileID: 1195128024}

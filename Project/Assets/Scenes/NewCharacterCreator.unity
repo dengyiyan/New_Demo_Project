@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -480,7 +479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -511,10 +510,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 696465753}
-        m_TargetAssemblyTypeName: SceneStateHandler, Assembly-CSharp
-        m_MethodName: ChangeSceneButton
-        m_Mode: 5
+      - m_Target: {fileID: 1905817029}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: Backward
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -998,7 +997,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 906556326}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BodyPartManager, Assembly-CSharp
         m_MethodName: UpdateBodyPart
         m_Mode: 1
@@ -1123,7 +1122,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1224697947
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 5
   m_Sprite: {fileID: -1885543086, guid: 84d19082a9a5b1d488f0d8f81695cb87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -1425,12 +1424,12 @@ MonoBehaviour:
   m_RequiresColorTexture: 0
   m_Version: 2
   m_TaaSettings:
-    quality: 3
-    frameInfluence: 0.1
-    jitterScale: 1
-    mipBias: 0
-    varianceClampScale: 0.9
-    contrastAdaptiveSharpening: 0
+    m_Quality: 3
+    m_FrameInfluence: 0.1
+    m_JitterScale: 1
+    m_MipBias: 0
+    m_VarianceClampScale: 0.9
+    m_ContrastAdaptiveSharpening: 0
 --- !u!1 &552932844
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,50 +1951,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 669009342}
   m_CullTransparentMesh: 1
---- !u!1 &696465752
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 696465754}
-  - component: {fileID: 696465753}
-  m_Layer: 0
-  m_Name: SceneManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &696465753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 696465752}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a1763dac0e22774e8519bb9a5e63d1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &696465754
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 696465752}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 941.9342, y: 366.23788, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &710315855
 GameObject:
   m_ObjectHideFlags: 0
@@ -2345,28 +2300,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 1887544452139063866, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
   m_PrefabInstance: {fileID: 9144538145514022961}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &906556325 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8913692220953615718, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
-  m_PrefabInstance: {fileID: 9144538145514022961}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c60731fd6ce9db84199f3f88347447f2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &906556326 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8430661483037141863, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
-  m_PrefabInstance: {fileID: 9144538145514022961}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ab85f64f93696848b7c042e464fd707, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &925548278
 GameObject:
   m_ObjectHideFlags: 0
@@ -2449,7 +2382,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 906556325}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Rotation, Assembly-CSharp
         m_MethodName: RotateRight
         m_Mode: 1
@@ -2660,7 +2593,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 906556325}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: Rotation, Assembly-CSharp
         m_MethodName: RotateLeft
         m_Mode: 1
@@ -2917,7 +2850,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1224697947
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: -770487517, guid: 5d410eae2d81679488ae756b8a6b335c, type: 3}
   m_Color: {r: 0.66666657, g: 0.35307172, b: 0.077568, a: 1}
@@ -3024,7 +2957,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 906556326}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BodyPartManager, Assembly-CSharp
         m_MethodName: UpdateBodyPart
         m_Mode: 1
@@ -3307,7 +3240,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1224697947
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 20
   m_Sprite: {fileID: 506863537, guid: 84d19082a9a5b1d488f0d8f81695cb87, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -3492,7 +3425,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Navigation:
-    m_Mode: 3
+    m_Mode: 0
     m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
@@ -3523,10 +3456,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 696465753}
-        m_TargetAssemblyTypeName: SceneStateHandler, Assembly-CSharp
-        m_MethodName: ChangeSceneButton
-        m_Mode: 5
+      - m_Target: {fileID: 1905817029}
+        m_TargetAssemblyTypeName: SceneLoader, Assembly-CSharp
+        m_MethodName: Forward
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -3818,7 +3751,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 906556326}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BodyPartManager, Assembly-CSharp
         m_MethodName: UpdateBodyPart
         m_Mode: 1
@@ -3962,7 +3895,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 906556326}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BodyPartManager, Assembly-CSharp
         m_MethodName: UpdateBodyPart
         m_Mode: 1
@@ -4387,7 +4320,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 906556326}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BodyPartManager, Assembly-CSharp
         m_MethodName: UpdateBodyPart
         m_Mode: 1
@@ -4653,7 +4586,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 906556326}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BodyPartManager, Assembly-CSharp
         m_MethodName: UpdateBodyPart
         m_Mode: 1
@@ -4778,7 +4711,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1224697947
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 10
   m_Sprite: {fileID: -835251696, guid: 418d766b2f2a27d4cae0ee2162ae5dd5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -4866,7 +4799,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1224697947
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 15
   m_Sprite: {fileID: -1853695657, guid: a864c1489f946b34ca4c02c594c4d22b, type: 3}
   m_Color: {r: 0.22107501, g: 0.2904459, b: 0.8679245, a: 1}
@@ -5041,7 +4974,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 906556326}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BodyPartManager, Assembly-CSharp
         m_MethodName: UpdateBodyPart
         m_Mode: 1
@@ -5340,7 +5273,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 906556326}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: BodyPartManager, Assembly-CSharp
         m_MethodName: UpdateBodyPart
         m_Mode: 1
@@ -5522,6 +5455,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1868267307}
   m_CullTransparentMesh: 1
+--- !u!1 &1905817028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1905817030}
+  - component: {fileID: 1905817029}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1905817029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905817028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1fca277ee5a5304f9f0381e3543738a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  toSceneName: PersistentScene
+  backSceneName: StartScene
+--- !u!4 &1905817030
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1905817028}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 941.9342, y: 366.23788, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1956769459
 GameObject:
   m_ObjectHideFlags: 0
@@ -6130,11 +6109,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4244468603881838738, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: m_SortingLayer
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4244468603881838738, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: m_SortingLayerID
-      value: 1224697947
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8236163815886333504, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: m_Sprite
@@ -6156,4 +6135,4 @@ SceneRoots:
   - {fileID: 357627470}
   - {fileID: 1607944474}
   - {fileID: 1750885459}
-  - {fileID: 696465754}
+  - {fileID: 1905817030}

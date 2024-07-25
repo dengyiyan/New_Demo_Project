@@ -203,7 +203,6 @@ public class DialogueManager : MonoBehaviour
         if (isShowing)
             return;
         Debug.Log("Conversation Started!");
-        isShowing = true;
         if (dialogues == null)
         {
             dialogues = new Queue<ConversationDialogue>();
@@ -213,7 +212,12 @@ public class DialogueManager : MonoBehaviour
         currentDialogueIndex = 0;
         currentConversationID = conversation.ID;
 
-        dialoguePanel.SetActive(true);
+        isShowing = true;
+        if (currentDialogues[0].triggers == null)
+        {
+            dialoguePanel.SetActive(true);
+            Debug.Log($"isShowing is set to {isShowing}");
+        }
 
         EventHandler.CallDisablePlayerMovementEvent();
         EventHandler.CallDisableCursorEvent();
@@ -226,6 +230,7 @@ public class DialogueManager : MonoBehaviour
     public void EndConversation()
     {
         isShowing = false;
+        Debug.Log($"isShowing is set to {isShowing}");
         dialoguePanel.SetActive(false);
         choicePanel.SetActive(false);
 
@@ -261,7 +266,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         string speakerName = getTrueSpeakerName(dialogue.speakerName);
-        Debug.Log($"MerchantShowHisName:{GameStateManager.GetBool("MerchantShowHisName")}");
+        // Debug.Log($"MerchantShowHisName:{GameStateManager.GetBool("MerchantShowHisName")}");
         // string speakerName = dialogue.speakerName == "Player" ? GameStateManager.PlayerName : dialogue.speakerName;
 
         if (!string.IsNullOrEmpty(dialogue.divergence.parameter.parameterName) && GameStateManager.IsConditionMet(dialogue.divergence.parameter))
@@ -364,10 +369,15 @@ public class DialogueManager : MonoBehaviour
         yield return StartCoroutine(TriggerAnimations(dialogue.triggers));
         isAnimationPlaying = false;
 
+        //if (dialogue == currentDialogues[0])
+        //    dialoguePanel.SetActive(true);
+
         if (!string.IsNullOrEmpty(dialogue.text))
         {
             nameText.text = getTrueSpeakerName(dialogue.speakerName);
             dialoguePanel.SetActive(true);
+            isShowing = true;
+            Debug.Log($"isShowing is set to {isShowing}");
             StopAllCoroutines();
 
             typingChoices = dialogue.choices;

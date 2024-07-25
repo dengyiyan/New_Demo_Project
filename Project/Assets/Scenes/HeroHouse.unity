@@ -3154,6 +3154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneTo: PeacefulVillage
   spawnID: 1
+  messageName: 
+  messageText: 
 --- !u!1001 &206613129
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3255,6 +3257,10 @@ PrefabInstance:
     - target: {fileID: 837398191815490963, guid: 7fa003732c164b241b3186c9a8cc538f, type: 3}
       propertyPath: m_Name
       value: Sister
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121734295801282331, guid: 7fa003732c164b241b3186c9a8cc538f, type: 3}
+      propertyPath: defaultFacingDirection
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4968414738153568163, guid: 7fa003732c164b241b3186c9a8cc538f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3438,7 +3444,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1121734295801282331, guid: 7fa003732c164b241b3186c9a8cc538f, type: 3}
       propertyPath: defaultFacingDirection
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4968414738153568163, guid: 7fa003732c164b241b3186c9a8cc538f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -16805,6 +16811,10 @@ PrefabInstance:
     - target: {fileID: 837398191815490963, guid: 7fa003732c164b241b3186c9a8cc538f, type: 3}
       propertyPath: m_Name
       value: Father
+      objectReference: {fileID: 0}
+    - target: {fileID: 1121734295801282331, guid: 7fa003732c164b241b3186c9a8cc538f, type: 3}
+      propertyPath: defaultFacingDirection
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4968414738153568163, guid: 7fa003732c164b241b3186c9a8cc538f, type: 3}
       propertyPath: m_LocalPosition.x

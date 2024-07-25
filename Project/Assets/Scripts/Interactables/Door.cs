@@ -24,8 +24,12 @@ public class Door : MonoBehaviour
 
     private IEnumerator HandleInteraction()
     {
-        EventHandler.CallStartConversationEvent(conversation);
-        yield return new WaitUntil(() => !dialogueManager.GetIsShowing());
+        if (conversation.conversationDialogues.Length > 0)
+        {
+
+            EventHandler.CallStartConversationEvent(conversation);
+            yield return new WaitUntil(() => !dialogueManager.GetIsShowing());
+        }
 
         if (!string.IsNullOrEmpty(sceneTo))
         {

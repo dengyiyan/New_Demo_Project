@@ -118,7 +118,7 @@ public class CursorManager : MonoBehaviour
 
     private void SetCursor(Texture2D cursor)
     {
-        Debug.Log($"Setting cursor to texture {cursor}");
+        // Debug.Log($"Setting cursor to texture {cursor}");
         if (cursor != null)
         {
             // exture2D cursorTexture = new Texture2D(cursor.width, cursor.height, cursor.format, false);
@@ -170,7 +170,7 @@ public class CursorManager : MonoBehaviour
 
             // currentTransparency = transparency;
 
-            Debug.Log($"Cursor change triggered with type {type} and valid {isValid}!");
+            // Debug.Log($"Cursor change triggered with type {type} and valid {isValid}!");
             SetCursor(currentTexture);
         }
     }

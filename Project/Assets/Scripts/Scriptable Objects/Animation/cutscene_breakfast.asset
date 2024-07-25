@@ -17,7 +17,7 @@ MonoBehaviour:
   - npcName: Father
     points: []
     trigger: 
-    waitForCompletion: 0
+    waitForCompletion: 1
     conversation:
       conversationDialogues:
       - speakerName: Mother
@@ -26,18 +26,51 @@ MonoBehaviour:
         nextIndex: 1
         triggers: []
         requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
       - speakerName: Player
         text: Morning, everyone! Yes Mom, and I had a wonderful dream!
         choices: []
         nextIndex: 2
         triggers: []
         requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
       - speakerName: Father
         text: That's great to hear! Dreams can be so inspiring. What was it about?
         choices: []
         nextIndex: 3
         triggers: []
         requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
       - speakerName: Player
         text: I was flying over the village, seeing everything from above. It felt
           so cool!
@@ -45,6 +78,17 @@ MonoBehaviour:
         nextIndex: 4
         triggers: []
         requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
       - speakerName: Sister
         text: (Excitedly) Wow, that sounds amazing! I wish I could fly in my dreams
           too!
@@ -52,6 +96,17 @@ MonoBehaviour:
         nextIndex: 5
         triggers: []
         requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
       - speakerName: Mother
         text: (Chuckles) Maybe one day you will, darling. Now, come and have breakfast.
           We have a beautiful day ahead.
@@ -59,6 +114,17 @@ MonoBehaviour:
         nextIndex: 999
         triggers: []
         requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
       ID: cutscene_breakfast
     waitForConversationEnd: 1
     allowPlayerMove: 0

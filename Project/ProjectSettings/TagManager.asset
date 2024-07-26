@@ -9,7 +9,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Player
   - Water
   - UI
   - 
@@ -71,4 +71,7 @@ TagManager:
     locked: 0
   - name: Collision
     uniqueID: 4742689
+    locked: 0
+  - name: Top
+    uniqueID: 3578055293
     locked: 0

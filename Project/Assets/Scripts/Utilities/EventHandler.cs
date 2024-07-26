@@ -15,6 +15,18 @@ public static class EventHandler
         TransitionEvent?.Invoke(sceneName, spawnPointID);
     }
 
+    public static event Action UpdateBodyPartEvent;
+    public static void CallUpdateBodyPartEvent()
+    {
+        UpdateBodyPartEvent?.Invoke();
+    }
+
+    public static event Action UpdateColorEvent;
+    public static void CallUpdateColorEvent()
+    {
+        UpdateColorEvent?.Invoke(); 
+    }
+
     public static event Action<Direction> PlayerFaceEvent;
     public static void CallPlayerFaceEvent(Direction direction)
     {

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74674e2953db534ea7e3f8065bd08bf, type: 3}
+  m_Name: torso_2
+  m_EditorClassIdentifier: 
+  bodyPartName: torso_2
+  bodyPartAnimationID: 2
+  bodyPartColor: {r: 1, g: 1, b: 1, a: 1}
+  allBodyPartAnimations:
+  - {fileID: 7400000, guid: 8fd7a2685f43ee14985912b477c0e10a, type: 2}
+  - {fileID: 7400000, guid: 68738e7a8e95d984c9aea9c2a6743129, type: 2}
+  - {fileID: 7400000, guid: 115e03e03539bd64f91d45324fc54526, type: 2}
+  - {fileID: 7400000, guid: a1754d2f119240f438d2ba540134524b, type: 2}
+  - {fileID: 7400000, guid: 130fbcaeb32c58b4f9e7f41c0b10c48f, type: 2}
+  - {fileID: 7400000, guid: cd74896e5069b344eb63c7aa7febd4e9, type: 2}
+  - {fileID: 7400000, guid: 446703f4d97218a40a8813c0b281f990, type: 2}
+  - {fileID: 7400000, guid: 04b44cd2f2059b74b886150ae26620de, type: 2}

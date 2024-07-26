@@ -43,6 +43,17 @@ public class BodyPartManager : MonoBehaviour
         ApplyColor();
     }
 
+    private void OnEnable()
+    {
+        EventHandler.UpdateColorEvent += ApplyColor;
+        EventHandler.UpdateBodyPartEvent += UpdateBodyPart;
+    }
+    private void OnDisable()
+    {
+        EventHandler.UpdateColorEvent -= ApplyColor;
+        EventHandler.UpdateBodyPartEvent -= UpdateBodyPart;
+    }
+
     public void UpdateBodyPart()
     {
         for (int partIndex = 0; partIndex < bodyPartTypes.Length; partIndex++)
@@ -90,14 +101,36 @@ public class BodyPartManager : MonoBehaviour
 
     private void ApplyColor()
     {
+
         for (int partIndex = 0; partIndex < bodyPartTypes.Length; partIndex++)
         {
             string type = bodyPartTypes[partIndex];
-            GameObject obj = GameObject.Find(type);
-            SpriteRenderer spriteRenderer = obj.GetComponent<SpriteRenderer>();
-            spriteRenderer.color = characterBody.characterBodyParts[partIndex].bodyPart.bodyPartColor;
+            // Find the child object with the specified name
+            Transform childTransform = transform.Find(type);
+
+            if (childTransform != null)
+            {
+                // Get the GameObject of the found transform
+                GameObject obj = childTransform.gameObject;
+
+                // Get the SpriteRenderer component and apply the color
+                SpriteRenderer spriteRenderer = obj.GetComponent<SpriteRenderer>();
+                if (spriteRenderer != null)
+                {
+                    spriteRenderer.color = characterBody.characterBodyParts[partIndex].bodyPart.bodyPartColor;
+                }
+                else
+                {
+                    Debug.LogWarning($"SpriteRenderer not found on child object: {type}");
+                }
+            }
+            else
+            {
+                Debug.LogWarning($"Child object not found: {type}");
+            }
         }
     }
+
 
 
     public class AnimationClipOverrides : List<KeyValuePair<AnimationClip, AnimationClip>>

@@ -90,6 +90,8 @@ public class BodyPartsSelection : MonoBehaviour
         selection.bodyPartOptions[selection.bodyPartCurrentIndex].bodyPartColor = updateColor;
         spriteRenderer.color = updateColor;
         selection.bodyPartColorTextComponent.text = "Color " + (selection.colorIndex + 1).ToString();
+
+        EventHandler.CallUpdateColorEvent();
     }
 
     public void nextColor(int index)
@@ -176,6 +178,8 @@ public class BodyPartsSelection : MonoBehaviour
         SO_BodyPart newBodyPart = selection.bodyPartOptions[selection.bodyPartCurrentIndex];
         selection.bodyPartNameTextComponent.text = "Type " + (selection.bodyPartCurrentIndex + 1).ToString();
         characterBody.characterBodyParts[index].bodyPart = newBodyPart;
+
+        EventHandler.CallUpdateBodyPartEvent();
     }
 
     private bool ValidateIndexValue(int index)

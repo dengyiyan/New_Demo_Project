@@ -8,8 +8,8 @@ namespace MyProject.Transition
 {
     public class TransitionManager : MonoBehaviour
     {
-        [SceneName]
-        public string startSceneName = string.Empty;
+        //[SceneName]
+        //public string startSceneName = string.Empty;
 
         // private ConversationChecker conversationChecker;
         private CanvasGroup fadeCanvasGroup;
@@ -31,7 +31,7 @@ namespace MyProject.Transition
 
             // conversationChecker = GetComponent<ConversationChecker>();
 
-            StartCoroutine(LoadSceneSetActive(startSceneName));
+            // StartCoroutine(LoadSceneSetActive(startSceneName));
 
         }
 
@@ -64,10 +64,10 @@ namespace MyProject.Transition
 
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            if (scene.name == startSceneName)
-            {
-                EventHandler.CallAfterSceneLoadEvent();
-            }
+            //if (scene.name == startSceneName)
+            //{
+            //    EventHandler.CallAfterSceneLoadEvent();
+            //}
         }
 
         private void OnEndGameEvent()
@@ -77,7 +77,7 @@ namespace MyProject.Transition
 
         private void OnStartNewGameEvent(int obj)
         {
-            StartCoroutine(LoadSaveDataScene(startSceneName));
+            // StartCoroutine(LoadSaveDataScene(startSceneName));
         }
 
 

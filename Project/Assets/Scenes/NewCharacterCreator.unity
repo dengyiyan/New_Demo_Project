@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c8bff22e35a514ab49cbb1cdb75488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneTo: StartScene
+  SceneTo: PhotoUpload
 --- !u!1 &263610476
 GameObject:
   m_ObjectHideFlags: 0

@@ -18,7 +18,7 @@ public class InteractableObject : MonoBehaviour
 
     private static InteractableObject currentHoveredObject = null;
 
-    private void Awake()
+    private void Start()
     {
         door = GetComponent<Door>();
         npc = GetComponent<NPC>();

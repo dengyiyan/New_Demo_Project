@@ -376,7 +376,7 @@ public class AnimationManager : MonoBehaviour
     public void PlaySequence(AnimationSequence sequence)
     {
         animator.SetBool("isWalking", false);
-        
+
         //var sequence = sequences.Find(seq => seq.sequenceName == sequenceName);
         //if (sequence != null && !GameStateManager.IsSequencePlayed(sequenceName))
         //{
@@ -449,7 +449,12 @@ public class AnimationManager : MonoBehaviour
             if (npcs.TryGetValue(step.npcName, out GameObject npc))
             {
                 Debug.Log(step.animationType);
-                AnimationMovement movementScript = npc.GetComponent<AnimationMovement>(); 
+                AnimationMovement movementScript = npc.GetComponent<AnimationMovement>();
+
+                if (movementScript == null)
+                {
+                    Debug.LogWarning("movement missing");
+                }
                 if (step.animationType == AnimationType.Movement)
                 {
                     yield return StartCoroutine(HandleMovementStep(movementScript, step));

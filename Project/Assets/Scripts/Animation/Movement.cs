@@ -21,9 +21,14 @@ public class AnimationMovement : MonoBehaviour
 
     private bool shouldFlip = false;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         animator = GetComponent<Animator>();
+
+        if (animator == null)
+        {
+            Debug.LogWarning("animator missing in movement start method!!!");
+        }
         myRigidbody = GetComponent<Rigidbody2D>();
 
         if (isPlayer())
@@ -35,7 +40,7 @@ public class AnimationMovement : MonoBehaviour
             pantsRenderer = gameObject.transform.Find("Pants").GetComponent<SpriteRenderer>();
         }
 
-        animator = GetComponent<Animator>();
+        // animator = GetComponent<Animator>();
         // myRigidbody.interpolation = RigidbodyInterpolation2D.Interpolate;
     }
 
@@ -127,6 +132,11 @@ public class AnimationMovement : MonoBehaviour
 
     public int GetLayerIndex(Animator animator, string layerName)
     {
+
+        if (animator == null)
+        {
+            Debug.LogWarning("animator missing in movement");
+        }
         for (int i = 0; i < animator.layerCount; i++)
         {
             if (animator.GetLayerName(i) == layerName)

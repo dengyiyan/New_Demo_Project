@@ -10,10 +10,21 @@ public class NPC : MonoBehaviour
     private Animator animator;
     private GameObject player;
 
+    private SpriteRenderer bodyRenderer;
+    private SpriteRenderer armsRenderer;
+    private SpriteRenderer hairRenderer;
+    private SpriteRenderer pantsRenderer;
+
     private void Start()
     {
         animator = GetComponentInParent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
+
+
+        bodyRenderer = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
+        armsRenderer = gameObject.transform.Find("Arms").GetComponent<SpriteRenderer>();
+        hairRenderer = gameObject.transform.Find("Hair").GetComponent<SpriteRenderer>();
+        pantsRenderer = gameObject.transform.Find("Pants").GetComponent<SpriteRenderer>();
     }
 
     public void StartConversation()
@@ -30,6 +41,18 @@ public class NPC : MonoBehaviour
         {
             animator.SetFloat("moveX", direction.x);
             animator.SetFloat("moveY", direction.y);
+
+            bool flag = direction.x < 0;
+
+            if (bodyRenderer)
+                bodyRenderer.flipX = flag;
+            if (armsRenderer)
+                armsRenderer.flipX = flag;
+            if (hairRenderer)
+                hairRenderer.flipX = flag;
+            if (pantsRenderer)
+                pantsRenderer.flipX = flag;
+
             animator.SetBool("isWalking", false);
         }
     }

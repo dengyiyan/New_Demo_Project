@@ -202,6 +202,8 @@ public class DialogueManager : MonoBehaviour
     {
         if (isShowing)
             return;
+        if (conversation.conversationDialogues.Length == 0)
+            return;
         Debug.Log("Conversation Started!");
         if (dialogues == null)
         {
@@ -213,6 +215,7 @@ public class DialogueManager : MonoBehaviour
         currentConversationID = conversation.ID;
 
         isShowing = true;
+
         if (currentDialogues[0].triggers == null)
         {
             dialoguePanel.SetActive(true);

@@ -312,6 +312,22 @@ public class AnimationManager : MonoBehaviour
     [SerializeField] private PlayableDirector playableDirector;
 
 
+    private void Awake()
+    {
+        npcs = new Dictionary<string, GameObject>();
+
+        player = GameObject.FindGameObjectWithTag("Player");
+        animator = player.GetComponent<Animator>();
+
+        playableDirector = FindObjectOfType<PlayableDirector>();
+        dialogueManager = FindObjectOfType<DialogueManager>();
+
+        foreach (var npc in FindObjectsOfType<AnimationMovement>())
+        {
+            npcs[npc.name] = npc.gameObject;
+        }
+    }
+
     private void Start()
     {
         npcs = new Dictionary<string, GameObject>();
@@ -375,6 +391,9 @@ public class AnimationManager : MonoBehaviour
 
     public void PlaySequence(AnimationSequence sequence)
     {
+        EventHandler.CallIncreaseDisableEvent();
+        EventHandler.CallDisableCursorEvent();
+        Debug.Log("Disable cursor in Animation Manager!");
         animator.SetBool("isWalking", false);
 
         //var sequence = sequences.Find(seq => seq.sequenceName == sequenceName);
@@ -435,9 +454,9 @@ public class AnimationManager : MonoBehaviour
     }
     private IEnumerator PlaySequenceCoroutine(AnimationSequence sequence)
     {
-        EventHandler.CallDisableCursorEvent();
-        Debug.Log("Disable cursor in Animation Manager!");
 
+        // EventHandler.CallDisableCursorEvent();
+        // Debug.Log("Disable cursor in Animation Manager!");
 
         Debug.Log($"Playing sequence {sequence.sequenceName}");
         GameStateManager.MarkSequencePlayed(sequence.sequenceName);
@@ -501,12 +520,12 @@ public class AnimationManager : MonoBehaviour
 
 
         // uiController.OnAnimationEnd();
-        if (!dialogueManager.GetIsShowing())
-        {
-            EventHandler.CallEnablePlayerMovementEvent();
-            EventHandler.CallEnableCursorEvent();
-            Debug.Log("Enable cursor in Animation Manager!");
-        }
+        //if (!dialogueManager.GetIsShowing())
+        // {
+        EventHandler.CallDecreaseDisableEvent();
+        EventHandler.CallEnableCursorEvent();
+        Debug.Log("Enable cursor in Animation Manager!");
+        // }
     }
 
     private IEnumerator HandleAnimationStep(AnimationMovement npc, AnimationStep step)
@@ -622,11 +641,11 @@ public class AnimationManager : MonoBehaviour
     {
         if (activeSteps.Count > 0 || dialogueManager.GetIsShowing())
         {
-            EventHandler.CallDisablePlayerMovementEvent();
+            EventHandler.CallIncreaseDisableEvent();
         }
         else
         {
-            EventHandler.CallEnablePlayerMovementEvent();
+            EventHandler.CallDecreaseDisableEvent();
         }
     }
 

@@ -80,14 +80,14 @@ public class PlayerMovement : MonoBehaviour
 
             //animator.SetTrigger("Move");
             animator.SetBool("isWalking", true);
-            myRigidbody.constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.FreezeRotation;
+            // myRigidbody.constraints = RigidbodyConstraints2D.None | RigidbodyConstraints2D.FreezeRotation;
             MoveCharacter();
         }
         else
         {
             //animator.SetTrigger("Idle");
             animator.SetBool("isWalking", false);
-            myRigidbody.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
+            // myRigidbody.constraints = RigidbodyConstraints2D.FreezePositionX | RigidbodyConstraints2D.FreezePositionY | RigidbodyConstraints2D.FreezeRotation;
         }
     }
 

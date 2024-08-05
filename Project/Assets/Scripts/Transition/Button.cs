@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class ButtonClick : MonoBehaviour
 {
     private Button myButton;
-    [SceneName] public string SceneTo; 
+    [SceneName] public string SceneTo;
+    public string SpawnID;
 
     void Awake()
     {
@@ -23,6 +24,6 @@ public class ButtonClick : MonoBehaviour
 
     void OnButtonClick()
     {
-        EventHandler.CallTransitionEvent(SceneTo, null);
+        EventHandler.CallTransitionEvent(SceneTo, SpawnID);
     }
 }

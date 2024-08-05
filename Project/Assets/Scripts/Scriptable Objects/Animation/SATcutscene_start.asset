@@ -16,14 +16,173 @@ MonoBehaviour:
   steps:
   - npcName: Player
     points: []
-    trigger: wait
-    waitForCompletion: 0
+    trigger: 
+    waitForCompletion: 1
     conversation:
-      conversationDialogues: []
-      ID: 
-    waitForConversationEnd: 0
+      conversationDialogues:
+      - speakerName: Player
+        text: 
+        choices: []
+        nextIndex: 1
+        triggers:
+        - characterName: Player
+          triggerName: wait
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Player
+        text: This is... my home?
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Player
+        text: I must have missed the past days so much...
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Player
+        text: How I wish things are still the same...
+        choices: []
+        nextIndex: 4
+        triggers:
+        - characterName: Player
+          triggerName: upset
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Familiar Voice
+        text: 'I know you are deeply traumatized, sweetheart. '
+        choices: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Familiar Voice
+        text: 'Here is your safe place, your forever home. '
+        choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Familiar Voice
+        text: 'This place is to help you heal yourself. '
+        choices: []
+        nextIndex: 7
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Familiar Voice
+        text: Let's begin the Self-Attachment Technique exercises.
+        choices: []
+        nextIndex: 8
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Childhood Self
+        text: Hi! Do you want to play with me?
+        choices: []
+        nextIndex: 9
+        triggers:
+        - characterName: Childhood Self
+          triggerName: cute
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      ID: SAT_starting
+    waitForConversationEnd: 1
     allowPlayerMove: 0
-    animationType: 1
+    animationType: 3
     boolParameters: []
     nextScene: 
     spawnID: 

@@ -8,8 +8,8 @@ namespace MyProject.Transition
 {
     public class TransitionManager : MonoBehaviour
     {
-        //[SceneName]
-        //public string startSceneName = string.Empty;
+        [SceneName]
+        public string startSceneName = string.Empty;
 
         // private ConversationChecker conversationChecker;
         private CanvasGroup fadeCanvasGroup;
@@ -27,11 +27,12 @@ namespace MyProject.Transition
 
         private void Start()
         {
-            fadeCanvasGroup = FindObjectOfType<CanvasGroup>();
+            GameObject loadingPanel = GameObject.FindGameObjectWithTag("Loading");
+            fadeCanvasGroup = loadingPanel.GetComponent<CanvasGroup>();
 
             // conversationChecker = GetComponent<ConversationChecker>();
 
-            // StartCoroutine(LoadSceneSetActive(startSceneName));
+            StartCoroutine(LoadSceneSetActive(startSceneName));
 
         }
 

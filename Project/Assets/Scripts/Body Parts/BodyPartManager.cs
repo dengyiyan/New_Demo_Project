@@ -20,6 +20,12 @@ public class BodyPartManager : MonoBehaviour
     private Dictionary<string, AnimationClip> animationCache = new Dictionary<string, AnimationClip>();
 
 
+    private SpriteRenderer bodyRenderer;
+    private SpriteRenderer armsRenderer;
+    private SpriteRenderer hairRenderer;
+    private SpriteRenderer pantsRenderer;
+
+
     //public SO_BodyPart[] allParts;
 
     //private void Awake()
@@ -41,6 +47,19 @@ public class BodyPartManager : MonoBehaviour
 
         UpdateBodyPart();
         ApplyColor();
+
+        bodyRenderer = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
+
+        armsRenderer = gameObject.transform.Find("Arms").GetComponent<SpriteRenderer>();
+        hairRenderer = gameObject.transform.Find("Hair").GetComponent<SpriteRenderer>();
+        pantsRenderer = gameObject.transform.Find("Pants").GetComponent<SpriteRenderer>();
+
+        bodyRenderer.flipX = false;
+        armsRenderer.flipX = false;
+        hairRenderer.flipX = false;
+        pantsRenderer.flipX = false;
+
+
     }
 
     private void OnEnable()

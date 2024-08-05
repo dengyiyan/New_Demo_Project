@@ -17,6 +17,7 @@ public class CursorManager : MonoBehaviour
     // private float previousTransparency;
 
     private bool cursorEnable = true;
+    public int cursorDisableCount = 0;
 
     private void OnEnable()
     {
@@ -24,8 +25,8 @@ public class CursorManager : MonoBehaviour
         EventHandler.AfterSceneLoadEvent += OnAfterSceneLoadEvent;
         EventHandler.CursorChangeEvent += OnCursorChange;
 
-        EventHandler.EnableCursorEvent += SetCursorEnable;
-        EventHandler.DisableCursorEvent += SetCursorDisable;
+        EventHandler.EnableCursorEvent += DecreaseDisableCount;
+        EventHandler.DisableCursorEvent += IncreaseDisableCount;
     }
 
     private void OnDisable()
@@ -34,8 +35,8 @@ public class CursorManager : MonoBehaviour
         EventHandler.AfterSceneLoadEvent -= OnAfterSceneLoadEvent;
         EventHandler.CursorChangeEvent -= OnCursorChange;
 
-        EventHandler.EnableCursorEvent -= SetCursorEnable;
-        EventHandler.DisableCursorEvent -= SetCursorDisable;
+        EventHandler.EnableCursorEvent -= DecreaseDisableCount;
+        EventHandler.DisableCursorEvent -= IncreaseDisableCount;
     }
 
     private void Awake()
@@ -132,6 +133,7 @@ public class CursorManager : MonoBehaviour
     {
         SetCursor(defaultCursorTexture);
         SetCursorDisable();
+        cursorDisableCount = 0;
     }
 
     private void SetCursorDisable()
@@ -144,6 +146,7 @@ public class CursorManager : MonoBehaviour
     {
         SetCursor(defaultCursorTexture);
         SetCursorEnable();
+        cursorDisableCount = 0;
     }
 
     private void SetCursorEnable()
@@ -154,6 +157,29 @@ public class CursorManager : MonoBehaviour
         cursorEnable = true;
     }
 
+    private void IncreaseDisableCount()
+    {
+        cursorDisableCount++;
+        OnCountChange();
+    }
+
+    private void DecreaseDisableCount()
+    {
+        cursorDisableCount--;
+        OnCountChange();
+    }
+
+    private void OnCountChange()
+    {
+        if (cursorDisableCount > 0)
+        {
+            SetCursorDisable();
+        }
+        else
+        {
+            SetCursorEnable();
+        }
+    }
 
     private void OnCursorChange(InteractionType type, bool isValid)
     {

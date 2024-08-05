@@ -13,4 +13,6 @@ public static class Settings
 
     public const string MerchantName = "Morris";
     public const string MerchantCode = "The suspicious merchant";
+
+    public const string ChildhoodSelfCode = "???";
 }

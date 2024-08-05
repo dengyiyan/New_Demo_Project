@@ -25,3 +25,10 @@ public enum Direction
     Right,
     // Add other animation types as needed
 }
+
+public enum ImageType
+{
+    Sad,
+    Cry,
+    Happy,
+}

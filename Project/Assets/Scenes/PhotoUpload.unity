@@ -1010,6 +1010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneTo: NewCharacterCreator
+  SpawnID: 
 --- !u!1 &1376551570
 GameObject:
   m_ObjectHideFlags: 0
@@ -1340,7 +1341,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 1
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 16
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
@@ -1370,8 +1371,8 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 10
+  m_SortingLayerID: -716912003
+  m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!224 &1733269619
 RectTransform:
@@ -1609,6 +1610,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneTo: StartScene
+  SpawnID: 
 --- !u!1 &1762295749
 GameObject:
   m_ObjectHideFlags: 0

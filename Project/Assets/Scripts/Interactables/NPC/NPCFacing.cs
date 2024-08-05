@@ -18,12 +18,14 @@ public class NPCFacing : MonoBehaviour
     {
         animator = GetComponent<Animator>();
 
+        if (gameObject.transform.Find("Body"))
+        {
+            bodyRenderer = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
 
-        bodyRenderer = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
-
-        armsRenderer = gameObject.transform.Find("Arms").GetComponent<SpriteRenderer>();
-        hairRenderer = gameObject.transform.Find("Hair").GetComponent<SpriteRenderer>();
-        pantsRenderer = gameObject.transform.Find("Pants").GetComponent<SpriteRenderer>();
+            armsRenderer = gameObject.transform.Find("Arms").GetComponent<SpriteRenderer>();
+            hairRenderer = gameObject.transform.Find("Hair").GetComponent<SpriteRenderer>();
+            pantsRenderer = gameObject.transform.Find("Pants").GetComponent<SpriteRenderer>();
+        }
 
         SetFacingDirection(defaultFacingDirection);
     }

@@ -157,6 +157,14 @@ public class DialogueManager : MonoBehaviour
                 name = Settings.MerchantCode;
             }
         }
+        else if (speakerName == "Childhood Self")
+        {
+            if (!GameStateManager.GetBool("RecognizeChildhoodSelf"))
+            {
+                name = Settings.ChildhoodSelfCode;
+            }
+            else name = speakerName;
+        }
         else
         {
             name = speakerName;
@@ -177,7 +185,7 @@ public class DialogueManager : MonoBehaviour
         StopAllCoroutines();
         StartCoroutine(TypeSentence(ReplaceWithNames(message), null));
 
-        EventHandler.CallDisablePlayerMovementEvent();
+        EventHandler.CallIncreaseDisableEvent();
         EventHandler.CallDisableCursorEvent();
         Debug.Log("Disable cursor in Dialogue Manager!");
 
@@ -191,7 +199,7 @@ public class DialogueManager : MonoBehaviour
         isShowing = false;
         isShowingMessage = false;
         dialoguePanel.SetActive(false);
-        EventHandler.CallEnablePlayerMovementEvent();
+        EventHandler.CallDecreaseDisableEvent();
         EventHandler.CallEnableCursorEvent();
         Debug.Log("Enable cursor in Dialogue Manager!");
 
@@ -222,7 +230,7 @@ public class DialogueManager : MonoBehaviour
             Debug.Log($"isShowing is set to {isShowing}");
         }
 
-        EventHandler.CallDisablePlayerMovementEvent();
+        EventHandler.CallIncreaseDisableEvent();
         EventHandler.CallDisableCursorEvent();
         Debug.Log("Disable cursor in Dialogue Manager!");
 
@@ -240,7 +248,7 @@ public class DialogueManager : MonoBehaviour
 
         GameStateManager.MarkConversationCompleted(currentConversationID);
 
-        EventHandler.CallEnablePlayerMovementEvent();
+        EventHandler.CallDecreaseDisableEvent();
         EventHandler.CallEnableCursorEvent();
         Debug.Log("Enable cursor in Dialogue Manager!");
 
@@ -378,6 +386,7 @@ public class DialogueManager : MonoBehaviour
         if (!string.IsNullOrEmpty(dialogue.text))
         {
             nameText.text = getTrueSpeakerName(dialogue.speakerName);
+            Debug.Log($"{dialogue.speakerName}");
             dialoguePanel.SetActive(true);
             isShowing = true;
             Debug.Log($"isShowing is set to {isShowing}");

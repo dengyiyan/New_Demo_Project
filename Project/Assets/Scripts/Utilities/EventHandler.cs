@@ -27,6 +27,30 @@ public static class EventHandler
         UpdateColorEvent?.Invoke(); 
     }
 
+    public static event Action IncreaseDisableEvent;
+    public static void CallIncreaseDisableEvent()
+    {
+        IncreaseDisableEvent?.Invoke();
+    }
+
+    public static event Action DecreaseDisableEvent;
+    public static void CallDecreaseDisableEvent()
+    {
+        DecreaseDisableEvent?.Invoke();
+    }
+
+    public static event Action<ImageType> ShowImageEvent;
+    public static void CallShowImageEvent(ImageType type)
+    {
+        ShowImageEvent?.Invoke(type);
+    }
+
+    public static event Action HideImageEvent;
+    public static void CallHideImageEvent()
+    {
+        HideImageEvent?.Invoke(); 
+    }
+
     public static event Action<Direction> PlayerFaceEvent;
     public static void CallPlayerFaceEvent(Direction direction)
     {

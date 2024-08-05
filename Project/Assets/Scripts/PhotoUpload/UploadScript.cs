@@ -93,12 +93,45 @@ public class UploadScript : MonoBehaviour
 
     void DisplayImageFromBytes(byte[] imageBytes)
     {
-        Texture2D texture = new Texture2D(2, 2);
-        if (ImageConversion.LoadImage(texture, imageBytes))
+        if (imageBytes == null || imageBytes.Length == 0)
         {
+            Debug.LogError("Image bytes are null or empty!");
+            return;
+        }
+
+        Debug.Log($"Image bytes length: {imageBytes.Length}");
+
+        // Log the first few bytes to check if they match the expected file signature
+        for (int i = 0; i < Mathf.Min(imageBytes.Length, 10); i++)
+        {
+            Debug.Log($"Byte {i}: {imageBytes[i]:X2}");
+        }
+
+        Texture2D texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
+        bool isLoaded = ImageConversion.LoadImage(texture, imageBytes);
+
+        Debug.Log($"Image loaded: {isLoaded}, Width: {texture.width}, Height: {texture.height}");
+
+        if (isLoaded)
+        {
+            GameStateManager.SaveImage(texture);
+
             Debug.Log("Loaded image successfully!");
             Sprite newSprite = Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f);
             image.sprite = newSprite;
+
+            // Adjust the Image component's rectTransform to match the aspect ratio of the uploaded image
+            float aspectRatio = (float)texture.width / texture.height;
+            RectTransform rectTransform = image.GetComponent<RectTransform>();
+
+            if (aspectRatio > 1) // Wider than tall
+            {
+                rectTransform.sizeDelta = new Vector2(300, 300 / aspectRatio);
+            }
+            else // Taller than wide or square
+            {
+                rectTransform.sizeDelta = new Vector2(200 * aspectRatio, 200);
+            }
         }
         else
         {

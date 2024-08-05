@@ -8,11 +8,18 @@ public static class GameStateManager
 {
     public static string PlayerName { get; set; } = "Jack";
 
+    //private static bool PlayerCanMove = false;
+
+    private static Texture2D UploadedImage;
+    private static Texture2D HappyImage;
+    private static Texture2D SadImage;
+
     private static Dictionary<string, bool> gameBools = new Dictionary<string, bool>
     {
         {"HasFlower", false},
         {"SisterReceiveFlower", false},
-        {"MerchantShowHisName", false }
+        {"MerchantShowHisName", false },
+        {"RecognizeChildhoodSelf", false},
     };
     private static Dictionary<string, Vector3> scenePlayerPositions = new Dictionary<string, Vector3>();
     private static Dictionary<string, Dictionary<string, NPCState>> sceneNPCStates = new Dictionary<string, Dictionary<string, NPCState>>();
@@ -22,6 +29,35 @@ public static class GameStateManager
     private static HashSet<string> itemPicked = new HashSet<string>();
 
     // private const string DefaultSpawnPoint = "default";
+
+    //public static bool GetPlayerCanMove()
+    //{
+    //    return PlayerCanMove; 
+    //}
+
+    //public static void SetPlayerCanMove()
+
+    public static void SaveImage(Texture2D image)
+    {
+        UploadedImage = image;
+        HappyImage = image;
+        SadImage = image;
+    }
+
+    public static Texture2D GetImage(ImageType type)
+    {
+        switch (type)
+        {
+            case ImageType.Happy:
+                return HappyImage;
+            case ImageType.Sad:
+                return SadImage;
+            default:
+                return UploadedImage;
+        }
+
+    }
+
     public static void SetBool(string key, bool value)
     {
         gameBools[key] = value;

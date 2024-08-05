@@ -39,6 +39,9 @@ EditorBuildSettings:
     path: Assets/Scenes/HeroHouse_Night_After_Genocide.unity
     guid: 2ddd319b42b64054da8b38044e93de39
   - enabled: 1
+    path: Assets/Scenes/HeroHouse_SAT_Exercise1.unity
+    guid: b3f1bcdb09f93b54f9f0b6242ff242ff
+  - enabled: 1
     path: Assets/Scenes/NewCharacterCreator.unity
     guid: 61545a8734a1edc4a8d7e3e6be2f6bc0
   - enabled: 1

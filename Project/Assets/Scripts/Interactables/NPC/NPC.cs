@@ -20,11 +20,14 @@ public class NPC : MonoBehaviour
         animator = GetComponentInParent<Animator>();
         player = GameObject.FindGameObjectWithTag("Player");
 
+        if (gameObject.transform.Find("Body"))
+        {
+            bodyRenderer = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
+            armsRenderer = gameObject.transform.Find("Arms").GetComponent<SpriteRenderer>();
+            hairRenderer = gameObject.transform.Find("Hair").GetComponent<SpriteRenderer>();
+            pantsRenderer = gameObject.transform.Find("Pants").GetComponent<SpriteRenderer>();
 
-        bodyRenderer = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
-        armsRenderer = gameObject.transform.Find("Arms").GetComponent<SpriteRenderer>();
-        hairRenderer = gameObject.transform.Find("Hair").GetComponent<SpriteRenderer>();
-        pantsRenderer = gameObject.transform.Find("Pants").GetComponent<SpriteRenderer>();
+        }
     }
 
     public void StartConversation()

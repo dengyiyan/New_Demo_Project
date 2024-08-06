@@ -10,59 +10,52 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
-  m_Name: SATexercise2
+  m_Name: SAT_Dance
   m_EditorClassIdentifier: 
-  sequenceName: sat_exercise2
+  sequenceName: dance
   steps:
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 6
+    boolParameters:
+    - parameterName: isPlayingMusic
+      value: 1
+    nextScene: 
+    spawnID: 
+    direction: 0
+  - npcName: Childhood Self
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 6
+    boolParameters:
+    - parameterName: isDancing
+      value: 1
+    nextScene: 
+    spawnID: 
+    direction: 0
   - npcName: Player
     points: []
     trigger: 
     waitForCompletion: 1
     conversation:
       conversationDialogues:
-      - speakerName: Familiar Voice
-        text: Now keep on imagine the four scenarios, and reflect on your feelings.
-        choices:
-        - choiceText: Being near to your childhood self
-          nextIndex: 1
-          triggerPickUp: 0
-          investObject: {fileID: 0}
-          conditions: []
-          counterAdders:
-          - counterName: Excercise2Completed
-            itemName: near
-        - choiceText: Embrace your childhood self
-          nextIndex: 2
-          triggerPickUp: 0
-          investObject: {fileID: 0}
-          conditions: []
-          counterAdders:
-          - counterName: Excercise2Completed
-            itemName: embracing
-        - choiceText: Playing with your childhood self
-          nextIndex: 3
-          triggerPickUp: 0
-          investObject: {fileID: 0}
-          conditions: []
-          counterAdders:
-          - counterName: Excercise2Completed
-            itemName: playing
-        - choiceText: Dancing with your childhood self
-          nextIndex: 4
-          triggerPickUp: 0
-          investObject: {fileID: 0}
-          conditions: []
-          counterAdders:
-          - counterName: Excercise2Completed
-            itemName: dancing
-        - choiceText: I have Finished!
-          nextIndex: 5
-          triggerPickUp: 0
-          investObject: {fileID: 0}
-          conditions:
-          - parameterName: Excercise2Completed
-            value: 1
-          counterAdders: []
+      - speakerName: Childhood Self
+        text: Thanks for being willing to dance with me! I haven't been this happy
+          for quite a while!
+        choices: []
         nextIndex: 1
         triggers: []
         requirements: []
@@ -78,9 +71,57 @@ MonoBehaviour:
         spawnID: 
         direction: 0
       - speakerName: Familiar Voice
-        text: You are already near your childhood self! What do you feel?
+        text: You seem to be having a great time dancing with the child. How do you
+          feel right now? Please keep in mind it is vital that you bond deep with
+          your inner child.
         choices: []
-        nextIndex: 0
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Familiar Voice
+        text: We shall proceed whenever you are ready.
+        choices:
+        - choiceText: I am ready to proceed!
+          nextIndex: 3
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: Not yet
+          nextIndex: 5
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Familiar Voice
+        text: Good job keeping up, sweetheart.
+        choices: []
+        nextIndex: 4
         triggers: []
         requirements: []
         divergence:
@@ -108,47 +149,13 @@ MonoBehaviour:
           elseIndex: 0
         actions: []
         boolParameters: []
-        sceneTo: SAT_embrace
-        spawnID: 6
-        direction: 4
-      - speakerName: 
-        text: 
-        choices: []
-        nextIndex: 999
-        triggers: []
-        requirements: []
-        divergence:
-          parameter:
-            parameterName: 
-            value: 0
-          nextIndex: 0
-          elseIndex: 0
-        actions: []
-        boolParameters: []
-        sceneTo: SAT_embrace
-        spawnID: 6
-        direction: 4
-      - speakerName: 
-        text: 
-        choices: []
-        nextIndex: 999
-        triggers: []
-        requirements: []
-        divergence:
-          parameter:
-            parameterName: 
-            value: 0
-          nextIndex: 0
-          elseIndex: 0
-        actions: []
-        boolParameters: []
-        sceneTo: SAT_dance
-        spawnID: 7
+        sceneTo: HeroHouse_SAT_Exercise2
+        spawnID: 5
         direction: 1
       - speakerName: Familiar Voice
-        text: Good job finishin exercise 2!
+        text: Take your time, darling.
         choices: []
-        nextIndex: 999
+        nextIndex: 2
         triggers: []
         requirements: []
         divergence:
@@ -162,13 +169,29 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
-      ID: SAT_exercise2
+      ID: embrace_childhood_self
     waitForConversationEnd: 1
     allowPlayerMove: 0
     animationType: 3
     boolParameters: []
     nextScene: 
     spawnID: 
+    direction: 0
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 4
+    boolParameters:
+    - parameterName: isPlayingMusic
+      value: 0
+    nextScene: HeroHouse_SAT_Exercise2
+    spawnID: 5
     direction: 0
   conditions:
     conditions: []

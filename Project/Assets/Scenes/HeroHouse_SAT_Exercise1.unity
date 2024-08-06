@@ -17613,7 +17613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[13].text
-      value: Play dancing animation
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[11].sceneTo
@@ -17622,6 +17622,14 @@ PrefabInstance:
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[11].spawnID
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[13].sceneTo
+      value: SAT_dance
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[13].spawnID
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[0].nextIndex
@@ -17680,8 +17688,12 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[13].direction
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[13].nextIndex
-      value: 9
+      value: 999
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[0].speakerName
@@ -17737,7 +17749,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[13].speakerName
-      value: Familiar Voice
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[2].actions.Array.size

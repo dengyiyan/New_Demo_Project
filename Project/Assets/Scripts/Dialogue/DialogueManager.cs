@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.Rendering;
 using UnityEngine.UI;
 
 public class DialogueManager : MonoBehaviour
@@ -452,11 +453,31 @@ public class DialogueManager : MonoBehaviour
 
         foreach (DialogueChoice choice in choices)
         {
-            Button choiceButton = Instantiate(choiceButtonPrefab, choicePanel.transform);
-            choiceButton.GetComponentInChildren<Text>().text = choice.choiceText;
-            choiceButton.onClick.AddListener(() => OnChoiceSelected(choice));
-            buttons.Add(choiceButton);
+            if (choice.conditions != null && choice.conditions.Count == 0)
+            {
+                DisplayButton(choice);
+            }
+            else
+            {
+                foreach (BooleanParameter condition in choice.conditions)
+                {
+                    if (GameStateManager.GetBool(condition.parameterName))
+                    {
+                        DisplayButton(choice);
+                    }
+                }
+            }
         }
+
+
+    }
+
+    private void DisplayButton(DialogueChoice choice)
+    {
+        Button choiceButton = Instantiate(choiceButtonPrefab, choicePanel.transform);
+        choiceButton.GetComponentInChildren<Text>().text = choice.choiceText;
+        choiceButton.onClick.AddListener(() => OnChoiceSelected(choice));
+        buttons.Add(choiceButton);
     }
 
     private void OnChoiceSelected(DialogueChoice choice)
@@ -465,6 +486,15 @@ public class DialogueManager : MonoBehaviour
         {
             choice.investObject.PickUp();
         }
+
+        if (choice.counterAdders != null && choice.counterAdders.Count > 0)
+        {
+            foreach (CounterAdder counterAdder in choice.counterAdders)
+            {
+                GameStateManager.AddCounter(counterAdder.counterName, counterAdder.itemName);
+            }
+        }
+
         choicePanel.SetActive(false);
         isChoiceActivated = false;
         currentDialogueIndex = choice.nextIndex;

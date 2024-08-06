@@ -1,0 +1,157 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
+  m_Name: SATexercise2
+  m_EditorClassIdentifier: 
+  sequenceName: sat_exercise2
+  steps:
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: Familiar Voice
+        text: Now experience the four phases, and relect on your feelings.
+        choices:
+        - choiceText: Near me
+          nextIndex: 1
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders:
+          - counterName: Excercise2Completed
+            itemName: near
+        - choiceText: embracing
+          nextIndex: 2
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders:
+          - counterName: Excercise2Completed
+            itemName: embracing
+        - choiceText: playing
+          nextIndex: 3
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders:
+          - counterName: Excercise2Completed
+            itemName: playing
+        - choiceText: dancing
+          nextIndex: 4
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders:
+          - counterName: Excercise2Completed
+            itemName: dancing
+        - choiceText: Finish!
+          nextIndex: 999
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions:
+          - parameterName: Excercise2Completed
+            value: 1
+          counterAdders: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: SAT_embrace
+        spawnID: 6
+        direction: 4
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: SAT_embrace
+        spawnID: 6
+        direction: 4
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: SAT_embrace
+        spawnID: 6
+        direction: 4
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: SAT_embrace
+        spawnID: 6
+        direction: 4
+      ID: SAT_exercise2
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+  conditions:
+    conditions: []

@@ -42,6 +42,12 @@ EditorBuildSettings:
     path: Assets/Scenes/HeroHouse_SAT_Exercise1.unity
     guid: b3f1bcdb09f93b54f9f0b6242ff242ff
   - enabled: 1
+    path: Assets/Scenes/HeroHouse_SAT_Exercise2.unity
+    guid: 3ddcd06e16c55054688d0266aabdec1c
+  - enabled: 1
+    path: Assets/Scenes/SAT_embrace.unity
+    guid: 397a49c0be0a7824fb0113b3212bd9b9
+  - enabled: 1
     path: Assets/Scenes/NewCharacterCreator.unity
     guid: 61545a8734a1edc4a8d7e3e6be2f6bc0
   - enabled: 1

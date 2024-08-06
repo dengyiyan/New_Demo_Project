@@ -3310,7 +3310,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &574559181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3325,7 +3325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequences: []
   dialogueManager: {fileID: 0}
-  startingSequence: {fileID: 11400000, guid: 8f81c390dd7a32741a7d9898a02c8db4, type: 2}
+  startingSequence: {fileID: 11400000, guid: 366bf85e7342ccc44a5904a2464fc59d, type: 2}
   isAnimationPlaying: 0
   playableDirector: {fileID: 0}
 --- !u!4 &574559182
@@ -16742,6 +16742,1587 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2305340370155503611, guid: ec08d02b33a926a44b548ca15251a40b, type: 3}
   m_PrefabInstance: {fileID: 3182622677690314288}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1606743644
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 525820204840301977, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 22100000, guid: ac4ee3eed12eb1f468bc65cd00072603, type: 2}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2511781661494984817, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_Name
+      value: Childhood Self
+      objectReference: {fileID: 0}
+    - target: {fileID: 2511781661494984817, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5160527352409084950, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5160527352409084950, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: defaultFacingDirection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886271517280261054, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: characterStates.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7886271517280261054, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: characterStates.Array.data[2]
+      value: Hug
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: defaultFacingDirection
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].text
+      value: Now experience the four phases, and relect on your feelings.
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].text
+      value: Play near me animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].text
+      value: Play embracing animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].text
+      value: Play playing animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].text
+      value: Play dancing animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].text
+      value: Play dancing animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].text
+      value: Play dancing animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].text
+      value: Play dancing animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].text
+      value: Play dancing animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].text
+      value: Play dancing animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[10].text
+      value: Play dancing animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[11].text
+      value: Play dancing animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[12].text
+      value: Play dancing animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[13].text
+      value: Play dancing animation
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].nextIndex
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].nextIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].nextIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].nextIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].nextIndex
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].nextIndex
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].nextIndex
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].nextIndex
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].nextIndex
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].nextIndex
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[10].nextIndex
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[11].nextIndex
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[12].nextIndex
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[13].nextIndex
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].speakerName
+      value: Familiar Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].speakerName
+      value: Familiar Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].speakerName
+      value: Familiar Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].speakerName
+      value: Familiar Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].speakerName
+      value: Familiar Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].speakerName
+      value: Familiar Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].speakerName
+      value: Familiar Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].speakerName
+      value: Familiar Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].speakerName
+      value: Familiar Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].speakerName
+      value: Familiar Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[10].speakerName
+      value: Familiar Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[11].speakerName
+      value: Familiar Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[12].speakerName
+      value: Familiar Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[13].speakerName
+      value: Familiar Voice
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].actions.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].actions.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].actions.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].triggers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].triggers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].triggers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].triggers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].triggers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].triggers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[11].triggers.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[11].boolParameters.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].actions.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].actions.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].actions.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[0].nextIndex
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[1].nextIndex
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[2].nextIndex
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[3].nextIndex
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[4].nextIndex
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[0].nextIndex
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[1].nextIndex
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[2].nextIndex
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[3].nextIndex
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[4].nextIndex
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[0].nextIndex
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[1].nextIndex
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[2].nextIndex
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[3].nextIndex
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[4].nextIndex
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[0].nextIndex
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[1].nextIndex
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[2].nextIndex
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[3].nextIndex
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[4].nextIndex
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[0].nextIndex
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[1].nextIndex
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[2].nextIndex
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[3].nextIndex
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[4].nextIndex
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[0].nextIndex
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[1].nextIndex
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[2].nextIndex
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[3].nextIndex
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[4].nextIndex
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[0].nextIndex
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[1].nextIndex
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[2].nextIndex
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[3].nextIndex
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[4].nextIndex
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[0].nextIndex
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[1].nextIndex
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[2].nextIndex
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[3].nextIndex
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[4].nextIndex
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[0].nextIndex
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[1].nextIndex
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[2].nextIndex
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[3].nextIndex
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[4].nextIndex
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[0].nextIndex
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[1].nextIndex
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[2].nextIndex
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[3].nextIndex
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].nextIndex
+      value: 999
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[0].choiceText
+      value: Near me
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[1].choiceText
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[2].choiceText
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[3].choiceText
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[4].choiceText
+      value: Finished!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[0].choiceText
+      value: Near me
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[1].choiceText
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[2].choiceText
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[3].choiceText
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[4].choiceText
+      value: Finished!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[0].choiceText
+      value: Near me
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[1].choiceText
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[2].choiceText
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[3].choiceText
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[4].choiceText
+      value: Finished!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[0].choiceText
+      value: Near me
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[1].choiceText
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[2].choiceText
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[3].choiceText
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[4].choiceText
+      value: Finished!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[0].choiceText
+      value: Near me
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[1].choiceText
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[2].choiceText
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[3].choiceText
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[4].choiceText
+      value: Finished!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[0].choiceText
+      value: Near me
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[1].choiceText
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[2].choiceText
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[3].choiceText
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[4].choiceText
+      value: Finished!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[0].choiceText
+      value: Near me
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[1].choiceText
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[2].choiceText
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[3].choiceText
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[4].choiceText
+      value: Finished!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[0].choiceText
+      value: Near me
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[1].choiceText
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[2].choiceText
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[3].choiceText
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[4].choiceText
+      value: Finished!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[0].choiceText
+      value: Near me
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[1].choiceText
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[2].choiceText
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[3].choiceText
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[4].choiceText
+      value: Finished!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[0].choiceText
+      value: Near me
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[1].choiceText
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[2].choiceText
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[3].choiceText
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].choiceText
+      value: Finished!
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].triggers.Array.data[0].triggerName
+      value: question
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].triggers.Array.data[0].triggerName
+      value: question
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].triggers.Array.data[0].triggerName
+      value: surprise
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].triggers.Array.data[0].triggerName
+      value: surprise
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].triggers.Array.data[0].triggerName
+      value: surprise
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].triggers.Array.data[0].triggerName
+      value: surprise
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].actions.Array.data[0].parameterName
+      value: RecognizeChildhoodSelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].actions.Array.data[0].parameterName
+      value: RecognizeChildhoodSelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].actions.Array.data[0].parameterName
+      value: RecognizeChildhoodSelf
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].triggers.Array.data[0].characterName
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].triggers.Array.data[0].characterName
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].triggers.Array.data[0].characterName
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].triggers.Array.data[0].characterName
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].triggers.Array.data[0].characterName
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].triggers.Array.data[0].characterName
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[4].conditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[4].conditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[4].conditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[4].conditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[4].conditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[4].conditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[4].conditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[4].conditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[4].conditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].conditions.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[0].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[1].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[2].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[3].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[4].counterAdders.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[0].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[1].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[2].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[3].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[4].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[0].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[1].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[2].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[3].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[4].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[0].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[1].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[2].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[3].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[4].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[0].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[1].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[2].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[3].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[4].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[0].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[1].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[2].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[3].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[4].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[0].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[1].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[2].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[3].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[4].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[0].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[1].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[2].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[3].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[4].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[0].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[1].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[2].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[3].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[4].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[0].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[1].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[2].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[3].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].counterAdders.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[4].conditions.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[4].conditions.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[4].conditions.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[4].conditions.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[4].conditions.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[4].conditions.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[4].conditions.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[4].conditions.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[4].conditions.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].conditions.Array.data[0].value
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[0].counterAdders.Array.data[0].itemName
+      value: near
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[1].counterAdders.Array.data[0].itemName
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[2].counterAdders.Array.data[0].itemName
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[3].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[4].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[0].counterAdders.Array.data[0].itemName
+      value: near
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[1].counterAdders.Array.data[0].itemName
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[2].counterAdders.Array.data[0].itemName
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[3].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[4].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[0].counterAdders.Array.data[0].itemName
+      value: near
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[1].counterAdders.Array.data[0].itemName
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[2].counterAdders.Array.data[0].itemName
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[3].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[4].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[0].counterAdders.Array.data[0].itemName
+      value: near
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[1].counterAdders.Array.data[0].itemName
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[2].counterAdders.Array.data[0].itemName
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[3].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[4].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[0].counterAdders.Array.data[0].itemName
+      value: near
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[1].counterAdders.Array.data[0].itemName
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[2].counterAdders.Array.data[0].itemName
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[3].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[4].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[0].counterAdders.Array.data[0].itemName
+      value: near
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[1].counterAdders.Array.data[0].itemName
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[2].counterAdders.Array.data[0].itemName
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[3].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[4].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[0].counterAdders.Array.data[0].itemName
+      value: near
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[1].counterAdders.Array.data[0].itemName
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[2].counterAdders.Array.data[0].itemName
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[3].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[4].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[0].counterAdders.Array.data[0].itemName
+      value: near
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[1].counterAdders.Array.data[0].itemName
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[2].counterAdders.Array.data[0].itemName
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[3].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[4].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[0].counterAdders.Array.data[0].itemName
+      value: near
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[1].counterAdders.Array.data[0].itemName
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[2].counterAdders.Array.data[0].itemName
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[3].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[4].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[0].counterAdders.Array.data[0].itemName
+      value: near
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[1].counterAdders.Array.data[0].itemName
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[1].counterAdders.Array.data[1].itemName
+      value: embracing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[2].counterAdders.Array.data[0].itemName
+      value: playing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[3].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].counterAdders.Array.data[0].itemName
+      value: dancing
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[4].conditions.Array.data[0].parameterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[4].conditions.Array.data[0].parameterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[4].conditions.Array.data[0].parameterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[4].conditions.Array.data[0].parameterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[4].conditions.Array.data[0].parameterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[4].conditions.Array.data[0].parameterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[4].conditions.Array.data[0].parameterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[4].conditions.Array.data[0].parameterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[4].conditions.Array.data[0].parameterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].conditions.Array.data[0].parameterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[0].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[1].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[2].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[3].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[0].choices.Array.data[4].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[0].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[1].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[2].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[3].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[4].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[0].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[1].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[2].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[3].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[4].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[0].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[1].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[2].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[3].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[3].choices.Array.data[4].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[0].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[1].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[2].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[3].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[4].choices.Array.data[4].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[0].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[1].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[2].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[3].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[5].choices.Array.data[4].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[0].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[1].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[2].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[3].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[6].choices.Array.data[4].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[0].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[1].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[2].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[3].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[4].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[0].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[1].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[2].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[3].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[4].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[0].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[1].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[1].counterAdders.Array.data[1].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[2].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[3].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].counterAdders.Array.data[0].counterName
+      value: Excercise2Completed
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f574884dff7bbe046b0384028e06c764, type: 3}
 --- !u!1001 &1636690095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17448,538 +19029,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
---- !u!1001 &4182230274182291556
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 525820204840301977, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 22100000, guid: ac4ee3eed12eb1f468bc65cd00072603, type: 2}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 17
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2511781661494984817, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_Name
-      value: Childhood Self
-      objectReference: {fileID: 0}
-    - target: {fileID: 2511781661494984817, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5160527352409084950, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: defaultFacingDirection
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.size
-      value: 14
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[0].text
-      value: Who are you...?
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[1].text
-      value: You look just like me...
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].text
-      value: I am you! What kind of question am I asking? Haha!
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[3].text
-      value: I am the childish self inside you, always by your side.
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[4].text
-      value: You are... me?
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[5].text
-      value: Remember, to heal, you must reconnect with your inner child, with compassion
-        and love.
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[6].text
-      value: First, look at the photos of your childhood self. Try to recall the
-        memories you had, both sad and happy ones. You can get the photos by pressing
-        the button on the right.
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[7].text
-      value: 'We shall continue when you finish. '
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[8].text
-      value: Very well, sweetheart! let us move on to the second exercise!
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].text
-      value: Now imagine the four scenarios, and reflect on your feelings.
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[10].text
-      value: You are already near your childhood self! What do you feel?
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[11].text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[12].text
-      value: Play playing animation
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[13].text
-      value: Play dancing animation
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[11].sceneTo
-      value: SAT_embrace
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[11].spawnID
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[0].nextIndex
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[1].nextIndex
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].nextIndex
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[3].nextIndex
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[4].nextIndex
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[5].nextIndex
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[6].nextIndex
-      value: 7
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[7].nextIndex
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[8].nextIndex
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].nextIndex
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[10].nextIndex
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[11].direction
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[11].nextIndex
-      value: 999
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[12].nextIndex
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[13].nextIndex
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[0].speakerName
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[1].speakerName
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].speakerName
-      value: Childhood Self
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[3].speakerName
-      value: Childhood Self
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[4].speakerName
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[5].speakerName
-      value: Familiar Voice
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[6].speakerName
-      value: Familiar Voice
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[7].speakerName
-      value: Familiar Voice
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[8].speakerName
-      value: Familiar Voice
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].speakerName
-      value: Familiar Voice
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[10].speakerName
-      value: Familiar Voice
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[11].speakerName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[12].speakerName
-      value: Familiar Voice
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[13].speakerName
-      value: Familiar Voice
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].actions.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[3].actions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[1].triggers.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].triggers.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[4].triggers.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[5].triggers.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[11].triggers.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[11].boolParameters.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].actions.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[3].actions.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[0].nextIndex
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[1].nextIndex
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[0].nextIndex
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[0].nextIndex
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[1].nextIndex
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[2].nextIndex
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[3].nextIndex
-      value: 13
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].nextIndex
-      value: 999
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[0].choiceText
-      value: I have finished!
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[7].choices.Array.data[1].choiceText
-      value: Not yet
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[8].choices.Array.data[0].choiceText
-      value: I have finished!
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[0].choiceText
-      value: Being near to your childhood self
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[1].choiceText
-      value: Embrace your childhood self
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[2].choiceText
-      value: Playing with your childhood self
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[3].choiceText
-      value: Dancing with your childhood self
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].choiceText
-      value: I have Finished!
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[1].triggers.Array.data[0].triggerName
-      value: question
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].triggers.Array.data[0].triggerName
-      value: question
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[4].triggers.Array.data[0].triggerName
-      value: surprise
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[5].triggers.Array.data[0].triggerName
-      value: surprise
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].actions.Array.data[0].parameterName
-      value: RecognizeChildhoodSelf
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[3].actions.Array.data[0].parameterName
-      value: RecognizeChildhoodSelf
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[1].triggers.Array.data[0].characterName
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].triggers.Array.data[0].characterName
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[4].triggers.Array.data[0].characterName
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[5].triggers.Array.data[0].characterName
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].conditions.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[0].counterAdders.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[1].counterAdders.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[2].counterAdders.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[3].counterAdders.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].counterAdders.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].conditions.Array.data[0].value
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[0].counterAdders.Array.data[0].itemName
-      value: near
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[1].counterAdders.Array.data[0].itemName
-      value: embracing
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[1].counterAdders.Array.data[1].itemName
-      value: embracing
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[2].counterAdders.Array.data[0].itemName
-      value: playing
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[3].counterAdders.Array.data[0].itemName
-      value: dancing
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].counterAdders.Array.data[0].itemName
-      value: dancing
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].conditions.Array.data[0].parameterName
-      value: Excercise2Completed
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[0].counterAdders.Array.data[0].counterName
-      value: Excercise2Completed
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[1].counterAdders.Array.data[0].counterName
-      value: Excercise2Completed
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[1].counterAdders.Array.data[1].counterName
-      value: Excercise2Completed
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[2].counterAdders.Array.data[0].counterName
-      value: Excercise2Completed
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[3].counterAdders.Array.data[0].counterName
-      value: Excercise2Completed
-      objectReference: {fileID: 0}
-    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].counterAdders.Array.data[0].counterName
-      value: Excercise2Completed
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f574884dff7bbe046b0384028e06c764, type: 3}
 --- !u!1001 &5314001604563797113
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32915,4 +33964,4 @@ SceneRoots:
   - {fileID: 3797710266542347850}
   - {fileID: 6930271664994412289}
   - {fileID: 1775786189}
-  - {fileID: 4182230274182291556}
+  - {fileID: 1606743644}

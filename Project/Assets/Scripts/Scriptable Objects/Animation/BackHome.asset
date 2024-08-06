@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
   m_Name: BackHome
   m_EditorClassIdentifier: 
-  sequenceName: 
+  sequenceName: backhome
   steps:
   - npcName: Sister
     points: []
@@ -27,6 +27,7 @@ MonoBehaviour:
     boolParameters: []
     nextScene: 
     spawnID: 
+    direction: 0
   - npcName: Sister
     points:
     - {x: 2, y: 1, z: 0}
@@ -41,6 +42,7 @@ MonoBehaviour:
     boolParameters: []
     nextScene: 
     spawnID: 
+    direction: 0
   - npcName: Sister
     points: []
     trigger: 
@@ -61,6 +63,9 @@ MonoBehaviour:
           elseIndex: 0
         actions: []
         boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
       - speakerName: Player
         text: I'm back!
         choices: []
@@ -75,6 +80,9 @@ MonoBehaviour:
           elseIndex: 0
         actions: []
         boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
       - speakerName: Mother
         text: The dinner is ready! Talk to me when you are ready for it!
         choices: []
@@ -89,6 +97,9 @@ MonoBehaviour:
           elseIndex: 0
         actions: []
         boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
       - speakerName: Player
         text: Thanks, Mom! I will.
         choices: []
@@ -103,6 +114,9 @@ MonoBehaviour:
           elseIndex: 0
         actions: []
         boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
       ID: 
     waitForConversationEnd: 0
     allowPlayerMove: 0
@@ -110,5 +124,6 @@ MonoBehaviour:
     boolParameters: []
     nextScene: 
     spawnID: 
+    direction: 0
   conditions:
     conditions: []

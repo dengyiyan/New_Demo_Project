@@ -28,6 +28,8 @@ public class PlayerMovement : MonoBehaviour
         armsRenderer = player.transform.Find("Arms").GetComponent<SpriteRenderer>();
         hairRenderer = player.transform.Find("Hair").GetComponent<SpriteRenderer>();
         pantsRenderer = player.transform.Find("Pants").GetComponent<SpriteRenderer>();
+
+        SetFacingDirection(Direction.Front);
     }
 
     private void OnEnable()
@@ -71,12 +73,11 @@ public class PlayerMovement : MonoBehaviour
     {
         if (movement.x != 0 || movement.y != 0)
         {
-            animator.SetFloat("moveX", movement.x);
-            animator.SetFloat("moveY", movement.y);
+            setAnimatorOnDirection(movement);
 
             shouldFlip = movement.x < 0;
 
-            flipOnX(shouldFlip);
+            //flipOnX(shouldFlip);
 
             //animator.SetTrigger("Move");
             animator.SetBool("isWalking", true);
@@ -91,16 +92,45 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    private void flipOnX(bool flag)
+    private void setAnimatorOnDirection(Vector3 direction)
     {
-        if (isPlayer())
+        if (Mathf.Abs(direction.y) > Mathf.Abs(direction.x))
         {
-            bodyRenderer.flipX = flag;
-            armsRenderer.flipX = flag;
-            hairRenderer.flipX = flag;
-            pantsRenderer.flipX = flag;
+            if (direction.y < 0)
+            {
+                animator.SetFloat("moveX", 0);
+                animator.SetFloat("moveY", -1);
+            }
+            else
+            {
+                animator.SetFloat("moveX", 0);
+                animator.SetFloat("moveY", 1);
+            }
+        }
+        else
+        {
+            if (direction.x < 0)
+            {
+                animator.SetFloat("moveX", -1);
+                animator.SetFloat("moveY", 0);
+            }
+            else
+            {
+                animator.SetFloat("moveX", 1);
+                animator.SetFloat("moveY", 0);
+            }
         }
     }
+    //private void flipOnX(bool flag)
+    //{
+    //    if (isPlayer())
+    //    {
+    //        bodyRenderer.flipX = flag;
+    //        armsRenderer.flipX = flag;
+    //        hairRenderer.flipX = flag;
+    //        pantsRenderer.flipX = flag;
+    //    }
+    //}
 
     private void MoveCharacter()
     {
@@ -152,21 +182,25 @@ public class PlayerMovement : MonoBehaviour
                 case Direction.Front:
                     animator.SetFloat("moveX", 0);
                     animator.SetFloat("moveY", -1);
+                    //flipOnX(false);
                     break;
                 case Direction.Back:
                     animator.SetFloat("moveX", 0);
                     animator.SetFloat("moveY", 1);
+                    //flipOnX(false);
                     break;
                 case Direction.Left:
                     animator.SetFloat("moveX", -1);
                     animator.SetFloat("moveY", 0);
-                    flipOnX(true);
+                    //flipOnX(true);
                     break;
                 case Direction.Right:
                     animator.SetFloat("moveX", 1);
                     animator.SetFloat("moveY", 0);
+                    //flipOnX(false);
                     break;
                 default:
+                    //flipOnX(false);
                     break;
             }
         }

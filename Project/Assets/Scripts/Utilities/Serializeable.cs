@@ -97,12 +97,21 @@ public class Conversation
 
 
 [System.Serializable]
+public class CounterAdder
+{
+    public string counterName;
+    public string itemName;
+}
+
+[System.Serializable]
 public class DialogueChoice
 {
     public string choiceText;
     public int nextIndex;
     public bool triggerPickUp;
     public InvestObject investObject;
+    public List<BooleanParameter> conditions;
+    public List<CounterAdder> counterAdders;
 }
 
 

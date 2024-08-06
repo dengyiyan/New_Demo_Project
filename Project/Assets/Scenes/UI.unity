@@ -171,6 +171,7 @@ MonoBehaviour:
   investCursor: {fileID: -440012809, guid: ec99a73785c0b674d838c81ab7d6cfa9, type: 3}
   dialogueCursor: {fileID: -1493291952, guid: ec99a73785c0b674d838c81ab7d6cfa9, type: 3}
   hotspot: {x: 0, y: 0}
+  cursorDisableCount: 0
 --- !u!1 &64573723
 GameObject:
   m_ObjectHideFlags: 0

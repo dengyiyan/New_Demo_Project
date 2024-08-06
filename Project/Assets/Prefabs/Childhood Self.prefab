@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionType: 0
-  interactionRange: 1
+  interactionRange: 0.5
 --- !u!114 &9115627289714457837
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,10 +14,10 @@ public class AnimationMovement : MonoBehaviour
     public bool HasCompletedPath { get; private set; }
 
 
-    private SpriteRenderer bodyRenderer;
-    private SpriteRenderer armsRenderer;
-    private SpriteRenderer hairRenderer;
-    private SpriteRenderer pantsRenderer;
+    //private SpriteRenderer bodyRenderer;
+    //private SpriteRenderer armsRenderer;
+    //private SpriteRenderer hairRenderer;
+    //private SpriteRenderer pantsRenderer;
 
     private bool shouldFlip = false;
     // Start is called before the first frame update
@@ -31,14 +31,14 @@ public class AnimationMovement : MonoBehaviour
         }
         myRigidbody = GetComponent<Rigidbody2D>();
 
-        if (isPlayer())
-        {
-            bodyRenderer = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
+        //if (isPlayer())
+        //{
+        //    bodyRenderer = gameObject.transform.Find("Body").GetComponent<SpriteRenderer>();
 
-            armsRenderer = gameObject.transform.Find("Arms").GetComponent<SpriteRenderer>();
-            hairRenderer = gameObject.transform.Find("Hair").GetComponent<SpriteRenderer>();
-            pantsRenderer = gameObject.transform.Find("Pants").GetComponent<SpriteRenderer>();
-        }
+        //    armsRenderer = gameObject.transform.Find("Arms").GetComponent<SpriteRenderer>();
+        //    hairRenderer = gameObject.transform.Find("Hair").GetComponent<SpriteRenderer>();
+        //    pantsRenderer = gameObject.transform.Find("Pants").GetComponent<SpriteRenderer>();
+        //}
 
         // animator = GetComponent<Animator>();
         // myRigidbody.interpolation = RigidbodyInterpolation2D.Interpolate;
@@ -66,7 +66,8 @@ public class AnimationMovement : MonoBehaviour
 
                 shouldFlip = direction.x < 0;
 
-                flipOnX(shouldFlip);
+                //flipOnX(shouldFlip);
+                Debug.LogWarning($"Setting flip to {shouldFlip} in movement");
 
                 MoveCharacter();
                 yield return null; // Wait for the next frame
@@ -168,16 +169,16 @@ public class AnimationMovement : MonoBehaviour
         }
     }
 
-    private void flipOnX(bool flag)
-    {
-        if (isPlayer())
-        {
-            bodyRenderer.flipX = flag;
-            armsRenderer.flipX = flag;
-            hairRenderer.flipX = flag;
-            pantsRenderer.flipX = flag;
-        }
-    }
+    //private void flipOnX(bool flag)
+    //{
+    //    if (isPlayer())
+    //    {
+    //        bodyRenderer.flipX = flag;
+    //        armsRenderer.flipX = flag;
+    //        hairRenderer.flipX = flag;
+    //        pantsRenderer.flipX = flag;
+    //    }
+    //}
 
     private void MoveCharacter()
     {

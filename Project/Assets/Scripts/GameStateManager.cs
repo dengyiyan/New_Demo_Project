@@ -14,13 +14,29 @@ public static class GameStateManager
     private static Texture2D HappyImage;
     private static Texture2D SadImage;
 
+    private const string exercise2Flag = "Excercise2Completed";
+
+    private static List<string> replayableAnimations = new List<string> 
+    { 
+        "sat_exercise2",
+        "embrace"
+    };
+
     private static Dictionary<string, bool> gameBools = new Dictionary<string, bool>
     {
         {"HasFlower", false},
         {"SisterReceiveFlower", false},
         {"MerchantShowHisName", false },
         {"RecognizeChildhoodSelf", false},
+        {exercise2Flag, false},
     };
+
+    private static Dictionary<string, HashSet<string>> gameCounters = new Dictionary<string, HashSet<string>>
+    {
+        {exercise2Flag, new HashSet<string>{ } }
+    };
+
+
     private static Dictionary<string, Vector3> scenePlayerPositions = new Dictionary<string, Vector3>();
     private static Dictionary<string, Dictionary<string, NPCState>> sceneNPCStates = new Dictionary<string, Dictionary<string, NPCState>>();
     // private static Dictionary<string, string> sceneLastSpawnPoints = new Dictionary<string, string>();
@@ -36,6 +52,19 @@ public static class GameStateManager
     //}
 
     //public static void SetPlayerCanMove()
+
+    public static void AddCounter(string counterName, string itemName)
+    {
+        gameCounters[counterName].Add(itemName);
+
+
+        // Conditions to check
+        if (counterName == exercise2Flag && gameCounters[counterName].Count >= 4)
+        {
+            SetBool(counterName, true);
+        }
+    }
+
 
     public static void SaveImage(Texture2D image)
     {
@@ -168,7 +197,7 @@ public static class GameStateManager
 
     public static void MarkSequencePlayed(string sequenceName)
     {
-        if (!sequencePlayed.Contains(sequenceName))
+        if (!replayableAnimations.Contains(sequenceName) && !sequencePlayed.Contains(sequenceName))
         {
             sequencePlayed.Add(sequenceName);
         }

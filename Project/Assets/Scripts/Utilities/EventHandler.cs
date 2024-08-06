@@ -51,6 +51,12 @@ public static class EventHandler
         HideImageEvent?.Invoke(); 
     }
 
+    public static event Action<Direction> NPCFaceEvent;
+    public static void CallNPCFaceEvent(Direction direction)
+    {
+        NPCFaceEvent?.Invoke(direction);
+    }
+
     public static event Action<Direction> PlayerFaceEvent;
     public static void CallPlayerFaceEvent(Direction direction)
     {

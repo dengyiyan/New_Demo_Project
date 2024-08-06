@@ -10,42 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
-  m_Name: SAT_Dance
+  m_Name: SAT_Play
   m_EditorClassIdentifier: 
-  sequenceName: SAT_dance
+  sequenceName: SAT_play
   steps:
-  - npcName: Player
-    points: []
-    trigger: 
-    waitForCompletion: 0
-    conversation:
-      conversationDialogues: []
-      ID: 
-    waitForConversationEnd: 0
-    allowPlayerMove: 0
-    animationType: 6
-    boolParameters:
-    - parameterName: isPlayingMusic
-      value: 1
-    nextScene: 
-    spawnID: 
-    direction: 0
-  - npcName: Childhood Self
-    points: []
-    trigger: 
-    waitForCompletion: 0
-    conversation:
-      conversationDialogues: []
-      ID: 
-    waitForConversationEnd: 0
-    allowPlayerMove: 0
-    animationType: 6
-    boolParameters:
-    - parameterName: isDancing
-      value: 1
-    nextScene: 
-    spawnID: 
-    direction: 0
   - npcName: Player
     points: []
     trigger: 
@@ -53,8 +21,7 @@ MonoBehaviour:
     conversation:
       conversationDialogues:
       - speakerName: Childhood Self
-        text: Thanks for being willing to dance with me! I haven't been this happy
-          for quite a while!
+        text: Can we play some games? Please... I really want to play.
         choices: []
         nextIndex: 1
         triggers: []
@@ -71,9 +38,8 @@ MonoBehaviour:
         spawnID: 
         direction: 0
       - speakerName: Familiar Voice
-        text: You seem to be having a great time dancing with the child. How do you
-          feel right now? Please keep in mind it is vital that you bond deep with
-          your inner child.
+        text: Playing a game can also strengthen the bond between you and the child.
+          Go take the chance, [Player].
         choices: []
         nextIndex: 2
         triggers: []
@@ -89,21 +55,9 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
-      - speakerName: Familiar Voice
-        text: We shall proceed whenever you are ready.
-        choices:
-        - choiceText: I am ready to proceed!
-          nextIndex: 3
-          triggerPickUp: 0
-          investObject: {fileID: 0}
-          conditions: []
-          counterAdders: []
-        - choiceText: Not yet
-          nextIndex: 5
-          triggerPickUp: 0
-          investObject: {fileID: 0}
-          conditions: []
-          counterAdders: []
+      - speakerName: Player
+        text: Sure, let's play!
+        choices: []
         nextIndex: 3
         triggers: []
         requirements: []
@@ -118,10 +72,27 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
-      - speakerName: Familiar Voice
-        text: Good job keeping up, sweetheart.
+      - speakerName: Childhood Self
+        text: Yeah! Thank you! You are the best!
         choices: []
-        nextIndex: 999
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Childhood Self
+        text: Let's play hide and seek! You count, and I'll hide. Try to find me!
+        choices: []
+        nextIndex: 5
         triggers: []
         requirements: []
         divergence:
@@ -139,24 +110,9 @@ MonoBehaviour:
         text: 
         choices: []
         nextIndex: 999
-        triggers: []
-        requirements: []
-        divergence:
-          parameter:
-            parameterName: 
-            value: 0
-          nextIndex: 0
-          elseIndex: 0
-        actions: []
-        boolParameters: []
-        sceneTo: HeroHouse_SAT_Exercise2
-        spawnID: 5
-        direction: 1
-      - speakerName: Familiar Voice
-        text: Take your time, darling.
-        choices: []
-        nextIndex: 2
-        triggers: []
+        triggers:
+        - characterName: Player
+          triggerName: sweat
         requirements: []
         divergence:
           parameter:
@@ -169,7 +125,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
-      ID: dance_with_childhood_self
+      ID: play_with_childhood_self
     waitForConversationEnd: 1
     allowPlayerMove: 0
     animationType: 3
@@ -187,11 +143,9 @@ MonoBehaviour:
     waitForConversationEnd: 0
     allowPlayerMove: 0
     animationType: 4
-    boolParameters:
-    - parameterName: isPlayingMusic
-      value: 0
-    nextScene: HeroHouse_SAT_Exercise2
-    spawnID: 5
-    direction: 0
+    boolParameters: []
+    nextScene: SAT_play_hide_and_seek
+    spawnID: 7
+    direction: 1
   conditions:
     conditions: []

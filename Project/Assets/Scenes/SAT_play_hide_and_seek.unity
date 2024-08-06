@@ -3325,7 +3325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequences: []
   dialogueManager: {fileID: 0}
-  startingSequence: {fileID: 11400000, guid: ddd322f98c0c8034caca2bdbe067a11f, type: 2}
+  startingSequence: {fileID: 0}
   isAnimationPlaying: 0
   playableDirector: {fileID: 0}
 --- !u!4 &574559182
@@ -16840,7 +16840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2511781661494984817, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5160527352409084950, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: m_Enabled
@@ -18982,7 +18982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 193132720039585728, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1278438276167128749, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
       propertyPath: m_LocalPosition.x

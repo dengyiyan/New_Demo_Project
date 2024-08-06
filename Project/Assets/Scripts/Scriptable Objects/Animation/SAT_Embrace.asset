@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
   m_Name: SAT_Embrace
   m_EditorClassIdentifier: 
-  sequenceName: embrace
+  sequenceName: SAT_embrace
   steps:
   - npcName: Player
     points: []

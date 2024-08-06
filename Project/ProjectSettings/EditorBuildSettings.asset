@@ -51,6 +51,15 @@ EditorBuildSettings:
     path: Assets/Scenes/SAT_dance.unity
     guid: c2bfdf3acea16de4a82cc94c0faa93ea
   - enabled: 1
+    path: Assets/Scenes/SAT_play.unity
+    guid: 81661378b1f86f74ba55faf157bb7882
+  - enabled: 1
+    path: Assets/Scenes/SAT_play_hide_and_seek.unity
+    guid: 90e8dab1122937040bd845de6cf32429
+  - enabled: 1
+    path: Assets/Scenes/SAT_play_after_game.unity
+    guid: 04241d832e1a93441addd17ed758b400
+  - enabled: 1
     path: Assets/Scenes/NewCharacterCreator.unity
     guid: 61545a8734a1edc4a8d7e3e6be2f6bc0
   - enabled: 1

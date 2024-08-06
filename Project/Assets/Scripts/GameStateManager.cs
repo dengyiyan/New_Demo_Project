@@ -19,8 +19,10 @@ public static class GameStateManager
     private static List<string> replayableAnimations = new List<string> 
     { 
         "sat_exercise2",
-        "embrace",
-        "dance",
+        "SAT_embrace",
+        "SAT_dance",
+        "SAT_play",
+        "hide_and_seek_start",
     };
 
     private static Dictionary<string, bool> gameBools = new Dictionary<string, bool>

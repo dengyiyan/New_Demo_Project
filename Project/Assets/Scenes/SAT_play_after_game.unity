@@ -3325,7 +3325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequences: []
   dialogueManager: {fileID: 0}
-  startingSequence: {fileID: 11400000, guid: ddd322f98c0c8034caca2bdbe067a11f, type: 2}
+  startingSequence: {fileID: 11400000, guid: 366bf85e7342ccc44a5904a2464fc59d, type: 2}
   isAnimationPlaying: 0
   playableDirector: {fileID: 0}
 --- !u!4 &574559182

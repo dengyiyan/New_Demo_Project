@@ -3325,7 +3325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequences: []
   dialogueManager: {fileID: 0}
-  startingSequence: {fileID: 0}
+  startingSequence: {fileID: 11400000, guid: 08e52ed7e18731441b31efe3c47d8eef, type: 2}
   isAnimationPlaying: 0
   playableDirector: {fileID: 0}
 --- !u!4 &574559182
@@ -16840,7 +16840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2511781661494984817, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5160527352409084950, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: m_Enabled
@@ -16848,7 +16848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5160527352409084950, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: defaultFacingDirection
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7886271517280261054, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: characterStates.Array.size
@@ -18982,7 +18982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 193132720039585728, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1278438276167128749, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
       propertyPath: m_LocalPosition.x
@@ -19023,119 +19023,6 @@ PrefabInstance:
     - target: {fileID: 1278438276167128749, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.ID
-      value: Hide_and_seek_broken_tile
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[0].text
-      value: (The broken floor here... Exactly the same with the one in reality...)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[1].text
-      value: (Speaking of hiding, this is a perfect place...)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].text
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[3].text
-      value: (It can't be... Only i know this place... Let me search other places
-        first...)
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].sceneTo
-      value: SAT_play_after_game
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[3].sceneTo
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].direction
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].nextIndex
-      value: 999
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[3].direction
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[3].nextIndex
-      value: 999
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[0].speakerName
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].speakerName
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[3].speakerName
-      value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[0].triggers.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[0].nextIndex
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[1].nextIndex
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[0].nextIndex
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[1].nextIndex
-      value: 99
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[0].choiceText
-      value: Search the hidden space
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[1].choices.Array.data[1].choiceText
-      value: Not now
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[0].choiceText
-      value: Search the hidden space
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[2].choices.Array.data[1].choiceText
-      value: Not now
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[0].triggers.Array.data[0].triggerName
-      value: wait
-      objectReference: {fileID: 0}
-    - target: {fileID: 2684239396060556472, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
-      propertyPath: conversation.conversationDialogues.Array.data[0].triggers.Array.data[0].characterName
-      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

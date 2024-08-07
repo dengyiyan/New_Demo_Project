@@ -165,11 +165,13 @@ public class PlayerMovement : MonoBehaviour
     private void OnAfterSceneLoadEvent()
     {
         canMove = true;
+        EventHandler.CallDecreaseDisableEvent();
     }
 
     private void OnBeforeSceneUnloadEvent()
     {
         canMove = false;
+        EventHandler.CallIncreaseDisableEvent();
         animator.SetBool("isWalking", false);
     }
 

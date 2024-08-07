@@ -3325,7 +3325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sequences: []
   dialogueManager: {fileID: 0}
-  startingSequence: {fileID: 11400000, guid: 366bf85e7342ccc44a5904a2464fc59d, type: 2}
+  startingSequence: {fileID: 11400000, guid: 16c12a7da02f5b34781800c34f1cae93, type: 2}
   isAnimationPlaying: 0
   playableDirector: {fileID: 0}
 --- !u!4 &574559182
@@ -16816,11 +16816,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -4
+      value: 0.37
       objectReference: {fileID: 0}
     - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 17
+      value: 17.24
       objectReference: {fileID: 0}
     - target: {fileID: 2197618717804005183, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -16848,7 +16848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5160527352409084950, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: defaultFacingDirection
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7886271517280261054, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: characterStates.Array.size

@@ -48,6 +48,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SAT_embrace.unity
     guid: 397a49c0be0a7824fb0113b3212bd9b9
   - enabled: 1
+    path: Assets/Scenes/SAT_embrace_unhappy.unity
+    guid: c6908a22edb0f144e8e63aaed60de8d9
+  - enabled: 1
     path: Assets/Scenes/SAT_dance.unity
     guid: c2bfdf3acea16de4a82cc94c0faa93ea
   - enabled: 1
@@ -59,6 +62,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SAT_play_after_game.unity
     guid: 04241d832e1a93441addd17ed758b400
+  - enabled: 1
+    path: Assets/Scenes/SAT_sing.unity
+    guid: d7d00e48d9797334aa65c69ae993e140
   - enabled: 1
     path: Assets/Scenes/NewCharacterCreator.unity
     guid: 61545a8734a1edc4a8d7e3e6be2f6bc0

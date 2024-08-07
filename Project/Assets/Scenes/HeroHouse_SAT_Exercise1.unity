@@ -17550,7 +17550,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5160527352409084950, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: defaultFacingDirection
-      value: 3
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.ID
+      value: exercise1
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.size
@@ -17597,11 +17601,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[9].text
-      value: Now imagine the four scenarios, and reflect on your feelings.
+      value: Starting with the happy side of the child. First, you look at the happy
+        photo, and imagine the four scenarios, then reflect on your feelings.
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[10].text
-      value: You are already near your childhood self! What do you feel?
+      value: You are already near your happy childhood self! What do you feel? You
+        can also close your eyes and use your imagination!
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[11].text
@@ -17609,7 +17615,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[12].text
-      value: Play playing animation
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[13].text
@@ -17622,6 +17628,14 @@ PrefabInstance:
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[11].spawnID
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[12].sceneTo
+      value: SAT_play
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[12].spawnID
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[13].sceneTo
@@ -17684,8 +17698,12 @@ PrefabInstance:
       value: 999
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
+      propertyPath: conversation.conversationDialogues.Array.data[12].direction
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[12].nextIndex
-      value: 9
+      value: 999
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[13].direction
@@ -17745,7 +17763,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[12].speakerName
-      value: Familiar Voice
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[13].speakerName
@@ -17849,19 +17867,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[0].choiceText
-      value: Being near to your childhood self
+      value: Being near your happy childhood self
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[1].choiceText
-      value: Embrace your childhood self
+      value: Embracing the child
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[2].choiceText
-      value: Playing with your childhood self
+      value: Playing with the child
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[3].choiceText
-      value: Dancing with your childhood self
+      value: Dancing with the child
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: conversation.conversationDialogues.Array.data[9].choices.Array.data[4].choiceText

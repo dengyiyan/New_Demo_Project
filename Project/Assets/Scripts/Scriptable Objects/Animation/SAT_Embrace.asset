@@ -188,7 +188,7 @@ MonoBehaviour:
     - parameterName: isHugging
       value: 0
     nextScene: HeroHouse_SAT_Exercise2
-    spawnID: 5
-    direction: 0
+    spawnID: 7
+    direction: 1
   conditions:
     conditions: []

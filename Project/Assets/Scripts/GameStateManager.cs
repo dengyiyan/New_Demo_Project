@@ -20,8 +20,10 @@ public static class GameStateManager
     { 
         "sat_exercise2",
         "SAT_embrace",
+        "SAT_embrace_unhappy",
         "SAT_dance",
         "SAT_play",
+        "SAT_play_after",
         "hide_and_seek_start",
     };
 
@@ -31,6 +33,7 @@ public static class GameStateManager
         {"SisterReceiveFlower", false},
         {"MerchantShowHisName", false },
         {"RecognizeChildhoodSelf", false},
+        {"Exercise2bCompleted", false},
         {exercise2Flag, false},
     };
 

@@ -10,42 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
-  m_Name: SAT_Dance
+  m_Name: SAT_Play_after
   m_EditorClassIdentifier: 
-  sequenceName: SAT_dance
+  sequenceName: SAT_play_after
   steps:
-  - npcName: Player
-    points: []
-    trigger: 
-    waitForCompletion: 0
-    conversation:
-      conversationDialogues: []
-      ID: 
-    waitForConversationEnd: 0
-    allowPlayerMove: 0
-    animationType: 6
-    boolParameters:
-    - parameterName: isPlayingMusic
-      value: 1
-    nextScene: 
-    spawnID: 
-    direction: 0
-  - npcName: Childhood Self
-    points: []
-    trigger: 
-    waitForCompletion: 0
-    conversation:
-      conversationDialogues: []
-      ID: 
-    waitForConversationEnd: 0
-    allowPlayerMove: 0
-    animationType: 6
-    boolParameters:
-    - parameterName: isDancing
-      value: 1
-    nextScene: 
-    spawnID: 
-    direction: 0
   - npcName: Player
     points: []
     trigger: 
@@ -53,8 +21,7 @@ MonoBehaviour:
     conversation:
       conversationDialogues:
       - speakerName: Childhood Self
-        text: Thanks for being willing to dance with me! I haven't been this happy
-          for quite a while!
+        text: You found me!
         choices: []
         nextIndex: 1
         triggers: []
@@ -70,10 +37,9 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
-      - speakerName: Familiar Voice
-        text: You seem to be having a great time dancing with the child. How do you
-          feel right now? Please keep in mind it is vital that you bond deep with
-          your inner child.
+      - speakerName: Childhood Self
+        text: No one has ever found me in the hide and seek game in the house! Do
+          you know magic or what?
         choices: []
         nextIndex: 2
         triggers: []
@@ -89,11 +55,13 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
-      - speakerName: Familiar Voice
-        text: 'Of course, imagination is always welcomed. '
+      - speakerName: Childhood Self
+        text: Thank you! I had fun!
         choices: []
         nextIndex: 3
-        triggers: []
+        triggers:
+        - characterName: Childhood Self
+          triggerName: cute
         requirements: []
         divergence:
           parameter:
@@ -107,20 +75,8 @@ MonoBehaviour:
         spawnID: 
         direction: 0
       - speakerName: Familiar Voice
-        text: We shall proceed whenever you are ready.
-        choices:
-        - choiceText: I am ready to proceed!
-          nextIndex: 4
-          triggerPickUp: 0
-          investObject: {fileID: 0}
-          conditions: []
-          counterAdders: []
-        - choiceText: Not yet
-          nextIndex: 6
-          triggerPickUp: 0
-          investObject: {fileID: 0}
-          conditions: []
-          counterAdders: []
+        text: It seems that you had a good time playing together!
+        choices: []
         nextIndex: 4
         triggers: []
         requirements: []
@@ -136,9 +92,11 @@ MonoBehaviour:
         spawnID: 
         direction: 0
       - speakerName: Familiar Voice
-        text: Good job keeping up, sweetheart.
+        text: Remember, it is important that you get connected to the child. You
+          can also picture playing a game you liked in your childhood with the child
+          to get more compassion.
         choices: []
-        nextIndex: 999
+        nextIndex: 5
         triggers: []
         requirements: []
         divergence:
@@ -152,27 +110,10 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
-      - speakerName: 
-        text: 
-        choices: []
-        nextIndex: 999
-        triggers: []
-        requirements: []
-        divergence:
-          parameter:
-            parameterName: 
-            value: 0
-          nextIndex: 0
-          elseIndex: 0
-        actions: []
-        boolParameters: []
-        sceneTo: HeroHouse_SAT_Exercise2
-        spawnID: 5
-        direction: 1
       - speakerName: Familiar Voice
-        text: Take your time, darling.
+        text: 'Now it is time to proceed.  '
         choices: []
-        nextIndex: 3
+        nextIndex: 6
         triggers: []
         requirements: []
         divergence:
@@ -186,7 +127,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
-      ID: dance_with_childhood_self
+      ID: play_with_childhood_self
     waitForConversationEnd: 1
     allowPlayerMove: 0
     animationType: 3
@@ -204,11 +145,9 @@ MonoBehaviour:
     waitForConversationEnd: 0
     allowPlayerMove: 0
     animationType: 4
-    boolParameters:
-    - parameterName: isPlayingMusic
-      value: 0
+    boolParameters: []
     nextScene: HeroHouse_SAT_Exercise2
-    spawnID: 5
-    direction: 0
+    spawnID: 7
+    direction: 1
   conditions:
     conditions: []

@@ -23,7 +23,7 @@ MonoBehaviour:
       - speakerName: Familiar Voice
         text: Now keep on imagine the four scenarios, and reflect on your feelings.
         choices:
-        - choiceText: Being near to your childhood self
+        - choiceText: Being near your happy childhood self
           nextIndex: 1
           triggerPickUp: 0
           investObject: {fileID: 0}
@@ -31,7 +31,7 @@ MonoBehaviour:
           counterAdders:
           - counterName: Excercise2Completed
             itemName: near
-        - choiceText: Embrace your childhood self
+        - choiceText: Embracing the child
           nextIndex: 2
           triggerPickUp: 0
           investObject: {fileID: 0}
@@ -39,7 +39,7 @@ MonoBehaviour:
           counterAdders:
           - counterName: Excercise2Completed
             itemName: embracing
-        - choiceText: Playing with your childhood self
+        - choiceText: Playing with the child
           nextIndex: 3
           triggerPickUp: 0
           investObject: {fileID: 0}
@@ -47,7 +47,7 @@ MonoBehaviour:
           counterAdders:
           - counterName: Excercise2Completed
             itemName: playing
-        - choiceText: Dancing with your childhood self
+        - choiceText: Dancing with the child
           nextIndex: 4
           triggerPickUp: 0
           investObject: {fileID: 0}
@@ -78,7 +78,8 @@ MonoBehaviour:
         spawnID: 
         direction: 0
       - speakerName: Familiar Voice
-        text: You are already near your childhood self! What do you feel?
+        text: You are already near your childhood self! What do you feel? You can
+          also close your eyes and use your imagination!
         choices: []
         nextIndex: 0
         triggers: []
@@ -125,8 +126,8 @@ MonoBehaviour:
           elseIndex: 0
         actions: []
         boolParameters: []
-        sceneTo: SAT_embrace
-        spawnID: 6
+        sceneTo: SAT_play
+        spawnID: 7
         direction: 4
       - speakerName: 
         text: 
@@ -146,9 +147,13 @@ MonoBehaviour:
         spawnID: 7
         direction: 1
       - speakerName: Familiar Voice
-        text: Good job finishin exercise 2!
+        text: 'Very Well! Now, look at the unhappy photo of yours, i.e. sad, angry,
+          fearful and disgusted, and try to go through the process of comforting
+          the child.
+
+'
         choices: []
-        nextIndex: 999
+        nextIndex: 6
         triggers: []
         requirements: []
         divergence:
@@ -162,6 +167,40 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+      - speakerName: Familiar Voice
+        text: Let us start with embracing the unhappy child.
+        choices: []
+        nextIndex: 7
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: SAT_embrace_unhappy
+        spawnID: 6
+        direction: 4
       ID: SAT_exercise2
     waitForConversationEnd: 1
     allowPlayerMove: 0

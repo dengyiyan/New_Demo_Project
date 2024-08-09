@@ -459,5 +459,19 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 4
+    boolParameters: []
+    nextScene: HeroHouse_SAT_Exercise6
+    spawnID: 7
+    direction: 1
   conditions:
     conditions: []

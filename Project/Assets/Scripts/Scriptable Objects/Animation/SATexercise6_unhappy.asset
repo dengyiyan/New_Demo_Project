@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
+  m_Name: SATexercise6_unhappy
+  m_EditorClassIdentifier: 
+  sequenceName: sat_exercise6_unhappy
+  steps:
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: Familiar Voice
+        text: Likewise, there will be dark parts inside the emotional world. You
+          can see them as derelict parts that need renovation, a scary basement of
+          the house, or another room which is filled with negative emotions.
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Familiar Voice
+        text: When suffering from negative emotions, imagine the child is trapped
+          in the room, but can gradually learn to open the door and walk out into
+          the happy, bright rooms, reuniting with the adult.
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Familiar Voice
+        text: In our case, we will use the home after the incident as an example.
+          Because it is the concrete shape of the negative emotions to you after
+          all these.
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Familiar Voice
+        text: Shall we wrap up this exercise?
+        choices:
+        - choiceText: Sure
+          nextIndex: 999
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: Could you repeat, please?
+          nextIndex: 4
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Familiar Voice
+        text: Sure, no worries honey.
+        choices: []
+        nextIndex: 0
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      ID: SAT_exercise6_unhappy
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 4
+    boolParameters: []
+    nextScene: HeroHouse_SAT_Exercise7a
+    spawnID: 7
+    direction: 1
+  conditions:
+    conditions: []

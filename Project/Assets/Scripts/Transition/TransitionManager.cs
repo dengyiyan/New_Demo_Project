@@ -10,6 +10,7 @@ namespace MyProject.Transition
     {
         [SceneName]
         public string startSceneName = string.Empty;
+        public string startSpawnID = "0";
 
         // private ConversationChecker conversationChecker;
         private CanvasGroup fadeCanvasGroup;
@@ -33,6 +34,10 @@ namespace MyProject.Transition
             // conversationChecker = GetComponent<ConversationChecker>();
 
             StartCoroutine(LoadSceneSetActive(startSceneName));
+            if (!string.IsNullOrEmpty(startSpawnID))
+            {
+                MovePlayerToSpawnPoint(startSpawnID);
+            }
 
         }
 
@@ -65,10 +70,10 @@ namespace MyProject.Transition
 
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            //if (scene.name == startSceneName)
-            //{
-            //    EventHandler.CallAfterSceneLoadEvent();
-            //}
+            if (scene.name == startSceneName)
+            {
+                EventHandler.CallAfterSceneLoadEvent();
+            }
         }
 
         private void OnEndGameEvent()
@@ -128,12 +133,7 @@ namespace MyProject.Transition
             return null;
         }
 
-        /// <summary>
-        /// 场景切换
-        /// </summary>
-        /// <param name="sceneName">目标位置</param>
-        /// <param name="spawnPointID">目标spawnpoint</param>
-        /// <returns></returns>
+        
         private IEnumerator Transition(string sceneName, string spawnPointID)
         {
             fadeCanvasGroup.blocksRaycasts = true;
@@ -144,6 +144,15 @@ namespace MyProject.Transition
 
             yield return LoadSceneSetActive(sceneName);// 加载场景并设置为激活
 
+            MovePlayerToSpawnPoint(spawnPointID);
+            
+            EventHandler.CallAfterSceneLoadEvent();
+            yield return Fade(0);
+            fadeCanvasGroup.blocksRaycasts = false;
+        }
+
+        private void MovePlayerToSpawnPoint(string spawnPointID)
+        {
             SpawnPoint spawnPoint = FindSpawnPointByID(spawnPointID);
             if (spawnPoint != null)
             {
@@ -152,17 +161,9 @@ namespace MyProject.Transition
                 EventHandler.CallMoveToPosition(targetPosition);
 
             }
-            EventHandler.CallAfterSceneLoadEvent();
-            yield return Fade(0);
-            fadeCanvasGroup.blocksRaycasts = false;
         }
 
-
-        /// <summary>
-        /// 加载场景并设置为激活
-        /// </summary>
-        /// <param name="sceneName"></param>
-        /// <returns></returns>
+        
         private IEnumerator LoadSceneSetActive(string sceneName)
         {
             yield return SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
@@ -174,11 +175,7 @@ namespace MyProject.Transition
             // conversationChecker = GetComponent<ConversationChecker>();
         }
 
-        /// <summary>
-        /// Fade in or Fade out
-        /// </summary>
-        /// <param name="targetAlpha">1 = fade in，0 = fade out</param>
-        /// <returns></returns>
+        
         private IEnumerator Fade(float targetAlpha)
         {
             isFade = true;
@@ -219,19 +216,7 @@ namespace MyProject.Transition
             yield return Fade(0);
         }
 
-        //public GameSaveData GenerateSaveData()
-        //{
-        //    GameSaveData saveData = new GameSaveData();
-        //    saveData.dataSceneName = SceneManager.GetActiveScene().name;
-
-        //    return saveData;
-        //}
-
-        //public void RestoreData(GameSaveData saveData)
-        //{
-        //    //加载游戏进度场景
-        //    StartCoroutine(LoadSaveDataScene(saveData.dataSceneName));
-        //}
+        
     }
 }
 

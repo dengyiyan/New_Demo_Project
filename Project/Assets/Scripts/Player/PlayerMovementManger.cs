@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerMovementManger : MonoBehaviour
 {
-    public int constraintNumber = 0;
+    public int constraintNumber = 1;
 
     private void OnEnable()
     {

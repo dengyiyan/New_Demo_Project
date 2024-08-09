@@ -4,9 +4,20 @@ using UnityEngine;
 
 public class DisablePlayerMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    //void Start()
+    //{
+    //    EventHandler.CallDisablePlayerMovementEvent();
+    //}
+
+    private void Start()
     {
-        EventHandler.CallDisablePlayerMovementEvent();
+        EventHandler.CallIncreaseDisableEvent();
     }
+
+    private void OnDestroy()
+    {
+        EventHandler.CallDecreaseDisableEvent();
+    }
+
 }

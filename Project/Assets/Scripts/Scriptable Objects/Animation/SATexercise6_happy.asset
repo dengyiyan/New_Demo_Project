@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
+  m_Name: SATexercise6_happy
+  m_EditorClassIdentifier: 
+  sequenceName: sat_exercise6_happy
+  steps:
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: Familiar Voice
+        text: At this stage, you will need to consider your emotion world as a home.
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Familiar Voice
+        text: "The home should be a safe haven for the child at times of distress
+          and the base for the child to tackle life\u2019s challenges."
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Familiar Voice
+        text: 'You can imagine your home to be bright, sunny, having a large garden.
+          Any type you like! And picture yourself taking the exercises in that imaginary
+          home. '
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Familiar Voice
+        text: 'In our case, we will continue to use the home you lived in to carry
+          out these exercises. It seems that this is your happy, safe place deep
+          inside your mind. '
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Familiar Voice
+        text: Shall we proceed to the next part?
+        choices:
+        - choiceText: Sure
+          nextIndex: 999
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: Could you repeat, please?
+          nextIndex: 5
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Familiar Voice
+        text: Sure, no worries honey.
+        choices: []
+        nextIndex: 0
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      ID: SAT_exercise6_happy
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 4
+    boolParameters: []
+    nextScene: HeroHouse_SAT_unhappy
+    spawnID: 7
+    direction: 1
+  conditions:
+    conditions: []

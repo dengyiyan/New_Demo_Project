@@ -17,7 +17,7 @@ public class CursorManager : MonoBehaviour
     // private float previousTransparency;
 
     private bool cursorEnable = true;
-    public int cursorDisableCount = 0;
+    public int cursorDisableCount = 1;
 
     private void OnEnable()
     {
@@ -133,7 +133,7 @@ public class CursorManager : MonoBehaviour
     {
         SetCursor(defaultCursorTexture);
         SetCursorDisable();
-        cursorDisableCount = 0;
+        cursorDisableCount += 1;
     }
 
     private void SetCursorDisable()
@@ -146,7 +146,7 @@ public class CursorManager : MonoBehaviour
     {
         SetCursor(defaultCursorTexture);
         SetCursorEnable();
-        cursorDisableCount = 0;
+        cursorDisableCount -= 1;
     }
 
     private void SetCursorEnable()

@@ -16848,7 +16848,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5160527352409084950, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: defaultFacingDirection
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: defaultFacingDirection

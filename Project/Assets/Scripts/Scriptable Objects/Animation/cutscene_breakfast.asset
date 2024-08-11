@@ -21,7 +21,7 @@ MonoBehaviour:
     conversation:
       conversationDialogues:
       - speakerName: Mother
-        text: (Smiling) Morning, sweetheart! Did you sleep well?
+        text: (Smiling) Morning, , sleepyhead! Just in time for breakfast.
         choices: []
         nextIndex: 1
         triggers: []
@@ -38,7 +38,7 @@ MonoBehaviour:
         spawnID: 
         direction: 0
       - speakerName: Player
-        text: Morning, everyone! Yes Mom, and I had a wonderful dream!
+        text: Morning! What smells so good?
         choices: []
         nextIndex: 2
         triggers: []
@@ -55,7 +55,8 @@ MonoBehaviour:
         spawnID: 
         direction: 0
       - speakerName: Father
-        text: That's great to hear! Dreams can be so inspiring. What was it about?
+        text: (Grinning) Your favorite pancakes. A little something special before
+          your big day.
         choices: []
         nextIndex: 3
         triggers: []
@@ -71,27 +72,9 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
-      - speakerName: Player
-        text: I was flying over the village, seeing everything from above. It felt
-          so cool!
-        choices: []
-        nextIndex: 4
-        triggers: []
-        requirements: []
-        divergence:
-          parameter:
-            parameterName: 
-            value: 0
-          nextIndex: 0
-          elseIndex: 0
-        actions: []
-        boolParameters: []
-        sceneTo: 
-        spawnID: 
-        direction: 0
       - speakerName: Sister
-        text: (Excitedly) Wow, that sounds amazing! I wish I could fly in my dreams
-          too!
+        text: "(Excitedly) I can\u2019t believe you\u2019re almost 13! I wish I can
+          grow up faster!"
         choices: []
         nextIndex: 5
         triggers: []
@@ -107,9 +90,99 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+      - speakerName: Player
+        text: "Yeah, it\u2019s kind of hard to believe. It feels like just yesterday
+          I was turning 10."
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
       - speakerName: Mother
-        text: (Chuckles) Maybe one day you will, darling. Now, come and have breakfast.
-          We have a beautiful day ahead.
+        text: "Our little gentleman is growing up so quickly. We\u2019ve got something
+          special planned for you."
+        choices: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Father
+        text: "We\u2019re proud of you, son. It\u2019s going to be a birthday to
+          remember."
+        choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Sister
+        text: You are going to love it!
+        choices: []
+        nextIndex: 7
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Player
+        text: "Thanks, everyone. I\u2019m really looking forward to it."
+        choices: []
+        nextIndex: 8
+        triggers:
+        - characterName: Player
+          triggerName: heart
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Mother
+        text: (Chuckles) Now, come and have some breakfast before it gets cold. We
+          have a beautiful day ahead.
         choices: []
         nextIndex: 999
         triggers: []
@@ -132,6 +205,7 @@ MonoBehaviour:
     boolParameters: []
     nextScene: 
     spawnID: 
+    direction: 0
   - npcName: Player
     points:
     - {x: -4.5, y: 6.196258, z: 0}
@@ -147,5 +221,6 @@ MonoBehaviour:
     boolParameters: []
     nextScene: HeroHouse_After_Breakfast
     spawnID: 2
+    direction: 0
   conditions:
     conditions: []

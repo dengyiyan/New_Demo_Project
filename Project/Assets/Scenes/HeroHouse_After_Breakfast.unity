@@ -3793,8 +3793,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 280e75207c9b99b4981fca57e27e31c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sequences:
-  - {fileID: 11400000, guid: 81c64b1736759ce478b265d7bee099a1, type: 2}
+  sequences: []
   dialogueManager: {fileID: 0}
   startingSequence: {fileID: 11400000, guid: 3c03ad4fdd169ea4da5b3e6f7b242e62, type: 2}
   isAnimationPlaying: 0

@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
+  m_Name: Invasion
+  m_EditorClassIdentifier: 
+  sequenceName: invasion
+  steps:
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: Player
+        text: (It is so dark under the bed and I could hardly see anything)
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Player
+        text: (I could not stop trembling... Suddenly, the door was broken in, a
+          familiar, yet annoying voice started talking)
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: The familiar disgusting voice
+        text: Well, well, what do we have here? The last of the rats hiding in their
+          little hole.
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Father
+        text: Who are you? What do you want from us?
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: The familiar disgusting voice
+        text: "Hahaha...Who am I? I\u2019m the man who was humiliated by your pathetic
+          village. You all thought you could defy me and get away with it?"
+        choices: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: The familiar disgusting voice
+        text: I am Morris the Magnate! Nobody says no to me! Ever!
+        choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Mother
+        text: We've done nothing to you!
+        choices: []
+        nextIndex: 7
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Morris
+        text: 'Your village did! Your precious mayor proved to me that this village
+          is beyond saving with his actions. '
+        choices: []
+        nextIndex: 8
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Morris
+        text: You disgusting, dirty creatures who refuse to be civilized deserve
+          to be eliminated from this world!! And I, Morris the Magnate, will personally
+          see to it!
+        choices: []
+        nextIndex: 9
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 4
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+  conditions:
+    conditions: []

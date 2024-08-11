@@ -718,7 +718,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2395cafe4de58094884cdee22196a760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: SAT_nature
+  sceneToLoad: SAT_nature_after
   spawnPointID: 8
 --- !u!1 &1840806292
 GameObject:
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
+  m_ReferencePixelsPerUnit: 16
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0

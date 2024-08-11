@@ -93,7 +93,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionType: 1
   interactionRange: 1
-  invalidTransparency: 0.5
 --- !u!114 &2684239396060556472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,19 +109,76 @@ MonoBehaviour:
   InversObjectID: BrokenTile
   conversation:
     conversationDialogues:
-    - speakerName: 
-      text: 'There is a hole here under the bed. '
+    - speakerName: Player
+      text: (There is a hidden door here under the bed, leading to a secret cabinet.)
       choices: []
       nextIndex: 1
       triggers: []
       requirements: []
+      divergence:
+        parameter:
+          parameterName: 
+          value: 0
+        nextIndex: 0
+        elseIndex: 0
       actions: []
+      boolParameters: []
+      sceneTo: 
+      spawnID: 
+      direction: 0
     - speakerName: Player
-      text: Why
+      text: (Only I know about this little secret, even my parents do not know it)
       choices: []
       nextIndex: 2
       triggers: []
       requirements: []
+      divergence:
+        parameter:
+          parameterName: 
+          value: 0
+        nextIndex: 0
+        elseIndex: 0
       actions: []
+      boolParameters: []
+      sceneTo: 
+      spawnID: 
+      direction: 0
+    - speakerName: Player
+      text: (Everytime I play hide and seek with my sister I win thanks to this little
+        'advantage' I have. My sister even thinks I know magic.)
+      choices: []
+      nextIndex: 3
+      triggers: []
+      requirements: []
+      divergence:
+        parameter:
+          parameterName: 
+          value: 0
+        nextIndex: 0
+        elseIndex: 0
+      actions: []
+      boolParameters: []
+      sceneTo: 
+      spawnID: 
+      direction: 0
+    - speakerName: 
+      text: 
+      choices: []
+      nextIndex: 4
+      triggers:
+      - characterName: Player
+        triggerName: cute
+      requirements: []
+      divergence:
+        parameter:
+          parameterName: 
+          value: 0
+        nextIndex: 0
+        elseIndex: 0
+      actions: []
+      boolParameters: []
+      sceneTo: 
+      spawnID: 
+      direction: 0
     ID: Invest_BrokenTile
   canPick: 0

@@ -31,6 +31,7 @@ MonoBehaviour:
     boolParameters: []
     nextScene: 
     spawnID: 
+    direction: 0
   - npcName: Merchant
     points: []
     trigger: 
@@ -439,7 +440,7 @@ MonoBehaviour:
         spawnID: 
         direction: 0
       - speakerName: Merchant
-        text: Nobody can say no to me, Morris the Magnate!!!
+        text: Nobody can say no to me, I am Morris the Magnate!!!
         choices: []
         nextIndex: 24
         triggers: []
@@ -462,6 +463,7 @@ MonoBehaviour:
     boolParameters: []
     nextScene: 
     spawnID: 
+    direction: 0
   - npcName: Merchant
     points:
     - {x: 18, y: 53, z: 0}
@@ -479,5 +481,6 @@ MonoBehaviour:
     boolParameters: []
     nextScene: PeacefulVillage_After_Conflict
     spawnID: 
+    direction: 0
   conditions:
     conditions: []

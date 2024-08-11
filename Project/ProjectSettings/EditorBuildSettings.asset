@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/HeroHouse_Night.unity
     guid: 1bdb926760adc234ba3c0265f19107ba
   - enabled: 1
+    path: Assets/Scenes/Invasion_Blacksceen.unity
+    guid: 2778db7c700ac6f4c852a0c3fefc2cad
+  - enabled: 1
     path: Assets/Scenes/HeroHouse_Night_After_Genocide.unity
     guid: 2ddd319b42b64054da8b38044e93de39
   - enabled: 1
@@ -77,6 +80,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SAT_nature.unity
     guid: 9377ac3c94d495849a72551c5d8ccd2a
+  - enabled: 1
+    path: Assets/Scenes/SAT_nature_after.unity
+    guid: 2c4e52cf26864964c85259f3ad273300
   - enabled: 1
     path: Assets/Scenes/TimelineScene_Nature.unity
     guid: 3b093376e59ef104687e1de33974e956

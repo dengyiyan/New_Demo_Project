@@ -131,6 +131,7 @@ public class DialogueManager : MonoBehaviour
 
     private void OnRegisterAnimatorEvent()
     {
+        animators.Clear();
         foreach (var ani in FindObjectsOfType<Animator>())
         {
             animators[ani.gameObject.name] = ani;

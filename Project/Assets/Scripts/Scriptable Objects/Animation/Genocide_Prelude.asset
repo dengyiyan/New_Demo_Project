@@ -175,7 +175,8 @@ MonoBehaviour:
     conversation:
       conversationDialogues:
       - speakerName: Father
-        text: Go hide yourselves!
+        text: "Stay hidden, both of you. No matter what happens, don\u2019t come
+          out until it\u2019s safe."
         choices: []
         nextIndex: 1
         triggers: []
@@ -282,8 +283,8 @@ MonoBehaviour:
     allowPlayerMove: 0
     animationType: 4
     boolParameters: []
-    nextScene: HeroHouse_Night_After_Genocide
-    spawnID: 4
-    direction: 3
+    nextScene: Invasion_Blacksceen
+    spawnID: 
+    direction: 0
   conditions:
     conditions: []

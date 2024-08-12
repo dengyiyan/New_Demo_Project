@@ -2195,6 +2195,10 @@ PrefabInstance:
       value: 1171648269
       objectReference: {fileID: 0}
     - target: {fileID: 4292005140228148759, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
+      propertyPath: slowSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292005140228148759, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: defaultSpeed
       value: 10
       objectReference: {fileID: 0}
@@ -2377,7 +2381,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -150.00002}
+  m_AnchoredPosition: {x: 0, y: -150}
   m_SizeDelta: {x: -40, y: -300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1143359559
@@ -3027,8 +3031,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4adbc733b8b5c7748b12c36abd1121c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSceneName: Invasion_Blacksceen
-  startSpawnID: 3
+  startSceneName: SAT_prelude_Blacksceen
+  startSpawnID: 1
 --- !u!4 &1510471760
 Transform:
   m_ObjectHideFlags: 0

@@ -17,7 +17,7 @@ MonoBehaviour:
   - npcName: Player
     points: []
     trigger: 
-    waitForCompletion: 0
+    waitForCompletion: 1
     conversation:
       conversationDialogues:
       - speakerName: Player
@@ -34,6 +34,9 @@ MonoBehaviour:
           elseIndex: 0
         actions: []
         boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
       - speakerName: Player
         text: Hope he is feeling better now...
         choices: []
@@ -48,12 +51,16 @@ MonoBehaviour:
           elseIndex: 0
         actions: []
         boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
       ID: 
-    waitForConversationEnd: 0
+    waitForConversationEnd: 1
     allowPlayerMove: 0
     animationType: 3
     boolParameters: []
     nextScene: 
     spawnID: 
+    direction: 0
   conditions:
     conditions: []

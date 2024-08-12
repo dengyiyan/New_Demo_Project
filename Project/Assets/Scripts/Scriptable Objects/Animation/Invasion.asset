@@ -21,7 +21,7 @@ MonoBehaviour:
     conversation:
       conversationDialogues:
       - speakerName: Player
-        text: (It is so dark under the bed and I could hardly see anything)
+        text: '[It is so dark under the bed and I could hardly see anything]'
         choices: []
         nextIndex: 1
         triggers: []
@@ -38,8 +38,8 @@ MonoBehaviour:
         spawnID: 
         direction: 0
       - speakerName: Player
-        text: (I could not stop trembling... Suddenly, the door was broken in, a
-          familiar, yet annoying voice started talking)
+        text: '[I could not stop trembling... Suddenly, the door was broken in, a
+          familiar, yet annoying voice started talking]'
         choices: []
         nextIndex: 2
         triggers: []
@@ -56,7 +56,7 @@ MonoBehaviour:
         spawnID: 
         direction: 0
       - speakerName: The familiar disgusting voice
-        text: Well, well, what do we have here? The last of the rats hiding in their
+        text: Well, well, what do we have here? The rest of the rats hiding in their
           little hole.
         choices: []
         nextIndex: 3
@@ -179,7 +179,889 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
-      ID: 
+      - speakerName: Morris
+        text: Your mayor and his whole family already paid for what they did! Now
+          it is your turn!
+        choices: []
+        nextIndex: 10
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Player
+        text: (What?! Does that mean Ian also...?)
+        choices: []
+        nextIndex: 11
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Player
+        text: '[But I do not have much time to process that message, as my own family
+          is in danger now]'
+        choices: []
+        nextIndex: 12
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Father
+        text: "Leave us alone! We don\u2019t even know you!"
+        choices: []
+        nextIndex: 13
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Morris
+        text: (Mocking) Oh you don't even have to. I will be your doom.
+        choices: []
+        nextIndex: 14
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[Sounds of fighting, and then...A loud, sickening thud followed by
+          the sound of something heavy hitting the floor]'
+        choices: []
+        nextIndex: 15
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[Then, sounds of smashing, laughing, screaming and crying mixes up,
+          like an endless nightmare.] '
+        choices: []
+        nextIndex: 16
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Mother
+        text: No! Please, stop! No!!!
+        choices: []
+        nextIndex: 17
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[[Player] feels as if his is experiencing an endless falling. This
+          can''t be true... The strong, reliable father...]'
+        choices: []
+        nextIndex: 18
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Morris
+        text: "Take the woman. She\u2019ll serve her purpose."
+        choices: []
+        nextIndex: 19
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: "[The sound of Mother\u2019s screams fades away as she\u2019s dragged
+          off...]"
+        choices: []
+        nextIndex: 20
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[A brief moment of Deadly silence, as [Player] can feel his heart
+          jumping out of his chest, and then, suddenly broken by the sound of crying]'
+        choices: []
+        nextIndex: 21
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[It seems that the baby was woken by the noice]'
+        choices: []
+        nextIndex: 22
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Player
+        text: (No, no, no... not him... Please, stay quiet...)
+        choices: []
+        nextIndex: 23
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Morris
+        text: 'It seems we have some little rats left behind upstairs. Such annoying
+          species, growing like cancer. '
+        choices: []
+        nextIndex: 24
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Morris
+        text: Stop the ******* crying! I hate that noice! Go search for other survivors!
+          I want no one left!
+        choices: []
+        nextIndex: 25
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Mercenary 1
+        text: Yes, boss!
+        choices: []
+        nextIndex: 26
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: "[[Player]'s heart pounds as he hears the heavy footsteps ascending
+          the stairs. The baby\u2019s cries grow louder, echoing in the room]"
+        choices: []
+        nextIndex: 27
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[He is rooted by the great shock despair... The will of living has
+          never been so strong, yet he has got nothing to do against these thugs]'
+        choices: []
+        nextIndex: 28
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[Accidentally, his hand touches the hidden door beneath him.]'
+        choices: []
+        nextIndex: 29
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Player
+        text: (The hidden door... I have to hide. It's the only chance...)
+        choices: []
+        nextIndex: 30
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[With trembling hands, [Player] slowly opens the hidden door and slips
+          into the secret cabinet, just as the heavy footsteps reach the top of the
+          stairs.]'
+        choices: []
+        nextIndex: 31
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: "[The baby\u2019s cries continue to fill the room, but he knows he
+          must remain hidden, no matter how much it tears at his heart..]"
+        choices: []
+        nextIndex: 32
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Mercenary 2
+        text: Look at this little pest. Making this unpleasant noice.
+        choices: []
+        nextIndex: 33
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[Sound of stabbing, followed by a sharp, final cry that pierces the
+          silence before gradually stopping.]'
+        choices: []
+        nextIndex: 34
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Mercenary 3
+        text: 'Now that''s much better. '
+        choices: []
+        nextIndex: 35
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[Tears welling up in [Player]''s eyes, he has to clench his fist to
+          the ground to stop himself from making a sound]'
+        choices: []
+        nextIndex: 36
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Mercenary 1
+        text: 'There are two beds here, there must be someone still hiding. '
+        choices: []
+        nextIndex: 37
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Mercenary 1
+        text: Let's keep searching. Boss says leave no survivors.
+        choices: []
+        nextIndex: 38
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[The sound of footsteps stops at the bed. [Player] can feel the heart
+          in his throat]'
+        choices: []
+        nextIndex: 39
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Player
+        text: (Please, don't find any of us...Please, don't find any of us...Please,
+          don't find any of us...)
+        choices: []
+        nextIndex: 40
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Mercenary 3
+        text: Find you, little cutie~
+        choices: []
+        nextIndex: 41
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Sister
+        text: Let me go! Let me go!
+        choices: []
+        nextIndex: 42
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[[Player]''s heart races, as every fiber of his being screaming to
+          do something, but he remains frozen, knowing he would be caught if he revealed
+          himself.] '
+        choices: []
+        nextIndex: 43
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Mercenary 3
+        text: Ouch! You little brat! You dare to kick me?!
+        choices: []
+        nextIndex: 44
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[Noice of running and chasing... And then, comes the screaming of
+          sister]'
+        choices: []
+        nextIndex: 45
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: "[[Player]\u2019s breath catches in his throat, the overwhelming urge
+          to help battling against his paralyzing fear.]"
+        choices: []
+        nextIndex: 46
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Mercenary 3
+        text: See if you can kick this time, huh?
+        choices: []
+        nextIndex: 47
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Morris
+        text: Well, well, well, what makes it so lively upstairs?
+        choices: []
+        nextIndex: 48
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Mercenary 1
+        text: "Just a little rat trying to fight back, boss. She\u2019s got some
+          spirit, but we\u2019ll finish it."
+        choices: []
+        nextIndex: 49
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Morris
+        text: "Oh, I do love it when they struggle. It\u2019s almost endearing...
+          almost."
+        choices: []
+        nextIndex: 50
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Morris
+        text: "(Crouching down beside the sister, voice dripping with mockery) What\u2019s
+          the matter, little one? Not so brave now, are you?"
+        choices: []
+        nextIndex: 51
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Sister
+        text: "You... you\u2019re a monster! Bring my father and mother back!"
+        choices: []
+        nextIndex: 52
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Morris
+        text: "I\u2019ve been called worse. But I suppose you won\u2019t have to
+          worry about that for long."
+        choices: []
+        nextIndex: 53
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Morris
+        text: "Take her. We\u2019ll see if that spirit lasts. And burn the rest of
+          this filthy place. I\u2019m done here."
+        choices: []
+        nextIndex: 54
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[[Player] listens in horror as the mercenaries drag his sister away,
+          her pained whimpers growing fainter as they descend the stairs.]'
+        choices: []
+        nextIndex: 55
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[Morris and his mercenaries leave, the sound of their footsteps receding
+          as they make their way out of the burning house.]'
+        choices: []
+        nextIndex: 56
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: 
+        text: '[[Player] remains frozen in place, the overwhelming sense of loss
+          crushing him.]'
+        choices: []
+        nextIndex: 57
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Player
+        text: "I\u2019m sorry... I\u2019m so sorry... I couldn\u2019t save you...
+          I couldn\u2019t save anyone... I just want to live..."
+        choices: []
+        nextIndex: 58
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      - speakerName: Player
+        text: I have to get out... I have to survive... I have to find her... I have
+          to...
+        choices: []
+        nextIndex: 59
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+      ID: invasion
     waitForConversationEnd: 1
     allowPlayerMove: 0
     animationType: 3
@@ -198,8 +1080,8 @@ MonoBehaviour:
     allowPlayerMove: 0
     animationType: 4
     boolParameters: []
-    nextScene: 
-    spawnID: 
-    direction: 0
+    nextScene: HeroHouse_Night_After_Genocide
+    spawnID: 4
+    direction: 3
   conditions:
     conditions: []

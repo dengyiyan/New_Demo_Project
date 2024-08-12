@@ -4,17 +4,20 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    [SerializeField] private float defaultSpeed = 4f;
+    [SerializeField] private float defaultSpeed = 4f; 
+    [SerializeField] private float slowSpeed = 2f; // Add this line
+    private float currentSpeed;
+
     private Vector3 movement;
     private Rigidbody2D myRigidbody;
     private Animator animator;
     private bool canMove = true;
 
 
-    private SpriteRenderer bodyRenderer;
-    private SpriteRenderer armsRenderer;
-    private SpriteRenderer hairRenderer;
-    private SpriteRenderer pantsRenderer;
+    //private SpriteRenderer bodyRenderer;
+    //private SpriteRenderer armsRenderer;
+    //private SpriteRenderer hairRenderer;
+    //private SpriteRenderer pantsRenderer;
 
     private bool shouldFlip = false;
     private void Awake()
@@ -22,14 +25,15 @@ public class PlayerMovement : MonoBehaviour
         animator = GetComponent<Animator>();
         myRigidbody = GetComponent<Rigidbody2D>();
 
-        GameObject player = GameObject.Find("Player");
-        bodyRenderer = player.transform.Find("Body").GetComponent<SpriteRenderer>();
+        //GameObject player = GameObject.Find("Player");
+        //bodyRenderer = player.transform.Find("Body").GetComponent<SpriteRenderer>();
 
-        armsRenderer = player.transform.Find("Arms").GetComponent<SpriteRenderer>();
-        hairRenderer = player.transform.Find("Hair").GetComponent<SpriteRenderer>();
-        pantsRenderer = player.transform.Find("Pants").GetComponent<SpriteRenderer>();
+        //armsRenderer = player.transform.Find("Arms").GetComponent<SpriteRenderer>();
+        //hairRenderer = player.transform.Find("Hair").GetComponent<SpriteRenderer>();
+        //pantsRenderer = player.transform.Find("Pants").GetComponent<SpriteRenderer>();
 
         SetFacingDirection(Direction.Front);
+        SetDefaultSpeed();
     }
 
     private void OnEnable()
@@ -41,6 +45,8 @@ public class PlayerMovement : MonoBehaviour
 
         EventHandler.EnablePlayerMovementEvent += EnableMovement;
         EventHandler.DisablePlayerMovementEvent += DisableMovement;
+        EventHandler.SetDefaultSpeedEvent += SetDefaultSpeed;
+        EventHandler.SetSlowSpeedEvent += SetSlowSpeed;
     }
     private void OnDisable()
     {
@@ -51,6 +57,8 @@ public class PlayerMovement : MonoBehaviour
 
         EventHandler.EnablePlayerMovementEvent -= EnableMovement;
         EventHandler.DisablePlayerMovementEvent -= DisableMovement;
+        EventHandler.SetDefaultSpeedEvent -= SetDefaultSpeed;
+        EventHandler.SetSlowSpeedEvent -= SetSlowSpeed;
     }
 
     private void FixedUpdate()
@@ -61,6 +69,16 @@ public class PlayerMovement : MonoBehaviour
             UpdateMovement();
             UpdateAnimationAndMove();
         }
+    }
+
+    public void SetSlowSpeed()
+    {
+        currentSpeed = slowSpeed;
+    }
+
+    public void SetDefaultSpeed()
+    {
+        currentSpeed = defaultSpeed;
     }
 
     private void UpdateMovement() 
@@ -139,7 +157,7 @@ public class PlayerMovement : MonoBehaviour
             movement.x *= 0.6f;
             movement.y *= 0.6f;
         }
-        myRigidbody.MovePosition(transform.position + movement * defaultSpeed * Time.deltaTime);
+        myRigidbody.MovePosition(transform.position + movement * currentSpeed * Time.deltaTime);
     }
 
     private void EnableMovement()

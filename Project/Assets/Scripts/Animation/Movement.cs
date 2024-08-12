@@ -67,7 +67,7 @@ public class AnimationMovement : MonoBehaviour
                 shouldFlip = direction.x < 0;
 
                 //flipOnX(shouldFlip);
-                Debug.LogWarning($"Setting flip to {shouldFlip} in movement");
+                // Debug.LogWarning($"Setting flip to {shouldFlip} in movement");
 
                 MoveCharacter();
                 yield return null; // Wait for the next frame

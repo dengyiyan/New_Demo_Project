@@ -170,6 +170,18 @@ public static class EventHandler
     {
         DisablePlayerMovementEvent?.Invoke();
     }
+
+    public static event Action SetDefaultSpeedEvent;
+    public static void CallSetDefaultSpeedEvent()
+    {
+        SetDefaultSpeedEvent?.Invoke();
+    }
+
+    public static event Action SetSlowSpeedEvent;
+    public static void CallSetSlowSpeedEvent()
+    {
+        SetSlowSpeedEvent?.Invoke();
+    }
     //public static event Action<Vector3, ItemDetails> MouseClickedEvent;
     //public static void CallMouseClickedEvent(Vector3 pos, ItemDetails itemDetails)
     //{

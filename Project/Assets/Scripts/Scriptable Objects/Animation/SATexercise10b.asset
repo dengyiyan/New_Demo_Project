@@ -1,0 +1,279 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
+  m_Name: SATexercise10b
+  m_EditorClassIdentifier: 
+  sequenceName: sat_exercise10b
+  steps:
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: Familiar Voice
+        text: First, recall a painful childhood episode, such as emotional or physical
+          abuse, or loss of a significant figure, with all the details your still
+          remember
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: Look at the unhappy photo of yours, and associate the face of the child
+          you were in the past with it.
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: As you remember the associated emotions, e.g.,  helplessness, humiliation
+          and rage, with closed eyes, imagine your Adult intervening in the scene
+          like a good parent.
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: Imagine yor adult self approaching your distressed child quickly
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: 'Meanwhile, the adult self is also loudly reassuring the child that
+          you have now come to save them by: '
+        choices: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: "1. standing up with a loud voice to any perpetrator, for example:
+          \u201CWhy are you hitting my Child?\u201D"
+        choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: "2. supporting the Child with a loud voice, for example: \u201CMy darling,
+          I will not let them hurt you anymore.\u201D"
+        choices: []
+        nextIndex: 7
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: 3. imaginatively cuddling your Child, by a face/neck/head self-massage
+        choices: []
+        nextIndex: 8
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: Repeat the process until you feel comforted and soothed, overcoming
+          the past pain.
+        choices: []
+        nextIndex: 9
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: I can repeat the process for you if you want me to.
+        choices:
+        - choiceText: Yes, please!
+          nextIndex: 0
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: No, thanks. I am done with this exercise!
+          nextIndex: 10
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        nextIndex: 10
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: Congratulations on completing this task darling! I am so proud of you!
+        choices:
+        - choiceText: Yes, please!
+          nextIndex: 0
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: No, thanks. I am done with this exercise!
+          nextIndex: 10
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        nextIndex: 11
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 4
+    boolParameters: []
+    nextScene: HeroHouse_SAT_unhappy
+    spawnID: 7
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  conditions:
+    conditions: []

@@ -1,3 +1,4 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -11,10 +12,13 @@ namespace MyProject.Transition
         [SceneName]
         public string startSceneName = string.Empty;
         public string startSpawnID = "0";
+        public AnimationSequence startingSequence = null;
 
         // private ConversationChecker conversationChecker;
         private CanvasGroup fadeCanvasGroup;
         private bool isFade;
+
+        private bool isNotFirstTime = false; //to prevent the loading become strange, not useful in final version
 
         private bool canTransit = true;
 
@@ -26,6 +30,11 @@ namespace MyProject.Transition
         //    SceneManager.LoadScene("UI", LoadSceneMode.Additive);
         //}
 
+        private void Awake()
+        {
+            SceneManager.LoadScene("UI", LoadSceneMode.Additive);
+        }
+
         private void Start()
         {
             GameObject loadingPanel = GameObject.FindGameObjectWithTag("Loading");
@@ -33,11 +42,11 @@ namespace MyProject.Transition
 
             // conversationChecker = GetComponent<ConversationChecker>();
 
-            StartCoroutine(LoadSceneSetActive(startSceneName));
-            if (!string.IsNullOrEmpty(startSpawnID))
-            {
-                MovePlayerToSpawnPoint(startSpawnID);
-            }
+            StartCoroutine(LoadSceneSetActive(startSceneName, startSpawnID, startingSequence));
+            //if (!string.IsNullOrEmpty(startSpawnID))
+            //{
+            //    MovePlayerToSpawnPoint(startSpawnID);
+            //}
 
         }
 
@@ -70,9 +79,11 @@ namespace MyProject.Transition
 
         private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            if (scene.name == startSceneName)
+            if (scene.name == startSceneName && !isNotFirstTime)
             {
                 EventHandler.CallAfterSceneLoadEvent();
+                isNotFirstTime = true;
+                // Debug.Log("loaded");
             }
         }
 
@@ -87,14 +98,14 @@ namespace MyProject.Transition
         }
 
 
-        private void OnTransitionEvent(string sceneToGo, string spawnPointID)
+        private void OnTransitionEvent(string sceneToGo, string spawnPointID, AnimationSequence sequence)
         {
             //if (conversationChecker)
             //    ;
-            Debug.Log($"Transition triggered with flag{canTransit}");
+            //Debug.Log($"Transition triggered with flag{canTransit}");
             if ((!isFade) && canTransit)
             {
-                StartCoroutine(Transition(sceneToGo, spawnPointID));
+                StartCoroutine(Transition(sceneToGo, spawnPointID, sequence));
 
             }
             // if ()
@@ -125,16 +136,16 @@ namespace MyProject.Transition
             {
                 if (spawnPoint.spawnPointID == spawnPointID)
                 {
-                    Debug.Log("Spawn Point Found!");
+                    // Debug.Log("Spawn Point Found!");
                     return spawnPoint;
                 }
             }
-            Debug.Log("Spawn Point NOT Found!");
+            // Debug.Log("Spawn Point NOT Found!");
             return null;
         }
 
         
-        private IEnumerator Transition(string sceneName, string spawnPointID)
+        private IEnumerator Transition(string sceneName, string spawnPointID, AnimationSequence sequence = null)
         {
             fadeCanvasGroup.blocksRaycasts = true;
             EventHandler.CallBeforeSceneUnloadEvent();
@@ -142,12 +153,12 @@ namespace MyProject.Transition
 
             yield return SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());// 卸载当前场景
 
-            yield return LoadSceneSetActive(sceneName);// 加载场景并设置为激活
+            yield return LoadSceneSetActive(sceneName, spawnPointID, sequence);// 加载场景并设置为激活
 
-            MovePlayerToSpawnPoint(spawnPointID);
-            
             EventHandler.CallAfterSceneLoadEvent();
+
             yield return Fade(0);
+
             fadeCanvasGroup.blocksRaycasts = false;
         }
 
@@ -164,7 +175,7 @@ namespace MyProject.Transition
         }
 
         
-        private IEnumerator LoadSceneSetActive(string sceneName)
+        private IEnumerator LoadSceneSetActive(string sceneName, string spawnPointID, AnimationSequence sequence = null)
         {
             yield return SceneManager.LoadSceneAsync(sceneName, LoadSceneMode.Additive);
 
@@ -172,6 +183,14 @@ namespace MyProject.Transition
 
             SceneManager.SetActiveScene(newScene);
 
+            MovePlayerToSpawnPoint(spawnPointID);
+
+            var animationManager = FindObjectOfType<AnimationManager>();
+            // Debug.LogWarning($"Animation manager: {animationManager}");
+            if (animationManager != null && sequence != null)
+            {
+                animationManager.SetStartingSequence(sequence);
+            }
             // conversationChecker = GetComponent<ConversationChecker>();
         }
 
@@ -193,20 +212,20 @@ namespace MyProject.Transition
             isFade = false;
         }
 
-        public IEnumerator LoadSaveDataScene(string sceneName)
-        {
-            yield return Fade(1f);
+        //public IEnumerator LoadSaveDataScene(string sceneName)
+        //{
+        //    yield return Fade(1f);
 
-            if (SceneManager.GetActiveScene().name != "PersistentScene")//在游戏过程中 加载另外游戏进度
-            {
-                EventHandler.CallBeforeSceneUnloadEvent();
-                yield return SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
-            }
+        //    if (SceneManager.GetActiveScene().name != "PersistentScene")//在游戏过程中 加载另外游戏进度
+        //    {
+        //        EventHandler.CallBeforeSceneUnloadEvent();
+        //        yield return SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene().buildIndex);
+        //    }
 
-            yield return LoadSceneSetActive(sceneName);
-            EventHandler.CallAfterSceneLoadEvent();
-            yield return Fade(0);
-        }
+        //    yield return LoadSceneSetActive(sceneName);
+        //    EventHandler.CallAfterSceneLoadEvent();
+        //    yield return Fade(0);
+        //}
 
         private IEnumerator UnloadScene()
         {

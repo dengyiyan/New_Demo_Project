@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -140,12 +139,12 @@ public class BodyPartManager : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogWarning($"SpriteRenderer not found on child object: {type}");
+                    //Debug.LogWarning($"SpriteRenderer not found on child object: {type}");
                 }
             }
             else
             {
-                Debug.LogWarning($"Child object not found: {type}");
+                //Debug.LogWarning($"Child object not found: {type}");
             }
         }
     }

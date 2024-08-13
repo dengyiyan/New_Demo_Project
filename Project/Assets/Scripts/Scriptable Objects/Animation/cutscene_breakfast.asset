@@ -21,7 +21,7 @@ MonoBehaviour:
     conversation:
       conversationDialogues:
       - speakerName: Mother
-        text: (Smiling) Morning, , sleepyhead! Just in time for breakfast.
+        text: (Smiling) Morning, sleepyhead! Just in time for breakfast.
         choices: []
         nextIndex: 1
         triggers: []
@@ -37,6 +37,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: Morning! What smells so good?
         choices: []
@@ -54,6 +55,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Father
         text: (Grinning) Your favorite pancakes. A little something special before
           your big day.
@@ -72,27 +74,10 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Sister
         text: "(Excitedly) I can\u2019t believe you\u2019re almost 13! I wish I can
           grow up faster!"
-        choices: []
-        nextIndex: 5
-        triggers: []
-        requirements: []
-        divergence:
-          parameter:
-            parameterName: 
-            value: 0
-          nextIndex: 0
-          elseIndex: 0
-        actions: []
-        boolParameters: []
-        sceneTo: 
-        spawnID: 
-        direction: 0
-      - speakerName: Player
-        text: "Yeah, it\u2019s kind of hard to believe. It feels like just yesterday
-          I was turning 10."
         choices: []
         nextIndex: 4
         triggers: []
@@ -108,9 +93,10 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
-      - speakerName: Mother
-        text: "Our little gentleman is growing up so quickly. We\u2019ve got something
-          special planned for you."
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: "Yeah, it\u2019s kind of hard to believe. It feels like just yesterday
+          I was turning 10."
         choices: []
         nextIndex: 5
         triggers: []
@@ -126,9 +112,10 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
-      - speakerName: Father
-        text: "We\u2019re proud of you, son. It\u2019s going to be a birthday to
-          remember."
+        newStartingSequence: {fileID: 0}
+      - speakerName: Mother
+        text: "Our little gentleman is growing up so quickly. We\u2019ve got something
+          special planned for you."
         choices: []
         nextIndex: 6
         triggers: []
@@ -144,8 +131,10 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
-      - speakerName: Sister
-        text: You are going to love it!
+        newStartingSequence: {fileID: 0}
+      - speakerName: Father
+        text: "We\u2019re proud of you, son. It\u2019s going to be a birthday to
+          remember."
         choices: []
         nextIndex: 7
         triggers: []
@@ -161,10 +150,29 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Sister
+        text: You are going to love it!
+        choices: []
+        nextIndex: 8
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: "Thanks, everyone. I\u2019m really looking forward to it."
         choices: []
-        nextIndex: 8
+        nextIndex: 9
         triggers:
         - characterName: Player
           triggerName: heart
@@ -180,6 +188,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mother
         text: (Chuckles) Now, come and have some breakfast before it gets cold. We
           have a beautiful day ahead.
@@ -198,6 +207,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       ID: cutscene_breakfast
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -206,6 +216,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points:
     - {x: -4.5, y: 6.196258, z: 0}
@@ -217,10 +228,26 @@ MonoBehaviour:
       ID: 
     waitForConversationEnd: 0
     allowPlayerMove: 0
-    animationType: 5
+    animationType: 0
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 4
     boolParameters: []
     nextScene: HeroHouse_After_Breakfast
     spawnID: 2
-    direction: 0
+    direction: 1
+    newStartingSequence: {fileID: 0}
   conditions:
     conditions: []

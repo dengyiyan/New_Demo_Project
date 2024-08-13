@@ -718,8 +718,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2395cafe4de58094884cdee22196a760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: SAT_nature_after
+  sceneToLoad: SAT_nature
   spawnPointID: 8
+  newStartingSequence: {fileID: 11400000, guid: a8cd896e05288d8459e286fee880f423, type: 2}
 --- !u!1 &1840806292
 GameObject:
   m_ObjectHideFlags: 0

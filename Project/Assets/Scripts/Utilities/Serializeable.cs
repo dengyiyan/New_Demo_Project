@@ -55,6 +55,7 @@ public class AnimationStep
     [SceneName] public string nextScene;
     public string spawnID;
     public Direction direction;
+    public AnimationSequence newStartingSequence = null;
     // public AnimationSequence nextSequence;
 }
 
@@ -84,6 +85,7 @@ public class ConversationDialogue
     public string sceneTo;
     public string spawnID;
     public Direction direction;
+    public AnimationSequence newStartingSequence = null;
 
 }
 

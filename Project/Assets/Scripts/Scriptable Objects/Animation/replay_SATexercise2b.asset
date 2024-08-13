@@ -1,0 +1,799 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
+  m_Name: replay_SATexercise2b
+  m_EditorClassIdentifier: 
+  sequenceName: replay_SATexercise2b
+  steps:
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 6
+    boolParameters:
+    - parameterName: isHugging
+      value: 1
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Childhood Self
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 6
+    boolParameters:
+    - parameterName: isHugging
+      value: 1
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: Familiar Voice
+        text: First, you will need to know why the child is upset before you start
+          comforting him.
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: Which negative emotion should we try next?
+        choices:
+        - choiceText: sad
+          nextIndex: 2
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: angry
+          nextIndex: 10
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: fearful
+          nextIndex: 18
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: disgusted
+          nextIndex: 25
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: I have finished this task!
+          nextIndex: 32
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions:
+          - parameterName: Exercise2bCompleted
+            value: 1
+          counterAdders: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: Hey there, it's okay to be sad. I'm here with you now.
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Childhood Self
+        text: (Sobbing) I feel so alone and scared. Why did this happen to us?
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: "I know it\u2019s hard to keep up. But we\u2019ll get through this
+          together. You\u2019re not alone anymore. I\u2019m here to protect you."
+        choices: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: "Let\u2019s remember the happy times we had, like when we played by
+          the river. Those memories can give us strength."
+        choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Childhood Self
+        text: (Smiling faintly) I miss those days.
+        choices: []
+        nextIndex: 7
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: We'll have more days like those ahead of us, I promise. Now, how about
+          a smile?
+        choices: []
+        nextIndex: 8
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: The child starts to smile and nods.
+        choices: []
+        nextIndex: 9
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: Well done! You have made the unhappy child happier!
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions:
+        - parameterName: Exercise2bCompleted
+          value: 1
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Childhood Self
+        text: "(Yelling) It\u2019s not fair! Why did they do this to us?"
+        choices: []
+        nextIndex: 11
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: "You\u2019re right, it\u2019s not fair. But holding onto anger will
+          only hurt us more. "
+        choices: []
+        nextIndex: 12
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: We can channel this anger into something positive, like rebuilding
+          and helping others.
+        choices: []
+        nextIndex: 13
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Childhood Self
+        text: How can we do that? We don't even have a place to live!
+        choices: []
+        nextIndex: 14
+        triggers:
+        - characterName: Childhood Self
+          triggerName: upset
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: "Together, we can make a difference. Let\u2019s start by taking deep
+          breaths and finding our calm."
+        choices: []
+        nextIndex: 15
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[[Player] demonstrates deep breathing, and the child imitates, slowly
+          calming down.]'
+        choices: []
+        nextIndex: 16
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: See? We can find peace even in the darkest times. Our future will be
+          bright, I promise.
+        choices: []
+        nextIndex: 17
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[The child says nothing, but is not that angry anymore]'
+        choices: []
+        nextIndex: 9
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: "It\u2019s okay, you\u2019re safe now. No one can hurt you here."
+        choices: []
+        nextIndex: 19
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Childhood Self
+        text: "I\u2019m scared... What if they come back?"
+        choices: []
+        nextIndex: 20
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: "They can\u2019t reach us here. This is our safe place. Remember how
+          brave you are. We faced so many fears together and came out stronger."
+        choices: []
+        nextIndex: 21
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Childhood Self
+        text: "But it\u2019s so hard to be brave..."
+        choices: []
+        nextIndex: 22
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: "I know. But I\u2019m here to help you. Let\u2019s face our fears together.
+          Hold my hand."
+        choices: []
+        nextIndex: 23
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: Feel the strength in our bond. We can overcome anything.
+        choices: []
+        nextIndex: 24
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Childhood Self
+        text: Okay. I trust you.
+        choices: []
+        nextIndex: 9
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Childhood Self
+        text: Everything feels so dirty and wrong. I hate it.
+        choices: []
+        nextIndex: 26
+        triggers:
+        - characterName: Childhood Self
+          triggerName: upset
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: What happened was awful, but we can clean up the mess, both inside
+          and out. We can make things beautiful again.
+        choices: []
+        nextIndex: 27
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Childhood Self
+        text: (Skeptical) How can we do that?
+        choices: []
+        nextIndex: 28
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: "Together, we can start small. One step at a time, we\u2019ll make
+          things better. Let\u2019s find something beautiful to focus on."
+        choices: []
+        nextIndex: 29
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: You see, even after all these, there is still something beautiful remaining.
+          This place in our memory, the past joys are still there.
+        choices: []
+        nextIndex: 30
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: All we need to do is picking up little extras in life.
+        choices: []
+        nextIndex: 31
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[The child nodded.]'
+        choices: []
+        nextIndex: 9
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: 'Well done following the task! It is worth noting that you can always
+          use your imagination to personalize the interaction with the child to get
+          a stronger bond. '
+        choices: []
+        nextIndex: 33
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: What is more, you can picture the child cheering up and dancing after
+          your comfort.
+        choices: []
+        nextIndex: 34
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: Now, should we go back?
+        choices:
+        - choiceText: Let's go!
+          nextIndex: 35
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: I want to experience it again
+          nextIndex: 0
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        nextIndex: 35
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: If you say so, darling.
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: replay_embrace_childhood_self_unhappy
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 4
+    boolParameters:
+    - parameterName: isHugging
+      value: 0
+    nextScene: HeroHouse_SAT_Exercise_template
+    spawnID: 7
+    direction: 1
+    newStartingSequence: {fileID: 11400000, guid: 7c68d83da44f7db42861361b9cb9fd64, type: 2}
+  conditions:
+    conditions: []

@@ -30,6 +30,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Childhood Self
     points: []
     trigger: 
@@ -46,6 +47,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -69,6 +71,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Do you feel closer to your inner self embracing him?
         choices: []
@@ -86,6 +89,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: We shall proceed whenever you are ready.
         choices:
@@ -115,6 +119,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: You are doing very well, sweetheart.
         choices: []
@@ -132,6 +137,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: 
         choices: []
@@ -149,6 +155,7 @@ MonoBehaviour:
         sceneTo: HeroHouse_SAT_Exercise2
         spawnID: 5
         direction: 1
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Take your time, darling.
         choices: []
@@ -166,6 +173,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       ID: embrace_childhood_self
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -174,6 +182,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -187,8 +196,9 @@ MonoBehaviour:
     boolParameters:
     - parameterName: isHugging
       value: 0
-    nextScene: HeroHouse_SAT_Exercise2
+    nextScene: HeroHouse_SAT_Exercise_template
     spawnID: 7
     direction: 1
+    newStartingSequence: {fileID: 11400000, guid: c83458c7084399243ba19eb3f45a9e39, type: 2}
   conditions:
     conditions: []

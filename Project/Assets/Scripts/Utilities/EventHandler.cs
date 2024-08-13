@@ -5,14 +5,14 @@ using System;
 
 public static class EventHandler
 {
-    public static event Action<string, string> TransitionEvent;
-    public static void CallTransitionEvent(string sceneName, string spawnPointID)
+    public static event Action<string, string, AnimationSequence> TransitionEvent;
+    public static void CallTransitionEvent(string sceneName, string spawnPointID, AnimationSequence sequence=null)
     {
         foreach (var convChecker in GameObject.FindObjectsOfType<ConversationChecker>())
         {
-            convChecker.CheckTransitionStatus(sceneName, spawnPointID);
+            convChecker.CheckTransitionStatus(sceneName, spawnPointID, sequence);
         }
-        TransitionEvent?.Invoke(sceneName, spawnPointID);
+        TransitionEvent?.Invoke(sceneName, spawnPointID, sequence);
     }
 
     public static event Action UpdateBodyPartEvent;
@@ -90,12 +90,14 @@ public static class EventHandler
     public static event Action BeforeSceneUnloadEvent;
     public static void CallBeforeSceneUnloadEvent()
     {
+        //Debug.Log("Unload scene");
         BeforeSceneUnloadEvent?.Invoke();
     }
 
     public static event Action AfterSceneLoadEvent;
     public static void CallAfterSceneLoadEvent()
     {
+        //Debug.Log("Load scene");
         AfterSceneLoadEvent?.Invoke();
     }
 
@@ -182,6 +184,19 @@ public static class EventHandler
     {
         SetSlowSpeedEvent?.Invoke();
     }
+
+    public static event Action<Dictionary<string, Animator>> RegisterAnimatorEvent;
+    public static void CallRegisterAnimatorEvent(Dictionary<string, Animator> animators)
+    {
+        RegisterAnimatorEvent?.Invoke(animators);
+    }
+
+    public static event Action<Dictionary<string, GameObject>> RegisterNPCEvent;
+    public static void CallRegisterNPCEvent(Dictionary<string, GameObject> npcs)
+    {
+        RegisterNPCEvent?.Invoke(npcs);
+    }
+
     //public static event Action<Vector3, ItemDetails> MouseClickedEvent;
     //public static void CallMouseClickedEvent(Vector3 pos, ItemDetails itemDetails)
     //{

@@ -39,6 +39,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: When suffering from negative emotions, imagine the child is trapped
           in the room, but can gradually learn to open the door and walk out into
@@ -58,6 +59,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: In our case, we will use the home after the incident as an example.
           Because it is the concrete shape of the negative emotions to you after
@@ -77,6 +79,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Shall we wrap up this exercise?
         choices:
@@ -106,6 +109,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Sure, no worries honey.
         choices: []
@@ -123,6 +127,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       ID: SAT_exercise6_unhappy
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -131,6 +136,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -142,8 +148,9 @@ MonoBehaviour:
     allowPlayerMove: 0
     animationType: 4
     boolParameters: []
-    nextScene: HeroHouse_SAT_Exercise7a
+    nextScene: HeroHouse_SAT_Exercise_template
     spawnID: 7
     direction: 1
+    newStartingSequence: {fileID: 11400000, guid: dce9bcb82c3c8c941b5f1765e7b810d2, type: 2}
   conditions:
     conditions: []

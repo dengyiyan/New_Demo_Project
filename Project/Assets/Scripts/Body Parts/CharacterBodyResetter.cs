@@ -36,6 +36,6 @@ public class CharacterBodyResetter : MonoBehaviour
             }
         }
 
-        Debug.Log("CharacterBody has been reset to default settings.");
+        //Debug.Log("CharacterBody has been reset to default settings.");
     }
 }

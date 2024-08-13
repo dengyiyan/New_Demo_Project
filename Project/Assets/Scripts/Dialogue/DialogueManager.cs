@@ -46,7 +46,7 @@ public class DialogueManager : MonoBehaviour
 
 
     private Dictionary<string, Animator> animators = new Dictionary<string, Animator>();
-    private Dictionary<string, Animator> new_animators = new Dictionary<string, Animator>();
+    // private Dictionary<string, Animator> new_animators = new Dictionary<string, Animator>();
 
 
     void Awake()
@@ -70,24 +70,24 @@ public class DialogueManager : MonoBehaviour
         animator = player.GetComponent<Animator>();
 
 
-        foreach (var ani in FindObjectsOfType<Animator>())
-        {
-            animators[ani.gameObject.name] = ani;
-        }
+        //foreach (var ani in FindObjectsOfType<Animator>())
+        //{
+        //    animators[ani.gameObject.name] = ani;
+        //}
 
-        animators["Player"] = animator;
+        //animators["Player"] = animator;
 
         AddEventTrigger(dialoguePanel, EventTriggerType.PointerClick, OnDialoguePanelClick);
     }
 
     private void Start()
     {
-        OnRegisterAnimatorEvent();
+        //OnRegisterAnimatorEvent();
     }
 
     private void OnEnable()
     {
-        EventHandler.AfterSceneLoadEvent += OnAfterSceneLoadEvent;
+        // EventHandler.AfterSceneLoadEvent += OnAfterSceneLoadEvent;
         EventHandler.StartConversationEvent += OnStartConversation;
         EventHandler.EndConversationEvent += EndConversation;
         EventHandler.ShowMessageEvent += ShowMessage;
@@ -96,12 +96,12 @@ public class DialogueManager : MonoBehaviour
         EventHandler.EnableNewConversationEvent += EnableNewConversation;
         EventHandler.DisableNewConversationEvent += DisableNewConversation;
 
-        //EventHandler.RegisterAnimatorEvent += OnRegisterAnimatorEvent;
+        EventHandler.RegisterAnimatorEvent += OnRegisterAnimatorEvent;
     }
 
     private void OnDestroy()
     {
-        EventHandler.AfterSceneLoadEvent -= OnAfterSceneLoadEvent;
+        // EventHandler.AfterSceneLoadEvent -= OnAfterSceneLoadEvent;
         EventHandler.StartConversationEvent -= OnStartConversation;
         EventHandler.EndConversationEvent -= EndConversation;
         EventHandler.ShowMessageEvent -= ShowMessage;
@@ -109,15 +109,15 @@ public class DialogueManager : MonoBehaviour
 
         EventHandler.EnableNewConversationEvent -= EnableNewConversation;
         EventHandler.DisableNewConversationEvent -= DisableNewConversation;
-        //EventHandler.RegisterAnimatorEvent -= OnRegisterAnimatorEvent;
+        EventHandler.RegisterAnimatorEvent -= OnRegisterAnimatorEvent;
     }
 
 
-    private void OnAfterSceneLoadEvent()
-    {
-        OnRegisterAnimatorEvent();
+    //private void OnAfterSceneLoadEvent()
+    //{
+    //    OnRegisterAnimatorEvent();
         
-    }
+    //}
 
     private void EnableNewConversation()
     {
@@ -129,16 +129,9 @@ public class DialogueManager : MonoBehaviour
         isShowing = false;
     }
 
-    private void OnRegisterAnimatorEvent()
+    private void OnRegisterAnimatorEvent(Dictionary<string, Animator> in_animators)
     {
-        animators.Clear();
-        foreach (var ani in FindObjectsOfType<Animator>())
-        {
-            animators[ani.gameObject.name] = ani;
-            Debug.Log(ani.gameObject.name);
-        }
-
-        animators["Player"] = animator;
+        animators = in_animators;
     }
 
     private string getTrueSpeakerName(string speakerName)
@@ -189,7 +182,7 @@ public class DialogueManager : MonoBehaviour
 
         EventHandler.CallIncreaseDisableEvent();
         EventHandler.CallDisableCursorEvent();
-        Debug.Log("Disable cursor in Dialogue Manager!");
+        //Debug.Log("Disable cursor in Dialogue Manager!");
 
         animator.SetBool("isWalking", false);
 
@@ -203,7 +196,7 @@ public class DialogueManager : MonoBehaviour
         dialoguePanel.SetActive(false);
         EventHandler.CallDecreaseDisableEvent();
         EventHandler.CallEnableCursorEvent();
-        Debug.Log("Enable cursor in Dialogue Manager!");
+        //Debug.Log("Enable cursor in Dialogue Manager!");
 
         ResetCameraFocus();
     }
@@ -214,7 +207,7 @@ public class DialogueManager : MonoBehaviour
             return;
         if (conversation.conversationDialogues.Length == 0)
             return;
-        Debug.Log("Conversation Started!");
+        //Debug.Log("Conversation Started!");
         if (dialogues == null)
         {
             dialogues = new Queue<ConversationDialogue>();
@@ -229,12 +222,12 @@ public class DialogueManager : MonoBehaviour
         if (currentDialogues[0].triggers == null)
         {
             dialoguePanel.SetActive(true);
-            Debug.Log($"isShowing is set to {isShowing}");
+            //Debug.Log($"isShowing is set to {isShowing}");
         }
 
         EventHandler.CallIncreaseDisableEvent();
         EventHandler.CallDisableCursorEvent();
-        Debug.Log("Disable cursor in Dialogue Manager!");
+        //Debug.Log("Disable cursor in Dialogue Manager!");
 
         animator.SetBool("isWalking", false);
         DisplayCurrentDialogue();
@@ -243,7 +236,7 @@ public class DialogueManager : MonoBehaviour
     public void EndConversation()
     {
         isShowing = false;
-        Debug.Log($"isShowing is set to {isShowing}");
+        //Debug.Log($"isShowing is set to {isShowing}");
         dialoguePanel.SetActive(false);
         choicePanel.SetActive(false);
 
@@ -252,7 +245,7 @@ public class DialogueManager : MonoBehaviour
 
         EventHandler.CallDecreaseDisableEvent();
         EventHandler.CallEnableCursorEvent();
-        Debug.Log("Enable cursor in Dialogue Manager!");
+        //Debug.Log("Enable cursor in Dialogue Manager!");
 
         ResetCameraFocus();
     }
@@ -274,7 +267,7 @@ public class DialogueManager : MonoBehaviour
 
         if (!string.IsNullOrEmpty(dialogue.sceneTo))
         {
-            EventHandler.CallTransitionEvent(dialogue.sceneTo, dialogue.spawnID);
+            EventHandler.CallTransitionEvent(dialogue.sceneTo, dialogue.spawnID, dialogue.newStartingSequence);
             EventHandler.CallPlayerFaceEvent(dialogue.direction);
         }
 
@@ -366,12 +359,12 @@ public class DialogueManager : MonoBehaviour
                 }
                 else
                 {
-                    Debug.LogWarning($"AnimationMovement component not found on {trigger.characterName}.");
+                    //Debug.LogWarning($"AnimationMovement component not found on {trigger.characterName}.");
                 }
             }
             else
             {
-                Debug.LogWarning($"Animator with name {trigger.characterName} not found.");
+                //Debug.LogWarning($"Animator with name {trigger.characterName} not found.");
             }
         }
     }
@@ -388,10 +381,10 @@ public class DialogueManager : MonoBehaviour
         if (!string.IsNullOrEmpty(dialogue.text))
         {
             nameText.text = getTrueSpeakerName(dialogue.speakerName);
-            Debug.Log($"{dialogue.speakerName}");
+            //Debug.Log($"{dialogue.speakerName}");
             dialoguePanel.SetActive(true);
             isShowing = true;
-            Debug.Log($"isShowing is set to {isShowing}");
+            //Debug.Log($"isShowing is set to {isShowing}");
             StopAllCoroutines();
 
             typingChoices = dialogue.choices;
@@ -581,7 +574,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (animators.TryGetValue(speakerName, out Animator animator))
         {
-            Debug.Log($"Got the animator for {speakerName}");
+            //Debug.Log($"Got the animator for {speakerName}");
             Transform speakerTransform = animator.transform;
 
             if (targetGroup != null)
@@ -622,7 +615,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            Debug.Log($"Did not get the animator for {speakerName}");
+            //Debug.Log($"Did not get the animator for {speakerName}");
         }
     }
 

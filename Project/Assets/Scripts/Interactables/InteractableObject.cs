@@ -31,7 +31,7 @@ public class InteractableObject : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Player object with tag 'Player' not found in the scene.");
+            //Debug.LogError("Player object with tag 'Player' not found in the scene.");
         }
         interactableCollider = GetComponent<Collider2D>();
         spriteRenderers = GetComponentsInChildren<SpriteRenderer>();
@@ -116,7 +116,7 @@ public class InteractableObject : MonoBehaviour
     {
         if (spriteRenderers.Length == 0)
         {
-            Debug.LogError("No SpriteRenderer components found in the children.");
+            //Debug.LogError("No SpriteRenderer components found in the children.");
             return float.MaxValue;
         }
 
@@ -180,7 +180,7 @@ public class InteractableObject : MonoBehaviour
         }
         else
         {
-            Debug.Log("No npc script found");
+            //Debug.Log("No npc script found");
         }
     }
     private void InvestInteraction()
@@ -191,7 +191,7 @@ public class InteractableObject : MonoBehaviour
         }
         else
         {
-            Debug.Log("No invest script found");
+            //Debug.Log("No invest script found");
         }
     }
 }

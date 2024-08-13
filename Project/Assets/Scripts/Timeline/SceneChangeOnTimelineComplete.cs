@@ -7,6 +7,7 @@ public class SceneChangeOnTimelineComplete : MonoBehaviour
     [SceneName]
     public string sceneToLoad; // The name of the scene to load
     public string spawnPointID;
+    public AnimationSequence newStartingSequence = null;
     private PlayableDirector playableDirector;
 
     private bool isPlaying;
@@ -22,7 +23,7 @@ public class SceneChangeOnTimelineComplete : MonoBehaviour
         }
         else
         {
-            Debug.LogError("PlayableDirector component not found.");
+            //Debug.LogError("PlayableDirector component not found.");
         }
     }
 
@@ -45,7 +46,7 @@ public class SceneChangeOnTimelineComplete : MonoBehaviour
 
     void OnPlayableDirectorPlayed(PlayableDirector director)
     {
-        Debug.Log("PlayableDirector started.");
+        //Debug.Log("PlayableDirector started.");
         if (director == playableDirector)
         {
             isPlaying = true;
@@ -54,12 +55,12 @@ public class SceneChangeOnTimelineComplete : MonoBehaviour
 
     void OnPlayableDirectorStopped(PlayableDirector director)
     {
-        Debug.Log("PlayableDirector stopped.");
+        //Debug.Log("PlayableDirector stopped.");
         if (director == playableDirector)
         {
             if (!string.IsNullOrEmpty(sceneToLoad))
             {
-                EventHandler.CallTransitionEvent(sceneToLoad, spawnPointID);
+                EventHandler.CallTransitionEvent(sceneToLoad, spawnPointID, newStartingSequence);
             }
 
             playableDirector.enabled = false;

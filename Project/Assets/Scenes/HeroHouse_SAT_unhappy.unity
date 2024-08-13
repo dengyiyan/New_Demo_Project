@@ -3557,6 +3557,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BrokenTile
       objectReference: {fileID: 0}
+    - target: {fileID: 193132720039585728, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1278438276167128749, guid: 81532f0c901bdbd46aafaaaac2c9ba85, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.3176572

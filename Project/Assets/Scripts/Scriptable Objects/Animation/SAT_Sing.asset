@@ -30,6 +30,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Childhood Self
     points: []
     trigger: 
@@ -46,6 +47,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -69,6 +71,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Pick a jolly lyrical song that you treasure, which can invoke your
           feelings of warmth, affection and love.
@@ -87,6 +90,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: While looking at the happy photo of yours, sing the song, as a way
           to establish a deep emotional bond with the child in your mind
@@ -105,6 +109,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: You can sing it quietly at first, and volume up while using more body
           motions over time. For example, shaking your body or hands or moving your
@@ -124,6 +129,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: We shall proceed whenever you are ready.
         choices:
@@ -153,6 +159,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: As you wish, darling!
         choices: []
@@ -170,6 +177,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: 
         choices: []
@@ -187,6 +195,7 @@ MonoBehaviour:
         sceneTo: HeroHouse_SAT_Exercise2
         spawnID: 5
         direction: 1
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Take your time, darling.
         choices: []
@@ -204,6 +213,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       ID: sing_to_childhood_self
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -212,6 +222,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -228,6 +239,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Childhood Self
     points: []
     trigger: 
@@ -244,6 +256,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -268,6 +281,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: 'While smiling at your happy photo, speak to your child loudly: "I
           passionately love you and deeply care for you."'
@@ -286,6 +300,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Just tell me when you finish the task.
         choices:
@@ -315,6 +330,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: You are doing a great job, darling!
         choices: []
@@ -332,6 +348,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: The next exercise request you to make a vow to care for the child.
         choices: []
@@ -349,6 +366,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: It is hoped that you project your own emotion to the child, and treat
           your childhood self as your own child.
@@ -367,6 +385,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: 'Now, first read the pledge silently and then confidently pledge out
           loud the following: '
@@ -385,6 +404,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: "\u201CFrom now on, I will seek to act as a devoted and loving parent
           to this child, consistently and wholeheartedly care for them in every way
@@ -405,6 +425,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: should we keep going?
         choices:
@@ -434,6 +455,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Good job, sweetheart! I am so proud of you!
         choices: []
@@ -451,6 +473,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       ID: SAT_vowing
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -459,6 +482,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -470,8 +494,9 @@ MonoBehaviour:
     allowPlayerMove: 0
     animationType: 4
     boolParameters: []
-    nextScene: HeroHouse_SAT_Exercise6
+    nextScene: HeroHouse_SAT_Exercise_template
     spawnID: 7
     direction: 1
+    newStartingSequence: {fileID: 11400000, guid: d523e94b558efe744bdc9dec6907684e, type: 2}
   conditions:
     conditions: []

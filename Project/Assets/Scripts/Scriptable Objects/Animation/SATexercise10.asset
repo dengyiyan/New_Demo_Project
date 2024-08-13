@@ -1,0 +1,432 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
+  m_Name: SATexercise10
+  m_EditorClassIdentifier: 
+  sequenceName: sat_exercise10
+  steps:
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: Familiar Voice
+        text: You are doing very well, darling. Now, it is time to face your past
+          pain directly, and try to overcome it.
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: Starting with less sever traumas, challenging negative scenarios and
+          replacing them with positive patterns with optimal ending.
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: 'Only move to more serious traumatic experiences if you feel you have
+          mastered the less severe ones and feel confident about moving on. '
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: If you feel you need to go back to the previous exercises, just tell
+          me.
+        choices:
+        - choiceText: No, thanks. I am ready to do this!
+          nextIndex: 15
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: Recap this exercise (Exercise 10)
+          nextIndex: 0
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: Go back to Exercise 1 (recalling childhood memories)
+          nextIndex: 6
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: Go back to Exercise 2 (interacting with happy and unhappy child)
+          nextIndex: 7
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: More Options
+          nextIndex: 4
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: If you feel you need to go back to the previous exercises, just tell
+          me.
+        choices:
+        - choiceText: Back to last list
+          nextIndex: 3
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: Go back to Exercise 3 (singing a love song)
+          nextIndex: 8
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: Go back to Exercise 4 (Expressing love and care for the child)
+          nextIndex: 9
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: Go back to Exercise 5 (Vowing to care for the child)
+          nextIndex: 10
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: More Options
+          nextIndex: 5
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: If you feel you need to go back to the previous exercises, just tell
+          me.
+        choices:
+        - choiceText: Back to last list
+          nextIndex: 4
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: Go back to Exercise 6 (Restoring the emotional world)
+          nextIndex: 11
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: Go back to Exercise 7 (Joyful love for the child)
+          nextIndex: 12
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: Go back to Exercise 8 (Enjoying nature)
+          nextIndex: 13
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        - choiceText: Go back to Exercise 9 (Overcoming current negative emotions)
+          nextIndex: 14
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: HeroHouse_SAT_Exercise_template
+        spawnID: 7
+        direction: 1
+        newStartingSequence: {fileID: 11400000, guid: 08ad58ba11096ff4c90c74cf6ddbf6fc, type: 2}
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: HeroHouse_SAT_Exercise_template
+        spawnID: 7
+        direction: 1
+        newStartingSequence: {fileID: 11400000, guid: 7474e5b5243d09b4ba002025dc7a8338, type: 2}
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: HeroHouse_SAT_Exercise_template
+        spawnID: 7
+        direction: 1
+        newStartingSequence: {fileID: 11400000, guid: 5f7c0dbdfb4b39649b01f77739e93dae, type: 2}
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: HeroHouse_SAT_Exercise_template
+        spawnID: 7
+        direction: 1
+        newStartingSequence: {fileID: 11400000, guid: d7f028cc378274648b1c00691f3e26a0, type: 2}
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: HeroHouse_SAT_Exercise_template
+        spawnID: 7
+        direction: 1
+        newStartingSequence: {fileID: 11400000, guid: eef2c657f3ee2e54d953681c03d4de2e, type: 2}
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: HeroHouse_SAT_Exercise_template
+        spawnID: 7
+        direction: 1
+        newStartingSequence: {fileID: 11400000, guid: 13fb8d915ab4d2b41aecfeac59c1b6d0, type: 2}
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: HeroHouse_SAT_Exercise_template
+        spawnID: 7
+        direction: 1
+        newStartingSequence: {fileID: 11400000, guid: 84f7827b13fa7c0459655139b8464985, type: 2}
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: SAT_nature
+        spawnID: 8
+        direction: 1
+        newStartingSequence: {fileID: 11400000, guid: b912da4fe1ac36a4286a60b2294940a1, type: 2}
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: HeroHouse_SAT_Exercise_template
+        spawnID: 7
+        direction: 1
+        newStartingSequence: {fileID: 11400000, guid: 95e77cace0f0496488f266b724ab09f9, type: 2}
+      - speakerName: Familiar Voice
+        text: You are so brave, honey. You can make it! I trust in you!
+        choices: []
+        nextIndex: 16
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 1
+        newStartingSequence: {fileID: 0}
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 4
+    boolParameters: []
+    nextScene: HeroHouse_SAT_unhappy
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 11400000, guid: 00f0864ca36f5904ca623c6d435ebea0, type: 2}
+  conditions:
+    conditions: []

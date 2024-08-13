@@ -30,6 +30,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: sleep
@@ -44,6 +45,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -67,6 +69,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Noice
         text: ... Let them ... pay for what they did ...
         choices: []
@@ -84,6 +87,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       ID: noice_at_night
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -92,6 +96,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: wake
@@ -106,6 +111,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -122,6 +128,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -145,6 +152,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       ID: player_night_wakingup
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -153,6 +161,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Father
     points:
     - {x: -5, y: 14, z: 0}
@@ -168,6 +177,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Father
     points: []
     trigger: 
@@ -192,6 +202,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Father
         text: The village is invaded!
         choices: []
@@ -209,6 +220,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: (Invaded? By whom? How? Why? ...)
         choices: []
@@ -230,6 +242,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: (I was stunned there, with hundreds of questions exploded in my mind)
         choices: []
@@ -247,6 +260,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: (The next thing I know is that I was pushed under my bed)
         choices: []
@@ -264,6 +278,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       ID: Father_warning
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -272,6 +287,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Father
     points: []
     trigger: 
@@ -283,8 +299,9 @@ MonoBehaviour:
     allowPlayerMove: 0
     animationType: 4
     boolParameters: []
-    nextScene: Invasion_Blacksceen
+    nextScene: Blacksceen
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   conditions:
     conditions: []

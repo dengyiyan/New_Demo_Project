@@ -3730,7 +3730,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &521188465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3793,11 +3793,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 280e75207c9b99b4981fca57e27e31c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sequences: []
   dialogueManager: {fileID: 0}
   startingSequence: {fileID: 11400000, guid: 3c03ad4fdd169ea4da5b3e6f7b242e62, type: 2}
   isAnimationPlaying: 0
-  playableDirector: {fileID: 0}
 --- !u!4 &574559182
 Transform:
   m_ObjectHideFlags: 0

@@ -30,6 +30,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Childhood Self
     points: []
     trigger: 
@@ -46,6 +47,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -70,6 +72,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Which negative emotion should we try next?
         choices:
@@ -119,6 +122,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: Hey there, it's okay to be sad. I'm here with you now.
         choices: []
@@ -136,6 +140,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Childhood Self
         text: (Sobbing) I feel so alone and scared. Why did this happen to us?
         choices: []
@@ -153,6 +158,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: "I know it\u2019s hard to keep up. But we\u2019ll get through this
           together. You\u2019re not alone anymore. I\u2019m here to protect you."
@@ -171,6 +177,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: "Let\u2019s remember the happy times we had, like when we played by
           the river. Those memories can give us strength."
@@ -189,6 +196,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Childhood Self
         text: (Smiling faintly) I miss those days.
         choices: []
@@ -206,6 +214,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: We'll have more days like those ahead of us, I promise. Now, how about
           a smile?
@@ -224,6 +233,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: The child starts to smile and nods.
         choices: []
@@ -241,6 +251,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Well done! You have made the unhappy child happier!
         choices: []
@@ -260,6 +271,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Childhood Self
         text: "(Yelling) It\u2019s not fair! Why did they do this to us?"
         choices: []
@@ -277,6 +289,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: "You\u2019re right, it\u2019s not fair. But holding onto anger will
           only hurt us more. "
@@ -295,6 +308,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: We can channel this anger into something positive, like rebuilding
           and helping others.
@@ -313,6 +327,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Childhood Self
         text: How can we do that? We don't even have a place to live!
         choices: []
@@ -332,6 +347,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: "Together, we can make a difference. Let\u2019s start by taking deep
           breaths and finding our calm."
@@ -350,6 +366,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[[Player] demonstrates deep breathing, and the child imitates, slowly
           calming down.]'
@@ -368,6 +385,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: See? We can find peace even in the darkest times. Our future will be
           bright, I promise.
@@ -386,6 +404,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[The child says nothing, but is not that angry anymore]'
         choices: []
@@ -403,6 +422,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: "It\u2019s okay, you\u2019re safe now. No one can hurt you here."
         choices: []
@@ -420,6 +440,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Childhood Self
         text: "I\u2019m scared... What if they come back?"
         choices: []
@@ -437,6 +458,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: "They can\u2019t reach us here. This is our safe place. Remember how
           brave you are. We faced so many fears together and came out stronger."
@@ -455,6 +477,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Childhood Self
         text: "But it\u2019s so hard to be brave..."
         choices: []
@@ -472,6 +495,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: "I know. But I\u2019m here to help you. Let\u2019s face our fears together.
           Hold my hand."
@@ -490,6 +514,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: Feel the strength in our bond. We can overcome anything.
         choices: []
@@ -507,6 +532,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Childhood Self
         text: Okay. I trust you.
         choices: []
@@ -524,6 +550,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Childhood Self
         text: Everything feels so dirty and wrong. I hate it.
         choices: []
@@ -543,6 +570,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: What happened was awful, but we can clean up the mess, both inside
           and out. We can make things beautiful again.
@@ -561,6 +589,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Childhood Self
         text: (Skeptical) How can we do that?
         choices: []
@@ -578,6 +607,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: "Together, we can start small. One step at a time, we\u2019ll make
           things better. Let\u2019s find something beautiful to focus on."
@@ -596,6 +626,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: You see, even after all these, there is still something beautiful remaining.
           This place in our memory, the past joys are still there.
@@ -614,6 +645,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: All we need to do is picking up little extras in life.
         choices: []
@@ -631,6 +663,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[The child nodded.]'
         choices: []
@@ -648,6 +681,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: 'Well done following the task! It is worth noting that you can always
           use your imagination to personalize the interaction with the child to get
@@ -667,6 +701,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: What is more, you can picture the child cheering up and dancing after
           your comfort.
@@ -685,6 +720,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Now, should we proceed to the next exercise?
         choices:
@@ -694,7 +730,7 @@ MonoBehaviour:
           investObject: {fileID: 0}
           conditions: []
           counterAdders: []
-        - choiceText: Not yet
+        - choiceText: I want to go through this part again
           nextIndex: 36
           triggerPickUp: 0
           investObject: {fileID: 0}
@@ -714,6 +750,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: If you say so, darling.
         choices: []
@@ -731,10 +768,11 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Anytime you like, sweetheart!
         choices: []
-        nextIndex: 34
+        nextIndex: 0
         triggers: []
         requirements: []
         divergence:
@@ -748,6 +786,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       ID: embrace_childhood_self_unhappy
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -756,6 +795,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -772,5 +812,6 @@ MonoBehaviour:
     nextScene: SAT_sing
     spawnID: 7
     direction: 0
+    newStartingSequence: {fileID: 0}
   conditions:
     conditions: []

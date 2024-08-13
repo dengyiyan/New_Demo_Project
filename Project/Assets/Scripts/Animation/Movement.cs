@@ -60,16 +60,16 @@ public class AnimationMovement : MonoBehaviour
             while (Vector3.Distance(transform.position, currentTarget) > threshold)
             {
                 Vector3 direction = (currentTarget - transform.position).normalized;
-                movement = direction * defaultSpeed;
+                //movement = direction * defaultSpeed * Time.deltaTime;
                 animator.SetFloat("moveX", direction.x);
                 animator.SetFloat("moveY", direction.y);
 
-                shouldFlip = direction.x < 0;
-
+                //shouldFlip = direction.x < 0;
+                transform.position = Vector3.MoveTowards(transform.position, currentTarget, defaultSpeed * Time.deltaTime);
                 //flipOnX(shouldFlip);
                 // Debug.LogWarning($"Setting flip to {shouldFlip} in movement");
 
-                MoveCharacter();
+                //MoveCharacter();
                 yield return null; // Wait for the next frame
             }
             transform.position = currentTarget;

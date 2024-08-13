@@ -65,7 +65,7 @@ public class UploadScript : MonoBehaviour
 
         // Dialog is closed
         // Print whether the user has selected some files or cancelled the operation (FileBrowser.Success)
-        Debug.Log(FileBrowser.Success);
+        //Debug.Log(FileBrowser.Success);
 
         if (FileBrowser.Success)
             OnFilesSelected(FileBrowser.Result); // FileBrowser.Result is null, if FileBrowser.Success is false
@@ -74,8 +74,8 @@ public class UploadScript : MonoBehaviour
     void OnFilesSelected(string[] filePaths)
     {
         // Print paths of the selected files
-        for (int i = 0; i < filePaths.Length; i++)
-            Debug.Log(filePaths[i]);
+        //for (int i = 0; i < filePaths.Length; i++)
+            //Debug.Log(filePaths[i]);
 
         // Get the file path of the first selected file
         string filePath = filePaths[0];
@@ -99,24 +99,24 @@ public class UploadScript : MonoBehaviour
             return;
         }
 
-        Debug.Log($"Image bytes length: {imageBytes.Length}");
+        //Debug.Log($"Image bytes length: {imageBytes.Length}");
 
-        // Log the first few bytes to check if they match the expected file signature
-        for (int i = 0; i < Mathf.Min(imageBytes.Length, 10); i++)
-        {
-            Debug.Log($"Byte {i}: {imageBytes[i]:X2}");
-        }
+        //// Log the first few bytes to check if they match the expected file signature
+        //for (int i = 0; i < Mathf.Min(imageBytes.Length, 10); i++)
+        //{
+        //    Debug.Log($"Byte {i}: {imageBytes[i]:X2}");
+        //}
 
         Texture2D texture = new Texture2D(2, 2, TextureFormat.RGBA32, false);
         bool isLoaded = ImageConversion.LoadImage(texture, imageBytes);
 
-        Debug.Log($"Image loaded: {isLoaded}, Width: {texture.width}, Height: {texture.height}");
+        //Debug.Log($"Image loaded: {isLoaded}, Width: {texture.width}, Height: {texture.height}");
 
         if (isLoaded)
         {
             GameStateManager.SaveImage(texture);
 
-            Debug.Log("Loaded image successfully!");
+            //Debug.Log("Loaded image successfully!");
             Sprite newSprite = Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f);
             image.sprite = newSprite;
 
@@ -135,7 +135,7 @@ public class UploadScript : MonoBehaviour
         }
         else
         {
-            Debug.LogError("Failed to load image!");
+            //Debug.LogError("Failed to load image!");
         }
     }
 }

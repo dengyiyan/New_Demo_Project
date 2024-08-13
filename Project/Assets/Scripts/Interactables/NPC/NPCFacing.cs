@@ -17,7 +17,7 @@ public class NPCFacing : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        Debug.Log($"animator is {animator}");
+        //Debug.Log($"animator is {animator}");
 
         //if (gameObject.transform.Find("Body"))
         //{

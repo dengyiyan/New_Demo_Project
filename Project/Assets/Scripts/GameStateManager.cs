@@ -16,7 +16,7 @@ public static class GameStateManager
 
     private const string exercise2Flag = "Excercise2Completed";
 
-    private static List<string> replayableAnimations = new List<string> 
+    private static readonly List<string> replayableAnimations = new List<string> 
     { 
         "sat_exercise2",
         "SAT_embrace",
@@ -25,6 +25,7 @@ public static class GameStateManager
         "SAT_play",
         "SAT_play_after",
         "hide_and_seek_start",
+        "sat_exercise8_after",
     };
 
     private static Dictionary<string, bool> gameBools = new Dictionary<string, bool>
@@ -110,7 +111,7 @@ public static class GameStateManager
 
     public static void DestroyPickedItems()
     {
-        Debug.Log("destroy triggered!");
+        //Debug.Log("destroy triggered!");
         foreach (var itemName in itemPicked)
         {
             var obj = GameObject.Find(itemName);
@@ -118,7 +119,7 @@ public static class GameStateManager
             {
                 UnityEngine.Object.Destroy(obj);
 
-                Debug.Log("object destroyed!");
+                //Debug.Log("object destroyed!");
             }
         }
     }
@@ -203,6 +204,10 @@ public static class GameStateManager
 
     public static void MarkSequencePlayed(string sequenceName)
     {
+        if (sequenceName.StartsWith("replay_"))
+        {
+            return;
+        }
         if (!replayableAnimations.Contains(sequenceName) && !sequencePlayed.Contains(sequenceName))
         {
             sequencePlayed.Add(sequenceName);
@@ -215,15 +220,15 @@ public static class GameStateManager
         return sequencePlayed.Contains(sequenceName);
     }
 
-    public static void PrintHashSet<T>(HashSet<T> hashSet)
-    {
-        foreach (T element in hashSet)
-        {
-            Debug.Log(element);
-        }
+    //public static void PrintHashSet<T>(HashSet<T> hashSet)
+    //{
+    //    foreach (T element in hashSet)
+    //    {
+    //        Debug.Log(element);
+    //    }
 
-        Debug.Log("Print finished");
-    }
+    //    Debug.Log("Print finished");
+    //}
 
     public static void MarkConversationCompleted(string name)
     {

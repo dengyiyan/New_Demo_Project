@@ -11,7 +11,7 @@ public class SetRenderCamera : MonoBehaviour
 
         if (canvas == null)
         {
-            Debug.LogError("Canvas component not found!");
+            //Debug.LogError("Canvas component not found!");
             return;
         }
 
@@ -22,11 +22,11 @@ public class SetRenderCamera : MonoBehaviour
         {
             // Set the render camera of the Canvas
             canvas.worldCamera = persistentCamera;
-            Debug.Log("Render camera set for the Canvas.");
+            //Debug.Log("Render camera set for the Canvas.");
         }
         else
         {
-            Debug.LogError("Persistent camera not found!");
+            //Debug.LogError("Persistent camera not found!");
         }
     }
 }

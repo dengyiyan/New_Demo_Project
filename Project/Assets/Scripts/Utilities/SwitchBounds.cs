@@ -36,17 +36,17 @@ public class SwitchBounds : MonoBehaviour
                 }
                 else
                 {
-                    Debug.Log("CinemachineConfiner component not found on this GameObject.");
+                    //Debug.Log("CinemachineConfiner component not found on this GameObject.");
                 }
             }
             else
             {
-                Debug.Log("PolygonCollider2D component not found on the object with 'BoundsConfiner' tag.");
+                //Debug.Log("PolygonCollider2D component not found on the object with 'BoundsConfiner' tag.");
             }
         }
         else
         {
-            Debug.Log("No object with 'BoundsConfiner' tag found.");
+            //Debug.Log("No object with 'BoundsConfiner' tag found.");
         }
     }
 }

@@ -3084,8 +3084,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c8bff22e35a514ab49cbb1cdb75488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneTo: HeroHouse_SAT_Exercise1
-  SpawnID: 5
+  SceneTo: HeroHouse
+  SpawnID: 3
 --- !u!1 &1298465020
 GameObject:
   m_ObjectHideFlags: 0

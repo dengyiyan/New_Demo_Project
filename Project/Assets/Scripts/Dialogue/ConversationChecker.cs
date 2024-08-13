@@ -32,7 +32,7 @@ public class ConversationChecker : MonoBehaviour
         return true;
     }
 
-    public void CheckTransitionStatus(string SceneTo, string SpawnID)
+    public void CheckTransitionStatus(string SceneTo, string SpawnID, AnimationSequence sequence)
     {
         if (!canLeaveScene())
         {

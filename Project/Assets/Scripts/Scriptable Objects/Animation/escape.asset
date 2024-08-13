@@ -38,6 +38,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: (Thank god... It will finally be over...)
         choices: []
@@ -55,6 +56,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       ID: 
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -63,6 +65,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -74,8 +77,9 @@ MonoBehaviour:
     allowPlayerMove: 0
     animationType: 4
     boolParameters: []
-    nextScene: SAT_prelude_Blacksceen
+    nextScene: Blacksceen
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 11400000, guid: a8b373de344cd184cb06238f111d4863, type: 2}
   conditions:
     conditions: []

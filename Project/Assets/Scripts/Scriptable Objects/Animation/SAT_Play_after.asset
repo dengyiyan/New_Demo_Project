@@ -37,6 +37,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Childhood Self
         text: No one has ever found me in the hide and seek game in the house! Do
           you know magic or what?
@@ -55,6 +56,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Childhood Self
         text: Thank you! I had fun!
         choices: []
@@ -74,6 +76,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: It seems that you had a good time playing together!
         choices: []
@@ -91,6 +94,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Remember, it is important that you get connected to the child. You
           can also picture playing a game you liked in your childhood with the child
@@ -110,6 +114,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: 'Now it is time to proceed.  '
         choices: []
@@ -127,6 +132,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       ID: play_with_childhood_self
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -135,6 +141,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -146,8 +153,9 @@ MonoBehaviour:
     allowPlayerMove: 0
     animationType: 4
     boolParameters: []
-    nextScene: HeroHouse_SAT_Exercise2
+    nextScene: HeroHouse_SAT_Exercise_template
     spawnID: 7
     direction: 1
+    newStartingSequence: {fileID: 11400000, guid: c83458c7084399243ba19eb3f45a9e39, type: 2}
   conditions:
     conditions: []

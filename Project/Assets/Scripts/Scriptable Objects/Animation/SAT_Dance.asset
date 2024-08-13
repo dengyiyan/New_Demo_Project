@@ -30,6 +30,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Childhood Self
     points: []
     trigger: 
@@ -46,6 +47,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -70,6 +72,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: You seem to be having a great time dancing with the child. How do you
           feel right now? Please keep in mind it is vital that you bond deep with
@@ -89,6 +92,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: 'Of course, imagination is always welcomed. '
         choices: []
@@ -106,6 +110,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: We shall proceed whenever you are ready.
         choices:
@@ -135,6 +140,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Good job keeping up, sweetheart.
         choices: []
@@ -152,6 +158,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: 
         choices: []
@@ -169,6 +176,7 @@ MonoBehaviour:
         sceneTo: HeroHouse_SAT_Exercise2
         spawnID: 5
         direction: 1
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Take your time, darling.
         choices: []
@@ -186,6 +194,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       ID: dance_with_childhood_self
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -194,6 +203,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -207,8 +217,9 @@ MonoBehaviour:
     boolParameters:
     - parameterName: isPlayingMusic
       value: 0
-    nextScene: HeroHouse_SAT_Exercise2
-    spawnID: 5
-    direction: 0
+    nextScene: HeroHouse_SAT_Exercise_template
+    spawnID: 7
+    direction: 1
+    newStartingSequence: {fileID: 11400000, guid: c83458c7084399243ba19eb3f45a9e39, type: 2}
   conditions:
     conditions: []

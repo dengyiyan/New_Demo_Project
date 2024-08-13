@@ -1,0 +1,223 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
+  m_Name: replay_SATexercise2
+  m_EditorClassIdentifier: 
+  sequenceName: replay_SATexercise2
+  steps:
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: Familiar Voice
+        text: Starting with the happy side of the child. First, you look at the happy
+          photo, and imagine the four scenarios, then reflect on your feelings.
+        choices:
+        - choiceText: Being near your happy childhood self
+          nextIndex: 1
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders:
+          - counterName: Excercise2Completed
+            itemName: near
+        - choiceText: Embracing the child
+          nextIndex: 2
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders:
+          - counterName: Excercise2Completed
+            itemName: embracing
+        - choiceText: Playing with the child
+          nextIndex: 3
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders:
+          - counterName: Excercise2Completed
+            itemName: playing
+        - choiceText: Dancing with the child
+          nextIndex: 4
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions: []
+          counterAdders:
+          - counterName: Excercise2Completed
+            itemName: dancing
+        - choiceText: I have Finished!
+          nextIndex: 5
+          triggerPickUp: 0
+          investObject: {fileID: 0}
+          conditions:
+          - parameterName: Excercise2Completed
+            value: 1
+          counterAdders: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: You are already near your childhood self! What do you feel? You can
+          also close your eyes and use your imagination!
+        choices: []
+        nextIndex: 0
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: SAT_embrace
+        spawnID: 6
+        direction: 4
+        newStartingSequence: {fileID: 11400000, guid: df8b42bf2253bdb429d982c4523df680, type: 2}
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: SAT_play
+        spawnID: 7
+        direction: 4
+        newStartingSequence: {fileID: 11400000, guid: 6676ddc4a7422914ab82250e39b9bc46, type: 2}
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: SAT_dance
+        spawnID: 7
+        direction: 1
+        newStartingSequence: {fileID: 11400000, guid: ef37c5b11b274d340baf84685a0edf2c, type: 2}
+      - speakerName: Familiar Voice
+        text: 'Very Well! Now, look at the unhappy photo of yours, i.e. sad, angry,
+          fearful and disgusted, and try to go through the process of comforting
+          the child.
+
+'
+        choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Familiar Voice
+        text: Let us start with embracing the unhappy child.
+        choices: []
+        nextIndex: 7
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: 
+        choices: []
+        nextIndex: 999
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: SAT_embrace
+        spawnID: 6
+        direction: 4
+        newStartingSequence: {fileID: 11400000, guid: 4863a67eba06b3749b9e9a6a1f78fbc4, type: 2}
+      ID: SAT_exercise2
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  conditions:
+    conditions: []

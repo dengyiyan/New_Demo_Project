@@ -3068,7 +3068,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1510471759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3081,9 +3081,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4adbc733b8b5c7748b12c36abd1121c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSceneName: StartScene
-  startSpawnID: 3
-  startingSequence: {fileID: 0}
+  startSceneName: HeroHouse_SAT_Exercise_template
+  startSpawnID: 7
+  startingSequence: {fileID: 11400000, guid: 73afc3c8fcbc6424f8cdf35f64eca500, type: 2}
 --- !u!4 &1510471760
 Transform:
   m_ObjectHideFlags: 0

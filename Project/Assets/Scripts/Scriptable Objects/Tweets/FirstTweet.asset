@@ -15,8 +15,15 @@ MonoBehaviour:
   tweetText: Wow! This is fun!
   followUpTweets:
   - {fileID: 11400000, guid: 1f2a32d76632f354483f76749b3fb1c6, type: 2}
-  - {fileID: 11400000, guid: 3f595dbdcba3ea2448cc1b5253f84bb2, type: 2}
-  - {fileID: 11400000, guid: 5561010003c47b14c811db76294dd7a7, type: 2}
   avatar: {fileID: -1692361376, guid: 6341f9089dee2d540884f8cb5d62e3ce, type: 3}
   username: pirate
   subtitle: what the fuck dude
+  likesList: 67000000be060000ac15000052bf0100
+  commentsList: 030000004c000000440000004b000000
+  retweetsList: 020000000c0000004e0000007f000000
+  likesCount: 114514
+  commentsCount: 75
+  retweetCount: 127
+  followerChange: 0
+  followerChangeMin: -5
+  followerChangeMax: 5

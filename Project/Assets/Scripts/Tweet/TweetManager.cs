@@ -2,11 +2,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.EventSystems;
+using TreeEditor;
 
 public class TweetManager : MonoBehaviour
 {
     public Transform chatWindow;  // The parent for tweet bubbles (Content of the ScrollView)
     public GameObject tweetPrefab;  // Prefab for a tweet bubble
+    public GameObject replyPrefab;
     public TweetData startingTweetData;  // Starting tweet data
 
     private TweetData currentTweetData;  // The current tweet being displayed
@@ -19,55 +21,52 @@ public class TweetManager : MonoBehaviour
     {
         // Start with the initial tweet
         AddTweet(startingTweetData);
+
         //HandleFollowUpTweets(startingTweetData);
     }
-    //void AddClickListenerToChatWindow()
-    //{
-    //    EventTrigger trigger = chatWindow.gameObject.AddComponent<EventTrigger>();
 
-    //    EventTrigger.Entry entry = new EventTrigger.Entry();
-    //    entry.eventID = EventTriggerType.PointerClick;
-    //    entry.callback.AddListener((eventData) => { OnChatWindowClick(); });
-
-    //    trigger.triggers.Add(entry);
-    //}
-
-    //void OnChatWindowClick()
-    //{
-    //    Debug.Log("Clicked!");
-    //    if (waitingForNextClick)
-    //    {
-    //        waitingForNextClick = false;
-
-    //        // Display the next tweet
-    //        HandleFollowUpTweets(currentTweetData);
-    //    }
-    //}
-
-    void DisplayTweet(TweetData tweetData)
+    void SetTweetFields(TweetData tweetData)
     {
+        // Determine which prefab to use based on the type of tweetData
+        GameObject prefabToUse = (tweetData is ReplyData) ? replyPrefab : tweetPrefab;
+
         // If a tweet is already being displayed, use the existing instance
         if (currentTweetInstance == null)
         {
-            currentTweetInstance = Instantiate(tweetPrefab, chatWindow);
+            currentTweetInstance = Instantiate(prefabToUse, chatWindow);
+            TweetInstanceHandler instanceHandler = currentTweetInstance.AddComponent<TweetInstanceHandler>();
+            instanceHandler.Initialize(tweetData);
+            //EventHandler.RegisterToStaticsUpdate(() => UpdateTweetInstance(currentTweetInstance, tweetData));
         }
-
         // Reference to the main components
         Transform tweetBody = currentTweetInstance.transform.Find("TweetBody");
         Transform panel = tweetBody.Find("Panel");
-        Transform statics = tweetBody.Find("Statics");
-        Transform buttons = currentTweetInstance.transform.Find("Buttons");
+        // Transform statics = tweetBody.Find("Statics");
 
         // Set avatar, username, subtitle, and tweet text
-        panel.Find("Avatar").GetComponent<Image>().sprite = tweetData.avatar;
-        panel.Find("Username").GetComponent<Text>().text = tweetData.username;
-        panel.Find("Subtitle").GetComponent<Text>().text = tweetData.subtitle;
+        if (tweetData.avatar)
+            panel.Find("Avatar").GetComponent<Image>().sprite = tweetData.avatar;
+        if (!string.IsNullOrEmpty(tweetData.username))
+            panel.Find("Username").GetComponent<Text>().text = tweetData.username;
+        else
+            panel.Find("Username").GetComponent<Text>().text = GameStateManager.PlayerName + "777";
+        if (!string.IsNullOrEmpty(tweetData.subtitle))
+            panel.Find("Subtitle").GetComponent<Text>().text = tweetData.subtitle;
+        else
+            panel.Find("Subtitle").GetComponent<Text>().text = Settings.TweetzSubtitle;
         tweetBody.Find("Text").GetComponent<Text>().text = tweetData.tweetText;
+    }
+
+    void DisplayTweet(TweetData tweetData)
+    {
+        SetTweetFields(tweetData);
+
+        Transform buttons = currentTweetInstance.transform.Find("Buttons");
 
         // Set stats (you can expand this if you have real data for likes, comments, retweets)
-        statics.Find("LikesCount").GetComponent<Text>().text = "0";  // Example default value
-        statics.Find("CommentsCount").GetComponent<Text>().text = "0";  // Example default value
-        statics.Find("RetweetCount").GetComponent<Text>().text = "0";  // Example default value
+        //statics.Find("LikesCount").GetComponent<Text>().text = "0";  // Example default value
+        //statics.Find("CommentsCount").GetComponent<Text>().text = "0";  // Example default value
+        //statics.Find("RetweetCount").GetComponent<Text>().text = "0";  // Example default value
 
         // Hide buttons if it's not a player tweet
         Button publishButton = buttons.Find("PublishButton").GetComponent<Button>();
@@ -79,15 +78,56 @@ public class TweetManager : MonoBehaviour
         //waitingForNextClick = true;
     }
 
+
+
+    //void UpdateTweetInstance(GameObject tweetInstance, TweetData tweetData)
+    //{
+    //    Transform statics = tweetInstance.transform.Find("TweetBody/Statics");
+    //    tweetData.UpdateStatics();  // Update the statics in TweetData
+    //    UpdateTweetStatics(statics, tweetData);  // Update the UI based on the new statics
+    //}
+
+    void UpdateTweetStatics(Transform statics, TweetData tweetData)
+    {
+        // Update statics using values from tweetData
+        Debug.Log($"Get text field: {statics.Find("LikesCount").GetComponent<Text>().text}");
+        Debug.Log($"Updated like: {tweetData.likesCount}");
+        statics.Find("LikesCount").GetComponent<Text>().text = tweetData.likesCount.ToString();
+        statics.Find("CommentsCount").GetComponent<Text>().text = tweetData.commentsCount.ToString();
+        statics.Find("RetweetCount").GetComponent<Text>().text = tweetData.retweetCount.ToString();
+    }
+
     void DisplayTweetFinal(TweetData tweetData)
     {
         DisplayTweet(tweetData);
+        EventHandler.CallStaticsUpdate();
+
+        if (tweetData.followerChange != 0)
+            ApplyFollowerChange(tweetData.followerChange, tweetData.followerChangeMin, tweetData.followerChangeMax);
+
         Transform buttons = currentTweetInstance.transform.Find("Buttons");
         GameObject.Destroy(buttons.gameObject);
         currentTweetInstance = null;
         HandleFollowUpTweets(tweetData);
     }
 
+    void ApplyFollowerChange(int baseChange, int minFluctuation, int maxFluctuation)
+    {
+        // Create a random fluctuation within the given range
+        int fluctuation = Random.Range(minFluctuation, maxFluctuation + 1);
+
+        // Calculate the final change in followers
+        int finalChange = baseChange + fluctuation;
+
+        // Update the current follower count
+        GameStateManager.Followers += finalChange;
+        if (GameStateManager.Followers < 0)
+            GameStateManager.Followers = 0;
+
+        EventHandler.CallFollowerChangeEvent();
+        // Optionally, you can add code here to update the UI with the new follower count
+        //Debug.Log($"Followers changed by {finalChange}. New follower count: {currentFollowers}");
+    }
 
     void HandleFollowUpTweets(TweetData tweetData)
     {
@@ -132,22 +172,9 @@ public class TweetManager : MonoBehaviour
 
     void DisplaySampleTweet(TweetData tweetData)
     {
-        // If a tweet is already being displayed, use the existing instance
-        if (currentTweetInstance == null)
-        {
-            currentTweetInstance = Instantiate(tweetPrefab, chatWindow);
-        }
+        SetTweetFields(tweetData);
 
-        // Reference to the main components
-        Transform tweetBody = currentTweetInstance.transform.Find("TweetBody");
-        Transform panel = tweetBody.Find("Panel");
         Transform buttons = currentTweetInstance.transform.Find("Buttons");
-
-        // Set avatar, username, subtitle, and tweet text
-        panel.Find("Avatar").GetComponent<Image>().sprite = tweetData.avatar;
-        panel.Find("Username").GetComponent<Text>().text = tweetData.username;
-        panel.Find("Subtitle").GetComponent<Text>().text = tweetData.subtitle;
-        tweetBody.Find("Text").GetComponent<Text>().text = tweetData.tweetText;
 
         Button publishButton = buttons.Find("PublishButton").GetComponent<Button>();
         Button pickAnotherOneButton = buttons.Find("PickAnotherOneButton").GetComponent<Button>();

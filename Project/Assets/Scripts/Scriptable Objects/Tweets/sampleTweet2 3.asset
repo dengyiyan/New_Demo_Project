@@ -14,6 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tweetText: wtf
   followUpTweets: []
-  avatar: {fileID: 755316740, guid: 6341f9089dee2d540884f8cb5d62e3ce, type: 3}
-  username: dark spirit
-  subtitle: hehehe
+  avatar: {fileID: 0}
+  username: 
+  subtitle: 
+  likesList: 
+  commentsList: 
+  retweetsList: 
+  likesCount: 0
+  commentsCount: 0
+  retweetCount: 0
+  followerChange: 100
+  followerChangeMin: -5
+  followerChangeMax: 5

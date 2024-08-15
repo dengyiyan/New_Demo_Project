@@ -8,6 +8,8 @@ public class ButtonClick : MonoBehaviour
     private Button myButton;
     [SceneName] public string SceneTo;
     public string SpawnID;
+    public AnimationSequence sequence = null;
+    public Direction faceDirection = Direction.None;
 
     void Awake()
     {
@@ -24,6 +26,7 @@ public class ButtonClick : MonoBehaviour
 
     void OnButtonClick()
     {
-        EventHandler.CallTransitionEvent(SceneTo, SpawnID);
+        EventHandler.CallTransitionEvent(SceneTo, SpawnID, sequence);
+        EventHandler.CallPlayerFaceEvent(faceDirection);
     }
 }

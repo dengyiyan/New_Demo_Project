@@ -19,6 +19,7 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] private float focusWeight = 2f;
     [SerializeField] private float playSpeed = 0.05f;
     public GameObject dialoguePanel;
+    public GameObject dialogueBG;
     public Text nameText;
     public Text dialogueText;
     public Button choiceButtonPrefab;
@@ -63,7 +64,7 @@ public class DialogueManager : MonoBehaviour
 
         dialogues = new Queue<ConversationDialogue>();
         //animationManager = FindObjectOfType<AnimationManager>();
-        dialoguePanel.SetActive(false);
+        dialogueBG.SetActive(false);
         choicePanel.SetActive(false);
 
         player = GameObject.FindGameObjectWithTag("Player");
@@ -175,7 +176,7 @@ public class DialogueManager : MonoBehaviour
         
         string name = getTrueSpeakerName(speakerName);
 
-        dialoguePanel.SetActive(true);
+        dialogueBG.SetActive(true);
         nameText.text = name;
         StopAllCoroutines();
         StartCoroutine(TypeSentence(ReplaceWithNames(message), null));
@@ -193,7 +194,7 @@ public class DialogueManager : MonoBehaviour
     {
         isShowing = false;
         isShowingMessage = false;
-        dialoguePanel.SetActive(false);
+        dialogueBG.SetActive(false);
         EventHandler.CallDecreaseDisableEvent();
         EventHandler.CallEnableCursorEvent();
         //Debug.Log("Enable cursor in Dialogue Manager!");
@@ -221,7 +222,7 @@ public class DialogueManager : MonoBehaviour
 
         if (currentDialogues[0].triggers == null)
         {
-            dialoguePanel.SetActive(true);
+            dialogueBG.SetActive(true);
             //Debug.Log($"isShowing is set to {isShowing}");
         }
 
@@ -237,7 +238,7 @@ public class DialogueManager : MonoBehaviour
     {
         isShowing = false;
         //Debug.Log($"isShowing is set to {isShowing}");
-        dialoguePanel.SetActive(false);
+        dialogueBG.SetActive(false);
         choicePanel.SetActive(false);
 
 
@@ -382,7 +383,7 @@ public class DialogueManager : MonoBehaviour
         {
             nameText.text = getTrueSpeakerName(dialogue.speakerName);
             //Debug.Log($"{dialogue.speakerName}");
-            dialoguePanel.SetActive(true);
+            dialogueBG.SetActive(true);
             isShowing = true;
             //Debug.Log($"isShowing is set to {isShowing}");
             StopAllCoroutines();

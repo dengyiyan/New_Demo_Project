@@ -197,6 +197,29 @@ public static class EventHandler
         RegisterNPCEvent?.Invoke(npcs);
     }
 
+    public static event Action FollowerChangeEvent;
+    public static void CallFollowerChangeEvent()
+    {
+        FollowerChangeEvent?.Invoke();
+    }
+
+    public static event Action OnStaticsUpdated;
+
+    public static void RegisterToStaticsUpdate(Action callback)
+    {
+        OnStaticsUpdated += callback;
+    }
+
+    public static void UnregisterFromStaticsUpdate(Action callback)
+    {
+        OnStaticsUpdated -= callback;
+    }
+
+    public static void CallStaticsUpdate()
+    {
+        OnStaticsUpdated?.Invoke();
+    }
+
     //public static event Action<Vector3, ItemDetails> MouseClickedEvent;
     //public static void CallMouseClickedEvent(Vector3 pos, ItemDetails itemDetails)
     //{
@@ -204,15 +227,15 @@ public static class EventHandler
     //}
 
 
-    public static event Action<int> StartNewGameEvent;
-    public static void CallStartNewGameEvent(int index)
-    {
-        StartNewGameEvent?.Invoke(index);
-    }
+    //public static event Action<int> StartNewGameEvent;
+    //public static void CallStartNewGameEvent(int index)
+    //{
+    //    StartNewGameEvent?.Invoke(index);
+    //}
 
-    public static event Action EndGameEvent;
-    public static void CallEndGameEvent()
-    {
-        EndGameEvent?.Invoke();
-    }
+    //public static event Action EndGameEvent;
+    //public static void CallEndGameEvent()
+    //{
+    //    EndGameEvent?.Invoke();
+    //}
 }

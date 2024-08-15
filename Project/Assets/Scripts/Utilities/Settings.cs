@@ -15,4 +15,6 @@ public static class Settings
     public const string MerchantCode = "The suspicious merchant";
 
     public const string ChildhoodSelfCode = "???";
+
+    public const string TweetzSubtitle = "Average Citizen | Hello world!";
 }

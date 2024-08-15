@@ -7,7 +7,7 @@ using UnityEngine;
 public static class GameStateManager
 {
     public static string PlayerName { get; set; } = "Jack";
-
+    public static int Followers = 5;
     //private static bool PlayerCanMove = false;
 
     private static Texture2D UploadedImage;
@@ -59,6 +59,7 @@ public static class GameStateManager
     //}
 
     //public static void SetPlayerCanMove()
+
 
     public static void AddCounter(string counterName, string itemName)
     {

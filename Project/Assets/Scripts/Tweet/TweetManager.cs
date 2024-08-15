@@ -1,8 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
-using UnityEngine.EventSystems;
-using TreeEditor;
 
 public class TweetManager : MonoBehaviour
 {

@@ -248,20 +248,5 @@ MonoBehaviour:
     spawnID: 
     direction: 0
     newStartingSequence: {fileID: 0}
-  - npcName: Player
-    points: []
-    trigger: 
-    waitForCompletion: 0
-    conversation:
-      conversationDialogues: []
-      ID: 
-    waitForConversationEnd: 0
-    allowPlayerMove: 0
-    animationType: 4
-    boolParameters: []
-    nextScene: HeroHouse_SAT_Exercise_template
-    spawnID: 7
-    direction: 0
-    newStartingSequence: {fileID: 11400000, guid: fc13fd77c59404b4dbedccf230e96a3b, type: 2}
   conditions:
     conditions: []

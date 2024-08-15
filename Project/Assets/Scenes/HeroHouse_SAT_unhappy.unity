@@ -4504,11 +4504,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 280e75207c9b99b4981fca57e27e31c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sequences: []
   dialogueManager: {fileID: 0}
-  startingSequence: {fileID: 11400000, guid: 63bb84e57003dc840949911e7c0ef8ea, type: 2}
+  startingSequence: {fileID: 0}
   isAnimationPlaying: 0
-  playableDirector: {fileID: 0}
 --- !u!4 &574559182
 Transform:
   m_ObjectHideFlags: 0

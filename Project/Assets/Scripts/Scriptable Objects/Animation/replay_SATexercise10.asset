@@ -382,7 +382,7 @@ MonoBehaviour:
           elseIndex: 0
         actions: []
         boolParameters: []
-        sceneTo: HeroHouse_SAT_Exercise_template
+        sceneTo: HeroHouse_SAT_unhappy
         spawnID: 7
         direction: 1
         newStartingSequence: {fileID: 11400000, guid: 95e77cace0f0496488f266b724ab09f9, type: 2}

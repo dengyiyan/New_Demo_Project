@@ -37,6 +37,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: "The home should be a safe haven for the child at times of distress
           and the base for the child to tackle life\u2019s challenges."
@@ -55,6 +56,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: 'You can imagine your home to be bright, sunny, having a large garden.
           Any type you like! And picture yourself taking the exercises in that imaginary
@@ -74,6 +76,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: 'In our case, we will continue to use the home you lived in to carry
           out these exercises. It seems that this is your happy, safe place deep
@@ -93,6 +96,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Shall we proceed to the next part?
         choices:
@@ -122,6 +126,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Familiar Voice
         text: Sure, no worries honey.
         choices: []
@@ -139,6 +144,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       ID: SAT_exercise6_happy
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -147,6 +153,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -161,5 +168,6 @@ MonoBehaviour:
     nextScene: HeroHouse_SAT_unhappy
     spawnID: 7
     direction: 1
+    newStartingSequence: {fileID: 11400000, guid: 63bb84e57003dc840949911e7c0ef8ea, type: 2}
   conditions:
     conditions: []

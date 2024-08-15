@@ -27,6 +27,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Village_After_Genocide.unity
     guid: 6dfadd5424645a741b34d3c0501dfa7b
   - enabled: 1
+    path: Assets/Scenes/SAT_Village_After_Genocide.unity
+    guid: d55fe04ce548c004badc2f8ec6bcfe7a
+  - enabled: 1
     path: Assets/Scenes/HeroHouse.unity
     guid: e30d32a7bff93df46a34a42f07d03e8f
   - enabled: 1
@@ -56,6 +59,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HeroHouse_SAT_unhappy.unity
     guid: d19c85c09b36cfd41a0e67babfdf4622
+  - enabled: 1
+    path: Assets/Scenes/HeroHouse_SAT_exercise10_1.unity
+    guid: 8240ec7dc8a909d4aa6290ca2f5cb770
   - enabled: 1
     path: Assets/Scenes/SAT_embrace.unity
     guid: 397a49c0be0a7824fb0113b3212bd9b9

@@ -1,0 +1,1371 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
+  m_Name: Ian_back
+  m_EditorClassIdentifier: 
+  sequenceName: Ian_back
+  steps:
+  - npcName: Ian
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: 
+        text: '[As Ian approaching the village, he sensed something different to
+          the village...]'
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: What happend to the village... Why is it so noisy here... What is this
+          smell of smoke...
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[With nervousness and anxiety, Ian steps forward into the village]'
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Ian
+    points:
+    - {x: 50, y: 0, z: 0}
+    - {x: 40, y: 0, z: 0}
+    - {x: 40, y: 1, z: 0}
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 0
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Ian
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: 
+        text: '[Ian''s gaze falls upon a horrific sight: a headless body of a villager,
+          tied to the wall of a building. The head it once belonged to falls somewhere
+          near it.]'
+        choices: []
+        nextIndex: 1
+        triggers:
+        - characterName: Ian
+          triggerName: surprise
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[Blood stains the ground, and the body hangs lifelessly, the blood
+          dropping down from the neck is a grim reminder of the brutality that occurred.]'
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: "What... what is this... Who\u2026 who would do something like this?
+          Why would they\u2026?"
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: "[Ian stumbles back a step, his mind racing as he tries to process
+          what he\u2019s seeing. The horror of the scene overwhelms him.]"
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: "[Then a terrifying thought cuts through the fog of his fear\u2014his
+          family. He hasn\u2019t seen them. He doesn\u2019t know if they\u2019re
+          safe...]"
+        choices: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: My family... [Player]... Please be safe...
+        choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Ian
+    points:
+    - {x: 27, y: 1, z: 0}
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 0
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Ian
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: Ian
+        text: Granny Evelyn... No...
+        choices: []
+        nextIndex: 1
+        triggers:
+        - characterName: Ian
+          triggerName: surprise
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[Ian feels like his heart was cut by a quick knife, he recalls the
+          memories when he was younger and Granny Evelyn always took care of him
+          when his parents and granpa was too busy]'
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[The anxiety grows as Ian is more and more worried about his family
+          and [Player], while the great pain is pressing him hard]'
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: Please, please...
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Ian
+    points:
+    - {x: 27, y: 0, z: 0}
+    - {x: 15, y: 0, z: 0}
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 0
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Ian
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: 
+        text: '[Ian''s eyes eyes widening in horror as he sees the full extent of
+          the destruction.]'
+        choices: []
+        nextIndex: 1
+        triggers:
+        - characterName: Ian
+          triggerName: surprise
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[The house, once a place of warmth and safety, is now a blazing inferno.
+          The fire roaring hungrily as it devours everything he once knew.]'
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[A sense of helplessness overwhelms him, paralyzing him as he struggles
+          to comprehend the horror unfolding before him.]'
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: "This\u2026 this can\u2019t be real\u2026 What\u2019s happening\u2026?
+          How\u2026 how could this happen\u2026?"
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[With trembling legs, Ian desperately search for his family]'
+        choices: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Ian
+    points:
+    - {x: 8, y: 0, z: 0}
+    - {x: 8, y: -3, z: 0}
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 0
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Ian
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: 
+        text: '[What Ian sees next further shatters his already fragile state.]'
+        choices: []
+        nextIndex: 1
+        triggers:
+        - characterName: Ian
+          triggerName: surprise
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[He sees his brother, Charlie, tied to a wooden post in front of the
+          house. His body is pierced by numerous arrows, blood has soaked the ground
+          beneath him]'
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: "[As if the sight of Charlie wasn\u2019t enough, the light of the flame
+          light up something nearby]"
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[The sheer horror of seeing his father impaled on a sharp wooden stake
+          driven into the ground broke his mind] '
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[Both bodies are naked, showing how the murderer humiliated them before
+          torturing them to death, treating them like sub-humans] '
+        choices: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[Both bodies are naked, stripped of their dignity in a final act of
+          cruelty, showing how the murderers humiliated them before torturing them
+          to death, treating them like sub-humans.]'
+        choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[The realization of this deepens Ian''s despair, he cannot believe
+          his beloved family was treated like that.]'
+        choices: []
+        nextIndex: 7
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: Grandpa! Where is grandpa! He is the mayor of the town, he can alway
+          save us from trouble!
+        choices: []
+        nextIndex: 8
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[like clutching at a straw, Ian lays his all remaining hope in his
+          grandpa, as a desparate gambler.]'
+        choices: []
+        nextIndex: 9
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Ian
+    points:
+    - {x: 19, y: -3, z: 0}
+    - {x: 19, y: 5, z: 0}
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 0
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Ian
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: 
+        text: '[People, lots of people, are gathering in the town square.]'
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[The leading person is a guy in a suit. They are all celebrating around
+          a massive fire, dancing, laughing, and waving sticks as if performing some
+          dark ritual.]'
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[The very glance almost took Ian''s breath away.]'
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: "[The objects on the sticks... they\u2019re body parts\u2014body parts
+          of the mayor, Ian's grandfather!!!]"
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[As the dancing gradually stops, the man in the suit clears his throat
+          and begins to speak..] '
+        choices: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Merchant
+        text: "My warriors! Tonight, you\u2019ve proven your loyalty and bravery!
+          I couldn\u2019t be more proud!"
+        choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Merchant
+        text: 'These uncivilized pests dared to refuse my generous offer and humiliated
+          me, Morris the Magnate! '
+        choices: []
+        nextIndex: 7
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Merchant
+        text: But we... we did the world a favor by cleaning them up!
+        choices: []
+        nextIndex: 8
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: "[The man called Morris raises the stick with Mayor Luis\u2019s severed
+          head, grinning wickedly as he continues.]"
+        choices: []
+        nextIndex: 9
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Merchant
+        text: Their so-called leader claimed they were... what? Self-sufficient?
+          Ha! The arrogance of these little rats!
+        choices: []
+        nextIndex: 10
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[The Mercenaries burst into mocking laughter.]'
+        choices: []
+        nextIndex: 11
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Merchant
+        text: This is what happens to anyone who says no to Morris!
+        choices: []
+        nextIndex: 12
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Merchant
+        text: And his grandson! That fool tried to fight me!
+        choices: []
+        nextIndex: 13
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Merchant
+        text: How utterly ignorant of his own limitations! Did you hear the scream
+          when he was shot in the eye? A fitting end for a little beast!
+        choices: []
+        nextIndex: 14
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[Cheers erupt from the Mercenaries, their voices rising into the night
+          sky.]'
+        choices: []
+        nextIndex: 15
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Merchant
+        text: And his father! The wretch who dared to sire that brat!
+        choices: []
+        nextIndex: 16
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Merchant
+        text: "This is why I\u2019ve always said: Once a sub-human, always a sub-human.
+          It\u2019s in their blood, passed down from one worthless generation to
+          the next."
+        choices: []
+        nextIndex: 17
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Merchant
+        text: "But tonight, warriors, we\u2019ve done the world a great service."
+        choices: []
+        nextIndex: 18
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Merchant
+        text: So let us celebrate! We rid the world of more filth today! To the world!
+        choices: []
+        nextIndex: 19
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Mercenaries
+        text: To the world!!!
+        choices: []
+        nextIndex: 20
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[Ian remains frozen, his breath shallow as he watches Morris and the
+          mercenaries celebrate around the fire.]'
+        choices: []
+        nextIndex: 21
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: "[His body trembles, his mind struggling to process the horror of what
+          he\u2019s witnessed\u2014the desecration of his family, the destruction
+          of his village.]"
+        choices: []
+        nextIndex: 22
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: "Charlie\u2026 Dad\u2026 Grandpa\u2026 How could this happen? How\u2026
+          how could I let this happen?"
+        choices: []
+        nextIndex: 23
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[Tears blur his vision, and he sinks to his knees, feeling utterly
+          helpless.]'
+        choices: []
+        nextIndex: 24
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[The weight of his guilt crushes him, and for a moment, it feels like
+          he might drown in it.]'
+        choices: []
+        nextIndex: 25
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: "This is all my fault\u2026 I wasn\u2019t here. I was so focused on
+          escaping, on chasing some stupid dream\u2026 I didn\u2019t think\u2026
+          I didn\u2019t care about what really mattered\u2026"
+        choices: []
+        nextIndex: 26
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: "They were trying to protect me\u2026 protect all of us\u2026 from
+          this. And I\u2026 I ignored them. "
+        choices: []
+        nextIndex: 27
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[But as the sounds of laughter and celebration continue to ring out,
+          something inside him begins to shift.]'
+        choices: []
+        nextIndex: 28
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: "I trusted those monsters\u2026 I trusted them more than my own family...
+          I left my family behind, and now\u2026 now they\u2019re all gone because
+          of me\u2026"
+        choices: []
+        nextIndex: 29
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: "I was so stupid\u2026 so selfish. I wanted to leave, to see the world\u2026
+          and I left them to die. I should have been here\u2026 I should have fought
+          with them\u2026"
+        choices: []
+        nextIndex: 30
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[Ian''s anger sharpens, cutting through the haze of grief. He feels
+          it coursing through his veins, filling the emptiness left by his loss.
+          .]'
+        choices: []
+        nextIndex: 31
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: "[This anger gives him a purpose, a focus for all the pain he\u2019s
+          feeling.]"
+        choices: []
+        nextIndex: 32
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: "They took everything from me\u2026 They destroyed my home, my family\u2026
+          I won\u2019t forgive them. I can\u2019t forgive them. "
+        choices: []
+        nextIndex: 33
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: "I\u2019ll make them pay for what they did\u2026 I\u2019ll make sure
+          they suffer just like we did\u2026"
+        choices: []
+        nextIndex: 34
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Ian
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 4
+    boolParameters: []
+    nextScene: Blacksceen
+    spawnID: 7
+    direction: 1
+    newStartingSequence: {fileID: 11400000, guid: 43184090c3bd1cd43a45cdd5b1c4a20b, type: 2}
+  conditions:
+    conditions: []

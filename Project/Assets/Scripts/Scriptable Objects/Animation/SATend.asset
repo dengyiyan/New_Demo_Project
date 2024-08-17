@@ -179,9 +179,9 @@ MonoBehaviour:
     allowPlayerMove: 0
     animationType: 4
     boolParameters: []
-    nextScene: HeroHouse_SAT_Exercise_template
-    spawnID: 7
+    nextScene: Blacksceen
+    spawnID: 
     direction: 0
-    newStartingSequence: {fileID: 0}
+    newStartingSequence: {fileID: 11400000, guid: ef8c83abf113e7841aff6d20fad058a2, type: 2}
   conditions:
     conditions: []

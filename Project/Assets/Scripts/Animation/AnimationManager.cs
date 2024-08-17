@@ -17,17 +17,24 @@ public class AnimationManager : MonoBehaviour
     private List<AnimationStep> activeSteps = new List<AnimationStep>();
     private GameObject player;
     private Animator animator;
-    // [SerializeField] private PlayableDirector playableDirector;
+
+    [SerializeField] private PlayableDirector playableDirector;
+    [SerializeField] private List<PlayableAsset> playables = new List<PlayableAsset>();
+    private int playableIndex = 0;
 
 
     private void OnEnable()
     {
         EventHandler.RegisterNPCEvent += OnRegisterNPCEvent;
+        //EventHandler.RegisterPlayableDirectorEvent += SetPlayableDirector;
+        //EventHandler.UnregisterPlayableDirectorEvent += UnregisterPlayableDirector;
     }
 
     private void OnDisable()
     {
         EventHandler.RegisterNPCEvent -= OnRegisterNPCEvent;
+        //EventHandler.RegisterPlayableDirectorEvent -= SetPlayableDirector;
+        //EventHandler.UnregisterPlayableDirectorEvent -= UnregisterPlayableDirector;
     }
 
     private void Start()
@@ -35,7 +42,8 @@ public class AnimationManager : MonoBehaviour
         //npcs = new Dictionary<string, GameObject>();
 
         player = GameObject.FindGameObjectWithTag("Player");
-        animator = player.GetComponent<Animator>();
+        if (player)
+            animator = player.GetComponent<Animator>();
 
         // npcs["Player"] = player;
         //Debug.Log($"NPCs:{npcs["Player"]}");
@@ -54,6 +62,16 @@ public class AnimationManager : MonoBehaviour
     {
         // Debug.Log(activeSteps.Count);
     }
+
+    //private void SetPlayableDirector(PlayableDirector playable)
+    //{
+    //    playableDirector = playable;
+    //}
+
+    //private void UnregisterPlayableDirector()
+    //{
+    //    playableDirector = null;
+    //}
 
 
     public void SetStartingSequence(AnimationSequence newSequence)
@@ -105,7 +123,8 @@ public class AnimationManager : MonoBehaviour
         EventHandler.CallIncreaseDisableEvent();
         EventHandler.CallDisableCursorEvent();
         //Debug.Log("Disable cursor in Animation Manager!");
-        animator.SetBool("isWalking", false);
+        if (animator)
+            animator.SetBool("isWalking", false);
 
         //var sequence = sequences.Find(seq => seq.sequenceName == sequenceName);
         //if (sequence != null && !GameStateManager.IsSequencePlayed(sequenceName))
@@ -200,14 +219,22 @@ public class AnimationManager : MonoBehaviour
                 }
                 else if (step.animationType == AnimationType.CutSceneTrigger)
                 {
-                    // playableDirector.Play();
-                    EventHandler.CallFadeInEvent();
-                    yield return StartCoroutine(HandleMovementStep(movementScript, step));
-                    if (!string.IsNullOrEmpty(step.nextScene))
-                    {
-                        HandleSceneChange(step);
-                    }
-                    EventHandler.CallFadeOutEvent();
+                    EventHandler.CallOnSetTimelinePlaying(true);
+                    Debug.Log($"Playing index {playableIndex}");
+                    playableDirector.playableAsset = playables[playableIndex];
+                    playableDirector.Play();
+                    playableIndex++;
+
+                    yield return new WaitUntil(() => playableDirector.state != PlayState.Playing);
+
+                    EventHandler.CallOnSetTimelinePlaying(false);
+                    //EventHandler.CallFadeInEvent();
+                    //yield return StartCoroutine(HandleMovementStep(movementScript, step));
+                    //if (!string.IsNullOrEmpty(step.nextScene))
+                    //{
+                    //    HandleSceneChange(step);
+                    //}
+                    //EventHandler.CallFadeOutEvent();
                 }
                 else if (step.animationType == AnimationType.None)
                 {

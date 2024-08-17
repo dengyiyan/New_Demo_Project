@@ -1,0 +1,197 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
+  m_Name: Ian_escaping
+  m_EditorClassIdentifier: 
+  sequenceName: Ian_escape
+  steps:
+  - npcName: Ian
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: Ian
+        text: "I can\u2019t stand it anymore. Every day, it\u2019s the same stuff\u2014always
+          the warnings, always the rules."
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: "They say it\u2019s for our own good, but I know it\u2019s just because
+          they\u2019re stuck in their old ways."
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: "I just want to see what\u2019s out there, beyond these walls. I want
+          to be free\u2026 free from all these endless limits."
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: "This is it\u2026 everyone\u2019s busy with whatever\u2019s happening
+          at the gate. If I\u2019m ever going to leave, it\u2019s gotta be now."
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: "I have to do this\u2026 I have to get away from this place, away from
+          all their rules."
+        choices: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: "I\u2019m sorry, [Player]\u2026 but I have to find my own happiness,
+          my own freedom."
+        choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Ian
+        text: "I\u2019ll prove them wrong about the outside world. I just know there\u2019s
+          something better out there."
+        choices: []
+        nextIndex: 7
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Ian
+    points:
+    - {x: 50, y: -14, z: 0}
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 0
+    boolParameters: []
+    nextScene: 
+    spawnID: 7
+    direction: 1
+    newStartingSequence: {fileID: 0}
+  - npcName: Ian
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 4
+    boolParameters: []
+    nextScene: Blacksceen
+    spawnID: 7
+    direction: 1
+    newStartingSequence: {fileID: 11400000, guid: 80db6a3c432e31049be1b1677e6f139e, type: 2}
+  conditions:
+    conditions: []

@@ -148,8 +148,9 @@ namespace MyProject.Transition
         private IEnumerator Transition(string sceneName, string spawnPointID, AnimationSequence sequence = null)
         {
             fadeCanvasGroup.blocksRaycasts = true;
-            EventHandler.CallBeforeSceneUnloadEvent();
+
             yield return Fade(1);
+            EventHandler.CallBeforeSceneUnloadEvent();
 
             yield return SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());// –∂‘ÿµ±«∞≥°æ∞
 

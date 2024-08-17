@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.Playables;
 
 public static class EventHandler
 {
@@ -131,6 +132,12 @@ public static class EventHandler
         EndConversationEvent?.Invoke();
     }
 
+    public static event Action<Transform> SetMainFocusEvent;
+    public static void CallSetMainFocusEvent(Transform focus)
+    {
+        SetMainFocusEvent?.Invoke(focus);
+    }
+
     public static event Action HideMessageEvent;
     public static void CallHideMessageEvent()
     {
@@ -171,6 +178,20 @@ public static class EventHandler
     public static void CallDisablePlayerMovementEvent()
     {
         DisablePlayerMovementEvent?.Invoke();
+    }
+
+    public static event Action<PlayableDirector> RegisterPlayableDirectorEvent;
+
+    public static void CallRegisterPlayableDirectorEvent(PlayableDirector playableDirector)
+    {
+        RegisterPlayableDirectorEvent?.Invoke(playableDirector);
+    }
+
+    public static event Action UnregisterPlayableDirectorEvent;
+
+    public static void CallUnregisterPlayableDirectorEvent()
+    {
+        UnregisterPlayableDirectorEvent?.Invoke();
     }
 
     public static event Action SetDefaultSpeedEvent;
@@ -218,6 +239,12 @@ public static class EventHandler
     public static void CallStaticsUpdate()
     {
         OnStaticsUpdated?.Invoke();
+    }
+
+    public static event Action<bool> SetTimelinePlayingEvent;
+    public static void CallOnSetTimelinePlaying(bool playing)
+    {
+        SetTimelinePlayingEvent?.Invoke(playing);
     }
 
     //public static event Action<Vector3, ItemDetails> MouseClickedEvent;

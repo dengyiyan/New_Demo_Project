@@ -31,6 +31,7 @@ public class DialogueManager : MonoBehaviour
     private bool isShowingMessage = false;
     private bool isChoiceActivated = false;
     private bool isTyping = false;
+    private bool isTimelinePlaying = false;
     private string typingSentence;
     private bool isAnimationPlaying = false;
     private DialogueChoice[] typingChoices;
@@ -39,6 +40,8 @@ public class DialogueManager : MonoBehaviour
     public PlayerMovement movement;
     private GameObject player;
     private Animator animator;
+
+    private Transform mainCharacter;
 
     private ConversationDialogue[] currentDialogues;
     private int currentDialogueIndex;
@@ -70,6 +73,10 @@ public class DialogueManager : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player");
         animator = player.GetComponent<Animator>();
 
+        if (player != null)
+        {
+            mainCharacter = player.transform;
+        }
 
         //foreach (var ani in FindObjectsOfType<Animator>())
         //{
@@ -98,6 +105,9 @@ public class DialogueManager : MonoBehaviour
         EventHandler.DisableNewConversationEvent += DisableNewConversation;
 
         EventHandler.RegisterAnimatorEvent += OnRegisterAnimatorEvent;
+
+        EventHandler.SetMainFocusEvent += SetMainFoucs;
+        EventHandler.SetTimelinePlayingEvent += SetTimelinePlaying;
     }
 
     private void OnDestroy()
@@ -110,7 +120,11 @@ public class DialogueManager : MonoBehaviour
 
         EventHandler.EnableNewConversationEvent -= EnableNewConversation;
         EventHandler.DisableNewConversationEvent -= DisableNewConversation;
+
         EventHandler.RegisterAnimatorEvent -= OnRegisterAnimatorEvent;
+
+        EventHandler.SetMainFocusEvent -= SetMainFoucs;
+        EventHandler.SetTimelinePlayingEvent -= SetTimelinePlaying;
     }
 
 
@@ -119,6 +133,17 @@ public class DialogueManager : MonoBehaviour
     //    OnRegisterAnimatorEvent();
         
     //}
+
+    private void SetTimelinePlaying(bool flag)
+    {
+        isTimelinePlaying = flag;
+    }
+
+
+    private void SetMainFoucs(Transform transform)
+    {
+        mainCharacter = transform;
+    }
 
     private void EnableNewConversation()
     {
@@ -508,6 +533,11 @@ public class DialogueManager : MonoBehaviour
             return;
         }
 
+        if (isTimelinePlaying)
+        {
+            return;
+        }
+
         if (isShowingMessage)
         {
             if (isTyping)
@@ -580,7 +610,7 @@ public class DialogueManager : MonoBehaviour
 
             if (targetGroup != null)
             {
-                bool playerInGroup = false;
+                bool focusInGroup = false;
                 bool speakerInGroup = false;
 
                 // Ensure player is in the group
@@ -595,16 +625,16 @@ public class DialogueManager : MonoBehaviour
                     {
                         targetGroup.m_Targets[i].weight = othersWeight;
                     }
-                    if (targetGroup.m_Targets[i].target == player.transform)
+                    if (targetGroup.m_Targets[i].target == mainCharacter)
                     {
-                        playerInGroup = true;
+                        focusInGroup = true;
                         targetGroup.m_Targets[i].weight = defaultWeight;
                     }
                 }
 
-                if (!playerInGroup)
+                if (!focusInGroup)
                 {
-                    targetGroup.AddMember(player.transform, defaultWeight, defaultRadius); // Add player with high weight
+                    targetGroup.AddMember(mainCharacter, defaultWeight, defaultRadius); // Add player with high weight
                 }
 
 
@@ -630,7 +660,7 @@ public class DialogueManager : MonoBehaviour
             // Identify all members except the player for removal
             for (int i = 0; i < targetGroup.m_Targets.Length; i++)
             {
-                if (targetGroup.m_Targets[i].target != player.transform)
+                if (targetGroup.m_Targets[i].target != mainCharacter)
                 {
                     membersToRemove.Add(targetGroup.m_Targets[i]);
                 }

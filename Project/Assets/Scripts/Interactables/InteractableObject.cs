@@ -45,6 +45,10 @@ public class InteractableObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameObject.FindObjectOfType<FoucsOnNpc>()) 
+        { 
+            return;
+        }
         bool isCursorOver = false;
         float distance = 0;
         if (GetComponentsInChildren<SpriteRenderer>().Length > 0)

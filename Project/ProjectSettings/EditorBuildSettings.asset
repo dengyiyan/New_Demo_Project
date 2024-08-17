@@ -24,8 +24,14 @@ EditorBuildSettings:
     path: Assets/Scenes/PeacefulVillage_After_Conflict.unity
     guid: a93635875c4392749872031e399a4ee5
   - enabled: 1
+    path: Assets/Scenes/PeacefulVillage_After_Conflict_Ian.unity
+    guid: ac54effb3e853674da36f0ed365fd5ab
+  - enabled: 1
     path: Assets/Scenes/Village_After_Genocide.unity
     guid: 6dfadd5424645a741b34d3c0501dfa7b
+  - enabled: 1
+    path: Assets/Scenes/Village_After_Genocide_Ian.unity
+    guid: 6e7e91954ebb6f44b9af7ec822cf2d3c
   - enabled: 1
     path: Assets/Scenes/SAT_Village_After_Genocide.unity
     guid: d55fe04ce548c004badc2f8ec6bcfe7a
@@ -86,6 +92,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SAT_nature.unity
     guid: 9377ac3c94d495849a72551c5d8ccd2a
+  - enabled: 1
+    path: Assets/Scenes/TimelineScene_Ian.unity
+    guid: 3ea2af361c11e964b80388d68eec571d
   - enabled: 1
     path: Assets/Scenes/TimelineScene_Nature.unity
     guid: 3b093376e59ef104687e1de33974e956

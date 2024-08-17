@@ -800,7 +800,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.4375
+  orthographic size: 7.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -825,7 +825,7 @@ Transform:
   m_GameObject: {fileID: 161169369}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46, y: 20, z: -16}
+  m_LocalPosition: {x: 19, y: 5, z: -16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1748,7 +1748,7 @@ Transform:
   m_GameObject: {fileID: 531126372}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46, y: 20, z: 0}
+  m_LocalPosition: {x: 19, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1998,7 +1998,7 @@ Transform:
   m_GameObject: {fileID: 565232659}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 46, y: 20, z: -16}
+  m_LocalPosition: {x: 19, y: 5, z: -16}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2542,11 +2542,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1887544452139063866, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 46
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 1887544452139063866, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 20
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1887544452139063866, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3782,9 +3782,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4adbc733b8b5c7748b12c36abd1121c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSceneName: HeroHouse_SAT_Exercise1
-  startSpawnID: 5
-  startingSequence: {fileID: 0}
+  startSceneName: TimelineScene_Ian
+  startSpawnID: 7
+  startingSequence: {fileID: 11400000, guid: 818452c186762984e924e895688602bf, type: 2}
 --- !u!4 &1510471760
 Transform:
   m_ObjectHideFlags: 0

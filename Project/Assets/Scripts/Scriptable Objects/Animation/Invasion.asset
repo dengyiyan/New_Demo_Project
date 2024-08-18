@@ -37,6 +37,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: '[I could not stop trembling... Suddenly, the door was broken in, a
           familiar, yet annoying voice started talking]'
@@ -55,6 +56,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: The familiar disgusting voice
         text: Well, well, what do we have here? The rest of the rats hiding in their
           little hole.
@@ -73,6 +75,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Father
         text: Who are you? What do you want from us?
         choices: []
@@ -90,6 +93,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: The familiar disgusting voice
         text: "Hahaha...Who am I? I\u2019m the man who was humiliated by your pathetic
           village. You all thought you could defy me and get away with it?"
@@ -108,6 +112,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: The familiar disgusting voice
         text: I am Morris the Magnate! Nobody says no to me! Ever!
         choices: []
@@ -125,6 +130,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mother
         text: We've done nothing to you!
         choices: []
@@ -142,6 +148,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Morris
         text: 'Your village did! Your precious mayor proved to me that this village
           is beyond saving with his actions. '
@@ -160,6 +167,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Morris
         text: You disgusting, dirty creatures who refuse to be civilized deserve
           to be eliminated from this world!! And I, Morris the Magnate, will personally
@@ -179,6 +187,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Morris
         text: Your mayor and his whole family already paid for what they did! Now
           it is your turn!
@@ -197,6 +206,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: (What?! Does that mean Ian also...?)
         choices: []
@@ -214,6 +224,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: '[But I do not have much time to process that message, as my own family
           is in danger now]'
@@ -232,6 +243,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Father
         text: "Leave us alone! We don\u2019t even know you!"
         choices: []
@@ -249,6 +261,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Morris
         text: (Mocking) Oh you don't even have to. I will be your doom.
         choices: []
@@ -266,6 +279,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[Sounds of fighting, and then...A loud, sickening thud followed by
           the sound of something heavy hitting the floor]'
@@ -284,6 +298,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[Then, sounds of smashing, laughing, screaming and crying mixes up,
           like an endless nightmare.] '
@@ -302,6 +317,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mother
         text: No! Please, stop! No!!!
         choices: []
@@ -319,6 +335,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[[Player] feels as if his is experiencing an endless falling. This
           can''t be true... The strong, reliable father...]'
@@ -337,6 +354,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Morris
         text: "Take the woman. She\u2019ll serve her purpose."
         choices: []
@@ -354,6 +372,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: "[The sound of Mother\u2019s screams fades away as she\u2019s dragged
           off...]"
@@ -372,6 +391,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[A brief moment of Deadly silence, as [Player] can feel his heart
           jumping out of his chest, and then, suddenly broken by the sound of crying]'
@@ -390,6 +410,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[It seems that the baby was woken by the noice]'
         choices: []
@@ -407,6 +428,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: (No, no, no... not him... Please, stay quiet...)
         choices: []
@@ -424,6 +446,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Morris
         text: 'It seems we have some little rats left behind upstairs. Such annoying
           species, growing like cancer. '
@@ -442,6 +465,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Morris
         text: Stop the ******* crying! I hate that noice! Go search for other survivors!
           I want no one left!
@@ -460,6 +484,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mercenary 1
         text: Yes, boss!
         choices: []
@@ -477,6 +502,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: "[[Player]'s heart pounds as he hears the heavy footsteps ascending
           the stairs. The baby\u2019s cries grow louder, echoing in the room]"
@@ -495,6 +521,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[He is rooted by the great shock despair... The will of living has
           never been so strong, yet he has got nothing to do against these thugs]'
@@ -513,6 +540,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[Accidentally, his hand touches the hidden door beneath him.]'
         choices: []
@@ -530,6 +558,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: (The hidden door... I have to hide. It's the only chance...)
         choices: []
@@ -547,6 +576,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[With trembling hands, [Player] slowly opens the hidden door and slips
           into the secret cabinet, just as the heavy footsteps reach the top of the
@@ -566,6 +596,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: "[The baby\u2019s cries continue to fill the room, but he knows he
           must remain hidden, no matter how much it tears at his heart..]"
@@ -584,6 +615,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mercenary 2
         text: Look at this little pest. Making this unpleasant noice.
         choices: []
@@ -601,6 +633,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[Sound of stabbing, followed by a sharp, final cry that pierces the
           silence before gradually stopping.]'
@@ -619,6 +652,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mercenary 3
         text: 'Now that''s much better. '
         choices: []
@@ -636,6 +670,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[Tears welling up in [Player]''s eyes, he has to clench his fist to
           the ground to stop himself from making a sound]'
@@ -654,6 +689,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mercenary 1
         text: 'There are two beds here, there must be someone still hiding. '
         choices: []
@@ -671,6 +707,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mercenary 1
         text: Let's keep searching. Boss says leave no survivors.
         choices: []
@@ -688,6 +725,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[The sound of footsteps stops at the bed. [Player] can feel the heart
           in his throat]'
@@ -706,6 +744,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: (Please, don't find any of us...Please, don't find any of us...Please,
           don't find any of us...)
@@ -724,6 +763,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mercenary 3
         text: Find you, little cutie~
         choices: []
@@ -741,6 +781,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Sister
         text: Let me go! Let me go!
         choices: []
@@ -758,6 +799,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[[Player]''s heart races, as every fiber of his being screaming to
           do something, but he remains frozen, knowing he would be caught if he revealed
@@ -777,6 +819,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mercenary 3
         text: Ouch! You little brat! You dare to kick me?!
         choices: []
@@ -794,6 +837,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[Noice of running and chasing... And then, comes the screaming of
           sister]'
@@ -812,6 +856,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: "[[Player]\u2019s breath catches in his throat, the overwhelming urge
           to help battling against his paralyzing fear.]"
@@ -830,6 +875,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mercenary 3
         text: See if you can kick this time, huh?
         choices: []
@@ -847,6 +893,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Morris
         text: Well, well, well, what makes it so lively upstairs?
         choices: []
@@ -864,6 +911,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mercenary 1
         text: "Just a little rat trying to fight back, boss. She\u2019s got some
           spirit, but we\u2019ll finish it."
@@ -882,6 +930,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Morris
         text: "Oh, I do love it when they struggle. It\u2019s almost endearing...
           almost."
@@ -900,6 +949,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Morris
         text: "(Crouching down beside the sister, voice dripping with mockery) What\u2019s
           the matter, little one? Not so brave now, are you?"
@@ -918,6 +968,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Sister
         text: "You... you\u2019re a monster! Bring my father and mother back!"
         choices: []
@@ -935,6 +986,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Morris
         text: "I\u2019ve been called worse. But I suppose you won\u2019t have to
           worry about that for long."
@@ -953,6 +1005,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Morris
         text: "Take her. We\u2019ll see if that spirit lasts. And burn the rest of
           this filthy place. I\u2019m done here."
@@ -971,6 +1024,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[[Player] listens in horror as the mercenaries drag his sister away,
           her pained whimpers growing fainter as they descend the stairs.]'
@@ -989,6 +1043,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[Morris and his mercenaries leave, the sound of their footsteps receding
           as they make their way out of the burning house.]'
@@ -1007,6 +1062,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: 
         text: '[[Player] remains frozen in place, the overwhelming sense of loss
           crushing him.]'
@@ -1025,6 +1081,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: "I\u2019m sorry... I\u2019m so sorry... I couldn\u2019t save you...
           I couldn\u2019t save anyone... I just want to live..."
@@ -1043,9 +1100,9 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
-        text: I have to get out... I have to survive... I have to find her... I have
-          to...
+        text: I have to get out... I have to survive... I have to...
         choices: []
         nextIndex: 59
         triggers: []
@@ -1061,6 +1118,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       ID: invasion
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -1069,6 +1127,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -1083,5 +1142,6 @@ MonoBehaviour:
     nextScene: HeroHouse_Night_After_Genocide
     spawnID: 4
     direction: 3
+    newStartingSequence: {fileID: 0}
   conditions:
     conditions: []

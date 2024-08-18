@@ -17,13 +17,49 @@ MonoBehaviour:
   - npcName: Player
     points: []
     trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 5
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
     waitForCompletion: 1
     conversation:
       conversationDialogues:
       - speakerName: 
-        text: (Several Years later...)
+        text: '[After the destruction of his village, Ian was left with nothing but
+          the searing pain of loss and the burning desire for revenge.]'
         choices: []
         nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: "[Unlike [Player], who sought healing, Ian\u2019s path was fueled by
+          a need for justice\u2014justice for his family, his village, and for the
+          innocent lives torn apart by Morris.]"
+        choices: []
+        nextIndex: 999
         triggers: []
         requirements: []
         divergence:
@@ -50,13 +86,753 @@ MonoBehaviour:
   - npcName: Player
     points: []
     trigger: 
-    waitForCompletion: 1
+    waitForCompletion: 0
     conversation:
       conversationDialogues: []
       ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 5
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: 
+        text: '[Determined to bring Morris to justice, Ian threw himself into his
+          studies, channeling all his grief and anger into becoming a lawyer.]'
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[He knew that the only way to truly destroy Morris was to dismantle
+          his power legally, leaving no room for escape.]'
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: 
     waitForConversationEnd: 1
     allowPlayerMove: 0
-    animationType: 4
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 5
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: 
+        text: '[Ian excelled in law school, his sharp mind and relentless determination
+          driving him to the top of his class.]'
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[But his focus was never just on the law; it was on the case that
+          would define his life.]'
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 5
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: 
+        text: '[Through years of hard work, Ian combed through mountains of evidence,
+          tracked down witnesses, and built an airtight case against Morris]'
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[His determination never wavered, even as he navigated the complexities
+          and challenges of the legal system.]'
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[Finally, after years of preparation and a gruelling trial, Ian succeeded
+          in bringing Morris to justice, seeing him sentenced to death.]'
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[This news became a sensation, capturing the attention of people across
+          the country.After all, Morris was not just any man.]'
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[He was a well-known merchant, infamous for his wealth and influence.
+          But beneath his success lay a trail of exploitation and greed. Countless
+          people had suffered under his reign.]'
+        choices: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: "[For many, seeing Morris finally brought to justice was a moment of
+          vindication\u2014a long-awaited reckoning.]"
+        choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 5
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: 
+        text: "[Grateful for Ian\u2019s relentless pursuit of justice, those who
+          had been harmed by Morris\u2019s greed began to see Ian as a hero.]"
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: "[Being both young and brave, social media buzzed with praise of him,
+          and Ian\u2019s name quickly became synonymous with courage and righteousness.]"
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[People started to idolize him, hailing him as a defender of the downtrodden
+          and a symbol of hope in a world where justice often seemed out of reach.]'
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: "[Ian\u2019s popularity grew rapidly on Tweetz, an online social platform,
+          where his every word was followed by millions.]"
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[He had become an influential power, his posts shaping public opinion
+          and rallying support for his cause.]'
+        choices: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[But despite the accolades and the adoration, Ian knew the ''truth''
+          deep inside: this world was rotten.]'
+        choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[It was a place filled with greed, brutality, and corruption, far
+          beyond what a single victory could cleanse]'
+        choices: []
+        nextIndex: 7
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[Morris was just one of many, a symptom of a deeper sickness that
+          had infected the world.]'
+        choices: []
+        nextIndex: 8
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[And it is his responsibility to get rid of them so that what happend
+          to his village and family would never happen again.]'
+        choices: []
+        nextIndex: 9
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 5
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: 
+        text: '[After the tragedy, [Player] was driven by a desperate need to find
+          his mother and sister, who had been taken by Morris.]'
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[His search was long and arduous, but in the end, it only led to heartbreak
+          when he discovered they had been dead for some time.]'
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[Shattered by the loss, [Player] faced a choice: to be consumed by
+          the same hatred that drove Morris, or to find a way to rise above it.]'
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[Choosing the latter, [Player] sought healing and understanding, dedicating
+          himself to rebuilding his life and finding meaning in the wake of such
+          overwhelming tragedy.]'
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[He emerged from his trauma not as a figure of vengeance, but as one
+          of compassion and empathy.]'
+        choices: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[Through years of Self-Attachment Technique exercises and introspection,
+          [Player] learned to process his grief and manage his emotions, transforming
+          his pain into a force for good.]'
+        choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[[Player] did his job first by supporting those who had suffered under
+          Morris''s exploitation, offering them the same understanding and compassion
+          that he had fought so hard to cultivate within himself.]'
+        choices: []
+        nextIndex: 7
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 5
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: 
+        text: '[Even after Morris was caught, [Player] continued to search for purpose,
+          and found it in community service.]'
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[He became a community volunteer, working tirelessly to support those
+          who, like him, had experienced profound loss.]'
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[[Player] devoted himself to caring for children who had lost their
+          parents, offering them the comfort and stability that had been ripped away
+          from him.]'
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: '[He embraced a simple life, filled with compassion and a love for
+          the world, just as his parents had taught him.]'
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
     boolParameters: []
     nextScene: 
     spawnID: 

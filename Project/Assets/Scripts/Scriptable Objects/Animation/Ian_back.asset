@@ -1190,7 +1190,7 @@ MonoBehaviour:
         newStartingSequence: {fileID: 0}
       - speakerName: Ian
         text: "They were trying to protect me\u2026 protect all of us\u2026 from
-          this. And I\u2026 I ignored them. "
+          this. And I\u2026 I ignored them... Thinking they were just being stubborn..."
         choices: []
         nextIndex: 27
         triggers: []
@@ -1363,9 +1363,9 @@ MonoBehaviour:
     allowPlayerMove: 0
     animationType: 4
     boolParameters: []
-    nextScene: Blacksceen
+    nextScene: TimelineScene_Ian
     spawnID: 7
     direction: 1
-    newStartingSequence: {fileID: 11400000, guid: 43184090c3bd1cd43a45cdd5b1c4a20b, type: 2}
+    newStartingSequence: {fileID: 11400000, guid: 818452c186762984e924e895688602bf, type: 2}
   conditions:
     conditions: []

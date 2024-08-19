@@ -35,6 +35,8 @@ public class TweetData : ScriptableObject
     public int followerChangeMin = -5;  // Minimum fluctuation range
     public int followerChangeMax = 5;   // Maximum fluctuation range
 
+    public bool isPlayer = false;
+    public bool isIan = false;
 
     private void OnEnable()
     {

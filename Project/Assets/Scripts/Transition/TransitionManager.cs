@@ -149,16 +149,20 @@ namespace MyProject.Transition
         {
             fadeCanvasGroup.blocksRaycasts = true;
 
-            yield return Fade(1);
             EventHandler.CallBeforeSceneUnloadEvent();
+            yield return Fade(1);
+            EventHandler.CallAfterFadeOutEvent();
 
             yield return SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());// 卸载当前场景
 
             yield return LoadSceneSetActive(sceneName, spawnPointID, sequence);// 加载场景并设置为激活
 
             EventHandler.CallAfterSceneLoadEvent();
+            EventHandler.CallBeforeFadeInEvent();
 
             yield return Fade(0);
+
+
 
             fadeCanvasGroup.blocksRaycasts = false;
         }

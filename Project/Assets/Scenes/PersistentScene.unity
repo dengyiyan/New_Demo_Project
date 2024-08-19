@@ -800,7 +800,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 7.5
+  orthographic size: 8.4375
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1734,7 +1734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PositionMode: 0
   m_RotationMode: 0
-  m_UpdateMethod: 2
+  m_UpdateMethod: 1
   m_Targets:
   - target: {fileID: 391847240}
     weight: 1
@@ -2193,7 +2193,7 @@ GameObject:
   - component: {fileID: 732682775}
   m_Layer: 5
   m_Name: ButtonCanvas
-  m_TagString: Untagged
+  m_TagString: ButtonCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3782,9 +3782,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4adbc733b8b5c7748b12c36abd1121c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSceneName: TimelineScene_Ian
-  startSpawnID: 7
-  startingSequence: {fileID: 11400000, guid: 818452c186762984e924e895688602bf, type: 2}
+  startSceneName: Website
+  startSpawnID: 
+  startingSequence: {fileID: 0}
 --- !u!4 &1510471760
 Transform:
   m_ObjectHideFlags: 0

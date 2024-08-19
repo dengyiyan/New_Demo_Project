@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59505117fe2d304c865361c7becd80e, type: 3}
+  m_Name: 6-2tweet
+  m_EditorClassIdentifier: 
+  tweetText: Justice is important, but we need to be careful not to let our anger
+    blind us. Innocent lives matter too. #BalanceInJustice #WitchHuntOrJustice
+  followUpTweets:
+  - {fileID: 11400000, guid: c818dbcd8b9f5764894f5e9c37e0e14c, type: 2}
+  avatar: {fileID: 0}
+  username: 
+  subtitle: 
+  likesList: 40020000
+  commentsList: 90000000
+  retweetsList: 0d000000
+  likesCount: 0
+  commentsCount: 0
+  retweetCount: 0
+  followerChange: 100
+  followerChangeMin: -10
+  followerChangeMax: 10
+  isPlayer: 1
+  isIan: 0

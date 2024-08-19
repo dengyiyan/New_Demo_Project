@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59505117fe2d304c865361c7becd80e, type: 3}
+  m_Name: 6-3tweet
+  m_EditorClassIdentifier: 
+  tweetText: "This isn\u2019t the way. We can\u2019t just go after everyone we suspect
+    without proof. We risk becoming what we hate. We must remember that justice is
+    not just about punishment, but also about healing and understanding. If we let
+    anger and revenge guide us, we risk losing our humanity.  #JusticeWithIntegrity
+    #NoToWitchHunts"
+  followUpTweets:
+  - {fileID: 11400000, guid: 0daa8306cc2c2b44bb580b68ecdeb658, type: 2}
+  avatar: {fileID: 0}
+  username: 
+  subtitle: 
+  likesList: 6b000000
+  commentsList: b2000000
+  retweetsList: 0c000000
+  likesCount: 107
+  commentsCount: 178
+  retweetCount: 12
+  followerChange: 10
+  followerChangeMin: 0
+  followerChangeMax: 10
+  isPlayer: 1
+  isIan: 0

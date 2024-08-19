@@ -16,5 +16,5 @@ public static class Settings
 
     public const string ChildhoodSelfCode = "???";
 
-    public const string TweetzSubtitle = "Average Citizen | Hello world!";
+    public const string TweetzSubtitle = "May You Find Peace and Love the World";
 }

@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using System.Collections.Generic;
+using TreeEditor;
 
 public class TweetManager : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class TweetManager : MonoBehaviour
     public GameObject tweetPrefab;  // Prefab for a tweet bubble
     public GameObject replyPrefab;
     public TweetData startingTweetData;  // Starting tweet data
+    public ScrollRect scrollRect;
 
     private TweetData currentTweetData;  // The current tweet being displayed
     private GameObject currentTweetInstance;  // The current tweet instance in the UI
@@ -15,11 +17,21 @@ public class TweetManager : MonoBehaviour
     private List<TweetData> playerTweetOptions = new List<TweetData>();  // List of player tweet options
     //private bool waitingForNextClick = false;
 
+    [SerializeField] private Sprite PlayerAvatar;
+    //[SerializeField] private string PlayerUsername;
+    //[SerializeField] private string PlayerSubtitle;
+    [SerializeField] private Sprite IanAvatar;
+    [SerializeField] private string IanUsername;
+    [SerializeField] private string IanSubtitle;
+    [SerializeField] [SceneName] private string nextScene;
+    //[SerializeField]
+    private TweetInstanceHandler instanceHandler;
+
     void Start()
     {
+        playerTweetOptions = new List<TweetData> { startingTweetData };
         // Start with the initial tweet
         AddTweet(startingTweetData);
-
         //HandleFollowUpTweets(startingTweetData);
     }
 
@@ -32,8 +44,8 @@ public class TweetManager : MonoBehaviour
         if (currentTweetInstance == null)
         {
             currentTweetInstance = Instantiate(prefabToUse, chatWindow);
-            TweetInstanceHandler instanceHandler = currentTweetInstance.AddComponent<TweetInstanceHandler>();
-            instanceHandler.Initialize(tweetData);
+            instanceHandler = currentTweetInstance.AddComponent<TweetInstanceHandler>();
+            instanceHandler.Initialize(playerTweetOptions);
             //EventHandler.RegisterToStaticsUpdate(() => UpdateTweetInstance(currentTweetInstance, tweetData));
         }
         // Reference to the main components
@@ -42,16 +54,29 @@ public class TweetManager : MonoBehaviour
         // Transform statics = tweetBody.Find("Statics");
 
         // Set avatar, username, subtitle, and tweet text
-        if (tweetData.avatar)
+        if (tweetData.isPlayer)
+            panel.Find("Avatar").GetComponent<Image>().sprite = PlayerAvatar;
+        else if (tweetData.isIan)
+            panel.Find("Avatar").GetComponent<Image>().sprite = IanAvatar;
+        else if (tweetData.avatar)
             panel.Find("Avatar").GetComponent<Image>().sprite = tweetData.avatar;
-        if (!string.IsNullOrEmpty(tweetData.username))
-            panel.Find("Username").GetComponent<Text>().text = tweetData.username;
-        else
+
+
+        if (tweetData.isPlayer)
             panel.Find("Username").GetComponent<Text>().text = GameStateManager.PlayerName + "777";
-        if (!string.IsNullOrEmpty(tweetData.subtitle))
-            panel.Find("Subtitle").GetComponent<Text>().text = tweetData.subtitle;
-        else
+        else if (tweetData.isIan)
+            panel.Find("Username").GetComponent<Text>().text = IanUsername;
+        else if (!string.IsNullOrEmpty(tweetData.username))
+            panel.Find("Username").GetComponent<Text>().text = tweetData.username;
+
+
+        if (tweetData.isPlayer)
             panel.Find("Subtitle").GetComponent<Text>().text = Settings.TweetzSubtitle;
+        else if (tweetData.isIan)
+            panel.Find("Subtitle").GetComponent<Text>().text = IanSubtitle;
+        else if (!string.IsNullOrEmpty(tweetData.subtitle))
+            panel.Find("Subtitle").GetComponent<Text>().text = tweetData.subtitle; 
+
         tweetBody.Find("Text").GetComponent<Text>().text = tweetData.tweetText;
     }
 
@@ -76,6 +101,12 @@ public class TweetManager : MonoBehaviour
         //waitingForNextClick = true;
     }
 
+    private void ScrollToBottom()
+    {
+        Canvas.ForceUpdateCanvases();  // Ensure UI is updated before changing scroll position
+        LayoutRebuilder.ForceRebuildLayoutImmediate(chatWindow.GetComponent<RectTransform>());
+        scrollRect.verticalNormalizedPosition = 0f;  // Scroll to the bottom
+    }
 
 
     //void UpdateTweetInstance(GameObject tweetInstance, TweetData tweetData)
@@ -107,6 +138,7 @@ public class TweetManager : MonoBehaviour
         GameObject.Destroy(buttons.gameObject);
         currentTweetInstance = null;
         HandleFollowUpTweets(tweetData);
+        ScrollToBottom();
     }
 
     void ApplyFollowerChange(int baseChange, int minFluctuation, int maxFluctuation)
@@ -129,6 +161,9 @@ public class TweetManager : MonoBehaviour
 
     void HandleFollowUpTweets(TweetData tweetData)
     {
+        // Use the follow-up TweetData objects directly
+        playerTweetOptions = new List<TweetData>(tweetData.followUpTweets);
+
         if (tweetData.followUpTweets.Count > 1)
         {
             // More than one follow-up tweet means these are player choices
@@ -149,9 +184,6 @@ public class TweetManager : MonoBehaviour
 
     void SetPlayerTweetOptions(TweetData tweetData)
     {
-        // Use the follow-up TweetData objects directly
-        playerTweetOptions = new List<TweetData>(tweetData.followUpTweets);
-
         // Start allowing the player to choose
         BeginPlayerTweetSelection();
     }
@@ -199,8 +231,10 @@ public class TweetManager : MonoBehaviour
 
     void ChangeTweet()
     {
+        instanceHandler.AddIndex();
         currentTweetIndex = (currentTweetIndex + 1) % playerTweetOptions.Count;
         UpdateSampleTweet();
+        ScrollToBottom();
     }
 
     void AddTweet(TweetData newTweetData)
@@ -228,5 +262,7 @@ public class TweetManager : MonoBehaviour
     void EndTweetChain()
     {
         Debug.Log("Tweet chain ended.");
+        if (!string.IsNullOrEmpty(nextScene))
+            EventHandler.CallTransitionEvent(nextScene, null);
     }
 }

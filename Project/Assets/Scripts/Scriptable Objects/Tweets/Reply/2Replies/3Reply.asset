@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2fd391df59c334fa32d6f62fc319b6, type: 3}
+  m_Name: 3Reply
+  m_EditorClassIdentifier: 
+  tweetText: "Not only is Ian fighting for justice, but he\u2019s also super handsome!
+    Total package. #HandsomeAndHeroic #JusticeCrush"
+  followUpTweets:
+  - {fileID: 11400000, guid: 9008e2184552f1946a7fef2308560a39, type: 2}
+  avatar: {fileID: 21300000, guid: d4a0874eaa59b5247903a7161ecd899c, type: 3}
+  username: Marnie
+  subtitle: Crushing on Justice
+  likesList: 0500000017000000380000008a000000
+  commentsList: 02000000050000001200000021000000
+  retweetsList: 00000000000000000100000004000000
+  likesCount: 138
+  commentsCount: 33
+  retweetCount: 4
+  followerChange: 0
+  followerChangeMin: -5
+  followerChangeMax: 5
+  isPlayer: 0
+  isIan: 0

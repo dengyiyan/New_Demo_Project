@@ -838,5 +838,20 @@ MonoBehaviour:
     spawnID: 
     direction: 0
     newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 4
+    boolParameters: []
+    nextScene: Website
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
   conditions:
     conditions: []

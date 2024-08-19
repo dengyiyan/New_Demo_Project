@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59505117fe2d304c865361c7becd80e, type: 3}
+  m_Name: 2tweet
+  m_EditorClassIdentifier: 
+  tweetText: "Morris\u2019s death sentence marks a major victory in the fight against
+    greed, cruelty, and corruption. Ian, who acted as the main force in bringing
+    this monster to justice, is an undoubted hero. Being so young and capable, he
+    will become a symbol of justice, followed by numerous young people.\n\n#JusticeServed
+    #EndTheCruelty #HeroInTheMaking #JusticeShallRise"
+  followUpTweets:
+  - {fileID: 11400000, guid: 6cd526853eb1e4841ab07b7ff9ac6724, type: 2}
+  avatar: {fileID: 21300000, guid: 4de7ff1b231aaad4ea90b9e9bb579452, type: 3}
+  username: Daily News
+  subtitle: Bringing You the Headlines
+  likesList: 34220000c13300003cdf0000
+  commentsList: 01010000a80d0000f6260000
+  retweetsList: 600000007401000006070000
+  likesCount: 57148
+  commentsCount: 9974
+  retweetCount: 1798
+  followerChange: 0
+  followerChangeMin: -5
+  followerChangeMax: 5
+  isPlayer: 0
+  isIan: 0

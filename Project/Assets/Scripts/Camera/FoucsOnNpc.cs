@@ -16,15 +16,15 @@ public class FoucsOnNpc : MonoBehaviour
     private void OnEnable()
     {
         EventHandler.RegisterNPCEvent += OnRegisterNPCEvent;
-        EventHandler.BeforeSceneUnloadEvent += OnBeforeSceneUnload;
-        EventHandler.AfterSceneLoadEvent += OnAfterSceneLoad;
+        EventHandler.BeforeFadeInEvent += OnBeforeFadeIn;
+        EventHandler.AfterFadeOutEvent += OnAfterFadeOut;
     }
 
     private void OnDisable()
     {
         EventHandler.RegisterNPCEvent -= OnRegisterNPCEvent;
-        EventHandler.BeforeSceneUnloadEvent -= OnBeforeSceneUnload;
-        EventHandler.AfterSceneLoadEvent -= OnAfterSceneLoad;
+        EventHandler.BeforeFadeInEvent -= OnBeforeFadeIn;
+        EventHandler.AfterFadeOutEvent -= OnAfterFadeOut;
     }
 
     private void Start()
@@ -72,7 +72,7 @@ public class FoucsOnNpc : MonoBehaviour
         EventHandler.CallSetMainFocusEvent(npcTransform);
     }
 
-    private void OnBeforeSceneUnload()
+    private void OnAfterFadeOut()
     {
         // Re-enable the player and focus back on the player when the scene is unloading
         if (player != null)
@@ -94,7 +94,7 @@ public class FoucsOnNpc : MonoBehaviour
         npcs = in_npcs;
     }
 
-    private void OnAfterSceneLoad()
+    private void OnBeforeFadeIn()
     {
         // Re-focus on the NPC (Ian) in the new scene if needed
         FocusOnNPC();

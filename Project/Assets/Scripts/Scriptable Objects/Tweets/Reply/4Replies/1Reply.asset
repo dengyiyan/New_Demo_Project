@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2fd391df59c334fa32d6f62fc319b6, type: 3}
+  m_Name: 1Reply
+  m_EditorClassIdentifier: 
+  tweetText: "Finally, someone who\u2019s not afraid to stand up and do what\u2019s
+    right. Ian is the hero we\u2019ve been waiting for! #JusticeShallRise #IanTheHero"
+  followUpTweets:
+  - {fileID: 11400000, guid: d35b7c5f8d23843478680f8e87f44acd, type: 2}
+  avatar: {fileID: 21300000, guid: fa3ae258d7097ed4cbf3f6faa54aec61, type: 3}
+  username: TrueBeliever
+  subtitle: In Ian We Trust
+  likesList: e40a0000bd12000044260000
+  commentsList: 7f0000007101000042020000
+  retweetsList: 0d000000250000004e000000
+  likesCount: 9796
+  commentsCount: 578
+  retweetCount: 78
+  followerChange: 0
+  followerChangeMin: -5
+  followerChangeMax: 5
+  isPlayer: 0
+  isIan: 0

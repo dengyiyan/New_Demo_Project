@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59505117fe2d304c865361c7becd80e, type: 3}
+  m_Name: 6-1tweet
+  m_EditorClassIdentifier: 
+  tweetText: "Ian\u2019s right\u2014there\u2019s no place for mercy when it comes
+    to justice. We need to root out all the evil. #JusticeShallRise #NoMercy"
+  followUpTweets:
+  - {fileID: 11400000, guid: 78e38202082850148b2491d47a7dab8f, type: 2}
+  avatar: {fileID: 0}
+  username: 
+  subtitle: 
+  likesList: ee0a0000
+  commentsList: 1b020000
+  retweetsList: 45000000
+  likesCount: 2798
+  commentsCount: 539
+  retweetCount: 69
+  followerChange: 200
+  followerChangeMin: -10
+  followerChangeMax: 10
+  isPlayer: 1
+  isIan: 0

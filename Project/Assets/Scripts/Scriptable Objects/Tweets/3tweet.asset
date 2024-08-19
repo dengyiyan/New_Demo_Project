@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59505117fe2d304c865361c7becd80e, type: 3}
+  m_Name: 3tweet
+  m_EditorClassIdentifier: 
+  tweetText: "Morris was just the beginning. There are still many out there who have
+    caused pain and suffering, hiding in plain sight. It\u2019s time to expose them
+    all. If you have information, speak up now.\n \n#JusticeShallRise #NoMercyForTheGuilty"
+  followUpTweets:
+  - {fileID: 11400000, guid: b6a10453d3406384c89df41c60ee98d0, type: 2}
+  avatar: {fileID: 0}
+  username: 
+  subtitle: 
+  likesList: d6350000f2000100eded0200
+  commentsList: e3060000661500005a630000
+  retweetsList: 4801000069030000dc0d0000
+  likesCount: 191981
+  commentsCount: 25434
+  retweetCount: 3548
+  followerChange: 0
+  followerChangeMin: -5
+  followerChangeMax: 5
+  isPlayer: 0
+  isIan: 1

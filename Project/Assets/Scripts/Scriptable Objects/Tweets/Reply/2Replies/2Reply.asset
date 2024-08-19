@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2fd391df59c334fa32d6f62fc319b6, type: 3}
+  m_Name: 2Reply
+  m_EditorClassIdentifier: 
+  tweetText: "It\u2019s amazing to see someone so young achieve so much. Ian is a
+    true role model for the next generation. \n#YoungAndCapable #FutureLeader #JusticeShallRise
+    #ThankYouIan"
+  followUpTweets:
+  - {fileID: 11400000, guid: 68594118a59c10240ae70fdd75f13ea7, type: 2}
+  avatar: {fileID: 21300000, guid: f9b14a4dc4a9a714e8f762c8655a6c02, type: 3}
+  username: FutureFocus
+  subtitle: "Shaping Tomorrow\u2019s Leaders"
+  likesList: 0d00000039000000b200000039020000
+  commentsList: 0200000008000000170000002d000000
+  retweetsList: 0200000003000000080000000d000000
+  likesCount: 569
+  commentsCount: 45
+  retweetCount: 13
+  followerChange: 0
+  followerChangeMin: -5
+  followerChangeMax: 5
+  isPlayer: 0
+  isIan: 0

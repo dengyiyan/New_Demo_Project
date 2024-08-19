@@ -27,3 +27,5 @@ MonoBehaviour:
   followerChange: -2
   followerChangeMin: -5
   followerChangeMax: 5
+  isPlayer: 1
+  isIan: 0

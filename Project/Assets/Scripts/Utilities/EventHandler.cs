@@ -95,6 +95,20 @@ public static class EventHandler
         BeforeSceneUnloadEvent?.Invoke();
     }
 
+    public static event Action AfterFadeOutEvent;
+    public static void CallAfterFadeOutEvent()
+    {
+        //Debug.Log("Unload scene");
+        AfterFadeOutEvent?.Invoke();
+    }
+
+    public static event Action BeforeFadeInEvent;
+    public static void CallBeforeFadeInEvent()
+    {
+        //Debug.Log("Unload scene");
+        BeforeFadeInEvent?.Invoke();
+    }
+
     public static event Action AfterSceneLoadEvent;
     public static void CallAfterSceneLoadEvent()
     {

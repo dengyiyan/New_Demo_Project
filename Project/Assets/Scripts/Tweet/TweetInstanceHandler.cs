@@ -1,15 +1,17 @@
 using DG.Tweening;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class TweetInstanceHandler : MonoBehaviour
 {
-    private TweetData tweetData;
+    private List<TweetData> tweetDataList;
     private Transform statics;
+    private int currentTweetIndex = 0;
 
-    public void Initialize(TweetData data)
+    public void Initialize(List<TweetData> dataList)
     {
-        tweetData = data;
+        tweetDataList = dataList;
         statics = transform.Find("TweetBody/Statics");
 
         // Register to the statics update event
@@ -24,14 +26,15 @@ public class TweetInstanceHandler : MonoBehaviour
 
     private void UpdateTweetStatics()
     {
-        tweetData.UpdateStatics();  // Update the statics in TweetData
+        //if (currentTweetIndex >= tweetDataList.Count)
+        //    return;  // No more tweets to update
 
-        UpdateTextField(statics.Find("LikesCount").GetComponent<Text>(), tweetData.likesCount);
-        UpdateTextField(statics.Find("CommentsCount").GetComponent<Text>(), tweetData.commentsCount);
-        UpdateTextField(statics.Find("RetweetCount").GetComponent<Text>(), tweetData.retweetCount);
-        //statics.Find("LikesCount").GetComponent<Text>().text = tweetData.likesCount.ToString();
-        //statics.Find("CommentsCount").GetComponent<Text>().text = tweetData.commentsCount.ToString();
-        //statics.Find("RetweetCount").GetComponent<Text>().text = tweetData.retweetCount.ToString();
+        TweetData currentTweetData = tweetDataList[currentTweetIndex];
+        currentTweetData.UpdateStatics();  // Update the statics in TweetData
+
+        UpdateTextField(statics.Find("LikesCount").GetComponent<Text>(), currentTweetData.likesCount);
+        UpdateTextField(statics.Find("CommentsCount").GetComponent<Text>(), currentTweetData.commentsCount);
+        UpdateTextField(statics.Find("RetweetCount").GetComponent<Text>(), currentTweetData.retweetCount);
     }
 
     private void UpdateTextField(Text text, int count)
@@ -46,5 +49,10 @@ public class TweetInstanceHandler : MonoBehaviour
         {
             text.text = endValue.ToString();
         });
+    }
+
+    public void AddIndex()
+    {
+        currentTweetIndex = (currentTweetIndex + 1)%(tweetDataList.Count);
     }
 }

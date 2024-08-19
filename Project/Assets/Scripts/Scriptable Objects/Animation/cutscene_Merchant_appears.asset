@@ -32,6 +32,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Merchant
     points: []
     trigger: 
@@ -56,6 +57,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mayor Luis
         text: Good day, traveller. What brings you to our village?
         choices: []
@@ -73,6 +75,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Merchant
         text: Good day indeed. I am Morris, people would call me Morris the Magnate.
         choices: []
@@ -92,6 +95,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Merchant
         text: I am a merchant of the finest goods and an investor in promising lands.
         choices: []
@@ -109,6 +113,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Merchant
         text: I'm here to bring your backward village into the modern age and perhaps
           discuss some... profitable opportunities.
@@ -127,6 +132,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Evelyn
         text: So arrogant... He is even worse than the other outsiders.
         choices: []
@@ -144,6 +150,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mayor Luis
         text: 'We appreciate your offer, Mr.Morris, but our village is self-sufficient. '
         choices: []
@@ -161,6 +168,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mayor Luis
         text: We have no need for your goods or your investments.
         choices: []
@@ -178,6 +186,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Merchant
         text: 'Hahaha...! Self-sufficient? Please. You''re living in the dark ages. '
         choices: []
@@ -195,6 +204,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Merchant
         text: Your land has great potential, and with my help, it could be worth
           a fortune.
@@ -213,6 +223,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Merchant
         text: You should be grateful I'm even considering doing business here.
         choices: []
@@ -230,6 +241,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Charlie
         text: Hey! Watch your words, outsider!
         choices: []
@@ -249,6 +261,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mayor Luis
         text: Calm down, Charlie.
         choices: []
@@ -266,6 +279,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Charlie
         text: But grandpa...
         choices: []
@@ -283,6 +297,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Merchant
         text: Wise choice, old fella! Now, are we talking business?
         choices: []
@@ -300,6 +315,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mayor Luis
         text: There will be no business, Mr. Morris.
         choices: []
@@ -317,6 +333,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mayor Luis
         text: Our village thrives on our own terms, and we do not want to ruin it
           for the greediness of some outsider.
@@ -335,6 +352,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Merchant
         text: Greediness? I'm offering progress, prosperity!
         choices: []
@@ -352,6 +370,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Merchant
         text: Your stubbornness is costing your people a chance at a better life.
         choices: []
@@ -369,6 +388,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Evelyn
         text: We've heard enough. Leave our village, and take your greed with you.
         choices: []
@@ -386,6 +406,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Merchant
         text: Very well. But remember, this land could be so much more. You are choosing
           to remain in the dark.
@@ -404,6 +425,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Mayor Luis
         text: This discussion is over. Leave now, and do not return.
         choices: []
@@ -421,6 +443,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Merchant
         text: You will regret this. Mark my words, this village will pay for your
           arrogance.
@@ -439,6 +462,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Merchant
         text: Nobody can say no to me, I am Morris the Magnate!!!
         choices: []
@@ -456,6 +480,7 @@ MonoBehaviour:
         sceneTo: 
         spawnID: 
         direction: 0
+        newStartingSequence: {fileID: 0}
       ID: Merchant_greetings
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -464,6 +489,7 @@ MonoBehaviour:
     nextScene: 
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Merchant
     points:
     - {x: 18, y: 53, z: 0}
@@ -477,10 +503,26 @@ MonoBehaviour:
       ID: 
     waitForConversationEnd: 0
     allowPlayerMove: 0
-    animationType: 5
+    animationType: 0
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Merchant
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 4
     boolParameters: []
     nextScene: PeacefulVillage_After_Conflict
     spawnID: 
     direction: 0
+    newStartingSequence: {fileID: 0}
   conditions:
     conditions: []

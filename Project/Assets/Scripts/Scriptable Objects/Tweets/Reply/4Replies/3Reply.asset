@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2fd391df59c334fa32d6f62fc319b6, type: 3}
+  m_Name: 3Reply
+  m_EditorClassIdentifier: 
+  tweetText: "Forget the justice stuff\u2014can we talk about how ridiculously hot
+    Ian is? I\u2019d follow him anywhere just to stare at that face. #JusticeCrush"
+  followUpTweets:
+  - {fileID: 11400000, guid: b029829d650c91f418b781c53d2ddef4, type: 2}
+  avatar: {fileID: 21300000, guid: d4a0874eaa59b5247903a7161ecd899c, type: 3}
+  username: Marnie
+  subtitle: Crushing on Justice
+  likesList: 7a0100002b040000f80c0000
+  commentsList: a50000004d01000090020000
+  retweetsList: 000000000300000007000000
+  likesCount: 3320
+  commentsCount: 656
+  retweetCount: 7
+  followerChange: 0
+  followerChangeMin: -5
+  followerChangeMax: 5
+  isPlayer: 0
+  isIan: 0

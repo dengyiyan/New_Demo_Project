@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59505117fe2d304c865361c7becd80e, type: 3}
+  m_Name: 1tweet
+  m_EditorClassIdentifier: 
+  tweetText: 'Justice has been served. Morris, the man who destroyed so many lives,
+    has been sentenced to death. This is just the beginning. R.I.P. to those who
+    died because of him.
+
+    #JusticeShallRise #JusticeServed'
+  followUpTweets:
+  - {fileID: 11400000, guid: be0d466b590adaa4ea148d06ec989b95, type: 2}
+  avatar: {fileID: 0}
+  username: 
+  subtitle: 
+  likesList: 73050000ac150000fa5b000052bf0100
+  commentsList: 81000000a60200002b090000b91e0000
+  retweetsList: 1700000069000000de01000071060000
+  likesCount: 114514
+  commentsCount: 7865
+  retweetCount: 1649
+  followerChange: 0
+  followerChangeMin: 0
+  followerChangeMax: 0
+  isPlayer: 0
+  isIan: 1

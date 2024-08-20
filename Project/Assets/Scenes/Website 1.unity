@@ -235,13 +235,13 @@ MonoBehaviour:
   chatWindow: {fileID: 755952698}
   tweetPrefab: {fileID: 7602534822621866008, guid: d6e936006711c5f4899a45765803b22b, type: 3}
   replyPrefab: {fileID: 7271559350441439530, guid: 2b635831ee545654e93e42926464f72e, type: 3}
-  startingTweetData: {fileID: 11400000, guid: e90c5ea1457ffd140a928765965a7352, type: 2}
+  startingTweetData: {fileID: 11400000, guid: 249337e7634a83b4798bd3f02b79a68d, type: 2}
   scrollRect: {fileID: 1682048848}
   PlayerAvatar: {fileID: 2067157485, guid: 6341f9089dee2d540884f8cb5d62e3ce, type: 3}
   IanAvatar: {fileID: 21300000, guid: 48f34d8114902874fab911800120769b, type: 3}
   IanUsername: IanTheJust
   IanSubtitle: Justice Shall Rise
-  nextScene: 
+  nextScene: Website 2
 --- !u!4 &86822585
 Transform:
   m_ObjectHideFlags: 0
@@ -1578,6 +1578,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1050083344}
   m_CullTransparentMesh: 1
+--- !u!1 &1126699774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1126699776}
+  - component: {fileID: 1126699775}
+  m_Layer: 0
+  m_Name: PhotoButtonDisabler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1126699775
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126699774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55f05039610a0d0409c9cfdf9ad73999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1126699776
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1126699774}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1160041495
 GameObject:
   m_ObjectHideFlags: 0
@@ -2481,7 +2525,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogueManager: {fileID: 0}
-  startingSequence: {fileID: 0}
+  startingSequence: {fileID: 11400000, guid: 8734a619cb084ba47be629c4318fc1ea, type: 2}
   isAnimationPlaying: 0
   playableDirector: {fileID: 0}
   playables: []
@@ -2808,6 +2852,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 384313227}
   - {fileID: 1704501893}
+  - {fileID: 1126699776}
   - {fileID: 86822585}
   - {fileID: 2121653417}
   - {fileID: 1248414750}

@@ -14,13 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bodyPartName: hair_1
   bodyPartAnimationID: 1
-  bodyPartColor: {r: 1, g: 1, b: 1, a: 1}
+  bodyPartColor: {r: 0.34, g: 0.16, b: 0.14, a: 1}
   allBodyPartAnimations:
-  - {fileID: 7400000, guid: 6e6c9ca3e62512a4fadaa36a2b368af0, type: 2}
-  - {fileID: 7400000, guid: bd634a6dd9f16314cae4b8eb7310576d, type: 2}
-  - {fileID: 7400000, guid: 8b8d7a906b81383439c3b402c94b6e7f, type: 2}
-  - {fileID: 7400000, guid: c322f2d41f6f46e469458d6d69adf064, type: 2}
-  - {fileID: 7400000, guid: cc3665d7c8d1b6748846264ca1e13fd3, type: 2}
-  - {fileID: 7400000, guid: 9a6a3692a113dfc4cb6c1aab43170547, type: 2}
-  - {fileID: 7400000, guid: 6c3610909100aa64baba580574428c84, type: 2}
-  - {fileID: 7400000, guid: 97a237f6c500074448bf7a3127b66a8d, type: 2}
+  - {fileID: 7400000, guid: 7767607d8e0c33a469b2e02e36bf0c7e, type: 2}
+  - {fileID: 7400000, guid: a49175821dc74e14dae5cf7c7061b792, type: 2}
+  - {fileID: 7400000, guid: b6c52ce2b24ce8f41b968c1f8d0dd8f3, type: 2}
+  - {fileID: 7400000, guid: 29d3ab9c2fcebc8448fb93f6a7836d75, type: 2}
+  - {fileID: 7400000, guid: 36a3b58bc4d37c04886097d02aa18763, type: 2}
+  - {fileID: 7400000, guid: 078dd8a61814eef4ea93abcdd6a564de, type: 2}
+  - {fileID: 7400000, guid: b58284ad7316d664dae838be62ba72da, type: 2}
+  - {fileID: 7400000, guid: 8b770b9596f11664db8deebc192fb266, type: 2}
+  - {fileID: 7400000, guid: 2dc9350c505ee5342b0435ae11485d99, type: 2}
+  - {fileID: 7400000, guid: d4f67bf86b8a79940a82bccf409c8e92, type: 2}
+  - {fileID: 7400000, guid: 5a6d54cf5a799b54f9ccd5833b8878e3, type: 2}
+  - {fileID: 7400000, guid: 3d45ebde7a1f30b4bb6c22387b66c2f3, type: 2}
+  - {fileID: 7400000, guid: bc9d64425925a1d499f5434519c60c4b, type: 2}

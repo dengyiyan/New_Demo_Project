@@ -3323,11 +3323,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 280e75207c9b99b4981fca57e27e31c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sequences: []
   dialogueManager: {fileID: 0}
   startingSequence: {fileID: 11400000, guid: 046a8b2b8ced4c44198643253f9397a1, type: 2}
   isAnimationPlaying: 0
   playableDirector: {fileID: 0}
+  playables: []
 --- !u!4 &574559182
 Transform:
   m_ObjectHideFlags: 0
@@ -16849,14 +16849,6 @@ PrefabInstance:
     - target: {fileID: 5160527352409084950, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: defaultFacingDirection
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7886271517280261054, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: characterStates.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7886271517280261054, guid: f574884dff7bbe046b0384028e06c764, type: 3}
-      propertyPath: characterStates.Array.data[2]
-      value: Hug
       objectReference: {fileID: 0}
     - target: {fileID: 9115627289714457837, guid: f574884dff7bbe046b0384028e06c764, type: 3}
       propertyPath: defaultFacingDirection

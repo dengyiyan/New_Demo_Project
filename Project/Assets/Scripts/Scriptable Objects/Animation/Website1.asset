@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93034f96d865ca44c980630ee3614bf0, type: 3}
+  m_Name: Website1
+  m_EditorClassIdentifier: 
+  sequenceName: Website1
+  steps:
+  - npcName: Player
+    points: []
+    trigger: 
+    waitForCompletion: 1
+    conversation:
+      conversationDialogues:
+      - speakerName: 
+        text: Congratulations! You have made your choice!
+        choices: []
+        nextIndex: 1
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: 'After that, Ian continued his relentless hunt for those who had treated
+          innocent people cruelly. '
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: One case after another, he exposed the wickedness that had been hiding
+          in plain sight, bringing them to justice with unwavering resolve.
+        choices: []
+        nextIndex: 3
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: 'With each victory, Ian''s name grew in stature. What began as a movement
+          has now become a symbol, an icon for justice. '
+        choices: []
+        nextIndex: 4
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: His name alone is enough to make the guilty tremble, a beacon of hope
+          for the oppressed and a warning to those who would do harm.
+        choices: []
+        nextIndex: 5
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: "But as Ian\u2019s power and influence grew, so too did the shadows
+          cast by his success. The world watched, some with admiration, others with
+          fear, as the line between justice and retribution began to blur."
+        choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: 
+        text: And in the midst of it all, [Player] watched too, wondering what role
+          you would play in the story that was still unfolding...
+        choices: []
+        nextIndex: 7
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      ID: 
+    waitForConversationEnd: 1
+    allowPlayerMove: 0
+    animationType: 3
+    boolParameters: []
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  conditions:
+    conditions: []

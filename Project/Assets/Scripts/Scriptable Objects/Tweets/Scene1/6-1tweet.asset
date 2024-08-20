@@ -25,7 +25,7 @@ MonoBehaviour:
   likesCount: 2798
   commentsCount: 539
   retweetCount: 69
-  followerChange: 200
+  followerChange: 400
   followerChangeMin: -10
   followerChangeMax: 10
   isPlayer: 1

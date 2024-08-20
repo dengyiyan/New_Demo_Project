@@ -98,14 +98,14 @@ namespace MyProject.Transition
         }
 
 
-        private void OnTransitionEvent(string sceneToGo, string spawnPointID, AnimationSequence sequence)
+        private void OnTransitionEvent(string sceneToGo, string spawnPointID, AnimationSequence sequence, Direction direction)
         {
             //if (conversationChecker)
             //    ;
             //Debug.Log($"Transition triggered with flag{canTransit}");
             if ((!isFade) && canTransit)
             {
-                StartCoroutine(Transition(sceneToGo, spawnPointID, sequence));
+                StartCoroutine(Transition(sceneToGo, spawnPointID, sequence, direction));
 
             }
             // if ()
@@ -145,12 +145,13 @@ namespace MyProject.Transition
         }
 
         
-        private IEnumerator Transition(string sceneName, string spawnPointID, AnimationSequence sequence = null)
+        private IEnumerator Transition(string sceneName, string spawnPointID, AnimationSequence sequence = null, Direction direction = Direction.None)
         {
             fadeCanvasGroup.blocksRaycasts = true;
 
             EventHandler.CallBeforeSceneUnloadEvent();
             yield return Fade(1);
+            EventHandler.CallPlayerFaceEvent(direction);
             EventHandler.CallAfterFadeOutEvent();
 
             yield return SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());// –∂‘ÿµ±«∞≥°æ∞

@@ -8,5 +8,5 @@ public class AnimationSequence : ScriptableObject
 {
     public string sequenceName;
     public List<AnimationStep> steps;
-    public SequenceConditions conditions = new SequenceConditions(); 
+    // public SequenceConditions conditions = new SequenceConditions(); 
 }

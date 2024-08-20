@@ -99,6 +99,9 @@ EditorBuildSettings:
     path: Assets/Scenes/TimelineScene_Nature.unity
     guid: 3b093376e59ef104687e1de33974e956
   - enabled: 1
+    path: Assets/Scenes/TimelineScene_Ending.unity
+    guid: 13ba6bad374307d4b99786c5d87be68c
+  - enabled: 1
     path: Assets/Scenes/replay_TimelineScene_Nature.unity
     guid: af711246328c5b3409dee7d56f9b73c6
   - enabled: 1
@@ -110,4 +113,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Website 1.unity
     guid: d30c40a881e876545b251f5abc262073
+  - enabled: 1
+    path: Assets/Scenes/Website 2.unity
+    guid: a555ad01bb2338049a021ddd0710dac7
   m_configObjects: {}

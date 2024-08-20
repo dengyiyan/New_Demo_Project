@@ -13,8 +13,9 @@ public class BodyPartsSelection : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
-        setSkinColors();
+        // setSkinColors();
         setHairColors();
+        SetPantsColors();
 
         for (int i = 0; i < bodyPartSelections.Length; i++)
         {
@@ -63,6 +64,31 @@ public class BodyPartsSelection : MonoBehaviour
             new Color(0.5f, 0.0f, 0.5f), // Purple
             new Color(1.0f, 0.2f, 0.6f) // Vibrant Pink
            };
+    }
+
+    private void SetPantsColors()
+    {
+        bodyPartSelections[3].colorOptions = new Color[]
+    {
+        new Color(0.0f, 0.0f, 0.0f), // Black
+        new Color(0.15f, 0.15f, 0.15f), // Charcoal Grey
+        new Color(0.25f, 0.25f, 0.25f), // Medium Grey
+        new Color(0.5f, 0.5f, 0.5f), // Light Grey
+        new Color(0.05f, 0.1f, 0.15f), // Navy Blue
+        new Color(0.4f, 0.4f, 0.2f), // Khaki
+        new Color(0.35f, 0.25f, 0.2f), // Dark Brown
+        new Color(0.5f, 0.35f, 0.25f), // Medium Brown
+        new Color(0.65f, 0.45f, 0.3f), // Light Brown
+        new Color(0.3f, 0.6f, 0.2f), // Olive Green
+        new Color(0.7f, 0.5f, 0.3f), // Beige
+        new Color(0.3f, 0.1f, 0.4f), // Deep Purple
+        new Color(0.6f, 0.2f, 0.2f), // Maroon
+        new Color(0.75f, 0.4f, 0.15f), // Rust
+        new Color(0.0f, 0.0f, 0.5f), // Royal Blue
+        new Color(0.25f, 0.0f, 0.5f), // Deep Plum
+        new Color(0.2f, 0.3f, 0.2f), // Forest Green
+        new Color(0.85f, 0.65f, 0.45f) // Camel
+    };
     }
 
     private void getColor(int index)

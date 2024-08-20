@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59505117fe2d304c865361c7becd80e, type: 3}
+  m_Name: 6-2tweet
+  m_EditorClassIdentifier: 
+  tweetText: "Justice isn\u2019t a sprint\u2014it\u2019s a marathon. We need to be
+    thorough and careful in our approach to ensure we\u2019re not harming the innocent.
+    Let\u2019s take the time to get it right. \n#JusticeWithIntegrity #PatienceAndJustice"
+  minFollower: -1
+  followUpTweets:
+  - {fileID: 11400000, guid: fbd496f4515eb26479fdeb48ec8caf6d, type: 2}
+  avatar: {fileID: 0}
+  username: 
+  subtitle: 
+  likesList: 2a060000
+  commentsList: 8f010000
+  retweetsList: 7e000000
+  likesCount: 114514
+  commentsCount: 7865
+  retweetCount: 1649
+  followerChange: 200
+  followerChangeMin: -50
+  followerChangeMax: 50
+  isPlayer: 1
+  isIan: 0

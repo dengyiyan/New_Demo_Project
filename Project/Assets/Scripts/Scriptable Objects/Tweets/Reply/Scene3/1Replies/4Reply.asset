@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2fd391df59c334fa32d6f62fc319b6, type: 3}
+  m_Name: 4Reply
+  m_EditorClassIdentifier: 
+  tweetText: I was wrong to support this! Give my father and mother back!!! They
+    are totally innocent!!! #JusticeForAll #StopTheMadness
+  minFollower: -1
+  followUpTweets:
+  - {fileID: 11400000, guid: 491db2b9deec0984095ceb0934dda309, type: 2}
+  avatar: {fileID: 21300000, guid: 84761fe326b788641a7c3505b45455cd, type: 3}
+  username: Kim
+  subtitle: No mercy for the guilty
+  likesList: 08040000
+  commentsList: c8010000
+  retweetsList: 91000000
+  likesCount: 547
+  commentsCount: 98
+  retweetCount: 23
+  followerChange: 0
+  followerChangeMin: -5
+  followerChangeMax: 5
+  isPlayer: 0
+  isIan: 0

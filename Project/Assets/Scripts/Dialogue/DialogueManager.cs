@@ -293,8 +293,8 @@ public class DialogueManager : MonoBehaviour
 
         if (!string.IsNullOrEmpty(dialogue.sceneTo))
         {
-            EventHandler.CallTransitionEvent(dialogue.sceneTo, dialogue.spawnID, dialogue.newStartingSequence);
-            EventHandler.CallPlayerFaceEvent(dialogue.direction);
+            EventHandler.CallTransitionEvent(dialogue.sceneTo, dialogue.spawnID, dialogue.newStartingSequence, dialogue.direction);
+            //EventHandler.CallPlayerFaceEvent(dialogue.direction);
         }
 
         string speakerName = getTrueSpeakerName(dialogue.speakerName);

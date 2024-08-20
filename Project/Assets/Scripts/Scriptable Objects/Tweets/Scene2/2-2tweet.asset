@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59505117fe2d304c865361c7becd80e, type: 3}
+  m_Name: 2-2tweet
+  m_EditorClassIdentifier: 
+  tweetText: "Justice isn\u2019t just about punishing the guilty; it\u2019s also
+    about helping those who have been hurt heal. Let\u2019s come together to support
+    the victims and rebuild our community stronger than before. #HealingTogether
+    #CommunitySupport"
+  followUpTweets:
+  - {fileID: 11400000, guid: 828a9af4f55be6245bb56974922e6b98, type: 2}
+  avatar: {fileID: 0}
+  username: 
+  subtitle: 
+  likesList: 5f190000
+  commentsList: 4c050000
+  retweetsList: f90d0000
+  likesCount: 114514
+  commentsCount: 7865
+  retweetCount: 1649
+  followerChange: 1000
+  followerChangeMin: -50
+  followerChangeMax: 105
+  isPlayer: 1
+  isIan: 0

@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2fd391df59c334fa32d6f62fc319b6, type: 3}
+  m_Name: 2Reply
+  m_EditorClassIdentifier: 
+  tweetText: "You are correct. I almost forgot what is the most important thing\u2014making
+    the world a better place for the next generation. We owe it to our children to
+    build a future rooted in compassion and understanding. \n\n#HealingTogether #BuildingForTomorrow"
+  followUpTweets:
+  - {fileID: 11400000, guid: c5516a6d0ae250a469ed9a009769187b, type: 2}
+  avatar: {fileID: 1363830121, guid: 6341f9089dee2d540884f8cb5d62e3ce, type: 3}
+  username: Kurt
+  subtitle: Raising the Next Generation
+  likesList: c20e0000
+  commentsList: e9060000
+  retweetsList: 2e020000
+  likesCount: 2039
+  commentsCount: 405
+  retweetCount: 15
+  followerChange: 0
+  followerChangeMin: -5
+  followerChangeMax: 5
+  isPlayer: 0
+  isIan: 0

@@ -28,6 +28,9 @@ MonoBehaviour:
     - parameterName: isSleeping
       value: 1
     nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: sleep
@@ -40,6 +43,9 @@ MonoBehaviour:
     animationType: 1
     boolParameters: []
     nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: wake
@@ -52,6 +58,9 @@ MonoBehaviour:
     animationType: 2
     boolParameters: []
     nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -66,6 +75,9 @@ MonoBehaviour:
     - parameterName: isSleeping
       value: 0
     nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
   - npcName: Player
     points: []
     trigger: 
@@ -77,17 +89,56 @@ MonoBehaviour:
         choices: []
         nextIndex: 1
         triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: I can hear the birds singing. It must be a beautiful day outside.
         choices: []
         nextIndex: 2
         triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: I can't wait to get outside and enjoy this weather. It's the perfect
           day for an adventure around the village!
         choices: []
         nextIndex: 3
         triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: I wonder what fun things I'll discover today.
         choices: []
@@ -95,21 +146,63 @@ MonoBehaviour:
         triggers:
         - characterName: Player
           triggerName: heart
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: Time to get up and see what Mom has made for breakfast.
         choices: []
         nextIndex: 5
         triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
       - speakerName: Player
         text: I should hurry up so I can head out and play.
         choices: []
         nextIndex: 999
         triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
       ID: player_wakingup
     waitForConversationEnd: 1
     allowPlayerMove: 0
     animationType: 3
     boolParameters: []
     nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
   conditions:
     conditions: []

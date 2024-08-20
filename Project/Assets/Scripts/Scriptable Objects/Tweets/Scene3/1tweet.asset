@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59505117fe2d304c865361c7becd80e, type: 3}
+  m_Name: 1tweet
+  m_EditorClassIdentifier: 
+  tweetText: "We\u2019re at a tipping point. The guilty are running scared, but some
+    still think they can hide in plain sight. We will find them. We will expose them.
+    Justice will not be denied. #JusticeShallRise #NoMercy #NoHiding"
+  minFollower: -1
+  followUpTweets:
+  - {fileID: 11400000, guid: f9462706b67798c4586f0f4fa00e0a38, type: 2}
+  avatar: {fileID: 0}
+  username: 
+  subtitle: 
+  likesList: fa270000
+  commentsList: f1070000
+  retweetsList: 3a150000
+  likesCount: 114514
+  commentsCount: 7865
+  retweetCount: 1649
+  followerChange: 0
+  followerChangeMin: 0
+  followerChangeMax: 0
+  isPlayer: 0
+  isIan: 1

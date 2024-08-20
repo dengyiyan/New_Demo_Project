@@ -5,8 +5,10 @@ using System.Collections.Generic;
 public class TweetData : ScriptableObject
 {
     [Header("Tweet Information")]
-    [TextArea]
+    [TextArea(3, 10)]
     public string tweetText;
+
+    public int minFollower = -1;
 
     [Tooltip("List of follow-up tweets that will appear after this tweet is sent.")]
     public List<TweetData> followUpTweets;

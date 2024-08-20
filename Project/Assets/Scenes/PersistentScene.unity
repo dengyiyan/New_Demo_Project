@@ -179,6 +179,7 @@ GameObject:
   - component: {fileID: 31708162}
   - component: {fileID: 31708161}
   - component: {fileID: 31708160}
+  - component: {fileID: 31708163}
   m_Layer: 5
   m_Name: Back Button
   m_TagString: Untagged
@@ -299,6 +300,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 31708158}
   m_CullTransparentMesh: 1
+--- !u!114 &31708163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31708158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0c8bff22e35a514ab49cbb1cdb75488, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SceneTo: NewCharacterCreator
+  SpawnID: 
+  sequence: {fileID: 0}
+  faceDirection: 0
 --- !u!1 &59739595
 GameObject:
   m_ObjectHideFlags: 0
@@ -2192,7 +2209,7 @@ GameObject:
   - component: {fileID: 732682776}
   - component: {fileID: 732682775}
   m_Layer: 5
-  m_Name: ButtonCanvas
+  m_Name: PhotoButtonCanvas
   m_TagString: ButtonCanvas
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2626,11 +2643,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6026526341942237248, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: characterStates.Array.size
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6026526341942237248, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: characterStates.Array.data[2]
       value: Hug
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026526341942237248, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
+      propertyPath: characterStates.Array.data[3]
+      value: Play
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026526341942237248, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
+      propertyPath: characterStates.Array.data[4]
+      value: Dance
+      objectReference: {fileID: 0}
+    - target: {fileID: 6026526341942237248, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
+      propertyPath: characterStates.Array.data[5]
+      value: Sing
       objectReference: {fileID: 0}
     - target: {fileID: 6469117469072630905, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2650,7 +2679,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7930523356691231715, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: defaultSpeed
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8236163815886333504, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: m_Sprite
@@ -3044,7 +3073,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1191655049
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3782,7 +3811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4adbc733b8b5c7748b12c36abd1121c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSceneName: Website
+  startSceneName: StartScene
   startSpawnID: 
   startingSequence: {fileID: 0}
 --- !u!4 &1510471760

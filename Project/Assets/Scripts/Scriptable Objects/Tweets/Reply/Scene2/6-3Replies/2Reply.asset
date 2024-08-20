@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2fd391df59c334fa32d6f62fc319b6, type: 3}
+  m_Name: 2Reply
+  m_EditorClassIdentifier: 
+  tweetText: "I respect your stance, thinking critically rather than just following
+    the crowd. While I despise those who harm the innocent, for the sake of the next
+    generation, I believe it\u2019s more important to create a world free from violence.
+    Let\u2019s break the cycle and focus on rebuilding a brighter future. #BreakTheCycle
+    #CompassionOverRevenge #BuildingForTomorrow"
+  minFollower: 1400
+  followUpTweets:
+  - {fileID: 11400000, guid: 46d15e51f4b90f442832244ef8c05b7f, type: 2}
+  avatar: {fileID: 1363830121, guid: 6341f9089dee2d540884f8cb5d62e3ce, type: 3}
+  username: Kurt
+  subtitle: Raising the Next Generation
+  likesList: 6a0c0000
+  commentsList: d3030000
+  retweetsList: 9b070000
+  likesCount: 3178
+  commentsCount: 979
+  retweetCount: 1947
+  followerChange: 0
+  followerChangeMin: -5
+  followerChangeMax: 5
+  isPlayer: 0
+  isIan: 0

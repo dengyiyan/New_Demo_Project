@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59505117fe2d304c865361c7becd80e, type: 3}
+  m_Name: 1tweet
+  m_EditorClassIdentifier: 
+  tweetText: "Another victory for justice today. We\u2019ve rooted out more of the
+    filth that\u2019s been poisoning our world. There\u2019s no place for them to
+    hide! #JusticeShallRise #JusticeServed #NoMercy"
+  followUpTweets:
+  - {fileID: 11400000, guid: 2950747ef16c57e4a8f1609959a749ae, type: 2}
+  avatar: {fileID: 0}
+  username: 
+  subtitle: 
+  likesList: 5d630000
+  commentsList: 750c0000
+  retweetsList: ca310000
+  likesCount: 114514
+  commentsCount: 7865
+  retweetCount: 1649
+  followerChange: 0
+  followerChangeMin: 0
+  followerChangeMax: 0
+  isPlayer: 0
+  isIan: 1

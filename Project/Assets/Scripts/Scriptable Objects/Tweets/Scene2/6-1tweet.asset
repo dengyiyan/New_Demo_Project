@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59505117fe2d304c865361c7becd80e, type: 3}
+  m_Name: 6-1tweet
+  m_EditorClassIdentifier: 
+  tweetText: "No stone should be left unturned! We can\u2019t let anyone who\u2019s
+    guilty slip through the cracks. Follow Ian's lead! It\u2019s time to intensify
+    our efforts and make them pay for what they've did! \n\n#JusticeShallRise #NoMercyForTheGuilty"
+  minFollower: -1
+  followUpTweets:
+  - {fileID: 11400000, guid: 1730cc17469273640beb18eb00627714, type: 2}
+  avatar: {fileID: 0}
+  username: 
+  subtitle: 
+  likesList: c3090000
+  commentsList: fd020000
+  retweetsList: 5d010000
+  likesCount: 114514
+  commentsCount: 7865
+  retweetCount: 1649
+  followerChange: 200
+  followerChangeMin: -50
+  followerChangeMax: 50
+  isPlayer: 1
+  isIan: 0

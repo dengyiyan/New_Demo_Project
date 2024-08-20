@@ -16,5 +16,7 @@ public class ResetSettingScript : MonoBehaviour
 
 
         EventHandler.CallUpdateColorEvent();
+
+        GameStateManager.ResetGameState();
     }
 }

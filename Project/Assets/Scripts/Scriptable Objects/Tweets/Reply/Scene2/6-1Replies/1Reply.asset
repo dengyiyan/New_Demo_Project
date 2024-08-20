@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2fd391df59c334fa32d6f62fc319b6, type: 3}
+  m_Name: 1Reply
+  m_EditorClassIdentifier: 
+  tweetText: "Is this really the path we want to take? More force isn\u2019t always
+    the answer. #JusticeWithIntegrity #HealingTogether #JusticeWithCompassion "
+  minFollower: -1
+  followUpTweets:
+  - {fileID: 11400000, guid: 2383db28a359315458ec2826fd8ab959, type: 2}
+  avatar: {fileID: 21300000, guid: 4fe9254dffdb4ad498ccb12f6ec7c790, type: 3}
+  username: HopefulSpirit
+  subtitle: Believing in Kindness
+  likesList: 5a010000
+  commentsList: b1020000
+  retweetsList: 20000000
+  likesCount: 0
+  commentsCount: 0
+  retweetCount: 0
+  followerChange: 0
+  followerChangeMin: -5
+  followerChangeMax: 5
+  isPlayer: 0
+  isIan: 0

@@ -6,14 +6,14 @@ using UnityEngine.Playables;
 
 public static class EventHandler
 {
-    public static event Action<string, string, AnimationSequence> TransitionEvent;
-    public static void CallTransitionEvent(string sceneName, string spawnPointID, AnimationSequence sequence=null)
+    public static event Action<string, string, AnimationSequence, Direction> TransitionEvent;
+    public static void CallTransitionEvent(string sceneName, string spawnPointID, AnimationSequence sequence=null, Direction direction=Direction.None)
     {
         foreach (var convChecker in GameObject.FindObjectsOfType<ConversationChecker>())
         {
             convChecker.CheckTransitionStatus(sceneName, spawnPointID, sequence);
         }
-        TransitionEvent?.Invoke(sceneName, spawnPointID, sequence);
+        TransitionEvent?.Invoke(sceneName, spawnPointID, sequence, direction);
     }
 
     public static event Action UpdateBodyPartEvent;

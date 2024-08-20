@@ -77,7 +77,7 @@ public class TweetManager : MonoBehaviour
         else if (!string.IsNullOrEmpty(tweetData.subtitle))
             panel.Find("Subtitle").GetComponent<Text>().text = tweetData.subtitle; 
 
-        tweetBody.Find("Text").GetComponent<Text>().text = tweetData.tweetText;
+        tweetBody.Find("Text").GetComponent<Text>().text = tweetData.tweetText.Replace("[Player]", GameStateManager.PlayerName);
     }
 
     void DisplayTweet(TweetData tweetData)
@@ -116,15 +116,15 @@ public class TweetManager : MonoBehaviour
     //    UpdateTweetStatics(statics, tweetData);  // Update the UI based on the new statics
     //}
 
-    void UpdateTweetStatics(Transform statics, TweetData tweetData)
-    {
-        // Update statics using values from tweetData
-        Debug.Log($"Get text field: {statics.Find("LikesCount").GetComponent<Text>().text}");
-        Debug.Log($"Updated like: {tweetData.likesCount}");
-        statics.Find("LikesCount").GetComponent<Text>().text = tweetData.likesCount.ToString();
-        statics.Find("CommentsCount").GetComponent<Text>().text = tweetData.commentsCount.ToString();
-        statics.Find("RetweetCount").GetComponent<Text>().text = tweetData.retweetCount.ToString();
-    }
+    //void UpdateTweetStatics(Transform statics, TweetData tweetData)
+    //{
+    //    // Update statics using values from tweetData
+    //    Debug.Log($"Get text field: {statics.Find("LikesCount").GetComponent<Text>().text}");
+    //    Debug.Log($"Updated like: {tweetData.likesCount}");
+    //    statics.Find("LikesCount").GetComponent<Text>().text = tweetData.likesCount.ToString();
+    //    statics.Find("CommentsCount").GetComponent<Text>().text = tweetData.commentsCount.ToString();
+    //    statics.Find("RetweetCount").GetComponent<Text>().text = tweetData.retweetCount.ToString();
+    //}
 
     void DisplayTweetFinal(TweetData tweetData)
     {
@@ -171,8 +171,11 @@ public class TweetManager : MonoBehaviour
         }
         else if (tweetData.followUpTweets.Count == 1)
         {
-            // Only one follow-up tweet, automatically display it
-            AddTweet(tweetData.followUpTweets[0]); 
+            if (tweetData.followUpTweets[0].minFollower != -1 && tweetData.followUpTweets[0].minFollower > GameStateManager.Followers)
+                HandleFollowUpTweets(tweetData.followUpTweets[0]);
+            else
+                // Only one follow-up tweet, automatically display it
+                AddTweet(tweetData.followUpTweets[0]); 
             //waitingForNextClick = true;
         }
         else

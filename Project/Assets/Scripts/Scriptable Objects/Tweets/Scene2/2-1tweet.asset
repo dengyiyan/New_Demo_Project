@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f59505117fe2d304c865361c7becd80e, type: 3}
-  m_Name: 6-2tweet
+  m_Name: 2-1tweet
   m_EditorClassIdentifier: 
-  tweetText: Justice is important, but we need to be careful not to let our anger
-    blind us. Innocent lives matter too. #BalanceInJustice #WitchHuntOrJustice
+  tweetText: "All rise for Ian! He\u2019s the true hero of justice! We won\u2019t
+    rest until every last monster is brought to light!! #JusticeShallRise"
   followUpTweets:
-  - {fileID: 11400000, guid: c818dbcd8b9f5764894f5e9c37e0e14c, type: 2}
+  - {fileID: 11400000, guid: c5516a6d0ae250a469ed9a009769187b, type: 2}
   avatar: {fileID: 0}
   username: 
   subtitle: 
-  likesList: 40020000
-  commentsList: 90000000
-  retweetsList: 0d000000
-  likesCount: 0
-  commentsCount: 0
-  retweetCount: 0
-  followerChange: 100
-  followerChangeMin: -10
-  followerChangeMax: 10
+  likesList: 10050000
+  commentsList: 86000000
+  retweetsList: 22000000
+  likesCount: 114514
+  commentsCount: 7865
+  retweetCount: 1649
+  followerChange: 200
+  followerChangeMin: -50
+  followerChangeMax: 50
   isPlayer: 1
   isIan: 0

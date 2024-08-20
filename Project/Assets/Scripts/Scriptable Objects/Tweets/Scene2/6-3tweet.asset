@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59505117fe2d304c865361c7becd80e, type: 3}
+  m_Name: 6-3tweet
+  m_EditorClassIdentifier: 
+  tweetText: "We\u2019re at a crossroads. Continuing down this path might lead to
+    more harm than good. It\u2019s time to break the cycle of violence and seek solutions
+    that heal rather than hurt. #BreakTheCycle #CompassionOverRevenge"
+  minFollower: -1
+  followUpTweets:
+  - {fileID: 11400000, guid: b3625f19bf602dd41b8bfe5a8b421af1, type: 2}
+  avatar: {fileID: 0}
+  username: 
+  subtitle: 
+  likesList: fe070000
+  commentsList: c7030000
+  retweetsList: 9d000000
+  likesCount: 2046
+  commentsCount: 967
+  retweetCount: 157
+  followerChange: 400
+  followerChangeMin: -50
+  followerChangeMax: 50
+  isPlayer: 1
+  isIan: 0

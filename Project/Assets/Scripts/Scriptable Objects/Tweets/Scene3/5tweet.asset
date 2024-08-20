@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59505117fe2d304c865361c7becd80e, type: 3}
+  m_Name: 5tweet
+  m_EditorClassIdentifier: 
+  tweetText: "It\u2019s time we step back and look at the path we\u2019re on. We\u2019ve
+    seen the damage that unchecked anger can do\u2014innocent lives are being torn
+    apart. We need to break the cycle of violence and start focusing on healing.
+    @[Player]777 made me realize that justice isn\u2019t just about punishment; it\u2019s
+    about building a better future for our children. Let\u2019s turn this around
+    before it\u2019s too late.\n\n #BreakTheCycle #CompassionOverRevenge #BuildingForTomorrow"
+  minFollower: 1400
+  followUpTweets:
+  - {fileID: 11400000, guid: 55f9be41631ed99439930f9498fbf74a, type: 2}
+  avatar: {fileID: 1363830121, guid: 6341f9089dee2d540884f8cb5d62e3ce, type: 3}
+  username: Kurt
+  subtitle: Raising the Next Generation
+  likesList: ce5c0000
+  commentsList: 595b0000
+  retweetsList: 07870000
+  likesCount: 6745
+  commentsCount: 4563
+  retweetCount: 10236
+  followerChange: 10000
+  followerChangeMin: -50
+  followerChangeMax: 1000
+  isPlayer: 0
+  isIan: 0

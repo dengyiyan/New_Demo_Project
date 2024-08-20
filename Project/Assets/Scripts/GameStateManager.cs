@@ -158,14 +158,14 @@ public static class GameStateManager
         scenePlayerPositions[sceneName] = position;
     }
 
-    public static Vector3 GetPlayerPosition(string sceneName)
-    {
-        if (scenePlayerPositions.ContainsKey(sceneName))
-        {
-            return scenePlayerPositions[sceneName];
-        }
-        return Vector3.zero; // Default position if not found
-    }
+    //public static Vector3 GetPlayerPosition(string sceneName)
+    //{
+    //    if (scenePlayerPositions.ContainsKey(sceneName))
+    //    {
+    //        return scenePlayerPositions[sceneName];
+    //    }
+    //    return Vector3.zero; // Default position if not found
+    //}
 
     //public static void SaveLastSpawnPoint(string sceneName, string spawnPointID)
     //{
@@ -181,27 +181,27 @@ public static class GameStateManager
     //    return DefaultSpawnPoint; 
     //}
 
-    public static void SaveNPCState(string sceneName, string npcName, Vector3 position)
-    {
-        if (!sceneNPCStates.ContainsKey(sceneName))
-        {
-            sceneNPCStates[sceneName] = new Dictionary<string, NPCState>();
-        }
-        sceneNPCStates[sceneName][npcName] = new NPCState
-        {
-            npcName = npcName,
-            position = position
-        };
-    }
+    //public static void SaveNPCState(string sceneName, string npcName, Vector3 position)
+    //{
+    //    if (!sceneNPCStates.ContainsKey(sceneName))
+    //    {
+    //        sceneNPCStates[sceneName] = new Dictionary<string, NPCState>();
+    //    }
+    //    sceneNPCStates[sceneName][npcName] = new NPCState
+    //    {
+    //        npcName = npcName,
+    //        position = position
+    //    };
+    //}
 
-    public static Dictionary<string, NPCState> GetNPCStates(string sceneName)
-    {
-        if (sceneNPCStates.ContainsKey(sceneName))
-        {
-            return sceneNPCStates[sceneName];
-        }
-        return new Dictionary<string, NPCState>(); // Return empty dictionary if not found
-    }
+    //public static Dictionary<string, NPCState> GetNPCStates(string sceneName)
+    //{
+    //    if (sceneNPCStates.ContainsKey(sceneName))
+    //    {
+    //        return sceneNPCStates[sceneName];
+    //    }
+    //    return new Dictionary<string, NPCState>(); // Return empty dictionary if not found
+    //}
 
     public static void MarkSequencePlayed(string sequenceName)
     {
@@ -244,56 +244,88 @@ public static class GameStateManager
         return conversationsCompleted.Contains(name);
     }
 
-
-    public static void SaveToPlayerPrefs()
+    public static void ResetGameState()
     {
-        PlayerPrefs.SetString("PlayerPositions", JsonUtility.ToJson(new SerializableDictionary<string, Vector3>(scenePlayerPositions)));
-        PlayerPrefs.SetString("NPCStates", JsonUtility.ToJson(new SerializableDictionary<string, Dictionary<string, NPCState>>(sceneNPCStates)));
-        PlayerPrefs.SetString("SequencePlayed", JsonUtility.ToJson(sequencePlayed));
-        // PlayerPrefs.SetString("LastSpawnPoints", JsonUtility.ToJson(new SerializableDictionary<string, string>(sceneLastSpawnPoints)));
-        PlayerPrefs.SetString("PlayerName", PlayerName);
-        PlayerPrefs.SetString("ConversationsCompleted", JsonUtility.ToJson(conversationsCompleted));
-        PlayerPrefs.Save();
-    }
+        PlayerName = "Jack"; // Reset to default value
+        Followers = 78; // Reset to default value
 
-    public static void LoadFromPlayerPrefs()
-    {
-        if (PlayerPrefs.HasKey("PlayerPositions"))
-        {
-            scenePlayerPositions = JsonUtility.FromJson<SerializableDictionary<string, Vector3>>(PlayerPrefs.GetString("PlayerPositions")).ToDictionary();
-        }
-        if (PlayerPrefs.HasKey("NPCStates"))
-        {
-            sceneNPCStates = JsonUtility.FromJson<SerializableDictionary<string, Dictionary<string, NPCState>>>(PlayerPrefs.GetString("NPCStates")).ToDictionary();
-        }
-        if (PlayerPrefs.HasKey("SequencePlayed"))
-        {
-            sequencePlayed = JsonUtility.FromJson<HashSet<string>>(PlayerPrefs.GetString("SequencePlayed"));
-        }
-        if (PlayerPrefs.HasKey("PlayerName"))
-        {
-            PlayerName = PlayerPrefs.GetString("PlayerName");
-        }
-        if (PlayerPrefs.HasKey("ConversationsCompleted"))
-        {
-            conversationsCompleted = JsonUtility.FromJson<HashSet<string>>(PlayerPrefs.GetString("ConversationsCompleted"));
-        }
-        //if (PlayerPrefs.HasKey("LastSpawnPoints"))
-        //{
-        //    sceneLastSpawnPoints = JsonUtility.FromJson<SerializableDictionary<string, string>>(PlayerPrefs.GetString("LastSpawnPoints")).ToDictionary();
-        //}
-    }
+        UploadedImage = null;
+        HappyImage = null;
+        SadImage = null;
 
-    public static void ClearStates()
+        // Clear and reset dictionaries and collections
+        gameBools = new Dictionary<string, bool>
     {
+        {"HasFlower", false},
+        {"SisterReceiveFlower", false},
+        {"MerchantShowHisName", false },
+        {"RecognizeChildhoodSelf", false},
+        {"Exercise2bCompleted", false},
+        {exercise2Flag, false},
+    };
+
+        gameCounters = new Dictionary<string, HashSet<string>>
+    {
+        {exercise2Flag, new HashSet<string>{ } }
+    };
+
         scenePlayerPositions.Clear();
         sceneNPCStates.Clear();
         sequencePlayed.Clear();
-        // sceneLastSpawnPoints.Clear();
+        conversationsCompleted.Clear();
+        itemPicked.Clear();
     }
 
-    public static HashSet<string> getSeqencesPlayed()
-    {
-        return sequencePlayed;
-    }
+
+    //public static void SaveToPlayerPrefs()
+    //{
+    //    PlayerPrefs.SetString("PlayerPositions", JsonUtility.ToJson(new SerializableDictionary<string, Vector3>(scenePlayerPositions)));
+    //    PlayerPrefs.SetString("NPCStates", JsonUtility.ToJson(new SerializableDictionary<string, Dictionary<string, NPCState>>(sceneNPCStates)));
+    //    PlayerPrefs.SetString("SequencePlayed", JsonUtility.ToJson(sequencePlayed));
+    //    // PlayerPrefs.SetString("LastSpawnPoints", JsonUtility.ToJson(new SerializableDictionary<string, string>(sceneLastSpawnPoints)));
+    //    PlayerPrefs.SetString("PlayerName", PlayerName);
+    //    PlayerPrefs.SetString("ConversationsCompleted", JsonUtility.ToJson(conversationsCompleted));
+    //    PlayerPrefs.Save();
+    //}
+
+    //public static void LoadFromPlayerPrefs()
+    //{
+    //    if (PlayerPrefs.HasKey("PlayerPositions"))
+    //    {
+    //        scenePlayerPositions = JsonUtility.FromJson<SerializableDictionary<string, Vector3>>(PlayerPrefs.GetString("PlayerPositions")).ToDictionary();
+    //    }
+    //    if (PlayerPrefs.HasKey("NPCStates"))
+    //    {
+    //        sceneNPCStates = JsonUtility.FromJson<SerializableDictionary<string, Dictionary<string, NPCState>>>(PlayerPrefs.GetString("NPCStates")).ToDictionary();
+    //    }
+    //    if (PlayerPrefs.HasKey("SequencePlayed"))
+    //    {
+    //        sequencePlayed = JsonUtility.FromJson<HashSet<string>>(PlayerPrefs.GetString("SequencePlayed"));
+    //    }
+    //    if (PlayerPrefs.HasKey("PlayerName"))
+    //    {
+    //        PlayerName = PlayerPrefs.GetString("PlayerName");
+    //    }
+    //    if (PlayerPrefs.HasKey("ConversationsCompleted"))
+    //    {
+    //        conversationsCompleted = JsonUtility.FromJson<HashSet<string>>(PlayerPrefs.GetString("ConversationsCompleted"));
+    //    }
+    //    //if (PlayerPrefs.HasKey("LastSpawnPoints"))
+    //    //{
+    //    //    sceneLastSpawnPoints = JsonUtility.FromJson<SerializableDictionary<string, string>>(PlayerPrefs.GetString("LastSpawnPoints")).ToDictionary();
+    //    //}
+    //}
+
+    //public static void ClearStates()
+    //{
+    //    scenePlayerPositions.Clear();
+    //    sceneNPCStates.Clear();
+    //    sequencePlayed.Clear();
+    //    // sceneLastSpawnPoints.Clear();
+    //}
+
+    //public static HashSet<string> getSeqencesPlayed()
+    //{
+    //    return sequencePlayed;
+    //}
 }

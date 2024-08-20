@@ -160,6 +160,9 @@ MonoBehaviour:
   characterStates:
   - Idle
   - Walk
+  - Hug
+  - Play
+  - Dance
   characterDirections:
   - Front
   - Right

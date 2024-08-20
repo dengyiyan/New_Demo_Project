@@ -168,7 +168,7 @@ public class PlayerMovement : MonoBehaviour
     private void DisableMovement()
     {
         canMove = false; 
-        animator.SetBool("isWalking", false);
+        //animator.SetBool("isWalking", false);
     }
 
     private bool isPlayer()

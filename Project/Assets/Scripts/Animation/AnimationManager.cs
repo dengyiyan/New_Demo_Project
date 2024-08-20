@@ -58,11 +58,6 @@ public class AnimationManager : MonoBehaviour
     }
 
 
-    private void Update()
-    {
-        // Debug.Log(activeSteps.Count);
-    }
-
     //private void SetPlayableDirector(PlayableDirector playable)
     //{
     //    playableDirector = playable;
@@ -144,43 +139,43 @@ public class AnimationManager : MonoBehaviour
 
     }
 
-    private bool ShouldPlaySequence(SequenceConditions conditions)
-    {
-        foreach (var condition in conditions.conditions)
-        {
-            if (!CheckCondition(condition))
-            {
-                return false;
-            }
-        }
+    //private bool ShouldPlaySequence(SequenceConditions conditions)
+    //{
+    //    foreach (var condition in conditions.conditions)
+    //    {
+    //        if (!CheckCondition(condition))
+    //        {
+    //            return false;
+    //        }
+    //    }
 
-        return true;
-    }
+    //    return true;
+    //}
 
-    private bool CheckCondition(SequenceCondition condition)
-    {
-        switch (condition.conditionType)
-        {
-            case SequenceCondition.ConditionType.None:
-                return true;
-            case SequenceCondition.ConditionType.SequencePlayed:
-                return GameStateManager.IsSequencePlayed(condition.parameter);
-            case SequenceCondition.ConditionType.EventTriggered:
+    //private bool CheckCondition(SequenceCondition condition)
+    //{
+    //    switch (condition.conditionType)
+    //    {
+    //        case SequenceCondition.ConditionType.None:
+    //            return true;
+    //        case SequenceCondition.ConditionType.SequencePlayed:
+    //            return GameStateManager.IsSequencePlayed(condition.parameter);
+    //        case SequenceCondition.ConditionType.EventTriggered:
 
-                //need implementation
-                return false;
-            case SequenceCondition.ConditionType.ConversationEnded:
-                return GameStateManager.IsConversationCompleted(condition.parameter);
-            default:
-                return false;
+    //            //need implementation
+    //            return false;
+    //        case SequenceCondition.ConditionType.ConversationEnded:
+    //            return GameStateManager.IsConversationCompleted(condition.parameter);
+    //        default:
+    //            return false;
 
-        }
-    }
+    //    }
+    //}
 
     private void HandleSceneChange(AnimationStep step)
     {
         EventHandler.CallTransitionEvent(step.nextScene, step.spawnID, step.newStartingSequence);
-        EventHandler.CallPlayerFaceEvent(step.direction);
+        //EventHandler.CallPlayerFaceEvent(step.direction);
     }
     private IEnumerator PlaySequenceCoroutine(AnimationSequence sequence)
     {
@@ -342,28 +337,28 @@ public class AnimationManager : MonoBehaviour
         }
     }
 
-    private IEnumerator WaitForNPCAndHandleConversation(AnimationMovement npc, AnimationStep step)
-    {
-        yield return StartCoroutine(npc.MoveAlongPoints());
+    //private IEnumerator WaitForNPCAndHandleConversation(AnimationMovement npc, AnimationStep step)
+    //{
+    //    yield return StartCoroutine(npc.MoveAlongPoints());
 
-        if (step.conversation.conversationDialogues.Length != 0)
-        {
-            EventHandler.CallStartConversationEvent(step.conversation);
+    //    if (step.conversation.conversationDialogues.Length != 0)
+    //    {
+    //        EventHandler.CallStartConversationEvent(step.conversation);
 
-            if (step.waitForConversationEnd)
-            {
-                yield return new WaitUntil(() => !dialogueManager.GetIsShowing());
-            }
-        }
+    //        if (step.waitForConversationEnd)
+    //        {
+    //            yield return new WaitUntil(() => !dialogueManager.GetIsShowing());
+    //        }
+    //    }
 
 
-        if (!step.allowPlayerMove)
-        {
-            activeSteps.Remove(step);
-            DecrementAnimationCounter();
-        }
+    //    if (!step.allowPlayerMove)
+    //    {
+    //        activeSteps.Remove(step);
+    //        DecrementAnimationCounter();
+    //    }
 
-    }
+    //}
 
     private void IncrementAnimationCounter()
     {
@@ -392,9 +387,9 @@ public class AnimationManager : MonoBehaviour
         }
     }
 
-    public List<AnimationStep> GetActiveSteps()
-    {
-        return activeSteps;
-    }
+    //public List<AnimationStep> GetActiveSteps()
+    //{
+    //    return activeSteps;
+    //}
 
 }

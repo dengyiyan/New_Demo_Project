@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf2fd391df59c334fa32d6f62fc319b6, type: 3}
+  m_Name: 1Reply
+  m_EditorClassIdentifier: 
+  tweetText: "I know how you feel, William. Ian brought justice for my family too.
+    We\u2019ll never forget what he\u2019s done for us. #ThankYouIan #JusticeShallRise"
+  followUpTweets:
+  - {fileID: 11400000, guid: f29b91793d40fd746bf80e10ab333bc1, type: 2}
+  avatar: {fileID: 13041365, guid: a81e224fa2222d443aa5317e3e0efc0c, type: 3}
+  username: Jane
+  subtitle: Living Through the Pain
+  likesList: 911d0000
+  commentsList: 770d0000
+  retweetsList: 25000000
+  likesCount: 128
+  commentsCount: 459
+  retweetCount: 203
+  followerChange: 0
+  followerChangeMin: -5
+  followerChangeMax: 5
+  isPlayer: 0
+  isIan: 0

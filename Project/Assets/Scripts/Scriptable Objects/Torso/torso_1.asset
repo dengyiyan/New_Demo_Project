@@ -16,11 +16,14 @@ MonoBehaviour:
   bodyPartAnimationID: 1
   bodyPartColor: {r: 1, g: 1, b: 1, a: 1}
   allBodyPartAnimations:
-  - {fileID: 7400000, guid: d5fe9be240cbf434c8aa7a60ef680c1c, type: 2}
-  - {fileID: 7400000, guid: d442aedd761075948840c39efe3db2dd, type: 2}
-  - {fileID: 7400000, guid: c9ceb32045bd97c44b12b3b58e637847, type: 2}
-  - {fileID: 7400000, guid: 3c77f34385caabd4eb3cca6d6fd122be, type: 2}
-  - {fileID: 7400000, guid: b431a61394b781f48a4d97bf9e98d149, type: 2}
-  - {fileID: 7400000, guid: 03cba737d4398b944905b47cdcbee566, type: 2}
-  - {fileID: 7400000, guid: e0db53d41be36744bb9a32433498e8e4, type: 2}
-  - {fileID: 7400000, guid: 86547e890d7f0e94e911aa26163e6f36, type: 2}
+  - {fileID: 7400000, guid: 4a2da7a88204a7f4795b1344141c9862, type: 2}
+  - {fileID: 7400000, guid: 86e1411ca4a85a94998ebf4455aa2cbc, type: 2}
+  - {fileID: 7400000, guid: 59d28114e8a1d9e4589c8e7b09196e4d, type: 2}
+  - {fileID: 7400000, guid: 68fafef8b57ae954599efafd70ea2266, type: 2}
+  - {fileID: 7400000, guid: e5517ffe7387e7141910ddad78b9b320, type: 2}
+  - {fileID: 7400000, guid: 1f920a1e6328d3e42a2080938bf319af, type: 2}
+  - {fileID: 7400000, guid: 6f6374bdefc008745882870bdf57fb40, type: 2}
+  - {fileID: 7400000, guid: 5f31cff4c8a6f9542b1b16090369d6a0, type: 2}
+  - {fileID: 7400000, guid: 7870a1cfd6ea7d14c9b57e610b865ae8, type: 2}
+  - {fileID: 7400000, guid: 9785cb5f12ab076409aba736993f024c, type: 2}
+  - {fileID: 7400000, guid: 39f3f58151f2d284c89abb467281b60b, type: 2}

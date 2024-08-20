@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f59505117fe2d304c865361c7becd80e, type: 3}
+  m_Name: 3tweet
+  m_EditorClassIdentifier: 
+  tweetText: "My brother was accused and punished without proof. He was innocent,
+    but that didn\u2019t matter. Now our family is destroyed, and no one will listen.
+    How many more innocent people have to suffer before this ends? #InnocentLivesMatter
+    #JusticeForAll #EndTheMadness"
+  minFollower: -1
+  followUpTweets:
+  - {fileID: 11400000, guid: f1d13a5b596bf7b46b9fbede091c24cc, type: 2}
+  avatar: {fileID: 21300000, guid: ae6114087f77e1449bcd9cd711b304a1, type: 3}
+  username: anonymous
+  subtitle: 
+  likesList: 97160000
+  commentsList: e4450000
+  retweetsList: 1b440000
+  likesCount: 6745
+  commentsCount: 4563
+  retweetCount: 10236
+  followerChange: 0
+  followerChangeMin: 0
+  followerChangeMax: 0
+  isPlayer: 0
+  isIan: 0

@@ -561,7 +561,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0c8bff22e35a514ab49cbb1cdb75488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneTo: PhotoUpload
+  SceneTo: PhotoPreview
   SpawnID: 
   sequence: {fileID: 0}
   faceDirection: 0

@@ -16,6 +16,43 @@ public static class EventHandler
         TransitionEvent?.Invoke(sceneName, spawnPointID, sequence, direction);
     }
 
+
+    public static event Action<ImageType> SetDisplayingExpressionEvent;
+    public static void CallSetDisplayingExpressionEvent(ImageType type)
+    {
+        SetDisplayingExpressionEvent?.Invoke(type);
+    }
+
+    public static event Action<GenerateButton> SetGenerateButtonEvent;
+    public static void CallSetGenerateButtonEvent(GenerateButton b)
+    {
+        SetGenerateButtonEvent?.Invoke(b);
+    }
+
+    public static event Action ImageSavedEvent;
+    public static void CallImageSavedEvent()
+    {
+        ImageSavedEvent?.Invoke();
+    }
+
+    public static event Action<string> SetServerRunningEvent;
+    public static void CallSetServerRunningEvent(string ex = "")
+    {
+        SetServerRunningEvent?.Invoke(ex);
+    }
+
+    public static event Action<string> SetServerStopEvent;
+    public static void CallSetServerStopEvent(string ex = "")
+    {
+        SetServerStopEvent?.Invoke(ex);
+    }
+
+    public static event Action LoadPhotoEvent;
+    public static void CallLoadPhotoEvent()
+    {
+        LoadPhotoEvent?.Invoke();
+    }
+
     public static event Action UpdateBodyPartEvent;
     public static void CallUpdateBodyPartEvent()
     {

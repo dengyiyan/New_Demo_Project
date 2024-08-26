@@ -424,9 +424,7 @@ MonoBehaviour:
     allowPlayerMove: 0
     animationType: 4
     boolParameters: []
-    nextScene: HeroHouse_SAT_unhappy
+    nextScene: HeroHouse_SAT_exercise10_1
     spawnID: 
-    direction: 0
-    newStartingSequence: {fileID: 11400000, guid: 00f0864ca36f5904ca623c6d435ebea0, type: 2}
-  conditions:
-    conditions: []
+    direction: 1
+    newStartingSequence: {fileID: 11400000, guid: 9be96b3c1ec13a145823c5088a2e7c4f, type: 2}

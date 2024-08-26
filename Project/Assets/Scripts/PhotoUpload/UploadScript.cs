@@ -13,9 +13,15 @@ public class UploadScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        submitButton.onClick.AddListener(saveName);
+        if (submitButton)
+            submitButton.onClick.AddListener(saveName);
         FileBrowser.SetFilters(false, new FileBrowser.Filter("Images", ".jpg", ".png"));
 
+        string filepath = GameStateManager.GetPhotoPath();
+        if (!string.IsNullOrEmpty(filepath) && File.Exists(filepath))
+        {
+            LoadImageFromFile(filepath);
+        }
         //FileBrowser.AddQuickLink("Users", "C:\\Users", null);
 
         // !!! Uncomment any of the examples below to show the file browser !!!
@@ -69,6 +75,25 @@ public class UploadScript : MonoBehaviour
 
         if (FileBrowser.Success)
             OnFilesSelected(FileBrowser.Result); // FileBrowser.Result is null, if FileBrowser.Success is false
+
+    }
+
+    private void OnEnable()
+    {
+        EventHandler.BeforeSceneUnloadEvent += CloseFileBrowser;
+    }
+
+    private void OnDisable()
+    {
+        EventHandler.BeforeSceneUnloadEvent -= CloseFileBrowser;
+    }
+
+    void CloseFileBrowser()
+    {
+        if (FileBrowser.IsOpen)
+        {
+            FileBrowser.HideDialog();
+        }
     }
 
     void OnFilesSelected(string[] filePaths)
@@ -79,6 +104,8 @@ public class UploadScript : MonoBehaviour
 
         // Get the file path of the first selected file
         string filePath = filePaths[0];
+        Debug.Log(filePath);
+        GameStateManager.SetPhotoPath(filePath);
 
         // Read the bytes of the first file via FileBrowserHelpers
         // Contrary to File.ReadAllBytes, this function works on Android 10+, as well
@@ -89,6 +116,21 @@ public class UploadScript : MonoBehaviour
         // Or, copy the first file to persistentDataPath
         // string destinationPath = Path.Combine(Application.persistentDataPath, FileBrowserHelpers.GetFilename(filePath));
         // FileBrowserHelpers.CopyFile(filePath, destinationPath);
+    }
+
+    void LoadImageFromFile(string filePath)
+    {
+        if (!File.Exists(filePath))
+        {
+            Debug.LogError("File not found at path: " + filePath);
+            return;
+        }
+
+        // Read the bytes of the file using FileBrowserHelpers for compatibility
+        byte[] bytes = FileBrowserHelpers.ReadBytesFromFile(filePath);
+
+        // Display the image from the byte array
+        DisplayImageFromBytes(bytes);
     }
 
     void DisplayImageFromBytes(byte[] imageBytes)
@@ -122,16 +164,9 @@ public class UploadScript : MonoBehaviour
 
             // Adjust the Image component's rectTransform to match the aspect ratio of the uploaded image
             float aspectRatio = (float)texture.width / texture.height;
-            RectTransform rectTransform = image.GetComponent<RectTransform>();
+            GameStateManager.aspectRatio = aspectRatio;
+            EventHandler.CallLoadPhotoEvent();
 
-            if (aspectRatio > 1) // Wider than tall
-            {
-                rectTransform.sizeDelta = new Vector2(300, 300 / aspectRatio);
-            }
-            else // Taller than wide or square
-            {
-                rectTransform.sizeDelta = new Vector2(200 * aspectRatio, 200);
-            }
         }
         else
         {

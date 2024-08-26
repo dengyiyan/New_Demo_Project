@@ -174,7 +174,7 @@ public class AnimationManager : MonoBehaviour
 
     private void HandleSceneChange(AnimationStep step)
     {
-        EventHandler.CallTransitionEvent(step.nextScene, step.spawnID, step.newStartingSequence);
+        EventHandler.CallTransitionEvent(step.nextScene, step.spawnID, step.newStartingSequence, step.direction);
         //EventHandler.CallPlayerFaceEvent(step.direction);
     }
     private IEnumerator PlaySequenceCoroutine(AnimationSequence sequence)

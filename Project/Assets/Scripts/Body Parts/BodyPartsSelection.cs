@@ -69,26 +69,27 @@ public class BodyPartsSelection : MonoBehaviour
     private void SetPantsColors()
     {
         bodyPartSelections[3].colorOptions = new Color[]
-    {
-        new Color(0.0f, 0.0f, 0.0f), // Black
-        new Color(0.15f, 0.15f, 0.15f), // Charcoal Grey
-        new Color(0.25f, 0.25f, 0.25f), // Medium Grey
-        new Color(0.5f, 0.5f, 0.5f), // Light Grey
-        new Color(0.05f, 0.1f, 0.15f), // Navy Blue
-        new Color(0.4f, 0.4f, 0.2f), // Khaki
-        new Color(0.35f, 0.25f, 0.2f), // Dark Brown
-        new Color(0.5f, 0.35f, 0.25f), // Medium Brown
-        new Color(0.65f, 0.45f, 0.3f), // Light Brown
-        new Color(0.3f, 0.6f, 0.2f), // Olive Green
-        new Color(0.7f, 0.5f, 0.3f), // Beige
-        new Color(0.3f, 0.1f, 0.4f), // Deep Purple
-        new Color(0.6f, 0.2f, 0.2f), // Maroon
-        new Color(0.75f, 0.4f, 0.15f), // Rust
-        new Color(0.0f, 0.0f, 0.5f), // Royal Blue
-        new Color(0.25f, 0.0f, 0.5f), // Deep Plum
-        new Color(0.2f, 0.3f, 0.2f), // Forest Green
-        new Color(0.85f, 0.65f, 0.45f) // Camel
-    };
+        {
+            new Color(1.0f, 1.0f, 1.0f), // White
+            new Color(0.0f, 0.0f, 0.0f), // Black
+            new Color(0.15f, 0.15f, 0.15f), // Charcoal Grey
+            new Color(0.25f, 0.25f, 0.25f), // Medium Grey
+            new Color(0.5f, 0.5f, 0.5f), // Light Grey
+            new Color(0.05f, 0.1f, 0.15f), // Navy Blue
+            new Color(0.4f, 0.4f, 0.2f), // Khaki
+            new Color(0.35f, 0.25f, 0.2f), // Dark Brown
+            new Color(0.5f, 0.35f, 0.25f), // Medium Brown
+            new Color(0.65f, 0.45f, 0.3f), // Light Brown
+            new Color(0.3f, 0.6f, 0.2f), // Olive Green
+            new Color(0.7f, 0.5f, 0.3f), // Beige
+            new Color(0.3f, 0.1f, 0.4f), // Deep Purple
+            new Color(0.6f, 0.2f, 0.2f), // Maroon
+            new Color(0.75f, 0.4f, 0.15f), // Rust
+            new Color(0.0f, 0.0f, 0.5f), // Royal Blue
+            new Color(0.25f, 0.0f, 0.5f), // Deep Plum
+            new Color(0.2f, 0.3f, 0.2f), // Forest Green
+            new Color(0.85f, 0.65f, 0.45f) // Camel
+        };
     }
 
     private void getColor(int index)
@@ -98,7 +99,7 @@ public class BodyPartsSelection : MonoBehaviour
         int currentColorIndex = System.Array.FindIndex(bodyPartSelections[index].colorOptions, color => color.Equals(currentColor));
         if (currentColorIndex == -1)
         {
-            Debug.Log("Error! Color does not exist!");
+            Debug.Log($"Error!{index} Color does not exist!");
         }
         else
         {
@@ -234,7 +235,11 @@ public class BodyPartsSelection : MonoBehaviour
             }
 
             UpdateCurrentPart(index);
+            if (bodyPartSelections[index].colorOptions.Length >= 2)
+                UpdateColor(index);
         }
+
+
     }
 
 
@@ -252,12 +257,11 @@ public class BodyPartsSelection : MonoBehaviour
             }
 
             UpdateCurrentPart(index);
+
+            
+            if (bodyPartSelections[index].colorOptions.Length >= 2)
+                UpdateColor(index);
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
 

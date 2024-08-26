@@ -122,40 +122,6 @@ MonoBehaviour:
   - npcName: Player
     points: []
     trigger: 
-    waitForCompletion: 0
-    conversation:
-      conversationDialogues: []
-      ID: 
-    waitForConversationEnd: 0
-    allowPlayerMove: 0
-    animationType: 6
-    boolParameters:
-    - parameterName: isHugging
-      value: 1
-    nextScene: 
-    spawnID: 
-    direction: 0
-    newStartingSequence: {fileID: 0}
-  - npcName: Childhood Self
-    points: []
-    trigger: 
-    waitForCompletion: 0
-    conversation:
-      conversationDialogues: []
-      ID: 
-    waitForConversationEnd: 0
-    allowPlayerMove: 0
-    animationType: 6
-    boolParameters:
-    - parameterName: isHugging
-      value: 1
-    nextScene: 
-    spawnID: 
-    direction: 0
-    newStartingSequence: {fileID: 0}
-  - npcName: Player
-    points: []
-    trigger: 
     waitForCompletion: 1
     conversation:
       conversationDialogues:
@@ -352,6 +318,40 @@ MonoBehaviour:
   - npcName: Player
     points: []
     trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 6
+    boolParameters:
+    - parameterName: isHugging
+      value: 1
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Childhood Self
+    points: []
+    trigger: 
+    waitForCompletion: 0
+    conversation:
+      conversationDialogues: []
+      ID: 
+    waitForConversationEnd: 0
+    allowPlayerMove: 0
+    animationType: 6
+    boolParameters:
+    - parameterName: isHugging
+      value: 1
+    nextScene: 
+    spawnID: 
+    direction: 0
+    newStartingSequence: {fileID: 0}
+  - npcName: Player
+    points: []
+    trigger: 
     waitForCompletion: 1
     conversation:
       conversationDialogues:
@@ -506,5 +506,3 @@ MonoBehaviour:
     spawnID: 7
     direction: 1
     newStartingSequence: {fileID: 11400000, guid: 910de593991c32d418b74487a885d4c2, type: 2}
-  conditions:
-    conditions: []

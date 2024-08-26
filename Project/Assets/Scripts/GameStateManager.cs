@@ -11,8 +11,14 @@ public static class GameStateManager
     //private static bool PlayerCanMove = false;
 
     private static Texture2D UploadedImage;
+
     private static Texture2D HappyImage;
     private static Texture2D SadImage;
+    private static Texture2D FearfulImage;
+    private static Texture2D AngryImage;
+    private static Texture2D DisgustedImage;
+    private static Texture2D SurprisedImage;
+    private static Texture2D NeutralImage;
 
     private const string exercise2Flag = "Excercise2Completed";
 
@@ -51,6 +57,9 @@ public static class GameStateManager
     private static HashSet<string> conversationsCompleted = new HashSet<string>(); // Track completed conversations
     private static HashSet<string> itemPicked = new HashSet<string>();
 
+    private static string photoPath;
+    public static float aspectRatio = -1;
+
     // private const string DefaultSpawnPoint = "default";
 
     //public static bool GetPlayerCanMove()
@@ -60,6 +69,15 @@ public static class GameStateManager
 
     //public static void SetPlayerCanMove()
 
+    public static void SetPhotoPath(string path)
+    {
+        photoPath = path;
+    }
+
+    public static string GetPhotoPath()
+    {
+        return photoPath;
+    }
 
     public static void AddCounter(string counterName, string itemName)
     {
@@ -77,9 +95,44 @@ public static class GameStateManager
     public static void SaveImage(Texture2D image)
     {
         UploadedImage = image;
-        HappyImage = image;
-        SadImage = image;
+        //HappyImage = image;
+        //SadImage = image;
     }
+
+    public static Texture2D GetUploadedImage()
+    {
+        return UploadedImage;
+    }
+
+
+    public static void SaveGeneratedImage(ImageType type, Texture2D image)
+    {
+        switch (type)
+        {
+            case ImageType.Happy:
+                HappyImage = image;
+                break;
+            case ImageType.Sad:
+                SadImage = image;
+                break;
+            case ImageType.Angry:
+                AngryImage = image;
+                break;
+            case ImageType.Surprised:
+                SurprisedImage = image;
+                break;
+            case ImageType.Disgusted:
+                DisgustedImage = image;
+                break;
+            case ImageType.Fearful:
+                FearfulImage = image;
+                break;
+            case ImageType.Neutral:
+                NeutralImage = image;
+                break;
+        }
+    }
+
 
     public static Texture2D GetImage(ImageType type)
     {
@@ -89,8 +142,18 @@ public static class GameStateManager
                 return HappyImage;
             case ImageType.Sad:
                 return SadImage;
+            case ImageType.Angry:
+                return AngryImage;
+            case ImageType.Surprised:
+                return SurprisedImage;
+            case ImageType.Disgusted:
+                return DisgustedImage;
+            case ImageType.Fearful:
+                return FearfulImage;
+            case ImageType.Neutral:
+                return NeutralImage;
             default:
-                return UploadedImage;
+                throw new NotImplementedException();
         }
 
     }

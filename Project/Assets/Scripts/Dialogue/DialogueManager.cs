@@ -293,6 +293,7 @@ public class DialogueManager : MonoBehaviour
 
         if (!string.IsNullOrEmpty(dialogue.sceneTo))
         {
+            Debug.Log("Transitioning");
             EventHandler.CallTransitionEvent(dialogue.sceneTo, dialogue.spawnID, dialogue.newStartingSequence, dialogue.direction);
             //EventHandler.CallPlayerFaceEvent(dialogue.direction);
         }

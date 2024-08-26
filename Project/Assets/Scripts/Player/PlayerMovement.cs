@@ -198,6 +198,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (animator != null)
         {
+            Debug.Log($"setting player facing {direction}");
             switch (direction)
             {
                 case Direction.Front:

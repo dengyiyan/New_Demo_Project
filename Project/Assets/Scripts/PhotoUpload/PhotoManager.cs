@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class PhotoManager : MonoBehaviour
 {
-    [SerializeField] private Image image;
+    [SerializeField] private RawImage image;
     [SerializeField] private GameObject photoPanel;
     [SerializeField] private ImageType defaultImageType;
     [SerializeField] private Button photoPanelButton;
@@ -40,7 +40,11 @@ public class PhotoManager : MonoBehaviour
         {
             PhotoPanelOpenSettings();
         }
-        LoadImage(GameStateManager.GetImage(type));
+        if (image)
+        {
+            image.texture = GameStateManager.GetUploadedImage();
+        }
+        //LoadImage(GameStateManager.GetImage(type));
     }
 
     private void OnHideImageEvent()
@@ -74,33 +78,34 @@ public class PhotoManager : MonoBehaviour
         photoPanel.SetActive(true);
         photoPanelButton.gameObject.SetActive(false);
         EventHandler.CallDisableCursorEvent();
+        EventHandler.CallImageSavedEvent();
         // EventHandler.CallDisablePlayerMovementEvent();
     }
 
-    private void LoadImage(Texture2D texture)
-    {
-        if (texture)
-        {
-            Sprite newSprite = Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f);
-            image.sprite = newSprite;
+    //private void LoadImage(Texture2D texture)
+    //{
+    //    if (texture)
+    //    {
+    //        Sprite newSprite = Sprite.Create(texture, new Rect(0.0f, 0.0f, texture.width, texture.height), new Vector2(0.5f, 0.5f), 100.0f);
+    //        image.sprite = newSprite;
 
-            // Adjust the Image component's rectTransform to match the aspect ratio of the uploaded image
-            float aspectRatio = (float)texture.width / texture.height;
-            RectTransform rectTransform = image.GetComponent<RectTransform>();
+    //        // Adjust the Image component's rectTransform to match the aspect ratio of the uploaded image
+    //        float aspectRatio = (float)texture.width / texture.height;
+    //        RectTransform rectTransform = image.GetComponent<RectTransform>();
 
-            if (aspectRatio > 1) // Wider than tall
-            {
-                rectTransform.sizeDelta = new Vector2(200, 200 / aspectRatio);
-            }
-            else // Taller than wide or square
-            {
-                rectTransform.sizeDelta = new Vector2(200 * aspectRatio, 200);
-            }
+    //        if (aspectRatio > 1) // Wider than tall
+    //        {
+    //            rectTransform.sizeDelta = new Vector2(200, 200 / aspectRatio);
+    //        }
+    //        else // Taller than wide or square
+    //        {
+    //            rectTransform.sizeDelta = new Vector2(200 * aspectRatio, 200);
+    //        }
 
-        }
-        else
-        {
-            Debug.LogWarning("Image does not exist");
-        }
-    }
+    //    }
+    //    else
+    //    {
+    //        Debug.LogWarning("Image does not exist");
+    //    }
+    //}
 }

@@ -29,6 +29,10 @@ public enum Direction
 public enum ImageType
 {
     Sad,
-    Cry,
     Happy,
+    Angry,
+    Disgusted,
+    Fearful,
+    Surprised,
+    Neutral,
 }

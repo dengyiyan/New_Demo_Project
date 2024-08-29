@@ -22,11 +22,13 @@ public class ShowButton : MonoBehaviour
 
     private void OnEnable()
     {
+        EventHandler.LoadPhotoFinishEvent += CheckInteractable;
         EventHandler.ImageSavedEvent += CheckInteractable;
     }
 
     private void OnDisable()
     {
+        EventHandler.LoadPhotoFinishEvent -= CheckInteractable;
         EventHandler.ImageSavedEvent -= CheckInteractable;
     }
 

@@ -309,12 +309,23 @@ public static class GameStateManager
 
     public static void ResetGameState()
     {
+        int random = UnityEngine.Random.Range(-10, 10);
+
         PlayerName = "Jack"; // Reset to default value
-        Followers = 78; // Reset to default value
+        Followers = 78 + random; // Reset to default value
+
 
         UploadedImage = null;
         HappyImage = null;
         SadImage = null;
+        FearfulImage = null;
+        DisgustedImage = null;
+        SurprisedImage = null;
+        NeutralImage = null;
+        AngryImage = null;
+
+        photoPath = null;
+        aspectRatio = -1;
 
         // Clear and reset dictionaries and collections
         gameBools = new Dictionary<string, bool>

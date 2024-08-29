@@ -13,7 +13,7 @@ public class SpotlightControl : MonoBehaviour
     public float minRotationAngle = -45f; // Minimum rotation angle in degrees
     public float maxRotationAngle = 45f; // Maximum rotation angle in degrees
 
-    private bool isFlashing = false;
+    //private bool isFlashing = false;
     private float currentRotationAngle;
 
     void Start()
@@ -59,10 +59,10 @@ public class SpotlightControl : MonoBehaviour
 
     IEnumerator FlashLight()
     {
-        isFlashing = true;
+        //isFlashing = true;
         spotlight.enabled = false;
         yield return new WaitForSeconds(flashDuration);
         spotlight.enabled = true;
-        isFlashing = false;
+        //isFlashing = false;
     }
 }

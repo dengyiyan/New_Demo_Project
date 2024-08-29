@@ -6,26 +6,28 @@ using UnityEngine.UI;
 public class GenerateButton : MonoBehaviour
 {
     public ImageType type;
-    public string promptText;  // The prompt text associated with this button
+    public string promptText;
+    public int loraWeightIndex;
+    //public string wildcardText;
 
     private Button button;
     void Start()
     {
         button = GetComponent<Button>();
         SetPrompt(type);
-        // Ensure the button has an onClick listener
+
         GetComponent<Button>().onClick.AddListener(OnButtonClick);
         CheckInteractable();
     }
 
     private void OnEnable()
     {
-        EventHandler.LoadPhotoEvent += CheckInteractable;
+        EventHandler.LoadPhotoFinishEvent += CheckInteractable;
     }
 
     private void OnDisable()
     {
-        EventHandler.LoadPhotoEvent -= CheckInteractable;
+        EventHandler.LoadPhotoFinishEvent -= CheckInteractable;
     }
 
     private void SetPrompt(ImageType t)
@@ -33,25 +35,33 @@ public class GenerateButton : MonoBehaviour
         switch (t)
         {
             case ImageType.Happy:
-                promptText = ", happy face";
+                promptText = "happy expression, eyes open";
+                loraWeightIndex = 1;
                 break;
             case ImageType.Sad:
-                promptText = ", sad face";
+                promptText = "sad expression";
+                loraWeightIndex = 5;
                 break;
             case ImageType.Angry:
-                promptText = ", angry face";
+                promptText = "angry expression";
+                loraWeightIndex = 2;
+                //wildcardText = "large eyes, angry";
                 break;
             case ImageType.Surprised:
-                promptText = ", surprised face";
+                promptText = "shocked expression, eyes open wide, big mouth";
+                loraWeightIndex = 4;
                 break;
             case ImageType.Disgusted:
-                promptText = ", disgusted face";
+                promptText = "disgusted expression";
+                loraWeightIndex = 6;
                 break;
             case ImageType.Fearful:
-                promptText = ", fearful face";
+                promptText = "scared expression";
+                loraWeightIndex = 3;
                 break;
             case ImageType.Neutral:
-                promptText = ", neutral face";
+                promptText = "expressionless";
+                loraWeightIndex = -1;
                 break;
         }
     }

@@ -19,7 +19,7 @@ public class AnimationMovement : MonoBehaviour
     //private SpriteRenderer hairRenderer;
     //private SpriteRenderer pantsRenderer;
 
-    private bool shouldFlip = false;
+    //private bool shouldFlip = false;
     // Start is called before the first frame update
     void Awake()
     {

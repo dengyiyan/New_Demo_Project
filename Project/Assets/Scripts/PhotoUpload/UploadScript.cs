@@ -18,6 +18,7 @@ public class UploadScript : MonoBehaviour
         FileBrowser.SetFilters(false, new FileBrowser.Filter("Images", ".jpg", ".png"));
 
         string filepath = GameStateManager.GetPhotoPath();
+
         if (!string.IsNullOrEmpty(filepath) && File.Exists(filepath))
         {
             LoadImageFromFile(filepath);
@@ -170,7 +171,7 @@ public class UploadScript : MonoBehaviour
         }
         else
         {
-            //Debug.LogError("Failed to load image!");
+            Debug.LogError("Failed to load image!");
         }
     }
 }

@@ -13,7 +13,8 @@ public class Instruction : MonoBehaviour
         instruction = GetComponent<Text>();
         if (GameStateManager.GetUploadedImage() == null)
             instruction.text = "First upload your photo then click generate. " +
-                "You can access these generated images later in the game.";
+                "You can access these generated images later in the game. " +
+                "First time cold start may take about one or two minutes.";
         else
             instruction.text = regularInstruction;
 
@@ -21,14 +22,14 @@ public class Instruction : MonoBehaviour
 
     private void OnEnable()
     {
-        EventHandler.LoadPhotoEvent += OnPhotoUpload;
+        EventHandler.LoadPhotoFinishEvent += OnPhotoUpload;
         EventHandler.SetServerRunningEvent += OnServerRunning;
         EventHandler.SetServerStopEvent += OnServerStop;
     }
 
     private void OnDisable()
     {
-        EventHandler.LoadPhotoEvent -= OnPhotoUpload;
+        EventHandler.LoadPhotoFinishEvent -= OnPhotoUpload;
         EventHandler.SetServerRunningEvent -= OnServerRunning;
         EventHandler.SetServerStopEvent -= OnServerStop;
     }

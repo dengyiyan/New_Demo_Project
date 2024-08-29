@@ -53,6 +53,12 @@ public static class EventHandler
         LoadPhotoEvent?.Invoke();
     }
 
+    public static event Action LoadPhotoFinishEvent;
+    public static void CallLoadPhotoFinishEvent()
+    {
+        LoadPhotoFinishEvent?.Invoke();
+    }
+
     public static event Action UpdateBodyPartEvent;
     public static void CallUpdateBodyPartEvent()
     {

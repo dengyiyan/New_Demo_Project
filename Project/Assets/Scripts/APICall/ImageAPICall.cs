@@ -8,16 +8,19 @@ using System.Collections.Generic;
 using WebSocketSharp;
 using System;
 using Newtonsoft.Json;
+using System.IO;
 
 public class ImageAPICall : MonoBehaviour
 {
-    private string serverAddress = "127.0.0.1:8188";
-    private string clientId = System.Guid.NewGuid().ToString();
+    private readonly string serverAddress = "comfyui-final-hbpmushhem.cn-shanghai.fcapp.run";
+    //private readonly string serverAddress = "127.0.0.1:8188";
+    private readonly string clientId = System.Guid.NewGuid().ToString();
     private WebSocket ws;
     private string promptText;
     //public Button button;
     private List<Button> buttons;
-    private string fixedPrompt = "solo, upper body, c0ne, pixel art, simple background";
+    private string fixedFacePrompt = "solo, child, ";
+    private string fixedPrompt = "solo, pixelart, child, highly detailed, 4k, masterpiece, looking at viewer, eye contact, simple background, ";
     private string current_node = "";
     private Dictionary<string, List<byte[]>> output_images = new Dictionary<string, List<byte[]>>();
 
@@ -26,14 +29,24 @@ public class ImageAPICall : MonoBehaviour
 
     private byte[] imageData;
     private readonly Queue<Action> mainThreadActions = new Queue<Action>();
+
+    private string imageName;
     void Start()
     {
-        // Load and modify the JSON prompt
-        TextAsset jsonFile = Resources.Load<TextAsset>("test_workflow");
+        TextAsset jsonFile = Resources.Load<TextAsset>("workflow");
         promptText = jsonFile.text;
 
         //button.onClick.AddListener(OnButtonClick);
         buttons = new List<Button>(FindObjectsOfType<Button>());
+        if (buttons.Count == 0)
+        {
+            Debug.LogError("No buttons found in the scene.");
+        }
+
+        foreach (var button in buttons)
+        {
+            Debug.Log($"Button found: {button.name}");
+        }
     }
 
     void Update()
@@ -51,6 +64,7 @@ public class ImageAPICall : MonoBehaviour
         EventHandler.SetGenerateButtonEvent += OnSetGenerateButtonEvent;
         EventHandler.SetServerRunningEvent += OnSetServerRunningEvent;
         EventHandler.SetServerStopEvent += OnSetServerStopEvent;
+        EventHandler.LoadPhotoEvent += OnLoadPhotoEvent;
     }
 
     private void OnDisable()
@@ -58,6 +72,76 @@ public class ImageAPICall : MonoBehaviour
         EventHandler.SetGenerateButtonEvent -= OnSetGenerateButtonEvent;
         EventHandler.SetServerRunningEvent -= OnSetServerRunningEvent;
         EventHandler.SetServerStopEvent -= OnSetServerStopEvent;
+        EventHandler.LoadPhotoEvent -= OnLoadPhotoEvent;
+    }
+
+    private void OnLoadPhotoEvent()
+    {
+        StartCoroutine(UploadImage());
+    }
+
+    private IEnumerator UploadImage()
+    {
+        string imagePath = GameStateManager.GetPhotoPath();
+        if (!File.Exists(imagePath))
+        {
+            Debug.LogError("Image file does not exist.");
+            yield break;
+        }
+        byte[] imageBytes = File.ReadAllBytes(imagePath);
+
+        string fileName = Path.GetFileName(imagePath);
+
+        // Create a new form and add the image as binary data
+        WWWForm form = new WWWForm();
+        form.AddBinaryData("image", imageBytes, fileName);
+        //form.AddField("overwrite", "true");
+
+        // Send the POST request to the server
+        using (UnityWebRequest www = UnityWebRequest.Post($"http://{serverAddress}/upload/image", form))
+        {
+            SetButtonsInteractable(false);
+            yield return www.SendWebRequest();
+            SetButtonsInteractable(true);
+            EventHandler.CallLoadPhotoFinishEvent();
+
+            if (www.result == UnityWebRequest.Result.Success)
+            {
+                string responseText = www.downloadHandler.text;
+
+                Debug.Log("Response Code: " + www.responseCode);
+                Debug.Log("Response: " + responseText);
+
+                ProcessUploadResponse(responseText);
+                InitializeWebSocket();
+            }
+            else
+            {
+                Debug.LogError("Error: " + www.error);
+            }
+        }
+
+    }
+
+    private void ProcessUploadResponse(string responseText)
+    {
+        try
+        {
+            // Parse the JSON response
+            JObject response = JObject.Parse(responseText);
+
+            imageName = response["name"]?.ToString();
+            //string subfolder = response["subfolder"]?.ToString();
+            //string imageType = response["type"]?.ToString();
+
+            //Debug.Log($"Uploaded image name: {imageName}");
+            //Debug.Log($"Uploaded image subfolder: {subfolder}");
+            //Debug.Log($"Uploaded image type: {imageType}");
+        }
+        catch (JsonReaderException ex)
+        {
+            Debug.LogError("Error parsing server response: " + ex.Message);
+        }
     }
 
     void OnSetGenerateButtonEvent(GenerateButton inputButton)
@@ -78,11 +162,9 @@ public class ImageAPICall : MonoBehaviour
         try
         {
             JObject prompt = JObject.Parse(promptText);
-            prompt["1"]["inputs"]["positive"] = fixedPrompt + b.promptText;
-            if (!string.IsNullOrEmpty(GameStateManager.GetPhotoPath()))
-                prompt["6"]["inputs"]["image"] = GameStateManager.GetPhotoPath();
-            int randomSeed = UnityEngine.Random.Range(0, int.MaxValue);
-            prompt["3"]["inputs"]["seed"] = randomSeed;
+
+            ProcessPrompt(prompt);
+
             promptText = prompt.ToString();
 
             EventHandler.CallSetServerRunningEvent();
@@ -95,6 +177,57 @@ public class ImageAPICall : MonoBehaviour
             Debug.LogError("JSON parsing error: " + ex.Message);
         }
     }
+
+
+    private void ProcessPrompt(JObject prompt)
+    {
+        // Seed update
+        //facedetailer
+        int randomSeed = UnityEngine.Random.Range(0, int.MaxValue);
+        prompt["71"]["inputs"]["seed"] = randomSeed;
+        //prompt["71"]["inputs"]["wildcard"] = b.type.ToString();
+
+        randomSeed = UnityEngine.Random.Range(0, int.MaxValue);
+        prompt["88"]["inputs"]["seed"] = randomSeed;
+
+        //prompt for facedetailer
+        prompt["96"]["inputs"]["positive"] = fixedPrompt + b.promptText;
+
+        //prompt for pixel art
+        prompt["91"]["inputs"]["positive"] = fixedPrompt + b.promptText;
+
+        //image
+        prompt["80"]["inputs"]["image"] = imageName;
+
+        ProcessLora(prompt);
+    }
+
+    private void ProcessLora(JObject prompt)
+    {
+        var pixelLoraLoader = prompt["82"]["inputs"];
+        var realLoraLoader = prompt["111"]["inputs"];
+
+        SetLoraWeights(pixelLoraLoader, 1);
+        SetLoraWeights(realLoraLoader, 2);
+    }
+
+    private void SetLoraWeights(JToken token, float val)
+    {
+        for (int i = 1; i <= 6; i++)
+        {
+            string key = $"lora_wt_{i}";
+            if (i != b.loraWeightIndex)
+            {
+
+                token[key] = 0;
+            }
+            else
+            {
+                token[key] = val;
+            }
+        }
+    }
+
 
     private IEnumerator QueuePrompt(string prompt)
     {
@@ -121,7 +254,6 @@ public class ImageAPICall : MonoBehaviour
             else
             {
                 Debug.Log("Prompt successfully sent to server.");
-                InitializeWebSocket(); // Initialize WebSocket only after HTTP success
             }
         }
     }
@@ -261,6 +393,10 @@ public class ImageAPICall : MonoBehaviour
 
     private void SetButtonsInteractable(bool interactable)
     {
+        if (buttons == null)
+        {
+            return;
+        }
         foreach (var button in buttons)
         {
             button.interactable = interactable;
@@ -275,6 +411,7 @@ public class ImageAPICall : MonoBehaviour
     private void OnSetServerStopEvent(string ex = "")
     {
         SetButtonsInteractable(true);
+        EventHandler.CallImageSavedEvent();
     }
 
     public Dictionary<string, List<byte[]>> GetOutputImages()

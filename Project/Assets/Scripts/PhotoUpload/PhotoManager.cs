@@ -12,7 +12,7 @@ public class PhotoManager : MonoBehaviour
     [SerializeField] private Button photoPanelButton;
     [SerializeField] private Button photoPanelCloseButton;
     private bool isShowing = false;
-    private bool disabled = false;
+    //private bool disabled = false;
 
     private void OnEnable()
     {

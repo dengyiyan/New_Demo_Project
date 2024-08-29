@@ -15,9 +15,6 @@ EditorBuildSettings:
     path: Assets/Scenes/StartScene.unity
     guid: f30081c41004e64449ab3bd5cbff970a
   - enabled: 1
-    path: Assets/Scenes/PhotoUpload.unity
-    guid: 43e2b567a1e0f2c479814a8c170fce8b
-  - enabled: 1
     path: Assets/Scenes/PhotoPreview.unity
     guid: d1a20f9f6141034498a4e7a9597817cb
   - enabled: 1

@@ -1,5 +1,416 @@
 {
-  "1": {
+  "21": {
+    "inputs": {
+      "images": [
+        "64",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "50": {
+    "inputs": {
+      "image": "happy.jpg",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  },
+  "62": {
+    "inputs": {
+      "seed": 297240522762570,
+      "steps": 5,
+      "cfg": 6,
+      "sampler_name": "euler",
+      "scheduler": "normal",
+      "denoise": 0.3,
+      "model": [
+        "117",
+        0
+      ],
+      "positive": [
+        "105",
+        0
+      ],
+      "negative": [
+        "117",
+        2
+      ],
+      "latent_image": [
+        "100",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "64": {
+    "inputs": {
+      "samples": [
+        "62",
+        0
+      ],
+      "vae": [
+        "117",
+        4
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "66": {
+    "inputs": {
+      "guide_size": 256,
+      "guide_size_for": true,
+      "max_size": 768,
+      "seed": 814520182610255,
+      "steps": 8,
+      "cfg": 6,
+      "sampler_name": "lcm",
+      "scheduler": "normal",
+      "denoise": 0.25,
+      "feather": 5,
+      "noise_mask": false,
+      "force_inpaint": false,
+      "bbox_threshold": 0.5,
+      "bbox_dilation": 10,
+      "bbox_crop_factor": 3,
+      "sam_detection_hint": "center-1",
+      "sam_dilation": 0,
+      "sam_threshold": 0.93,
+      "sam_bbox_expansion": 0,
+      "sam_mask_hint_threshold": 0.7000000000000001,
+      "sam_mask_hint_use_negative": "False",
+      "drop_size": 10,
+      "wildcard": "",
+      "cycle": 1,
+      "inpaint_model": false,
+      "noise_mask_feather": 20,
+      "image": [
+        "64",
+        0
+      ],
+      "model": [
+        "117",
+        0
+      ],
+      "clip": [
+        "117",
+        5
+      ],
+      "vae": [
+        "117",
+        4
+      ],
+      "positive": [
+        "105",
+        0
+      ],
+      "negative": [
+        "117",
+        2
+      ],
+      "bbox_detector": [
+        "67",
+        0
+      ],
+      "sam_model_opt": [
+        "68",
+        0
+      ],
+      "segm_detector_opt": [
+        "67",
+        1
+      ]
+    },
+    "class_type": "FaceDetailer",
+    "_meta": {
+      "title": "FaceDetailer"
+    }
+  },
+  "67": {
+    "inputs": {
+      "model_name": "bbox/face_yolov8m.pt"
+    },
+    "class_type": "UltralyticsDetectorProvider",
+    "_meta": {
+      "title": "UltralyticsDetectorProvider"
+    }
+  },
+  "68": {
+    "inputs": {
+      "model_name": "sam_vit_b_01ec64.pth",
+      "device_mode": "Prefer GPU"
+    },
+    "class_type": "SAMLoader",
+    "_meta": {
+      "title": "SAMLoader (Impact)"
+    }
+  },
+  "69": {
+    "inputs": {
+      "images": [
+        "66",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "71": {
+    "inputs": {
+      "images": [
+        "66",
+        1
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "72": {
+    "inputs": {
+      "images": [
+        "66",
+        2
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "81": {
+    "inputs": {
+      "pixels": [
+        "66",
+        0
+      ],
+      "vae": [
+        "117",
+        4
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "82": {
+    "inputs": {
+      "upscale_method": "nearest-exact",
+      "scale_by": 1
+    },
+    "class_type": "LatentUpscaleBy",
+    "_meta": {
+      "title": "Upscale Latent By"
+    }
+  },
+  "83": {
+    "inputs": {
+      "seed": 580283028648799,
+      "steps": 4,
+      "cfg": 4,
+      "sampler_name": "lcm",
+      "scheduler": "normal",
+      "denoise": 0.2,
+      "model": [
+        "117",
+        0
+      ],
+      "positive": [
+        "105",
+        0
+      ],
+      "negative": [
+        "117",
+        2
+      ],
+      "latent_image": [
+        "81",
+        0
+      ]
+    },
+    "class_type": "KSampler",
+    "_meta": {
+      "title": "KSampler"
+    }
+  },
+  "84": {
+    "inputs": {
+      "samples": [
+        "83",
+        0
+      ],
+      "vae": [
+        "117",
+        4
+      ]
+    },
+    "class_type": "VAEDecode",
+    "_meta": {
+      "title": "VAE Decode"
+    }
+  },
+  "92": {
+    "inputs": {
+      "control_net_name": "sai_xl_canny_256lora.safetensors"
+    },
+    "class_type": "ControlNetLoader",
+    "_meta": {
+      "title": "Load ControlNet Model"
+    }
+  },
+  "98": {
+    "inputs": {
+      "strength": 0.2,
+      "conditioning": [
+        "117",
+        1
+      ],
+      "control_net": [
+        "92",
+        0
+      ],
+      "image": [
+        "101",
+        0
+      ]
+    },
+    "class_type": "ControlNetApply",
+    "_meta": {
+      "title": "Apply ControlNet"
+    }
+  },
+  "100": {
+    "inputs": {
+      "pixels": [
+        "116",
+        0
+      ],
+      "vae": [
+        "117",
+        4
+      ]
+    },
+    "class_type": "VAEEncode",
+    "_meta": {
+      "title": "VAE Encode"
+    }
+  },
+  "101": {
+    "inputs": {
+      "pyrUp_iters": 3,
+      "resolution": 512,
+      "image": [
+        "116",
+        0
+      ]
+    },
+    "class_type": "TilePreprocessor",
+    "_meta": {
+      "title": "Tile"
+    }
+  },
+  "102": {
+    "inputs": {
+      "images": [
+        "101",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "104": {
+    "inputs": {
+      "images": [
+        "112",
+        0
+      ]
+    },
+    "class_type": "PreviewImage",
+    "_meta": {
+      "title": "Preview Image"
+    }
+  },
+  "105": {
+    "inputs": {
+      "strength": 0.4,
+      "conditioning": [
+        "98",
+        0
+      ],
+      "control_net": [
+        "108",
+        0
+      ],
+      "image": [
+        "112",
+        0
+      ]
+    },
+    "class_type": "ControlNetApply",
+    "_meta": {
+      "title": "Apply ControlNet"
+    }
+  },
+  "108": {
+    "inputs": {
+      "control_net_name": "OpenPoseXL2.safetensors"
+    },
+    "class_type": "ControlNetLoader",
+    "_meta": {
+      "title": "Load ControlNet Model"
+    }
+  },
+  "112": {
+    "inputs": {
+      "detect_hand": "enable",
+      "detect_body": "enable",
+      "detect_face": "enable",
+      "resolution": 512,
+      "image": [
+        "116",
+        0
+      ]
+    },
+    "class_type": "OpenposePreprocessor",
+    "_meta": {
+      "title": "OpenPose Pose"
+    }
+  },
+  "116": {
+    "inputs": {
+      "side_length": 512,
+      "side": "Shortest",
+      "upscale_method": "nearest-exact",
+      "crop": "disabled",
+      "image": [
+        "50",
+        0
+      ]
+    },
+    "class_type": "DF_Image_scale_to_side",
+    "_meta": {
+      "title": "Image scale to side"
+    }
+  },
+  "117": {
     "inputs": {
       "ckpt_name": "autismmixSDXL_autismmixConfetti.safetensors",
       "vae_name": "Baked VAE",
@@ -7,15 +418,15 @@
       "lora_name": "None",
       "lora_model_strength": 1,
       "lora_clip_strength": 1,
-      "positive": "c0ne, Pixel art, lady justice",
-      "negative": "bad composition, long neck, censored, grayscale, watermark, text, worst quality, low res, ugly, deformed, jpeg artifacts, signature, username, artist name, negative_hand, Extra legs, Hyperrealism, ((((3d)))), ((monochrome, black and white)), lips, distorted mouth, large mouth, nsfw",
+      "positive": "solo, good-looking, looking at viewer, c0ne, pixel art, friendly smile,happy face, eyes open, simple background, ",
+      "negative": "bad composition, long neck, censored, grayscale, watermark, text, worst quality, low res, ugly, deformed, jpeg artifacts, signature, username, artist name, negative_hand, Extra legs, Hyperrealism, ((((3d)))), ((monochrome, black and white)), lips, distorted mouth, large mouth, nsfw, teeth, shadow on face",
       "token_normalization": "none",
       "weight_interpretation": "comfy",
       "empty_latent_width": 1024,
       "empty_latent_height": 1024,
       "batch_size": 1,
       "lora_stack": [
-        "2",
+        "118",
         0
       ]
     },
@@ -24,10 +435,10 @@
       "title": "Efficient Loader"
     }
   },
-  "2": {
+  "118": {
     "inputs": {
       "input_mode": "simple",
-      "lora_count": 4,
+      "lora_count": 2,
       "lora_name_1": "c0ne.safetensors",
       "lora_wt_1": 1,
       "model_str_1": 1,
@@ -37,7 +448,7 @@
       "model_str_2": 1,
       "clip_str_2": 1,
       "lora_name_3": "None",
-      "lora_wt_3": 0.7,
+      "lora_wt_3": 1,
       "model_str_3": 1,
       "clip_str_3": 1,
       "lora_name_4": "None",
@@ -230,148 +641,10 @@
       "title": "LoRA Stacker"
     }
   },
-  "3": {
-    "inputs": {
-      "seed": 1031875256085029,
-      "steps": 20,
-      "cfg": 7,
-      "sampler_name": "euler",
-      "scheduler": "normal",
-      "denoise": 0.35,
-      "model": [
-        "1",
-        0
-      ],
-      "positive": [
-        "1",
-        1
-      ],
-      "negative": [
-        "1",
-        2
-      ],
-      "latent_image": [
-        "7",
-        0
-      ]
-    },
-    "class_type": "KSampler",
-    "_meta": {
-      "title": "KSampler"
-    }
-  },
-  "4": {
-    "inputs": {
-      "samples": [
-        "3",
-        0
-      ],
-      "vae": [
-        "1",
-        4
-      ]
-    },
-    "class_type": "VAEDecode",
-    "_meta": {
-      "title": "VAE Decode"
-    }
-  },
-  "5": {
-    "inputs": {
-      "images": [
-        "4",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
-  },
-  "6": {
-    "inputs": {
-      "image": "watercolors-lady-justice-art-print-justice-symbol-watercolor-law-corporate-art-themis-greek-goddess-leith-huber.jpg",
-      "upload": "image"
-    },
-    "class_type": "LoadImage",
-    "_meta": {
-      "title": "Load Image"
-    }
-  },
-  "7": {
-    "inputs": {
-      "pixels": [
-        "9",
-        0
-      ],
-      "vae": [
-        "1",
-        4
-      ]
-    },
-    "class_type": "VAEEncode",
-    "_meta": {
-      "title": "VAE Encode"
-    }
-  },
-  "9": {
-    "inputs": {
-      "side_length": 1024,
-      "side": "Longest",
-      "upscale_method": "nearest-exact",
-      "crop": "disabled",
-      "image": [
-        "6",
-        0
-      ]
-    },
-    "class_type": "DF_Image_scale_to_side",
-    "_meta": {
-      "title": "Image scale to side"
-    }
-  },
-  "10": {
-    "inputs": {
-      "images": [
-        "9",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
-  },
-  "13": {
-    "inputs": {
-      "upscale_method": "lanczos",
-      "scale_by": 1,
-      "image": [
-        "6",
-        0
-      ]
-    },
-    "class_type": "ImageScaleBy",
-    "_meta": {
-      "title": "Upscale Image By"
-    }
-  },
-  "14": {
-    "inputs": {
-      "images": [
-        "13",
-        0
-      ]
-    },
-    "class_type": "PreviewImage",
-    "_meta": {
-      "title": "Preview Image"
-    }
-  },
   "save_image_websocket_node": {
     "inputs": {
       "images": [
-        "4",
+        "84",
         0
       ]
     },

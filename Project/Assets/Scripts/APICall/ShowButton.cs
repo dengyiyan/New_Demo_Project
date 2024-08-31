@@ -52,6 +52,6 @@ public class ShowButton : MonoBehaviour
     {
         imageDisplay.texture = GameStateManager.GetImage(type);
         CheckInteractable();
-        EventHandler.CallSetDisplayingExpressionEvent(type);
+        EventHandler.CallSetDisplayingExpressionEvent("Displaying: ", type);
     }
 }

@@ -17,10 +17,23 @@ public static class EventHandler
     }
 
 
-    public static event Action<ImageType> SetDisplayingExpressionEvent;
-    public static void CallSetDisplayingExpressionEvent(ImageType type)
+    public static event Action<string> RegisterTipsEvent;
+    public static void CallRegisterTipsEvent(string tips)
     {
-        SetDisplayingExpressionEvent?.Invoke(type);
+        RegisterTipsEvent?.Invoke(tips);
+    }
+
+
+    public static event Action UnregisterTipsEvent;
+    public static void CallUnregisterTipsEvent()
+    {
+        UnregisterTipsEvent?.Invoke();
+    }
+
+    public static event Action<string, ImageType> SetDisplayingExpressionEvent;
+    public static void CallSetDisplayingExpressionEvent(string str, ImageType type)
+    {
+        SetDisplayingExpressionEvent?.Invoke(str, type);
     }
 
     public static event Action<GenerateButton> SetGenerateButtonEvent;

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class InteractableObject : MonoBehaviour
 {
@@ -49,6 +50,13 @@ public class InteractableObject : MonoBehaviour
         { 
             return;
         }
+
+        if (EventSystem.current.IsPointerOverGameObject())
+        {
+            // Block interaction if over UI
+            return;
+        }
+
         bool isCursorOver = false;
         float distance = 0;
         if (GetComponentsInChildren<SpriteRenderer>().Length > 0)

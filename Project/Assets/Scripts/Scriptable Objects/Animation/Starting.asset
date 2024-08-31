@@ -180,6 +180,25 @@ MonoBehaviour:
       - speakerName: Player
         text: I should hurry up so I can head out and play.
         choices: []
+        nextIndex: 6
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Tips
+        text: press wasd for moving in 4 directions and left click your mouse on
+          the object for any interations! Enjoy your day!
+        choices: []
         nextIndex: 999
         triggers: []
         requirements: []
@@ -204,5 +223,3 @@ MonoBehaviour:
     spawnID: 
     direction: 0
     newStartingSequence: {fileID: 0}
-  conditions:
-    conditions: []

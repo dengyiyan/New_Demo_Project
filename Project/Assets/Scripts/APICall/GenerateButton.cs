@@ -7,16 +7,23 @@ public class GenerateButton : MonoBehaviour
 {
     public ImageType type;
     public string promptText;
-    public int loraWeightIndex;
+    public int loraWeightIndex = -1;
+    public bool isGenerateAllButton = false;
     //public string wildcardText;
+    private ImageAPICall imageAPICall;
 
     private Button button;
     void Start()
     {
+        imageAPICall = FindObjectOfType<ImageAPICall>();
         button = GetComponent<Button>();
         SetPrompt(type);
 
-        GetComponent<Button>().onClick.AddListener(OnButtonClick);
+        if (!isGenerateAllButton)
+        {
+            GameStateManager.allGenerateButtons.Add(this);
+        }
+        button.onClick.AddListener(OnButtonClick);
         CheckInteractable();
     }
 
@@ -28,6 +35,11 @@ public class GenerateButton : MonoBehaviour
     private void OnDisable()
     {
         EventHandler.LoadPhotoFinishEvent -= CheckInteractable;
+
+        if (!isGenerateAllButton)
+        {
+            GameStateManager.allGenerateButtons.Remove(this);
+        }
     }
 
     private void SetPrompt(ImageType t)
@@ -82,7 +94,28 @@ public class GenerateButton : MonoBehaviour
 
     private void OnButtonClick()
     {
-        EventHandler.CallSetGenerateButtonEvent(this);
-        EventHandler.CallSetDisplayingExpressionEvent(type);
+        if (isGenerateAllButton)
+        {
+            StartCoroutine(GenerateAllImages());
+        }
+        else
+        {
+            EventHandler.CallSetGenerateButtonEvent(this);
+            //EventHandler.CallSetDisplayingExpressionEvent($"Generating ",type);
+        }
+    }
+
+    private IEnumerator GenerateAllImages()
+    {
+        foreach (var generateButton in GameStateManager.allGenerateButtons)
+        {
+            generateButton.GenerateImage();  // Programmatically click each button
+            yield return new WaitUntil(() => imageAPICall.GetIsGenerating() == false);
+        }
+    }
+
+    public void GenerateImage()
+    {
+        OnButtonClick();
     }
 }

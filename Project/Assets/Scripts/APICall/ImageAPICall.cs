@@ -19,12 +19,14 @@ public class ImageAPICall : MonoBehaviour
     private string promptText;
     //public Button button;
     private List<Button> buttons;
-    private string fixedFacePrompt = "solo, child, ";
-    private string fixedPrompt = "solo, pixelart, child, highly detailed, 4k, masterpiece, looking at viewer, eye contact, simple background, ";
+    private List<GenerateButton> generateButtons;
+    private string fixedFacePrompt = "solo, ";
+    private string fixedPrompt = "solo, pixelart, highly detailed, 4k, masterpiece, looking at viewer, eye contact, simple background, ";
     private string current_node = "";
     private Dictionary<string, List<byte[]>> output_images = new Dictionary<string, List<byte[]>>();
 
     public UnityEngine.UI.RawImage imageDisplay;
+    private bool isGenerating = false;
     private GenerateButton b = null;
 
     private byte[] imageData;
@@ -43,10 +45,7 @@ public class ImageAPICall : MonoBehaviour
             Debug.LogError("No buttons found in the scene.");
         }
 
-        foreach (var button in buttons)
-        {
-            Debug.Log($"Button found: {button.name}");
-        }
+        //generateButtons = new List<GenerateButton>(FindObjectsOfType<GenerateButton>());
     }
 
     void Update()
@@ -98,7 +97,7 @@ public class ImageAPICall : MonoBehaviour
         //form.AddField("overwrite", "true");
 
         // Send the POST request to the server
-        using (UnityWebRequest www = UnityWebRequest.Post($"http://{serverAddress}/upload/image", form))
+        using (UnityWebRequest www = UnityWebRequest.Post($"https://{serverAddress}/upload/image", form))
         {
             SetButtonsInteractable(false);
             yield return www.SendWebRequest();
@@ -109,11 +108,10 @@ public class ImageAPICall : MonoBehaviour
             {
                 string responseText = www.downloadHandler.text;
 
-                Debug.Log("Response Code: " + www.responseCode);
-                Debug.Log("Response: " + responseText);
+                //Debug.Log("Response Code: " + www.responseCode);
+                //Debug.Log("Response: " + responseText);
 
                 ProcessUploadResponse(responseText);
-                InitializeWebSocket();
             }
             else
             {
@@ -142,6 +140,26 @@ public class ImageAPICall : MonoBehaviour
         {
             Debug.LogError("Error parsing server response: " + ex.Message);
         }
+    }
+
+    //public void OnGenerateAllButtonClick()
+    //{
+    //    StartCoroutine(GenerateAllImages());
+    //}
+
+    //private IEnumerator GenerateAllImages()
+    //{
+    //    foreach (var generateButton in generateButtons)
+    //    {
+    //        generateButton.GenerateImage(); 
+    //        yield return new WaitUntil(() => CheckIfServerIsAvailable());
+    //        yield return new WaitForSeconds(1f);
+    //    }
+    //}
+
+    public bool CheckIfServerIsAvailable()
+    {
+        return ws == null || !ws.IsAlive;
     }
 
     void OnSetGenerateButtonEvent(GenerateButton inputButton)
@@ -191,7 +209,7 @@ public class ImageAPICall : MonoBehaviour
         prompt["88"]["inputs"]["seed"] = randomSeed;
 
         //prompt for facedetailer
-        prompt["96"]["inputs"]["positive"] = fixedPrompt + b.promptText;
+        prompt["96"]["inputs"]["positive"] = fixedFacePrompt + b.promptText;
 
         //prompt for pixel art
         prompt["91"]["inputs"]["positive"] = fixedPrompt + b.promptText;
@@ -208,7 +226,7 @@ public class ImageAPICall : MonoBehaviour
         var realLoraLoader = prompt["111"]["inputs"];
 
         SetLoraWeights(pixelLoraLoader, 1);
-        SetLoraWeights(realLoraLoader, 2);
+        SetLoraWeights(realLoraLoader, 1.5f);
     }
 
     private void SetLoraWeights(JToken token, float val)
@@ -220,6 +238,10 @@ public class ImageAPICall : MonoBehaviour
             {
 
                 token[key] = 0;
+            }
+            else if (i == 3)
+            {
+                token[key] = 2;
             }
             else
             {
@@ -239,7 +261,7 @@ public class ImageAPICall : MonoBehaviour
 
         byte[] postData = Encoding.UTF8.GetBytes(promptData);
 
-        using (UnityWebRequest www = UnityWebRequest.Put($"http://{serverAddress}/prompt", postData))
+        using (UnityWebRequest www = UnityWebRequest.Put($"https://{serverAddress}/prompt", postData))
         {
             www.method = UnityWebRequest.kHttpVerbPOST;
             www.SetRequestHeader("Content-Type", "application/json");
@@ -254,6 +276,7 @@ public class ImageAPICall : MonoBehaviour
             else
             {
                 Debug.Log("Prompt successfully sent to server.");
+                InitializeWebSocket();
             }
         }
     }
@@ -302,7 +325,7 @@ public class ImageAPICall : MonoBehaviour
         try
         {
             var data = JObject.Parse(message);
-            Debug.Log(data);
+            //Debug.Log(data);
             if (data["type"].ToString() == "executing")
             {
                 var executingData = data["data"];
@@ -319,7 +342,7 @@ public class ImageAPICall : MonoBehaviour
                     else
                     {
                         current_node = executingData["node"].ToString();
-                        Debug.Log(current_node);
+                        //Debug.Log(current_node);
                     }
                 }
             }
@@ -351,6 +374,7 @@ public class ImageAPICall : MonoBehaviour
                 DisplayImage(imageData);
                 EventHandler.CallSetServerStopEvent();
                 EventHandler.CallImageSavedEvent();
+                EventHandler.CallSetDisplayingExpressionEvent("Displaying: ", b.type);
             });
         }
     }
@@ -368,6 +392,7 @@ public class ImageAPICall : MonoBehaviour
             EventHandler.CallSetServerStopEvent("Failed to load image data into texture.");
             Debug.LogError("Failed to load image data into texture.");
         }
+
     }
     void OnDestroy()
     {
@@ -403,19 +428,26 @@ public class ImageAPICall : MonoBehaviour
         }
     }
 
-    private void OnSetServerRunningEvent(string ex="")
+    private void OnSetServerRunningEvent(string ex = "")
     {
         SetButtonsInteractable(false);
+        isGenerating = true;
     }
 
     private void OnSetServerStopEvent(string ex = "")
     {
         SetButtonsInteractable(true);
         EventHandler.CallImageSavedEvent();
+        isGenerating = false;
     }
 
     public Dictionary<string, List<byte[]>> GetOutputImages()
     {
         return output_images;
+    }
+
+    public bool GetIsGenerating()
+    {
+        return isGenerating;
     }
 }

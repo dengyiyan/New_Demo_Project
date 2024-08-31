@@ -3340,12 +3340,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 280e75207c9b99b4981fca57e27e31c9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sequences:
-  - {fileID: 11400000, guid: 81c64b1736759ce478b265d7bee099a1, type: 2}
   dialogueManager: {fileID: 0}
   startingSequence: {fileID: 11400000, guid: 6bf638f1fb2c2454b97e8e74abf3dc1e, type: 2}
   isAnimationPlaying: 0
   playableDirector: {fileID: 0}
+  playables: []
 --- !u!4 &574559182
 Transform:
   m_ObjectHideFlags: 0
@@ -17201,6 +17200,61 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sequence: {fileID: 11400000, guid: 81c64b1736759ce478b265d7bee099a1, type: 2}
+--- !u!1 &1858679265
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1858679267}
+  - component: {fileID: 1858679266}
+  m_Layer: 0
+  m_Name: Tips
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1858679266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858679265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16da486e6d212614fa636cdf741f1cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tips: 'Press W/up arrow for moving up
+
+    Press A/left arrow for moving left
+
+    Press
+    S/down arrow for moving down
+
+    Press D/right arrow for moving right
+
+    Hover
+    your mouse onto interactable objects and click them to interact.'
+--- !u!4 &1858679267
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858679265}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1972188572
 GameObject:
   m_ObjectHideFlags: 0
@@ -32392,3 +32446,4 @@ SceneRoots:
   - {fileID: 3797710266542347850}
   - {fileID: 6930271664994412289}
   - {fileID: 1775786189}
+  - {fileID: 1858679267}

@@ -34,6 +34,46 @@ MonoBehaviour:
           elseIndex: 0
         actions: []
         boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: (The atmosphere is quite intense here...)
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
+      - speakerName: Player
+        text: (It is almost evening time. I guess it is time to go home.)
+        choices: []
+        nextIndex: 2
+        triggers: []
+        requirements: []
+        divergence:
+          parameter:
+            parameterName: 
+            value: 0
+          nextIndex: 0
+          elseIndex: 0
+        actions: []
+        boolParameters: []
+        sceneTo: 
+        spawnID: 
+        direction: 0
+        newStartingSequence: {fileID: 0}
       ID: 
     waitForConversationEnd: 1
     allowPlayerMove: 0
@@ -41,5 +81,5 @@ MonoBehaviour:
     boolParameters: []
     nextScene: 
     spawnID: 
-  conditions:
-    conditions: []
+    direction: 0
+    newStartingSequence: {fileID: 0}

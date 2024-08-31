@@ -24,10 +24,10 @@ public class DisplayingHeader : MonoBehaviour
         EventHandler.SetDisplayingExpressionEvent -= SetHeader;
     }
 
-    private void SetHeader(ImageType type)
+    private void SetHeader(string str, ImageType type)
     {
         if (header)
-            header.text = $"{prefix}{type}";
+            header.text = $"{str}{type}";
     }
 
 }

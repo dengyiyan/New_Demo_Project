@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tweetText: "Finally, someone who\u2019s not afraid to stand up and do what\u2019s
     right. Ian is the hero we\u2019ve been waiting for! #JusticeShallRise #IanTheHero"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: d35b7c5f8d23843478680f8e87f44acd, type: 2}
   avatar: {fileID: 21300000, guid: fa3ae258d7097ed4cbf3f6faa54aec61, type: 3}
   username: TrueBeliever
   subtitle: In Ian We Trust
-  likesList: e40a0000bd12000044260000
-  commentsList: 7f0000007101000042020000
-  retweetsList: 0d000000250000004e000000
+  likesList: 44260000
+  commentsList: 42020000
+  retweetsList: 4e000000
   likesCount: 9796
   commentsCount: 578
   retweetCount: 78

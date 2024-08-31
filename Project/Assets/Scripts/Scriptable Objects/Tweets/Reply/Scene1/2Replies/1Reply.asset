@@ -15,14 +15,15 @@ MonoBehaviour:
   tweetText: "Ian is incredible\u2014so young and already making such a huge impact.
     I hope my child grows up to be as brave and capable as him. \n#ParentGoals #Inspiration
     #JusticeShallRise #ThankYouIan"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: 6ce420fd057f3894c8603575ac9c20f8, type: 2}
   avatar: {fileID: 1363830121, guid: 6341f9089dee2d540884f8cb5d62e3ce, type: 3}
   username: Kurt
   subtitle: Raising the Next Generation
-  likesList: 19000000160100001e030000f7070000
-  commentsList: 080000004c0000002101000095010000
-  retweetsList: 0100000004000000070000000f000000
+  likesList: f7070000
+  commentsList: 95010000
+  retweetsList: 23000000
   likesCount: 2039
   commentsCount: 405
   retweetCount: 15

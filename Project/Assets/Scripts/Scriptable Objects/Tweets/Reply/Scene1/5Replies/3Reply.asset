@@ -15,14 +15,15 @@ MonoBehaviour:
   tweetText: "Typical media, always trying to stir up doubt and controversy. Ian\u2019s
     doing what\u2019s right, and you\u2019re just trying to slow him down. Stop questioning
     his methods and let him do his job! #MediaBias #StandWithIan"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: 85f0dd857e008c6469003cd20e3f669f, type: 2}
   avatar: {fileID: 21300000, guid: d4a0874eaa59b5247903a7161ecd899c, type: 3}
   username: Marnie
   subtitle: Crushing on Justice
-  likesList: e2090000ef0f00000f230000
-  commentsList: 67010000910200007f030000
-  retweetsList: 57000000b000000051010000
+  likesList: 0f230000
+  commentsList: 7f030000
+  retweetsList: 51010000
   likesCount: 8975
   commentsCount: 895
   retweetCount: 337

@@ -15,14 +15,15 @@ MonoBehaviour:
   tweetText: "I\u2019m all for justice, but we need to make sure we\u2019re not punishing
     the wrong people. Innocent lives could be ruined if we\u2019re not careful. #BalanceInJustice
     #WitchHuntOrJustice"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: 69a89f59af718fd4abc42ec5954ed391, type: 2}
   avatar: {fileID: -1692361376, guid: 6341f9089dee2d540884f8cb5d62e3ce, type: 3}
   username: Ben
   subtitle: 
-  likesList: 22020000ed030000f4070000
-  commentsList: 89000000cb000000e9010000
-  retweetsList: 250000004c00000085000000
+  likesList: f4070000
+  commentsList: e9010000
+  retweetsList: 85000000
   likesCount: 2036
   commentsCount: 489
   retweetCount: 133

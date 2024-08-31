@@ -18,14 +18,15 @@ MonoBehaviour:
     just a hero\u2014he\u2019s a symbol of hope in a world desperate for change.
     The support for him online is unprecedented. \n\n#JusticeShallRise #IanTheHero
     #InternetSensation\u201D"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: 0a0774b7d728c2d4eb6ff9ab399c2084, type: 2}
   avatar: {fileID: 21300000, guid: b0a2aab4117dbb84584121e055e61634, type: 3}
   username: JusticeToday
   subtitle: Reporting the Fight for Justice
-  likesList: bc3900003fd600002f5e0100
-  commentsList: 00040000fa0d0000fd220000
-  retweetsList: 00010000a903000003090000
+  likesList: 2f5e0100
+  commentsList: fd220000
+  retweetsList: 03090000
   likesCount: 89647
   commentsCount: 8957
   retweetCount: 2307

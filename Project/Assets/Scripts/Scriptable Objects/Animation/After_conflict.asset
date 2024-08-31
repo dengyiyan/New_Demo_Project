@@ -59,7 +59,7 @@ MonoBehaviour:
       - speakerName: Player
         text: (It is almost evening time. I guess it is time to go home.)
         choices: []
-        nextIndex: 2
+        nextIndex: 3
         triggers: []
         requirements: []
         divergence:

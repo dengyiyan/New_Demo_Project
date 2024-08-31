@@ -11,7 +11,7 @@ public class TipsManager : MonoBehaviour
     [SerializeField] private Button tipsPanelButton;
     [SerializeField] private Button tipsPanelCloseButton;
     [SerializeField] private Text tipsText;
-    private bool isShowing = false;
+    //private bool isShowing = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -65,7 +65,7 @@ public class TipsManager : MonoBehaviour
 
     private void TipsPanelClosedSettings()
     {
-        isShowing = false;
+        //isShowing = false;
         tipsPanel.SetActive(false);
         tipsPanelButton.gameObject.SetActive(true);
         //EventHandler.CallEnableCursorEvent();
@@ -74,7 +74,7 @@ public class TipsManager : MonoBehaviour
 
     private void TipsPanelOpenSettings()
     {
-        isShowing = true;
+        //isShowing = true;
         tipsPanel.SetActive(true);
         tipsPanelButton.gameObject.SetActive(false);
         //EventHandler.CallDisableCursorEvent();

@@ -17,14 +17,15 @@ MonoBehaviour:
     died because of him.
 
     #JusticeShallRise #JusticeServed'
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: be0d466b590adaa4ea148d06ec989b95, type: 2}
   avatar: {fileID: 0}
   username: 
   subtitle: 
-  likesList: 73050000ac150000fa5b000052bf0100
-  commentsList: 81000000a60200002b090000b91e0000
-  retweetsList: 1700000069000000de01000071060000
+  likesList: 52bf0100
+  commentsList: b91e0000
+  retweetsList: 11160000
   likesCount: 114514
   commentsCount: 7865
   retweetCount: 1649

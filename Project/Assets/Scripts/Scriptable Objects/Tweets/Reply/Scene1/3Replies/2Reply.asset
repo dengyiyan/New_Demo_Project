@@ -15,14 +15,15 @@ MonoBehaviour:
   tweetText: "My family was destroyed by one of these hidden monsters. Please, Ian,
     don\u2019t stop now. We need justice for all the victims. #JusticeForTheLost
     #JusticeShallRise"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: 9dc1f6739b80ac4498398324ce0bbd3f, type: 2}
   avatar: {fileID: -1230223651, guid: d67f8bdea7b454ba08443e00d51268b8, type: 3}
   username: William
   subtitle: Please help me
-  likesList: f8000000250200003a050000
-  commentsList: 590000004801000042030000
-  retweetsList: 390000000d010000bb020000
+  likesList: 3a050000
+  commentsList: 42030000
+  retweetsList: bb020000
   likesCount: 1338
   commentsCount: 834
   retweetCount: 699

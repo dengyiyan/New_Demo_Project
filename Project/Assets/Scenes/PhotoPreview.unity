@@ -1690,8 +1690,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e3e48e4264f2c457290e5be99bf75b99, type: 3}
-  m_Type: 0
+  m_Sprite: {fileID: 21300000, guid: 0a638f6575a9649cf80a33bf0c3858ad, type: 3}
+  m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -1699,7 +1699,7 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 16
+  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &356850324
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5266,6 +5266,62 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1352267690}
   m_CullTransparentMesh: 1
+--- !u!1 &1391451981
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1391451983}
+  - component: {fileID: 1391451982}
+  m_Layer: 0
+  m_Name: Tips
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1391451982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391451981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16da486e6d212614fa636cdf741f1cb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tips: 'First upload your childhood photo. Usually this will take about 40 seconds
+    for the server to start.
+
+    Then click on generate button to get your childhood
+    avatar with different emotions. Each generation should typically take around
+    10 - 15 seconds.
+
+    Click generate all button to get them all at once.
+
+    After
+    your image is generated, you can click on the show button to view the last generated
+    version of it in the preview window.'
+--- !u!4 &1391451983
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391451981}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1399213249
 GameObject:
   m_ObjectHideFlags: 0
@@ -7332,7 +7388,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Preview Your photos with different expressions
+  m_Text: Upload your childhood photo for sat exercises
 --- !u!222 &1762295752
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8294,3 +8350,4 @@ SceneRoots:
   - {fileID: 526847772}
   - {fileID: 1671095519}
   - {fileID: 699875904}
+  - {fileID: 1391451983}

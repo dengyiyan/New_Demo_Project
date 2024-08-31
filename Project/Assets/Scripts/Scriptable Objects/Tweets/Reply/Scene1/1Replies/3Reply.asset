@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tweetText: Morris is dead, but what about the others who helped him? They deserve
     to pay too! #JusticeShallRise #JusticeForAll
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: 1f2a32d76632f354483f76749b3fb1c6, type: 2}
   avatar: {fileID: 21300000, guid: 1e1e204b1fcc5754e9fe029ef0da6c19, type: 3}
   username: Tom
   subtitle: "No Rest Until It\u2019s Done"
-  likesList: 2e0000009b000000560200006f060000
-  commentsList: 1300000057000000110100008d020000
-  retweetsList: 070000001c0000002b00000035000000
+  likesList: 6f060000
+  commentsList: 58060000
+  retweetsList: 9b030000
   likesCount: 1647
   commentsCount: 653
   retweetCount: 53

@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tweetText: "Expose them all, Ian! They deserve to pay for what they\u2019ve done.
     No mercy!\n#JusticeForTheLost #NoMercy"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: 19428863c45d6ce4e9821eec331ff785, type: 2}
   avatar: {fileID: 21300000, guid: 84761fe326b788641a7c3505b45455cd, type: 3}
   username: Kim
   subtitle: No mercy for the guilty
-  likesList: 4e000000b20000005d010000
-  commentsList: 0c000000250000003a000000
-  retweetsList: 03000000080000001a000000
+  likesList: 5d010000
+  commentsList: 3a000000
+  retweetsList: 1a000000
   likesCount: 349
   commentsCount: 58
   retweetCount: 26

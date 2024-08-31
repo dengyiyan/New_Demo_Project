@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tweetText: "Not only is Ian fighting for justice, but he\u2019s also super handsome!
     Total package. #HandsomeAndHeroic #JusticeCrush"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: 9008e2184552f1946a7fef2308560a39, type: 2}
   avatar: {fileID: 21300000, guid: d4a0874eaa59b5247903a7161ecd899c, type: 3}
   username: Marnie
   subtitle: Crushing on Justice
-  likesList: 0500000017000000380000008a000000
-  commentsList: 02000000050000001200000021000000
-  retweetsList: 00000000000000000100000004000000
+  likesList: 8a000000
+  commentsList: 21000000
+  retweetsList: 04000000
   likesCount: 138
   commentsCount: 33
   retweetCount: 4

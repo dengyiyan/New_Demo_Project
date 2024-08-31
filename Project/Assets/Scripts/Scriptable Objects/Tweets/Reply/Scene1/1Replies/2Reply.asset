@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tweetText: My family can finally rest in peace knowing Morris is gone. Thank you,
     Ian! #JusticeShallRise #ThankYouIan
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: 7fb356849ace8a44f835541acb780477, type: 2}
   avatar: {fileID: 13041365, guid: a81e224fa2222d443aa5317e3e0efc0c, type: 3}
   username: Jane
   subtitle: Living Through the Pain
-  likesList: 0d0000002b0000005400000080000000
-  commentsList: 100000003a00000067000000cb010000
-  retweetsList: 080000001a0000004c000000cb000000
+  likesList: 5a010000
+  commentsList: e7010000
+  retweetsList: cb000000
   likesCount: 128
   commentsCount: 459
   retweetCount: 203

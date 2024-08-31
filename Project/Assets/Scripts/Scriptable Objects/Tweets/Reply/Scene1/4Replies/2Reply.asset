@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tweetText: "I don\u2019t usually get involved in online debates, but Ian has inspired
     me. It\u2019s time we all stood up against the monsters. #JusticeForAll #IanTheHero"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: a82da6fdb32c9ed46be91d9ebad9c651, type: 2}
   avatar: {fileID: 21300000, guid: e545d4307238cdc41a483b093dfe2368, type: 3}
   username: SilentMajority
   subtitle: Speaking Up for Justice
-  likesList: 60050000a60e0000e8190000
-  commentsList: 170000004e000000e9000000
-  retweetsList: 020000000300000006000000
+  likesList: e8190000
+  commentsList: e9000000
+  retweetsList: 06000000
   likesCount: 6632
   commentsCount: 233
   retweetCount: 6

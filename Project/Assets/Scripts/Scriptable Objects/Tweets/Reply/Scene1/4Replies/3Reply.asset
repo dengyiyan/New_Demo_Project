@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tweetText: "Forget the justice stuff\u2014can we talk about how ridiculously hot
     Ian is? I\u2019d follow him anywhere just to stare at that face. #JusticeCrush"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: b029829d650c91f418b781c53d2ddef4, type: 2}
   avatar: {fileID: 21300000, guid: d4a0874eaa59b5247903a7161ecd899c, type: 3}
   username: Marnie
   subtitle: Crushing on Justice
-  likesList: 7a0100002b040000f80c0000
-  commentsList: a50000004d01000090020000
-  retweetsList: 000000000300000007000000
+  likesList: f80c0000
+  commentsList: 90020000
+  retweetsList: 07000000
   likesCount: 3320
   commentsCount: 656
   retweetCount: 7

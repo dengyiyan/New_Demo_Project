@@ -14,6 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tweetText: "Who cares if it\u2019s a witch hunt? As long as the guilty pay for
     their crimes, that\u2019s what matters. Go Ian! #NoMercyForTheGuilty #JusticeShallRise"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: cffb1d37aa23441428c8bf124fc8ae66, type: 2}
   - {fileID: 11400000, guid: d9aeb8195063c7c41b98a86bf7803b49, type: 2}
@@ -21,9 +22,9 @@ MonoBehaviour:
   avatar: {fileID: 21300000, guid: 84761fe326b788641a7c3505b45455cd, type: 3}
   username: Kim
   subtitle: No mercy for the guilty
-  likesList: 2302000019040000
-  commentsList: 6200000000010000
-  retweetsList: 170000004d000000
+  likesList: 19040000
+  commentsList: 00010000
+  retweetsList: 4d000000
   likesCount: 1049
   commentsCount: 256
   retweetCount: 77

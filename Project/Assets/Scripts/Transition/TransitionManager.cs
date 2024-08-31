@@ -151,8 +151,8 @@ namespace MyProject.Transition
 
             EventHandler.CallBeforeSceneUnloadEvent();
             yield return Fade(1);
-            EventHandler.CallPlayerFaceEvent(direction);
             EventHandler.CallAfterFadeOutEvent();
+            EventHandler.CallPlayerFaceEvent(direction);
 
             yield return SceneManager.UnloadSceneAsync(SceneManager.GetActiveScene());// –∂‘ÿµ±«∞≥°æ∞
 

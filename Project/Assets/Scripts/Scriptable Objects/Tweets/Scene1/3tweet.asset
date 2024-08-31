@@ -15,14 +15,15 @@ MonoBehaviour:
   tweetText: "Morris was just the beginning. There are still many out there who have
     caused pain and suffering, hiding in plain sight. It\u2019s time to expose them
     all. If you have information, speak up now.\n \n#JusticeShallRise #NoMercyForTheGuilty"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: b6a10453d3406384c89df41c60ee98d0, type: 2}
   avatar: {fileID: 0}
   username: 
   subtitle: 
-  likesList: d6350000f2000100eded0200
-  commentsList: e3060000661500005a630000
-  retweetsList: 4801000069030000dc0d0000
+  likesList: eded0200
+  commentsList: 5a630000
+  retweetsList: 7e240000
   likesCount: 191981
   commentsCount: 25434
   retweetCount: 3548

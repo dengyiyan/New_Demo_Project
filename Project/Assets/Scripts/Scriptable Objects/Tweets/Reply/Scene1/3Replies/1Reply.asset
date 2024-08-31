@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tweetText: "You\u2019re right, Ian! We can\u2019t stop now. We need to dig deeper
     and bring every one of these monsters to justice. #NoMercy #JusticeShallRise"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: 6a634bc54ad8023419f563f978b4e968, type: 2}
   avatar: {fileID: 21300000, guid: 1e1e204b1fcc5754e9fe029ef0da6c19, type: 3}
   username: Tom
   subtitle: "No Rest Until It\u2019s Done"
-  likesList: ec00000015030000f4050000
-  commentsList: 1d0000004a00000093000000
-  retweetsList: 0a0000001700000021000000
+  likesList: f4050000
+  commentsList: 0f020000
+  retweetsList: 4e000000
   likesCount: 1524
   commentsCount: 147
   retweetCount: 33

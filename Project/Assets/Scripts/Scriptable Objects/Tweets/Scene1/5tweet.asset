@@ -15,14 +15,15 @@ MonoBehaviour:
   tweetText: "Ian\u2019s call to action has sparked a wave of support, but also concern.
     Is this the path to true justice, or are we treading dangerous ground?\n#JusticeShallRise
     #WitchHuntOrJustice"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: 1450ea0dd3644a44f9cfd446b809a4df, type: 2}
   avatar: {fileID: 21300000, guid: 4de7ff1b231aaad4ea90b9e9bb579452, type: 3}
   username: Daily News
   subtitle: Bringing You the Headlines
-  likesList: 67090000a0120000a0170000
-  commentsList: 35040000cc0a0000b2120000
-  retweetsList: 4b000000bd0000007b010000
+  likesList: a0170000
+  commentsList: b2120000
+  retweetsList: 59010000
   likesCount: 6048
   commentsCount: 4786
   retweetCount: 379

@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tweetText: "Finally, justice for all those who suffered. You\u2019re a true hero,
     Ian! #JusticeShallRise #ThankYouIan"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: da5440389ce354e42a59ba16257abdbb, type: 2}
   avatar: {fileID: -1692361376, guid: 6341f9089dee2d540884f8cb5d62e3ce, type: 3}
   username: Ben
   subtitle: 
-  likesList: 4d000000a5000000de0100004e050000
-  commentsList: 020000000d0000002400000062000000
-  retweetsList: 00000000010000000200000005000000
+  likesList: 4e050000
+  commentsList: ea000000
+  retweetsList: 17000000
   likesCount: 1358
   commentsCount: 98
   retweetCount: 5

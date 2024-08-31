@@ -31,6 +31,7 @@ public static class GameStateManager
         "SAT_dance",
         "SAT_play",
         "SAT_play_after",
+        "SAT_play_giveup",
         "hide_and_seek_start",
         "sat_exercise8_after",
     };

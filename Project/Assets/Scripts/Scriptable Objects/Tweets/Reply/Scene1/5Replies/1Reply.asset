@@ -15,14 +15,15 @@ MonoBehaviour:
   tweetText: "There\u2019s no dangerous ground when it comes to bringing the guilty
     to justice. Ian is doing what\u2019s necessary to protect the innocent. #NoMercyForTheGuilty
     #JusticeShallRise"
+  minFollower: -1
   followUpTweets:
   - {fileID: 11400000, guid: 9b75c0801d36dcd468664bf3849c7095, type: 2}
   avatar: {fileID: 21300000, guid: fa3ae258d7097ed4cbf3f6faa54aec61, type: 3}
   username: TrueBeliever
   subtitle: In Ian We Trust
-  likesList: 060c0000a616000026260000
-  commentsList: b2000000570100000a030000
-  retweetsList: 7b00000017010000c7010000
+  likesList: 26260000
+  commentsList: 0a030000
+  retweetsList: c7010000
   likesCount: 9766
   commentsCount: 778
   retweetCount: 455

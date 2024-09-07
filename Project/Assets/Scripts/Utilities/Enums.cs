@@ -12,7 +12,6 @@ public enum AnimationType
     SceneChange,
     CutSceneTrigger,
     None,
-    // Add other animation types as needed
 }
 
 [System.Serializable]
@@ -23,7 +22,6 @@ public enum Direction
     Back,
     Left,
     Right,
-    // Add other animation types as needed
 }
 
 public enum ImageType

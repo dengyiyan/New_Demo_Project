@@ -225,11 +225,11 @@ public class ImageAPICall : MonoBehaviour
         var pixelLoraLoader = prompt["82"]["inputs"];
         var realLoraLoader = prompt["111"]["inputs"];
 
-        SetLoraWeights(pixelLoraLoader, 1);
-        SetLoraWeights(realLoraLoader, 1.5f);
+        SetLoraWeights(pixelLoraLoader, 1, 2, 2);
+        SetLoraWeights(realLoraLoader, 1.5f, 2, 1.5f);
     }
 
-    private void SetLoraWeights(JToken token, float val)
+    private void SetLoraWeights(JToken token, float val, float val1, float val2)
     {
         for (int i = 1; i <= 6; i++)
         {
@@ -241,7 +241,11 @@ public class ImageAPICall : MonoBehaviour
             }
             else if (i == 3)
             {
-                token[key] = 2;
+                token[key] = val1;
+            }
+            else if (i == 4)
+            {
+                token[key] = val2;
             }
             else
             {
@@ -301,7 +305,7 @@ public class ImageAPICall : MonoBehaviour
             catch (Exception ex)
             {
                 Debug.LogError("Error processing WebSocket message: " + ex.Message);
-                mainThreadActions.Enqueue(() => EventHandler.CallSetServerStopEvent($"Error processing WebSocket message: {ex.Message}"));
+                mainThreadActions.Enqueue(() => EventHandler.CallSetServerStopEvent($"Error processing WebSocket message: {ex.Message}, try upload the photo again!"));
             }
         };
 

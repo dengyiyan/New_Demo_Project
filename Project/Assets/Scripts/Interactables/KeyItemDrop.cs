@@ -8,9 +8,10 @@ public class KeyItemDrop : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(GameStateManager.GetBool(relatedBool));
         if (!GameStateManager.GetBool(relatedBool))
         {
-            Object.Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

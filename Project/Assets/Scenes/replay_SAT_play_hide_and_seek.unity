@@ -3426,7 +3426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneTo: SAT_play_after_game
-  SpawnID: 5
+  SpawnID: 7
   sequence: {fileID: 11400000, guid: 6f6e5658acc05384da2aaeb8baf0d099, type: 2}
   faceDirection: 4
 --- !u!114 &561246504
@@ -3543,6 +3543,8 @@ MonoBehaviour:
   dialogueManager: {fileID: 0}
   startingSequence: {fileID: 0}
   isAnimationPlaying: 0
+  playableDirector: {fileID: 0}
+  playables: []
 --- !u!4 &574559182
 Transform:
   m_ObjectHideFlags: 0

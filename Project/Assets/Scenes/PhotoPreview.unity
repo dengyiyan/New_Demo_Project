@@ -1834,8 +1834,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   image: {fileID: 763292444}
-  nameInput: {fileID: 0}
-  submitButton: {fileID: 0}
+  nameInput: {fileID: 1580494572}
+  submitButton: {fileID: 869951373}
 --- !u!1 &387832280
 GameObject:
   m_ObjectHideFlags: 0
@@ -5296,17 +5296,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tips: 'First upload your childhood photo. Usually this will take about 40 seconds
-    for the server to start.
+    for the server to start. If you left the page open for too long without generating,
+    upload the photo again before doing so.
 
-    Then click on generate button to get your childhood
-    avatar with different emotions. Each generation should typically take around
-    10 - 15 seconds.
+    Then click on generate button to
+    get your childhood avatar with different emotions. Each generation should typically
+    take around 10 - 15 seconds.
 
-    Click generate all button to get them all at once.
+    Click generate all button to get them all at
+    once.
 
-    After
-    your image is generated, you can click on the show button to view the last generated
-    version of it in the preview window.'
+    Click on the show button to view the last generated version of it
+    in the preview window.'
 --- !u!4 &1391451983
 Transform:
   m_ObjectHideFlags: 0

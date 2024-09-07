@@ -368,6 +368,7 @@ public class DialogueManager : MonoBehaviour
         foreach (var action in actions)
         {
             GameStateManager.SetBool(action.parameterName, action.value);
+            Debug.Log($"Set {action.parameterName} to {action.value}");
         }
     }
 

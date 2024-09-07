@@ -3746,6 +3746,14 @@ PrefabInstance:
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4745596719811427766, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
+      propertyPath: m_Mass
+      value: 0.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745596719811427766, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
+      propertyPath: m_BodyType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4745596719811427766, guid: fbba04b8f30864e468045b2c819440b9, type: 3}
       propertyPath: m_Simulated
       value: 1
       objectReference: {fileID: 0}
@@ -5423,7 +5431,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: -10, y: 69}
+  m_AnchoredPosition: {x: -10, y: 77}
   m_SizeDelta: {x: -80, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1470852416
@@ -5460,17 +5468,18 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1.2
   m_Text: 'First upload your childhood photo. Usually this will take about 40 seconds
-    for the server to start.
+    for the server to start. If you left the page open for too long without generating,
+    upload the photo again before doing so.
 
-    Then click on generate button to get your childhood
-    avatar with different emotions. Each generation should typically take around
-    10 seconds.
+    Then click on generate button to
+    get your childhood avatar with different emotions. Each generation should typically
+    take around 10 - 15 seconds.
 
-    Click generate all button to get them all at once.
+    Click generate all button to get them all at
+    once.
 
-    After
-    your image is generated, you can click on the show button to view the last generated
-    version of it in the preview window.'
+    Click on the show button to view the last generated version of it
+    in the preview window.'
 --- !u!222 &1470852417
 CanvasRenderer:
   m_ObjectHideFlags: 0

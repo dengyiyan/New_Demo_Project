@@ -12,8 +12,8 @@ using System.IO;
 
 public class ImageAPICall : MonoBehaviour
 {
-    private readonly string serverAddress = "comfyui-final-hbpmushhem.cn-shanghai.fcapp.run";
-    //private readonly string serverAddress = "127.0.0.1:8188";
+    // private readonly string serverAddress = "comfyui-final-hbpmushhem.cn-shanghai.fcapp.run";
+    private readonly string serverAddress = "127.0.0.1:8188";
     private readonly string clientId = System.Guid.NewGuid().ToString();
     private WebSocket ws;
     private string promptText;
@@ -97,7 +97,7 @@ public class ImageAPICall : MonoBehaviour
         //form.AddField("overwrite", "true");
 
         // Send the POST request to the server
-        using (UnityWebRequest www = UnityWebRequest.Post($"https://{serverAddress}/upload/image", form))
+        using (UnityWebRequest www = UnityWebRequest.Post($"http://{serverAddress}/upload/image", form))
         {
             SetButtonsInteractable(false);
             yield return www.SendWebRequest();
@@ -265,7 +265,7 @@ public class ImageAPICall : MonoBehaviour
 
         byte[] postData = Encoding.UTF8.GetBytes(promptData);
 
-        using (UnityWebRequest www = UnityWebRequest.Put($"https://{serverAddress}/prompt", postData))
+        using (UnityWebRequest www = UnityWebRequest.Put($"http://{serverAddress}/prompt", postData))
         {
             www.method = UnityWebRequest.kHttpVerbPOST;
             www.SetRequestHeader("Content-Type", "application/json");
